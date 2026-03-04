@@ -95,6 +95,13 @@ async function renderDetail(params) {
                 `).join('')}
               </div>
             </div>
+
+            <!-- YouTube Trailer Action -->
+            <div class="trailer-section" style="margin-top: 24px;">
+              <button class="btn btn-primary" onclick="window.open('https://www.youtube.com/results?search_query=${encodeURIComponent(movie.title + ' ' + movie.year + ' official trailer')}', '_blank')">
+                ▶ Watch Trailer
+              </button>
+            </div>
           </div>
         </div>
 
