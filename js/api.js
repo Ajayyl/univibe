@@ -19,6 +19,7 @@ const API = {
     async login(username, password) {
         const user = { username, display_name: username, age: 18, avatar_emoji: '👤', user_uid: 'USER-' + Date.now() };
         localStorage.setItem(this.USER_KEY, JSON.stringify(user));
+        localStorage.setItem('univibe_age', user.age);
         return { ok: true, data: { user } };
     },
 
@@ -26,6 +27,13 @@ const API = {
         const user = { username, display_name: displayName, email, age, avatar_emoji: '✨', user_uid: 'USER-' + Date.now() };
         localStorage.setItem(this.USER_KEY, JSON.stringify(user));
         localStorage.setItem('univibe_age', age);
+        return { ok: true, data: { user } };
+    },
+
+    async updateProfile(updates) {
+        const user = { ...this.getUser(), ...updates };
+        localStorage.setItem(this.USER_KEY, JSON.stringify(user));
+        if (updates.age) localStorage.setItem('univibe_age', updates.age);
         return { ok: true, data: { user } };
     },
 

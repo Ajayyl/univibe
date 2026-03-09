@@ -1,60 +1,38 @@
-// UniVibe — Age Gate Modal (Profile Selection)
+// UniVibe — Age & Content Control
+// Derive content labels (Kids, Teen, Adult) from numeric age
 
 function renderAgeGate() {
   return `
     <div class="age-gate-overlay" id="age-gate">
       <div class="age-gate-card">
-        <div class="gate-icon">🎬</div>
-        <h2>Who is watching?</h2>
-        <p>Select your profile to personalize recommendations</p>
+        <div class="gate-icon">🎈</div>
+        <h2>Welcome to UniVibe</h2>
+        <p>Enter your age to personalize your movie discovery</p>
         
-        <div class="profile-grid">
-          <button class="profile-card" onclick="selectProfile(9)">
-            <div class="profile-emoji">🎈</div>
-            <div class="profile-label">Kids</div>
-            <span class="profile-desc">Safe for all ages</span>
-          </button>
-          
-          <button class="profile-card" onclick="selectProfile(15)">
-            <div class="profile-emoji">🍿</div>
-            <div class="profile-label">Teen</div>
-            <span class="profile-desc">PG-13 content</span>
-          </button>
-          
-          <button class="profile-card" onclick="selectProfile(18)">
-            <div class="profile-emoji">🔞</div>
-            <div class="profile-label">Adult</div>
-            <span class="profile-desc">Unrestricted</span>
-          </button>
+        <div class="age-input-field">
+          <input type="number" id="age-gate-input" placeholder="Your age" min="1" max="120" />
+          <p class="age-hint">We use this to filter content for Kids, Teens, or Adults.</p>
         </div>
         
-        <p style="font-size: 12px; opacity: 0.5; margin-top: 12px;">
-          This helps us filter content appropriate for you.
-        </p>
+        <button class="btn btn-primary" onclick="submitAgeGate()">Continue</button>
       </div>
     </div>
   `;
 }
 
-function selectProfile(age) {
-  submitAge(age);
-}
-
-function submitAge(ageInput) {
-  // If called without arg (e.g. from Enter key on hidden input), ignore or define fallback
-  // But here we rely on button clicks.
-
-  // Support legacy input if we ever revert or add manual override
-  let age = ageInput;
-  if (!age) {
-    const input = document.getElementById('age-input');
-    age = parseInt(input?.value);
-  }
+function submitAgeGate() {
+  const input = document.getElementById('age-gate-input');
+  const age = parseInt(input?.value);
 
   if (!age || age < 1 || age > 120) {
+    showToast('Please enter a valid age (1-120)', 'error');
     return;
   }
 
+  submitAge(age);
+}
+
+function submitAge(age) {
   localStorage.setItem('univibe_age', age);
 
   // Remove the gate
@@ -67,34 +45,59 @@ function submitAge(ageInput) {
   // Update nav age badge
   updateNavAgeBadge();
 
-  // Re-render current page
+  // Re-render current page to apply filters
   Router.resolve();
 }
 
 function showAgeGate() {
-  // Only show if no age is stored
-  if (!localStorage.getItem('univibe_age')) {
+  // Only show if no age is stored AND not logged in
+  if (!localStorage.getItem('univibe_age') && !API.isLoggedIn()) {
     document.body.insertAdjacentHTML('beforeend', renderAgeGate());
   }
 }
 
 function resetAge() {
+  // Only allow reset for guests
+  if (API.isLoggedIn()) {
+    Router.navigate('/profile');
+    showToast('Update your age in your profile settings', 'info');
+    return;
+  }
   localStorage.removeItem('univibe_age');
   location.reload();
 }
 
 function updateNavAgeBadge() {
   const badge = document.getElementById('nav-age-badge');
-  if (badge) {
-    const age = parseInt(localStorage.getItem('univibe_age'));
-    if (age) {
-      let label = 'Adult';
-      if (age <= 12) label = 'Kids';
-      else if (age <= 17) label = 'Teen';
+  if (!badge) return;
 
-      const isFiltered = age < 18;
-      badge.innerHTML = `👤 ${label} Profile`;
-      badge.title = 'Click to switch profile';
+  const user = API.getUser();
+  const age = user ? user.age : parseInt(localStorage.getItem('univibe_age'));
+
+  if (age) {
+    const label = getAgeLabel(age);
+    const emoji = age <= 12 ? '🎈' : age <= 17 ? '🍿' : '🔞';
+
+    if (user) {
+      // Logged in: show Name + Age Label
+      badge.innerHTML = `${user.avatar_emoji || '👤'} ${user.display_name} (${label} ${emoji})`;
+      badge.onclick = () => Router.navigate('/profile');
+      badge.title = 'View your profile';
+    } else {
+      // Guest: show Age Label only
+      badge.innerHTML = `👤 ${label} Profile ${emoji}`;
+      badge.onclick = () => resetAge();
+      badge.title = 'Click to reset age';
     }
+  } else {
+    badge.innerHTML = '👤 Set Age';
+    badge.onclick = () => showAgeGate();
   }
+}
+
+// Helper to get labels globally
+function getAgeLabel(age) {
+  if (age <= 12) return 'Kids';
+  if (age <= 17) return 'Teen';
+  return 'Adult';
 }

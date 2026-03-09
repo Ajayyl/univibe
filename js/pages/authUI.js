@@ -686,14 +686,10 @@ function updateAuthUI() {
   // Remove existing auth btn
   if (existingAuthBtn) existingAuthBtn.remove();
 
-  if (user) {
-    // Logged in — show profile & avatar
-    if (ageBadge) {
-      ageBadge.innerHTML = `${user.avatar_emoji || '👤'} ${user.display_name}`;
-      ageBadge.title = `${user.user_uid} — Click to view profile`;
-      ageBadge.onclick = () => Router.navigate('/profile');
-    }
+  // Always sync and update the age-based badge
+  updateNavAgeBadge();
 
+  if (user) {
     // Add profile link to nav
     const profileLink = document.createElement('a');
     profileLink.id = 'nav-auth-btn';
@@ -701,20 +697,10 @@ function updateAuthUI() {
     profileLink.href = '#/dashboard';
     profileLink.dataset.route = '/dashboard';
     profileLink.textContent = '📊 Dashboard';
-    navLinks.insertBefore(profileLink, ageBadge);
+    if (ageBadge) navLinks.insertBefore(profileLink, ageBadge);
+    else navLinks.appendChild(profileLink);
   } else {
     // Not logged in — show sign in button
-    if (ageBadge) {
-      const age = parseInt(localStorage.getItem('univibe_age'));
-      if (age) {
-        let label = 'Adult';
-        if (age <= 12) label = 'Kids';
-        else if (age <= 17) label = 'Teen';
-        ageBadge.innerHTML = `👤 ${label} Profile`;
-        ageBadge.onclick = () => resetAge();
-      }
-    }
-
     const loginBtn = document.createElement('button');
     loginBtn.id = 'nav-auth-btn';
     loginBtn.className = 'btn btn-primary btn-sm nav-login-btn';
