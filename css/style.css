@@ -799,6 +799,47 @@ select {
   overflow: hidden;
 }
 
+.watch-later-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(10, 10, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  z-index: 10;
+  transition: all 0.3s var(--ease);
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.movie-card:hover .watch-later-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.watch-later-btn:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-tertiary);
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.watch-later-btn.active {
+  background: var(--fun);
+  border-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .movie-card .poster-wrap img {
   width: 100%;
   height: 100%;

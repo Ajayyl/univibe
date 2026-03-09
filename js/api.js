@@ -187,5 +187,24 @@ const API = {
 
     async getRatings() {
         return this.get('/api/ratings');
+    },
+
+    // ──────────────────────────────────
+    // WATCHLIST ENDPOINTS
+    // ──────────────────────────────────
+    async addToWatchlist(movieId) {
+        return this.post('/api/watchlist/add', { movieId });
+    },
+
+    async removeFromWatchlist(movieId) {
+        return this.request(`/api/watchlist/remove/${movieId}`, { method: 'DELETE' });
+    },
+
+    async getWatchlist() {
+        return this.get('/api/watchlist');
+    },
+
+    async checkWatchlist(movieId) {
+        return this.get(`/api/watchlist/${movieId}`);
     }
 };

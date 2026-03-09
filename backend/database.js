@@ -36,7 +36,7 @@ db.exec(`
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_uid TEXT NOT NULL,
     movie_id INTEGER NOT NULL,
-    event_type TEXT NOT NULL CHECK(event_type IN ('view', 'click', 'search', 'rating', 'recommend_click', 'dwell')),
+    event_type TEXT NOT NULL CHECK(event_type IN ('view', 'click', 'search', 'rating', 'recommend_click', 'dwell', 'watchlist')),
     event_value TEXT DEFAULT '',
     context_genre TEXT DEFAULT '',
     context_experience TEXT DEFAULT '',
@@ -98,6 +98,16 @@ db.exec(`
     FOREIGN KEY (user_uid) REFERENCES users(user_uid)
   );
 
+  -- Movie Watch Later (Watchlist)
+  CREATE TABLE IF NOT EXISTS watchlist (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_uid TEXT NOT NULL,
+    movie_id INTEGER NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(user_uid, movie_id),
+    FOREIGN KEY (user_uid) REFERENCES users(user_uid)
+  );
+
   -- Indexes for performance
   CREATE INDEX IF NOT EXISTS idx_interactions_user ON interactions(user_uid);
   CREATE INDEX IF NOT EXISTS idx_interactions_movie ON interactions(movie_id);
@@ -105,6 +115,7 @@ db.exec(`
   CREATE INDEX IF NOT EXISTS idx_search_user ON search_history(user_uid);
   CREATE INDEX IF NOT EXISTS idx_rl_user_state ON rl_qtable(user_uid, state_key);
   CREATE INDEX IF NOT EXISTS idx_ratings_user ON ratings(user_uid);
+  CREATE INDEX IF NOT EXISTS idx_watchlist_user ON watchlist(user_uid);
 `);
 
 // ──────────────────────────────────
@@ -156,6 +167,16 @@ const stmts = {
   `),
   getUserRatings: db.prepare('SELECT * FROM ratings WHERE user_uid = ?'),
   getMovieRating: db.prepare('SELECT * FROM ratings WHERE user_uid = ? AND movie_id = ?'),
+
+  // Watchlist
+  addToWatchlist: db.prepare(`
+    INSERT INTO watchlist (user_uid, movie_id)
+    VALUES (@user_uid, @movie_id)
+    ON CONFLICT(user_uid, movie_id) DO NOTHING
+  `),
+  removeFromWatchlist: db.prepare('DELETE FROM watchlist WHERE user_uid = ? AND movie_id = ?'),
+  getUserWatchlist: db.prepare('SELECT * FROM watchlist WHERE user_uid = ? ORDER BY created_at DESC'),
+  getWatchlistItem: db.prepare('SELECT * FROM watchlist WHERE user_uid = ? AND movie_id = ?'),
 
   // RL Q-Table
   getQValue: db.prepare('SELECT * FROM rl_qtable WHERE user_uid = ? AND state_key = ? AND movie_id = ?'),

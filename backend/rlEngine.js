@@ -28,6 +28,7 @@ const CONFIG = {
         rating_neutral: 0.5,    // User rated 3 stars
         rating_negative: -1.0,  // User rated <= 2 stars
         recommend_click: 1.5,   // User clicked a recommendation
+        watchlist: 1.2,         // User added movie to watch later
         dwell: 0.8,             // User spent significant time on detail
         ignore: -0.2,           // Recommendation was shown but not clicked
     }
@@ -114,6 +115,8 @@ function calculateReward(eventType, eventValue = '') {
             return CONFIG.rewardWeights.recommend_click;
         case 'dwell':
             return CONFIG.rewardWeights.dwell;
+        case 'watchlist':
+            return CONFIG.rewardWeights.watchlist;
         case 'rating': {
             const rating = parseInt(eventValue);
             if (rating >= 4) return CONFIG.rewardWeights.rating_positive;

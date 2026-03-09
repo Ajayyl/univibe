@@ -75,7 +75,7 @@ app.post('/api/track', auth.authMiddleware, (req, res) => {
         return res.status(400).json({ error: 'movieId and eventType are required' });
     }
 
-    const validEvents = ['view', 'click', 'search', 'rating', 'recommend_click', 'dwell'];
+    const validEvents = ['view', 'click', 'search', 'rating', 'recommend_click', 'dwell', 'watchlist'];
     if (!validEvents.includes(eventType)) {
         return res.status(400).json({ error: 'Invalid event type' });
     }
@@ -152,6 +152,44 @@ app.post('/api/rate', auth.authMiddleware, (req, res) => {
 app.get('/api/rate/:movieId', auth.authMiddleware, (req, res) => {
     const rating = stmts.getMovieRating.get(req.userUid, parseInt(req.params.movieId));
     res.json({ rating: rating ? rating.rating : null });
+});
+
+// ──────────────────────────────────
+// WATCHLIST ROUTES (Watch Later)
+// ──────────────────────────────────
+
+// Add to watchlist
+app.post('/api/watchlist/add', auth.authMiddleware, (req, res) => {
+    const { movieId } = req.body;
+    if (!movieId) return res.status(400).json({ error: 'movieId is required' });
+
+    stmts.addToWatchlist.run({
+        user_uid: req.userUid,
+        movie_id: parseInt(movieId)
+    });
+
+    // Learn from watchlist action (positive signal)
+    rlEngine.learn(req.userUid, parseInt(movieId), 'watchlist', 'add', { source: 'watchlist' });
+
+    res.json({ success: true });
+});
+
+// Remove from watchlist
+app.delete('/api/watchlist/remove/:movieId', auth.authMiddleware, (req, res) => {
+    stmts.removeFromWatchlist.run(req.userUid, parseInt(req.params.movieId));
+    res.json({ success: true });
+});
+
+// Get full watchlist
+app.get('/api/watchlist', auth.authMiddleware, (req, res) => {
+    const items = stmts.getUserWatchlist.all(req.userUid);
+    res.json({ success: true, watchlist: items });
+});
+
+// Check if in watchlist
+app.get('/api/watchlist/:movieId', auth.authMiddleware, (req, res) => {
+    const item = stmts.getWatchlistItem.get(req.userUid, parseInt(req.params.movieId));
+    res.json({ inWatchlist: !!item });
 });
 
 // ──────────────────────────────────

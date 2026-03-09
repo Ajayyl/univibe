@@ -19,6 +19,9 @@ function renderMovieCard(movie) {
         />
         <div class="poster-overlay">
           <div class="overlay-rating">⭐ ${movie.rating_percent}%</div>
+          <button class="watch-later-btn" onclick="event.stopPropagation(); toggleWatchlist(event, ${movie.movie_id})" title="Watch Later">
+            🔖
+          </button>
         </div>
       </div>
       <div class="card-info">
@@ -51,6 +54,9 @@ function renderRecommendedCard(movie, reason) {
           />
           <div class="poster-overlay">
             <div class="overlay-rating">⭐ ${movie.rating_percent}%</div>
+            <button class="watch-later-btn" onclick="event.stopPropagation(); toggleWatchlist(event, ${movie.movie_id})" title="Watch Later">
+              🔖
+            </button>
           </div>
         </div>
         <div class="card-info">

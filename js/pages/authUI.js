@@ -272,6 +272,19 @@ function renderProfile() {
           </div>
         </div>
 
+        <!-- Watch Later Section -->
+        <div class="section fade-in-up" style="padding-top:0;margin-top:20px;">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">🔖 Watch Later</h2>
+              <p class="section-subtitle">Movies you've saved to watch another time</p>
+            </div>
+          </div>
+          <div id="watchlist-feed">
+            ${renderAnalysisLoader()}
+          </div>
+        </div>
+
         <!-- RL Recommendations Section -->
         <div class="section recommend-section fade-in-up" style="padding-top:0;margin-top:40px;">
           <div class="section-header">
@@ -320,6 +333,9 @@ async function loadProfileData() {
   // Load ML stats
   loadMLStats();
 
+  // Load Watchlist
+  loadWatchlist();
+
   // Load RL recommendations
   loadRLRecommendations();
 
@@ -328,6 +344,33 @@ async function loadProfileData() {
 
   // Load search history
   loadSearchHistory();
+}
+
+async function loadWatchlist() {
+  const container = document.getElementById('watchlist-feed');
+  if (!container) return;
+
+  const res = await API.getWatchlist();
+  if (!res.ok || res.data.watchlist.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state" style="padding:40px 0;">
+        <div class="empty-icon">🔖</div>
+        <p style="color:var(--text-muted);">Your Watch Later list is empty. Save movies you want to watch later!</p>
+      </div>
+    `;
+    return;
+  }
+
+  const items = res.data.watchlist;
+  container.innerHTML = `
+    <div class="movie-row stagger">
+      ${items.map(item => {
+    const movie = MOVIES.find(m => m.movie_id === item.movie_id);
+    if (!movie) return '';
+    return renderMovieCard(movie);
+  }).join('')}
+    </div>
+  `;
 }
 
 async function loadMLStats() {
@@ -835,6 +878,65 @@ async function submitRating(movieId, rating) {
   }
 }
 
+// ──────────────────────────────────
+// WATCHLIST LOGIC
+// ──────────────────────────────────
+
+async function toggleWatchlist(event, movieId) {
+  if (!API.isLoggedIn()) {
+    showAuthModal('login');
+    return;
+  }
+
+  const btn = event.currentTarget;
+  const isDetail = btn.id === 'watchlist-toggle-btn';
+
+  // Check current status
+  const checkRes = await API.checkWatchlist(movieId);
+  const inWatchlist = checkRes.inWatchlist;
+
+  if (inWatchlist) {
+    // Remove
+    const res = await API.removeFromWatchlist(movieId);
+    if (res.ok) {
+      showToast('Removed from Watch Later', 'info');
+      updateWatchlistButton(movieId, false);
+    }
+  } else {
+    // Add
+    const res = await API.addToWatchlist(movieId);
+    if (res.ok) {
+      showToast('Added to Watch Later 🔖', 'success');
+      updateWatchlistButton(movieId, true);
+    }
+  }
+}
+
+async function updateWatchlistButton(movieId, forceStatus = null) {
+  if (!API.isLoggedIn()) return;
+
+  let inWatchlist = forceStatus;
+  if (inWatchlist === null) {
+    const res = await API.checkWatchlist(movieId);
+    inWatchlist = res.inWatchlist;
+  }
+
+  // Update detail page button if active
+  const detailBtn = document.getElementById('watchlist-toggle-btn');
+  const currentPath = window.location.hash.split('?')[0];
+  if (detailBtn && currentPath.includes(`/movie/${movieId}`)) {
+    detailBtn.innerHTML = inWatchlist ? '✅ In Watch Later' : '🔖 Add to Watch Later';
+    detailBtn.classList.toggle('active', inWatchlist);
+  }
+
+  // Update any grid buttons if visible
+  document.querySelectorAll(`.watch-later-btn[onclick*="${movieId}"]`).forEach(btn => {
+    btn.innerHTML = inWatchlist ? '✅' : '🔖';
+    btn.classList.toggle('active', inWatchlist);
+    btn.title = inWatchlist ? 'In Watch Later' : 'Watch Later';
+  });
+}
+
 // Make functions globally accessible
 window.showAuthModal = showAuthModal;
 window.closeAuthModal = closeAuthModal;
@@ -856,3 +958,5 @@ window.loadExistingRating = loadExistingRating;
 window.showToast = showToast;
 window.updateAuthUI = updateAuthUI;
 window.loadProfileData = loadProfileData;
+window.toggleWatchlist = toggleWatchlist;
+window.updateWatchlistButton = updateWatchlistButton;

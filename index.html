@@ -145,6 +145,7 @@
         setTimeout(() => {
           trackMovieView(movieId, movie);
           loadExistingRating(movieId);
+          updateWatchlistButton(movieId);
         }, 100);
       });
 

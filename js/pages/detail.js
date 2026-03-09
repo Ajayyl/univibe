@@ -99,6 +99,13 @@ function renderDetail(params) {
                 `).join('')}
               </div>
             </div>
+
+            <!-- Actions -->
+            <div class="detail-actions" style="margin-top: 24px;">
+              <button id="watchlist-toggle-btn" class="btn btn-outline" style="width: 100%; justify-content: center;" onclick="toggleWatchlist(event, ${movieId})">
+                🔖 Add to Watch Later
+              </button>
+            </div>
           </div>
         </div>
 
