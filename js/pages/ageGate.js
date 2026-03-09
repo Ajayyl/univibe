@@ -75,17 +75,14 @@ function updateNavAgeBadge() {
   const age = user ? user.age : parseInt(localStorage.getItem('univibe_age'));
 
   if (age) {
-    const label = getAgeLabel(age);
-    const emoji = age <= 12 ? '🎈' : age <= 17 ? '🍿' : '🔞';
-
     if (user) {
-      // Logged in: show Name + Age Label
-      badge.innerHTML = `${user.avatar_emoji || '👤'} ${user.display_name} (${label} ${emoji})`;
+      // Logged in: show Name + Avatar only
+      badge.innerHTML = `${user.avatar_emoji || '👤'} ${user.display_name}`;
       badge.onclick = () => Router.navigate('/profile');
       badge.title = 'View your profile';
     } else {
-      // Guest: show Age Label only
-      badge.innerHTML = `👤 ${label} Profile ${emoji}`;
+      // Guest: show generic profile label
+      badge.innerHTML = `👤 Guest Profile`;
       badge.onclick = () => resetAge();
       badge.title = 'Click to reset age';
     }
