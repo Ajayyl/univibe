@@ -17,14 +17,33 @@ const API = {
     },
 
     async login(username, password) {
-        const user = { username, display_name: username, age: 18, avatar_emoji: '👤', user_uid: 'USER-' + Date.now() };
+        const user = {
+            username,
+            display_name: username,
+            age: 18,
+            avatar_emoji: '👤',
+            user_uid: 'USER-' + Date.now(),
+            created_at: new Date().toISOString(),
+            preferred_genres: [],
+            preferred_experience: 'any'
+        };
         localStorage.setItem(this.USER_KEY, JSON.stringify(user));
         localStorage.setItem('univibe_age', user.age);
         return { ok: true, data: { user } };
     },
 
     async register(username, email, password, displayName, age) {
-        const user = { username, display_name: displayName, email, age, avatar_emoji: '✨', user_uid: 'USER-' + Date.now() };
+        const user = {
+            username,
+            display_name: displayName,
+            email,
+            age: parseInt(age),
+            avatar_emoji: '✨',
+            user_uid: 'USER-' + Date.now(),
+            created_at: new Date().toISOString(),
+            preferred_genres: [],
+            preferred_experience: 'any'
+        };
         localStorage.setItem(this.USER_KEY, JSON.stringify(user));
         localStorage.setItem('univibe_age', age);
         return { ok: true, data: { user } };

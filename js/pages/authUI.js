@@ -604,8 +604,12 @@ function showEditProfile() {
             <label>Preferred Genres (select up to 3)</label>
             <div class="genre-picker" id="genre-picker">
               ${allGenres.map(g => {
-    const preferred = JSON.parse(user.preferred_genres || '[]');
-    return `<button type="button" class="genre-pick-btn ${preferred.includes(g) ? 'active' : ''}" 
+    let prefArray = [];
+    try {
+      prefArray = Array.isArray(user.preferred_genres) ? user.preferred_genres : JSON.parse(user.preferred_genres || '[]');
+    } catch (e) { prefArray = []; }
+
+    return `<button type="button" class="genre-pick-btn ${prefArray.includes(g) ? 'active' : ''}" 
                           onclick="toggleGenrePick(this, '${g}')">${g}</button>`;
   }).join('')}
             </div>
