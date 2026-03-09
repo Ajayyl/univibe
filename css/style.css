@@ -806,10 +806,10 @@ select {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(10, 10, 26, 0.6);
+  background: rgba(10, 10, 26, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -817,8 +817,19 @@ select {
   color: #fff;
   z-index: 10;
   transition: all 0.3s var(--ease);
-  opacity: 0;
-  transform: translateY(-5px);
+  /* Desktop default: partially hidden until hover */
+  opacity: 0.2;
+  transform: translateY(0);
+}
+
+/* On Mobile/Touch: Always visible */
+@media (max-width: 768px) {
+  .watch-later-btn {
+    opacity: 1;
+    background: rgba(10, 10, 26, 0.85);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .movie-card:hover .watch-later-btn {
