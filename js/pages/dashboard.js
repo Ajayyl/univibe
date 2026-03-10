@@ -811,37 +811,37 @@ function renderKPIs(summary) {
 
 function renderAllCharts(d) {
   // 1. Interaction Timeline
-  if (d.timeline.labels.length > 0) {
-    drawAreaChart('chart-timeline', d.timeline.labels, d.timeline.datasets, {
+  // Datasets arrives as [{label, data}] array — convert to {label: data} object for drawAreaChart
+  const timelineDatasets = {};
+  if (d.timeline && d.timeline.datasets) {
+    d.timeline.datasets.forEach(ds => { timelineDatasets[ds.label] = ds.data; });
+  }
+  const hasTimeline = d.timeline && d.timeline.labels && d.timeline.labels.length > 0;
+  if (hasTimeline) {
+    drawAreaChart('chart-timeline', d.timeline.labels, timelineDatasets, {
       title: '', height: 280
     });
   } else {
     document.getElementById('chart-timeline').innerHTML = emptyChartMsg('No timeline data yet — start browsing movies!');
   }
 
-  // 2. Activity Breakdown (Doughnut)
-  const actLabels = Object.keys(d.sourceBreakdown).length > 0 ? Object.keys(d.summary).filter(k => false) : [];
-  // Use genreBreakdown totals to build activity doughnut
-  const actTypes = ['view', 'click', 'rating', 'recommend_click'];
-  const actTotals = actTypes.map(type => {
-    let count = 0;
-    Object.values(d.genreBreakdown).forEach(g => { count += g[type] || 0; });
-    return count;
-  });
-  const actIcons = { view: 'Views', click: 'Clicks', rating: 'Ratings', recommend_click: 'Rec. Clicks' };
-  const actLabelsFinal = actTypes.map(t => actIcons[t]);
+  // 2. Activity Breakdown (Doughnut) — use activityBreakdown directly
+  const act = d.activityBreakdown || {};
+  const actTypes = ['view', 'click', 'rating', 'recommend_click', 'watchlist'];
+  const actTotals = actTypes.map(t => act[t] || 0);
+  const actLabelsFinal = ['Views', 'Clicks', 'Ratings', 'Rec. Clicks', 'Watchlist'];
   const hasActivity = actTotals.some(v => v > 0);
 
   if (hasActivity) {
     drawDoughnutChart('chart-activity-doughnut', actLabelsFinal, actTotals, {
-      colors: [ChartColors.purple, ChartColors.pink, ChartColors.amber, ChartColors.emerald]
+      colors: [ChartColors.purple, ChartColors.pink, ChartColors.amber, ChartColors.emerald, ChartColors.cyan]
     });
   } else {
     document.getElementById('chart-activity-doughnut').innerHTML = emptyChartMsg('No interactions recorded yet');
   }
 
   // 3. Q-Value Distribution
-  if (d.qDistribution.labels.length > 0) {
+  if (d.qDistribution && d.qDistribution.counts && d.qDistribution.counts.length > 0) {
     drawBarChart('chart-q-distribution', d.qDistribution.labels.map(l => l.toString()), d.qDistribution.counts, {
       barColors: ChartColors.palette,
       yLabel: 'Frequency',
@@ -852,8 +852,9 @@ function renderAllCharts(d) {
   }
 
   // 4. Explore vs Exploit (Doughnut)
-  const srcLabels = Object.keys(d.sourceBreakdown);
-  const srcValues = srcLabels.map(k => d.sourceBreakdown[k]);
+  const src = d.sourceBreakdown || {};
+  const srcLabels = Object.keys(src).filter(k => src[k] > 0);
+  const srcValues = srcLabels.map(k => src[k]);
   const srcColors = { rl: ChartColors.purple, explore: ChartColors.amber, hybrid: ChartColors.emerald, content: ChartColors.cyan, popular: ChartColors.pink };
   if (srcLabels.length > 0) {
     drawDoughnutChart('chart-source-doughnut', srcLabels, srcValues, {
@@ -864,10 +865,10 @@ function renderAllCharts(d) {
   }
 
   // 5. Top Movie Q-Values
-  if (d.topMovieQ.length > 0) {
+  if (d.topMovieQ && d.topMovieQ.length > 0) {
     drawHorizontalBarChart('chart-movie-q-bars',
       d.topMovieQ.map(m => m.title),
-      d.topMovieQ.map(m => m.maxQ),
+      d.topMovieQ.map(m => parseFloat(m.maxQ) || 0),
       { height: 380 }
     );
   } else {
@@ -875,13 +876,14 @@ function renderAllCharts(d) {
   }
 
   // 6. Genre Heatmap
-  drawHeatmap('chart-genre-heatmap', d.genreBreakdown, { height: 280 });
+  drawHeatmap('chart-genre-heatmap', d.genreBreakdown || {}, { height: 280 });
 
   // 7. Rating Distribution
   const ratingLabels = ['★ 1', '★★ 2', '★★★ 3', '★★★★ 4', '★★★★★ 5'];
-  const hasRatings = d.ratingDistribution.some(v => v > 0);
+  const ratingDist = d.ratingDistribution || [0, 0, 0, 0, 0];
+  const hasRatings = ratingDist.some(v => v > 0);
   if (hasRatings) {
-    drawBarChart('chart-rating-dist', ratingLabels, d.ratingDistribution, {
+    drawBarChart('chart-rating-dist', ratingLabels, ratingDist, {
       barColors: ['#ef4444', '#f97316', '#f59e0b', '#10b981', '#7c3aed'],
       height: 260
     });
@@ -890,10 +892,11 @@ function renderAllCharts(d) {
   }
 
   // 8. State-Space Radar
-  if (d.stateDetails.length >= 3) {
+  const states = d.stateDetails || [];
+  if (states.length >= 3) {
     drawRadarChart('chart-state-radar',
-      d.stateDetails.slice(0, 8).map(s => s.state),
-      d.stateDetails.slice(0, 8).map(s => s.movieCount),
+      states.slice(0, 8).map(s => s.state),
+      states.slice(0, 8).map(s => s.movieCount),
       { title: '', height: 300 }
     );
   } else {
@@ -901,10 +904,10 @@ function renderAllCharts(d) {
   }
 
   // 9. RL Configuration Panel
-  renderConfigPanel(d.config);
+  if (d.config) renderConfigPanel(d.config);
 
   // 10. State Details Table
-  renderStateTable(d.stateDetails);
+  renderStateTable(d.stateDetails || []);
 }
 
 function renderConfigPanel(config) {
