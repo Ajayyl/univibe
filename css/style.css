@@ -3232,4 +3232,17 @@ select {
   align-items: center;
   gap: 6px;
 }
-
+
+.ott-original-logo {
+  height: 24px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
