@@ -3,7 +3,7 @@
 // Caches all static assets for full offline functionality
 // ═══════════════════════════════════════════════════════════════
 
-const CACHE_NAME = 'univibe-v7';
+const CACHE_NAME = 'univibe-v10';
 
 // All static assets to cache for offline use
 const STATIC_ASSETS = [
