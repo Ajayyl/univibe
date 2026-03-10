@@ -29,7 +29,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00J2PGLO0",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/bxc0WpGPEYSH8UokB5tX8mdWMGt.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
         "synopsis": "A legendary concierge at a famous European hotel and his trusted lobby boy become embroiled in the theft of a priceless painting.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -179,7 +179,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00IANO1TA",
         "year": 2013,
-        "poster": "https://image.tmdb.org/t/p/w500/sGn67cqGbkNYFdVjPVaCUmD62PQ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/hFesdtnQmCLFEOMA3jGvVlEGsR0.jpg",
         "synopsis": "A daydreamer escapes his anonymous life by disappearing into a world of fantasies of romance, heroism, and action.",
         "tags": ["underrated", "family-safe"],
         "ottPlatforms": [
@@ -217,7 +217,7 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2001,
-        "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5AGK63apjqYzdvDCe.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/yr7wocm26hT7IQBB78sprQVLlVd.jpg",
         "synopsis": "A young girl wanders into a world of spirits ruled by gods, witches, and strange creatures, and must find the courage to free herself and her parents.",
         "tags": ["cult", "family-safe"],
         "ottPlatforms": [
@@ -273,7 +273,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B01MU9CMGP",
         "year": 2016,
-        "poster": "https://image.tmdb.org/t/p/w500/4911T5FbJ9eAlnMqWLaQNbLo77a.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
         "synopsis": "A timeless story of human self-discovery and connection, told across three defining chapters in the life of a young Black man growing up in Miami.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -311,7 +311,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000IBUPMK",
         "year": 2003,
-        "poster": "https://image.tmdb.org/t/p/w500/k2wGqBaKxLGKWUIOOMPlQp8FQoA.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/qRz3doI7a2ftwWng7wE6lZCZquk.jpg",
         "synopsis": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -368,7 +368,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000I9YLWM",
         "year": 2001,
-        "poster": "https://image.tmdb.org/t/p/w500/f0uorE7K4ZNKU9F6UVVLTS6FHQX.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/4rHIh0WlZNHE5pOgR31tBeUlJZN.jpg",
         "synopsis": "A shy waitress in Montmartre decides to change the lives of those around her for the better, while struggling with her own isolation.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -406,7 +406,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2015,
-        "poster": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9EnUVCQSQS4bm.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/ayyBTAxL0ONtf8E9ttBLOjf450K.jpg",
         "synopsis": "After young Riley is uprooted from her Midwest life, her emotions — Joy, Fear, Anger, Disgust and Sadness — conflict on how to navigate a new city.",
         "tags": ["family-safe"],
         "ottPlatforms": [
@@ -424,7 +424,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0012I8B0Y",
         "year": 2007,
-        "poster": "https://image.tmdb.org/t/p/w500/6d5XOczc0bDOKooSlhsADovNrHm.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg",
         "synopsis": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and a suitcase full of cash in the desert.",
         "tags": ["cult"],
         "ottPlatforms": [
@@ -461,7 +461,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00HHJR5PO",
         "year": 2013,
-        "poster": "https://image.tmdb.org/t/p/w500/eCOtqtfvn7mxGGGuBHGFBEJzfxP.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/70NBqsoTHo7fOwcK4urZEFaGOSw.jpg",
         "synopsis": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -499,7 +499,7 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "https://www.amazon.com/dp/B079DZ5XWD",
         "year": 2017,
-        "poster": "https://image.tmdb.org/t/p/w500/uEFWGCBHKmEMlTfT5K0Tt1oDnkU.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/m9m0v5819vB539mK73fH2A5S37R.jpg",
         "synopsis": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen.",
         "tags": ["family-safe", "underrated"],
         "ottPlatforms": [
@@ -556,7 +556,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2007,
-        "poster": "https://image.tmdb.org/t/p/w500/npHNjlDBYe6R34bF1EffUXFHLIl.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/cghrtuHdD8uujxQjG8czKQ635AJ.jpg",
         "synopsis": "A rat named Remy dreams of becoming a great chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy.",
         "tags": ["family-safe"],
         "ottPlatforms": [
@@ -574,7 +574,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000P0J0AI",
         "year": 2006,
-        "poster": "https://image.tmdb.org/t/p/w500/jKuDyqS3j01eEKFLBFBBlbGgnlc.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/ydomtut0UATCxnzdNdPiYTKtcwf.jpg",
         "synopsis": "An undercover cop and a mole in the police try to identify each other while infiltrating an Irish gang in Boston.",
         "tags": ["cult"],
         "ottPlatforms": [
@@ -593,7 +593,7 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2004,
-        "poster": "https://image.tmdb.org/t/p/w500/4U4NuhEqRHkJSanEfGLfHZdYJKr.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/mEh0NFn1C3PdbLScbooFMoaM5ET.jpg",
         "synopsis": "When a young hat-maker is turned into an old woman by a witch's curse, she finds refuge in the magical moving castle of the wizard Howl.",
         "tags": ["family-safe", "cult"],
         "ottPlatforms": [
@@ -631,7 +631,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00AEFXVYM",
         "year": 1995,
-        "poster": "https://image.tmdb.org/t/p/w500/fvUAXkJHPBpBJEXv2GPUOQX5OE2.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/9ehLZcm6rRIePqcKN2Wzak5aGWM.jpg",
         "synopsis": "A young man and woman meet on a train and end up spending one romantic evening together in Vienna before going their separate ways.",
         "tags": ["underrated"],
         "ottPlatforms": [
@@ -706,7 +706,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00AOT8JUC",
         "year": 1987,
-        "poster": "https://image.tmdb.org/t/p/w500/golGnS0TIOYVXZ8B3KCMgaJr61q.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/lxmULlro6055tZr14ZI91TFtq58.jpg",
         "synopsis": "A farmhand-turned-pirate encounters numerous obstacles, enemies, and allies in his quest to be reunited with his true love.",
         "tags": ["cult", "family-safe"],
         "ottPlatforms": [
@@ -744,7 +744,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 1994,
-        "poster": "https://image.tmdb.org/t/p/w500/sKCr78MXSuS2FrgINUKdJB5bkNr.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/2rEJ8jPjyjMIYAmTqRbLdrHud5r.jpg",
         "synopsis": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
         "tags": ["cult", "family-safe"],
         "ottPlatforms": [
@@ -762,7 +762,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B09J5D7GV1",
         "year": 2021,
-        "poster": "https://image.tmdb.org/t/p/w500/d5NXSklpcuveduIfyUSQz6tBmEK.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/5F6GBIdWpRk6f52FX5VipK57vuv.jpg",
         "synopsis": "Paul Atreides, a brilliant and gifted young man, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
         "tags": ["cult"],
         "ottPlatforms": [
@@ -854,7 +854,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com",
         "year": 2018,
-        "poster": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0kowo.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/hpaIwkvV6Pqe7pjR41TQ37bLbFR.jpg",
         "synopsis": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
         "tags": ["family-safe", "cult"],
         "ottPlatforms": [
@@ -872,7 +872,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B082L42V5B",
         "year": 2019,
-        "poster": "https://image.tmdb.org/t/p/w500/pThyQovXQrws2hmykfNjHs5oVOQ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/3vldwDuMGJvZIx7e0a3AULGCjee.jpg",
         "synopsis": "A detective investigates the death of a patriarch of an eccentric, combative family.",
         "tags": [],
         "ottPlatforms": [
@@ -928,7 +928,7 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/4JUNWIy9fmPunDlICM83FQ8Mnf5.jpg",
         "synopsis": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
         "tags": ["underrated"],
         "ottPlatforms": [
