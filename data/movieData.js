@@ -499,7 +499,7 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "https://www.amazon.com/dp/B079DZ5XWD",
         "year": 2017,
-        "poster": "https://image.tmdb.org/t/p/w500/m9m0v5819vB539mK73fH2A5S37R.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/gvVgMUoDPYHORiDMkpdzq98tFin.jpg",
         "synopsis": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen.",
         "tags": ["family-safe", "underrated"],
         "ottPlatforms": [
