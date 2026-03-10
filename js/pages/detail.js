@@ -65,6 +65,21 @@ function renderDetail(params) {
             </blockquote>
             ` : ''}
 
+            ${movie.trailer ? `
+            <!-- Trailer -->
+            <div class="trailer-section">
+              <div class="rating-label" style="margin-bottom: 14px;">🎬 Watch Trailer</div>
+              <div class="trailer-container" id="trailer-container">
+                <div class="trailer-thumbnail" onclick="playTrailer('${movie.trailer}')">
+                  <img src="https://img.youtube.com/vi/${movie.trailer}/hqdefault.jpg" alt="${movie.title} Trailer" />
+                  <div class="trailer-play-btn">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.6c-3 .7-4.6 3.2-5.4 6.1C.1 13 0 24 0 24s.1 11 1.5 16.3c.8 2.9 2.5 5.4 5.4 6.2C12.2 47.9 34 48 34 48s21.8-.1 27.1-1.6c3-.7 4.6-3.2 5.4-6.1C67.9 35 68 24 68 24s-.1-11-1.5-16.3z" fill="#FF0000"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            ` : ''}
+
             <!-- Rating -->
             <div class="rating-section">
               <div class="rating-label">Reference Rating (avg. IMDb, Rotten Tomatoes, Metacritic)</div>
@@ -171,17 +186,32 @@ function showDetailRecommendations(movieId) {
 }
 
 function getOTTIcon(name) {
-  const icons = {
-    'Netflix': '🔴',
-    'Prime Video': '📦',
-    'Disney+': '🏰',
-    'HBO Max': '🟣',
-    'Apple TV': '🍎',
-    'Hulu': '🟢',
-    'Paramount+': '⭐',
-    'Peacock': '🦚'
+  const logos = {
+    'Netflix': '<img class="ott-logo" src="https://cdn.simpleicons.org/netflix/E50914" alt="Netflix" />',
+    'Prime Video': '<img class="ott-logo" src="https://cdn.simpleicons.org/amazonprime/00A8E1" alt="Prime Video" />',
+    'Disney+': '<img class="ott-logo" src="https://cdn.simpleicons.org/disneyplus/113CCF" alt="Disney+" />',
+    'HBO Max': '<img class="ott-logo" src="https://cdn.simpleicons.org/hbo/000000" alt="HBO Max" style="filter: invert(1);" />',
+    'Apple TV': '<img class="ott-logo" src="https://cdn.simpleicons.org/appletv/FFFFFF" alt="Apple TV" />',
+    'Hulu': '<img class="ott-logo" src="https://cdn.simpleicons.org/hulu/1CE783" alt="Hulu" />',
+    'Paramount+': '<img class="ott-logo" src="https://cdn.simpleicons.org/paramount/0064FF" alt="Paramount+" />',
+    'Peacock': '<img class="ott-logo" src="https://cdn.simpleicons.org/peacock/000000" alt="Peacock" style="filter: invert(1);" />'
   };
-  return icons[name] || '🎬';
+  return logos[name] || '<span class="ott-logo-fallback">🎬</span>';
+}
+
+function playTrailer(ytId) {
+  const container = document.getElementById('trailer-container');
+  if (!container) return;
+  container.innerHTML = `
+    <div class="trailer-iframe-wrap">
+      <iframe 
+        src="https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+      ></iframe>
+    </div>
+  `;
 }
 
 /**
