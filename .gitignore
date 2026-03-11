@@ -3,8 +3,18 @@ node_modules/
 *.log
 .DS_Store
 *.db
-backend/data/univibe.db
-backend/data/*.sqlite
-backend/data/*.db
-backend/data/*.db-shm
-backend/data/*.db-wal
+backend/data/*.db*
+backend/data/*.sqlite*
+
+# Python & ML Exclusions
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+ml/dataset.csv
+models/*.pkl
+*.pkl
+.pytest_cache/
+.coverage
+htmlcov/

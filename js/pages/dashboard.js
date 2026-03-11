@@ -640,6 +640,19 @@ function renderDashboard() {
           ${renderKPILoader()}
         </div>
 
+        <!-- ML Effectiveness Metrics (New: Ground Truth) -->
+        <div class="dash-row" id="ml-metrics-row" style="display:none;">
+          <div class="dash-chart-card dash-full fade-in-up">
+            <div class="dash-chart-head">
+               <h3 class="dash-chart-title">🎯 ML Model Effectiveness (Offline Evaluation)</h3>
+               <p class="dash-chart-desc">Ground truth performance metrics calculated from the latest similarity model training</p>
+            </div>
+            <div class="dash-ml-metrics-container" id="ml-metrics-container">
+               <div class="dash-kpi-shimmer" style="height:60px;"></div>
+            </div>
+          </div>
+        </div>
+
         <!-- Row 1: Interaction Timeline + Activity Breakdown -->
         <div class="dash-row">
           <div class="dash-chart-card dash-wide fade-in-up">
@@ -781,8 +794,46 @@ async function loadDashboardData() {
     badge.innerHTML = `<span class="model-status-dot" style="background:${maturityColors[d.summary.modelMaturity]}"></span> ${maturityLabels[d.summary.modelMaturity]}`;
   }
 
+  // ── ML Metrics (Ground Truth) ──
+  loadMLMetrics();
+
   // Small delay to let container dimensions settle
   setTimeout(() => renderAllCharts(d), 100);
+}
+
+async function loadMLMetrics() {
+    const res = await API.getMLMetrics();
+    const container = document.getElementById('ml-metrics-container');
+    const row = document.getElementById('ml-metrics-row');
+    if (!container || !res.ok) return;
+
+    if (row) row.style.display = 'block';
+    const m = res.data;
+
+    container.innerHTML = `
+        <div class="ml-metrics-grid">
+            <div class="ml-metric-item">
+                <div class="ml-metric-value">${(m.precision_k * 100).toFixed(1)}%</div>
+                <div class="ml-metric-label">Precision@5</div>
+                <div class="ml-metric-bar"><div style="width: ${m.precision_k * 100}%"></div></div>
+            </div>
+            <div class="ml-metric-item">
+                <div class="ml-metric-value">${(m.recall_k * 100).toFixed(2)}%</div>
+                <div class="ml-metric-label">Recall@5</div>
+                <div class="ml-metric-bar"><div style="width: ${m.recall_k * 100}%"></div></div>
+            </div>
+            <div class="ml-metric-item">
+                <div class="ml-metric-value">${(m.hit_rate_k * 100).toFixed(1)}%</div>
+                <div class="ml-metric-label">Hit Rate@5</div>
+                <div class="ml-metric-bar"><div style="width: ${m.hit_rate_k * 100}%"></div></div>
+            </div>
+            <div class="ml-metric-item">
+                <div class="ml-metric-value">${m.mrr.toFixed(3)}</div>
+                <div class="ml-metric-label">MRR (Mean Reciprocal Rank)</div>
+                <div class="ml-metric-bar"><div style="width: ${m.mrr * 100}%"></div></div>
+            </div>
+        </div>
+    `;
 }
 
 function renderKPIs(summary) {
@@ -793,7 +844,7 @@ function renderKPIs(summary) {
     { icon: '⚡', label: 'Interactions', value: summary.totalInteractions, color: ChartColors.purple },
     { icon: '🧩', label: 'Q-Table Entries', value: summary.totalQEntries, color: ChartColors.pink },
     { icon: '🌐', label: 'States Learned', value: summary.uniqueStates, color: ChartColors.cyan },
-    { icon: '⭐', label: 'Ratings Given', value: summary.totalRatings, color: ChartColors.amber },
+    { icon: '🎯', label: 'Hit Rate@5', value: summary.hitRate ? (summary.hitRate * 100).toFixed(1) + '%' : 'N/A', color: ChartColors.emerald },
     { icon: '📈', label: 'Avg Q-Value', value: summary.avgQValue, color: ChartColors.emerald },
     { icon: '🚀', label: 'Max Q-Value', value: summary.maxQValue, color: ChartColors.indigo }
   ];

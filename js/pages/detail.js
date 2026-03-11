@@ -151,38 +151,68 @@ function renderDetail(params) {
 /**
  * Show recommendations on the detail page after analysis delay.
  * Displays reasoning text under each recommended card for explainability.
+ * Fetches from the FastAPI ML backend for production-grade similarity.
  */
-function showDetailRecommendations(movieId) {
+async function showDetailRecommendations(movieId) {
   const container = document.getElementById('detail-recommendations');
   if (!container) return;
 
   const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
-  const recs = getRecommendations(MOVIES, movieId, userAge, 6);
 
-  setTimeout(() => {
-    if (recs.length > 0) {
-      container.innerHTML = `
-        <div class="movie-row stagger">
-          ${recs.map(item => {
-        // Wrap card to track recommendation clicks
-        const card = renderRecommendedCard(item.movie, item.reason);
-        return card.replace(
-          `onclick="Router.navigate('/movie/${item.movie.movie_id}')"`,
-          `onclick="trackRecommendationClick(${item.movie.movie_id}, MOVIES.find(m=>m.movie_id===${item.movie.movie_id})); Router.navigate('/movie/${item.movie.movie_id}')"`
-        );
-      }).join('')}
-        </div>
-      `;
-    } else {
-      container.innerHTML = `
-        <div class="empty-state" style="padding: 40px 0;">
-          <div class="empty-icon">🔍</div>
-          <h3>No Similar Movies Found</h3>
-          <p style="color: var(--text-muted);">No similar movies found under current age filter. Try updating your age to see more recommendations.</p>
-        </div>
-      `;
+  // Analysis delay for "AI Premium" feel
+  await new Promise(resolve => setTimeout(resolve, 1500));
+
+  try {
+    // 1. Try fetching from FastAPI ML Backend
+    const result = await API.getMovieRecommendations(movieId, 6);
+    if (result.ok && result.data.recommendations.length > 0) {
+      renderRecList(container, result.data.recommendations);
+      return;
     }
-  }, 1500);
+  } catch (error) {
+    console.warn('FastAPI similarity fetch failed, using local engine:', error);
+  }
+
+  // 2. Fallback to Local Recommendation Engine (heuristic-based)
+  const localRecs = getRecommendations(MOVIES, movieId, userAge, 6);
+  if (localRecs.length > 0) {
+    renderRecList(container, localRecs.map(r => ({
+      ...r.movie,
+      reason: r.reason + ' (Local)',
+      source: 'LocalHeuristic'
+    })));
+  } else {
+    container.innerHTML = `
+      <div class="empty-state" style="padding: 40px 0;">
+        <div class="empty-icon">🔍</div>
+        <h3>No Similar Movies Found</h3>
+        <p style="color: var(--text-muted);">No similar movies found under current age filter. Try updating your age to see more recommendations.</p>
+      </div>
+    `;
+  }
+}
+
+/**
+ * Helper to render the recommendation list.
+ */
+function renderRecList(container, items) {
+  container.innerHTML = `
+    <div class="movie-row stagger">
+      ${items.map(item => {
+    const movie = item.movie_id ? MOVIES.find(m => m.movie_id === item.movie_id) : item;
+    if (!movie) return '';
+
+    const reason = item.reason || '🤖 AI matched your vibe';
+    const card = renderRecommendedCard(movie, reason);
+
+    // Wrap card to track recommendation clicks for RL learning
+    return card.replace(
+      `onclick="Router.navigate('/movie/${movie.movie_id}')"`,
+      `onclick="trackRecommendationClick(${movie.movie_id}, MOVIES.find(m=>m.movie_id===${movie.movie_id})); Router.navigate('/movie/${movie.movie_id}')"`
+    );
+  }).join('')}
+    </div>
+  `;
 }
 
 function getOTTIcon(name) {

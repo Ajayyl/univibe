@@ -2,7 +2,10 @@ const MOVIES = [
     {
         "movie_id": 1,
         "title": "Inception",
-        "genre": ["Sci-Fi", "Thriller"],
+        "genre": [
+            "Sci-Fi",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 87,
         "popularity_score": 0.9,
@@ -10,20 +13,32 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com/title/70131314",
         "prime_url": "https://www.amazon.com/dp/B0047WJ11G",
         "year": 2010,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/edv5CZvj0Y9yOQ6oCcQbMgoFMmS.jpg",
         "synopsis": "A skilled thief who infiltrates dreams is offered a chance to have his criminal record erased if he can successfully plant an idea in a target's subconscious.",
-        "quote": "An idea is like a virus. Resilient. Highly contagious. — Sometimes the smallest thought planted in your mind changes your entire life.",
-        "trailer": "YoHD9XEInc0",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com/title/70131314"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B0047WJ11G"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com/title/70131314"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0047WJ11G"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "keywords": "dream, subconscious, thief, heist, mind-bending"
     },
     {
         "movie_id": 2,
         "title": "The Grand Budapest Hotel",
-        "genre": ["Comedy", "Drama"],
+        "genre": [
+            "Comedy",
+            "Drama"
+        ],
         "experience_type": "fun",
         "rating_percent": 84,
         "popularity_score": 0.7,
@@ -31,20 +46,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00J2PGLO0",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+        "poster": "/assets/posters/movie_2.png",
         "synopsis": "A legendary concierge at a famous European hotel and his trusted lobby boy become embroiled in the theft of a priceless painting.",
-        "quote": "There are still faint glimmers of civilization left in this barbaric slaughterhouse. — Even in chaos, hold on to what makes life beautiful.",
-        "trailer": "1Fg5iWmQjwk",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00J2PGLO0"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00J2PGLO0"
+            }
+        ],
+        "director": "Wes Anderson",
+        "cast": "Ralph Fiennes, Tony Revolori, Adrien Brody",
+        "keywords": "hotel, concierge, mystery, quirky, colorful"
     },
     {
         "movie_id": 3,
         "title": "Finding Nemo",
-        "genre": ["Animation", "Adventure"],
+        "genre": [
+            "Animation",
+            "Adventure"
+        ],
         "experience_type": "fun",
         "rating_percent": 86,
         "popularity_score": 0.8,
@@ -52,19 +79,28 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2003,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ggQJA979vYmYpWv9idq6MvS9S7A.jpg",
         "synopsis": "A clownfish named Marlin embarks on a perilous journey across the ocean to find his abducted son Nemo, with the help of a forgetful fish named Dory.",
-        "quote": "Just keep swimming. — When life gets hard, the only way out is forward.",
-        "trailer": "SPHfeNgogVs",
-        "tags": ["family-safe"],
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/finding-nemo/5Gpj2XqF7BV2"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/finding-nemo/5Gpj2XqF7BV2"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 4,
         "title": "Blade Runner 2049",
-        "genre": ["Sci-Fi", "Drama"],
+        "genre": [
+            "Sci-Fi",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 81,
         "popularity_score": 0.7,
@@ -72,20 +108,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0764GY2JD",
         "year": 2017,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/g9vYUEIByByS9vjY6Yv9pM8pL9Y.jpg",
         "synopsis": "A young blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos.",
-        "quote": "All those moments will be lost in time, like tears in rain. — Cherish every moment — they won't last forever.",
-        "trailer": "gCcx85zbxz4",
-        "tags": ["cult", "underrated"],
+        "tags": [
+            "cult",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B0764GY2JD"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0764GY2JD"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Ryan Gosling, Harrison Ford, Ana de Armas",
+        "keywords": "replicant, sci-fi, cyberpunk, mystery, visuals"
     },
     {
         "movie_id": 5,
         "title": "The Shawshank Redemption",
-        "genre": ["Drama"],
+        "genre": [
+            "Drama"
+        ],
         "experience_type": "emotional",
         "rating_percent": 91,
         "popularity_score": 1,
@@ -93,20 +141,32 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 1994,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lyPX9N97vU6zd2Y0UnubUnls9SX.jpg",
         "synopsis": "A banker sentenced to life in Shawshank State Penitentiary forms an unlikely friendship and finds hope through acts of common decency.",
-        "quote": "Get busy living, or get busy dying. — Hope is the one thing no prison can take from you.",
-        "trailer": "PLl99DlL6b4",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "HBO Max", "url": "https://www.hbomax.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 6,
         "title": "My Neighbor Totoro",
-        "genre": ["Animation", "Fantasy"],
+        "genre": [
+            "Animation",
+            "Fantasy"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 88,
         "popularity_score": 0.7,
@@ -114,20 +174,33 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 1988,
-        "poster": "https://image.tmdb.org/t/p/w500/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg",
+        "poster": "/assets/posters/movie_6.jpg",
         "synopsis": "Two young girls move to the countryside and befriend playful forest spirits, including the lovable giant creature Totoro.",
-        "quote": "Sometimes you just need to sit with a giant, fluffy friend. — Find your quiet place in this noisy world.",
-        "trailer": "92a7Hj0ijLs",
-        "tags": ["family-safe", "cult"],
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "HBO Max", "url": "https://www.hbomax.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 7,
         "title": "Pulp Fiction",
-        "genre": ["Crime", "Drama"],
+        "genre": [
+            "Crime",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 89,
         "popularity_score": 0.9,
@@ -135,20 +208,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000I9YJ8E",
         "year": 1994,
-        "poster": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        "poster": "/assets/posters/movie_7.jpg",
         "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        "quote": "The path of the righteous man is beset on all sides. — Life isn't about the destination, it's about the messy journey.",
-        "trailer": "s7EdQ4FqbhY",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000I9YJ8E"},
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9YJ8E"
+            },
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            }
+        ],
+        "director": "Quentin Tarantino",
+        "cast": "John Travolta, Uma Thurman, Samuel L. Jackson",
+        "keywords": "crime, nonlinear, violence, dialogue-heavy, cult classic"
     },
     {
         "movie_id": 8,
         "title": "Coco",
-        "genre": ["Animation", "Family", "Fantasy"],
+        "genre": [
+            "Animation",
+            "Family",
+            "Fantasy"
+        ],
         "experience_type": "emotional",
         "rating_percent": 90,
         "popularity_score": 0.8,
@@ -156,19 +242,28 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2017,
-        "poster": "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+        "poster": "/assets/posters/movie_8.jpg",
         "synopsis": "A young boy who dreams of becoming a musician journeys to the Land of the Dead to uncover his family's history.",
-        "quote": "Never forget where you come from. — Your roots are the most beautiful part of who you are.",
-        "trailer": "Rvr68u6k5sI",
-        "tags": ["family-safe"],
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 9,
         "title": "Drive",
-        "genre": ["Action", "Drama"],
+        "genre": [
+            "Action",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 79,
         "popularity_score": 0.7,
@@ -176,20 +271,34 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B006IMZ0DQ",
         "year": 2011,
-        "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+        "poster": "/assets/posters/movie_9.jpg",
         "synopsis": "A Hollywood stunt driver who moonlights as a getaway driver finds himself in trouble when he helps his neighbour.",
-        "quote": "There are no clean getaways. — Some roads look simple, but every choice has a cost.",
-        "trailer": "KBiOF3y1W0Y",
-        "tags": ["cult", "underrated"],
+        "tags": [
+            "cult",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B006IMZ0DQ"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B006IMZ0DQ"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 10,
         "title": "The Secret Life of Walter Mitty",
-        "genre": ["Adventure", "Comedy", "Drama"],
+        "genre": [
+            "Adventure",
+            "Comedy",
+            "Drama"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 65,
         "popularity_score": 0.6,
@@ -197,20 +306,34 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00IANO1TA",
         "year": 2013,
-        "poster": "https://image.tmdb.org/t/p/w500/hFesdtnQmCLFEOMA3jGvVlEGsR0.jpg",
+        "poster": "/assets/posters/movie_10.png",
         "synopsis": "A daydreamer escapes his anonymous life by disappearing into a world of fantasies of romance, heroism, and action.",
-        "quote": "To see the world, things dangerous to come to. To see behind walls, draw closer. — Life begins where your comfort zone ends.",
-        "trailer": "QD6cy4PBQPI",
-        "tags": ["underrated", "family-safe"],
+        "tags": [
+            "underrated",
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00IANO1TA"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00IANO1TA"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 11,
         "title": "Interstellar",
-        "genre": ["Sci-Fi", "Drama", "Adventure"],
+        "genre": [
+            "Sci-Fi",
+            "Drama",
+            "Adventure"
+        ],
         "experience_type": "emotional",
         "rating_percent": 85,
         "popularity_score": 0.9,
@@ -218,20 +341,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00TU9UFTS",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "poster": "/assets/posters/movie_11.jpg",
         "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival on a dying Earth.",
-        "quote": "We used to look up at the sky and wonder. Now we just look down and worry. — Don't forget to dream big, even when reality weighs you down.",
-        "trailer": "zSWdZVtXT7E",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00TU9UFTS"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00TU9UFTS"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+        "keywords": "space, time travel, wormhole, father-daughter, gravity"
     },
     {
         "movie_id": 12,
         "title": "Spirited Away",
-        "genre": ["Animation", "Fantasy", "Adventure"],
+        "genre": [
+            "Animation",
+            "Fantasy",
+            "Adventure"
+        ],
         "experience_type": "fun",
         "rating_percent": 96,
         "popularity_score": 0.8,
@@ -239,20 +375,34 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2001,
-        "poster": "https://image.tmdb.org/t/p/w500/yr7wocm26hT7IQBB78sprQVLlVd.jpg",
+        "poster": "/assets/posters/movie_12.jpg",
         "synopsis": "A young girl wanders into a world of spirits ruled by gods, witches, and strange creatures, and must find the courage to free herself and her parents.",
-        "quote": "Once you meet someone, you never really forget them. — The people who change your life stay in your heart forever.",
-        "trailer": "ByXuk9QqQkk",
-        "tags": ["cult", "family-safe"],
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "HBO Max", "url": "https://www.hbomax.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Hayao Miyazaki",
+        "cast": "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
+        "keywords": "animation, spirits, adventure, coming of age, fantasy"
     },
     {
         "movie_id": 13,
         "title": "The Wolf of Wall Street",
-        "genre": ["Crime", "Comedy", "Drama"],
+        "genre": [
+            "Crime",
+            "Comedy",
+            "Drama"
+        ],
         "experience_type": "fun",
         "rating_percent": 79,
         "popularity_score": 0.9,
@@ -260,20 +410,31 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00IIU9FMQ",
         "year": 2013,
-        "poster": "https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg",
+        "poster": "/assets/posters/movie_13.jpg",
         "synopsis": "Based on the true story of Jordan Belfort, a wealthy stockbroker who ran a massive securities fraud scheme.",
-        "quote": "The only thing standing between you and your goal is the story you keep telling yourself. — Stop making excuses. Start making moves.",
-        "trailer": "iszwuX1AK6A",
         "tags": [],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00IIU9FMQ"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00IIU9FMQ"
+            }
+        ],
+        "director": "Martin Scorsese",
+        "cast": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+        "keywords": "finance, stock market, excess, greed, biography"
     },
     {
         "movie_id": 14,
         "title": "Up",
-        "genre": ["Animation", "Adventure", "Comedy"],
+        "genre": [
+            "Animation",
+            "Adventure",
+            "Comedy"
+        ],
         "experience_type": "emotional",
         "rating_percent": 88,
         "popularity_score": 0.8,
@@ -281,19 +442,27 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2009,
-        "poster": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "poster": "/assets/posters/movie_14.jpg",
         "synopsis": "An elderly widower ties thousands of balloons to his house and flies to South America, accidentally taking a young stowaway along for the ride.",
-        "quote": "Adventure is out there! — You're never too old to chase your dreams.",
-        "trailer": "HWEW_qTLSEE",
-        "tags": ["family-safe"],
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/up/3HbSCnQEbir9"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/up/3HbSCnQEbir9"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 15,
         "title": "Moonlight",
-        "genre": ["Drama"],
+        "genre": [
+            "Drama"
+        ],
         "experience_type": "emotional",
         "rating_percent": 92,
         "popularity_score": 0.7,
@@ -301,20 +470,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B01MU9CMGP",
         "year": 2016,
-        "poster": "https://image.tmdb.org/t/p/w500/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
+        "poster": "/assets/posters/movie_15.png",
         "synopsis": "A timeless story of human self-discovery and connection, told across three defining chapters in the life of a young Black man growing up in Miami.",
-        "quote": "At some point, you gotta decide for yourself who you gonna be. — Don't let the world write your story for you.",
-        "trailer": "9NJj12tJzqc",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B01MU9CMGP"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B01MU9CMGP"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 16,
         "title": "The Matrix",
-        "genre": ["Sci-Fi", "Action"],
+        "genre": [
+            "Sci-Fi",
+            "Action"
+        ],
         "experience_type": "intense",
         "rating_percent": 83,
         "popularity_score": 0.9,
@@ -322,20 +503,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000HAB4KS",
         "year": 1999,
-        "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+        "poster": "/assets/posters/movie_16.jpg",
         "synopsis": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
-        "quote": "I know you're out there. I can feel you now. — The reality you accept is the reality you live in. Question everything.",
-        "trailer": "vKQi3bBA1y8",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000HAB4KS"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000HAB4KS"
+            }
+        ],
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+        "keywords": "simulation, cyberpunk, action, rebellion, choice, red pill"
     },
     {
         "movie_id": 17,
         "title": "Lost in Translation",
-        "genre": ["Drama", "Romance"],
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 80,
         "popularity_score": 0.6,
@@ -343,20 +536,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000IBUPMK",
         "year": 2003,
-        "poster": "https://image.tmdb.org/t/p/w500/qRz3doI7a2ftwWng7wE6lZCZquk.jpg",
+        "poster": "/assets/posters/movie_17.jpg",
         "synopsis": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
-        "quote": "Let's never come here again because it would never be as much fun. — Some moments are perfect precisely because they can't be repeated.",
-        "trailer": "W6iVPCRflQM",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000IBUPMK"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000IBUPMK"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 18,
         "title": "Mad Max: Fury Road",
-        "genre": ["Action", "Sci-Fi"],
+        "genre": [
+            "Action",
+            "Sci-Fi"
+        ],
         "experience_type": "intense",
         "rating_percent": 90,
         "popularity_score": 0.8,
@@ -364,20 +569,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00ZIFHU9Y",
         "year": 2015,
-        "poster": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+        "poster": "/assets/posters/movie_18.jpg",
         "synopsis": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a drifter named Max.",
-        "quote": "Oh, what a day! What a lovely day! — When everything burns around you, find something worth fighting for.",
-        "trailer": "hEJnMQG9ev8",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00ZIFHU9Y"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00ZIFHU9Y"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 19,
         "title": "The Truman Show",
-        "genre": ["Comedy", "Drama"],
+        "genre": [
+            "Comedy",
+            "Drama"
+        ],
         "experience_type": "emotional",
         "rating_percent": 83,
         "popularity_score": 0.8,
@@ -385,20 +602,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B001EBWIPY",
         "year": 1998,
-        "poster": "https://image.tmdb.org/t/p/w500/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+        "poster": "/assets/posters/movie_19.jpg",
         "synopsis": "An insurance salesman discovers his whole life is actually a giant TV show, and everyone around him is acting.",
-        "quote": "We accept the reality of the world with which we are presented. — Break free from the show others have written for you.",
-        "trailer": "dlnmQbPGuls",
-        "tags": ["cult", "family-safe"],
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B001EBWIPY"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B001EBWIPY"
+            }
+        ],
+        "director": "Peter Weir",
+        "cast": "Jim Carrey, Laura Linney, Ed Harris",
+        "keywords": "reality tv, surveillance, simulation, escape"
     },
     {
         "movie_id": 20,
-        "title": "Amélie",
-        "genre": ["Romance", "Comedy"],
+        "title": "Am\u00e9lie",
+        "genre": [
+            "Romance",
+            "Comedy"
+        ],
         "experience_type": "fun",
         "rating_percent": 85,
         "popularity_score": 0.7,
@@ -406,20 +636,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000I9YLWM",
         "year": 2001,
-        "poster": "https://image.tmdb.org/t/p/w500/4rHIh0WlZNHE5pOgR31tBeUlJZN.jpg",
+        "poster": "/assets/posters/movie_20.jpg",
         "synopsis": "A shy waitress in Montmartre decides to change the lives of those around her for the better, while struggling with her own isolation.",
-        "quote": "Times are hard for dreamers. — But the world needs your kind of crazy. Never stop imagining.",
-        "trailer": "HUECWi5pX7o",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000I9YLWM"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9YLWM"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 21,
         "title": "Fight Club",
-        "genre": ["Drama", "Thriller"],
+        "genre": [
+            "Drama",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 79,
         "popularity_score": 0.9,
@@ -427,20 +669,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B003MAQG9Y",
         "year": 1999,
-        "poster": "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+        "poster": "/assets/posters/movie_21.jpg",
         "synopsis": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more.",
-        "quote": "It's only after we've lost everything that we're free to do anything. — Sometimes you have to let go of who you were to become who you need to be.",
-        "trailer": "qtRKdVHc-cE",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B003MAQG9Y"},
-            {"name": "Hulu", "url": "https://www.hulu.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B003MAQG9Y"
+            },
+            {
+                "name": "Hulu",
+                "url": "https://www.hulu.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 22,
         "title": "Inside Out",
-        "genre": ["Animation", "Comedy", "Family"],
+        "genre": [
+            "Animation",
+            "Comedy",
+            "Family"
+        ],
         "experience_type": "emotional",
         "rating_percent": 94,
         "popularity_score": 0.8,
@@ -448,19 +703,28 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2015,
-        "poster": "https://image.tmdb.org/t/p/w500/ayyBTAxL0ONtf8E9ttBLOjf450K.jpg",
-        "synopsis": "After young Riley is uprooted from her Midwest life, her emotions — Joy, Fear, Anger, Disgust and Sadness — conflict on how to navigate a new city.",
-        "quote": "Do you ever look at someone and wonder: what is going on inside their head? — Be kind. Everyone is fighting battles you can't see.",
-        "trailer": "yRUAzGQ3nSY",
-        "tags": ["family-safe"],
+        "poster": "/assets/posters/movie_22.svg",
+        "synopsis": "After young Riley is uprooted from her Midwest life, her emotions \u2014 Joy, Fear, Anger, Disgust and Sadness \u2014 conflict on how to navigate a new city.",
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/inside-out/2I0bBbhZIbkZ"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/inside-out/2I0bBbhZIbkZ"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 23,
         "title": "No Country for Old Men",
-        "genre": ["Thriller", "Crime"],
+        "genre": [
+            "Thriller",
+            "Crime"
+        ],
         "experience_type": "intense",
         "rating_percent": 86,
         "popularity_score": 0.8,
@@ -468,20 +732,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0012I8B0Y",
         "year": 2007,
-        "poster": "https://image.tmdb.org/t/p/w500/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg",
+        "poster": "/assets/posters/movie_23.jpg",
         "synopsis": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and a suitcase full of cash in the desert.",
-        "quote": "You can't stop what's coming. — Life doesn't wait for you to be ready. Keep moving anyway.",
-        "trailer": "38A__WT3-o0",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B0012I8B0Y"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0012I8B0Y"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 24,
         "title": "WALL-E",
-        "genre": ["Animation", "Sci-Fi", "Family"],
+        "genre": [
+            "Animation",
+            "Sci-Fi",
+            "Family"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 95,
         "popularity_score": 0.8,
@@ -489,19 +766,30 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2008,
-        "poster": "https://image.tmdb.org/t/p/w500/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+        "poster": "/assets/posters/movie_24.jpg",
         "synopsis": "In a distant future, a small waste-collecting robot inadvertently embarks on a space journey that will decide the fate of mankind.",
-        "quote": "I don't want to survive. I want to live. — Existing isn't enough. Make every day count.",
-        "trailer": "alIq_wG9FNk",
-        "tags": ["family-safe", "cult"],
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 25,
         "title": "Her",
-        "genre": ["Sci-Fi", "Romance", "Drama"],
+        "genre": [
+            "Sci-Fi",
+            "Romance",
+            "Drama"
+        ],
         "experience_type": "emotional",
         "rating_percent": 82,
         "popularity_score": 0.7,
@@ -509,20 +797,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00HHJR5PO",
         "year": 2013,
-        "poster": "https://image.tmdb.org/t/p/w500/70NBqsoTHo7fOwcK4urZEFaGOSw.jpg",
+        "poster": "/assets/posters/movie_25.jpg",
         "synopsis": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
-        "quote": "The past is just a story we tell ourselves. — You are not your mistakes. You are what you choose to be next.",
-        "trailer": "ne6p6MfLBxc",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00HHJR5PO"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00HHJR5PO"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 26,
         "title": "The Dark Knight",
-        "genre": ["Action", "Crime", "Drama"],
+        "genre": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 90,
         "popularity_score": 1,
@@ -530,20 +831,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B001I189MG",
         "year": 2008,
-        "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDp9EXm7IbmV94Lqvwq.jpg",
         "synopsis": "Batman raises the stakes in his war on crime, facing off against the Joker, a criminal mastermind who wreaks havoc on Gotham City.",
-        "quote": "Why so serious? — The world will test you. Don't lose your sense of self in the process.",
-        "trailer": "EXeTwQWrcwY",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B001I189MG"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B001I189MG"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
+        "keywords": "batman, joker, vigilante, chaos, justice, superhero"
     },
     {
         "movie_id": 27,
         "title": "Paddington 2",
-        "genre": ["Comedy", "Family", "Adventure"],
+        "genre": [
+            "Comedy",
+            "Family",
+            "Adventure"
+        ],
         "experience_type": "fun",
         "rating_percent": 93,
         "popularity_score": 0.7,
@@ -551,20 +865,34 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "https://www.amazon.com/dp/B079DZ5XWD",
         "year": 2017,
-        "poster": "https://image.tmdb.org/t/p/w500/gvVgMUoDPYHORiDMkpdzq98tFin.jpg",
+        "poster": "/assets/posters/movie_27.jpg",
         "synopsis": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen.",
-        "quote": "If we're kind and polite, the world will be right. — A little kindness goes a long way, even when the world doesn't deserve it.",
-        "trailer": "52x5HJ9H8DM",
-        "tags": ["family-safe", "underrated"],
+        "tags": [
+            "family-safe",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B079DZ5XWD"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B079DZ5XWD"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 28,
         "title": "Eternal Sunshine of the Spotless Mind",
-        "genre": ["Romance", "Drama", "Sci-Fi"],
+        "genre": [
+            "Romance",
+            "Drama",
+            "Sci-Fi"
+        ],
         "experience_type": "emotional",
         "rating_percent": 82,
         "popularity_score": 0.8,
@@ -572,20 +900,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000JLQUZI",
         "year": 2004,
-        "poster": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+        "poster": "/assets/posters/movie_28.jpg",
         "synopsis": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
-        "quote": "How happy is the blameless soul's lot! — Forgetting someone doesn't erase what they meant to you.",
-        "trailer": "07-QBnEkgXU",
-        "tags": ["cult", "underrated"],
+        "tags": [
+            "cult",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Peacock", "url": "https://www.peacocktv.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000JLQUZI"}
-        ]
+            {
+                "name": "Peacock",
+                "url": "https://www.peacocktv.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000JLQUZI"
+            }
+        ],
+        "director": "Michel Gondry",
+        "cast": "Jim Carrey, Kate Winslet, Kirsten Dunst",
+        "keywords": "memory, breakup, romance, sci-fi, surreal"
     },
     {
         "movie_id": 29,
         "title": "John Wick",
-        "genre": ["Action", "Thriller"],
+        "genre": [
+            "Action",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 75,
         "popularity_score": 0.8,
@@ -593,20 +934,31 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00R0291Q2",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+        "poster": "/assets/posters/movie_29.jpg",
         "synopsis": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.",
-        "quote": "People keep asking if I'm back. Yeah, I'm thinking I'm back. — When life knocks you down, come back stronger than ever.",
-        "trailer": "2AUmvWm5ZDQ",
         "tags": [],
         "ottPlatforms": [
-            {"name": "Peacock", "url": "https://www.peacocktv.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00R0291Q2"}
-        ]
+            {
+                "name": "Peacock",
+                "url": "https://www.peacocktv.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00R0291Q2"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 30,
         "title": "Ratatouille",
-        "genre": ["Animation", "Comedy", "Family"],
+        "genre": [
+            "Animation",
+            "Comedy",
+            "Family"
+        ],
         "experience_type": "fun",
         "rating_percent": 92,
         "popularity_score": 0.8,
@@ -614,19 +966,29 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2007,
-        "poster": "https://image.tmdb.org/t/p/w500/cghrtuHdD8uujxQjG8czKQ635AJ.jpg",
+        "poster": "/assets/posters/movie_30.jpg",
         "synopsis": "A rat named Remy dreams of becoming a great chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy.",
-        "quote": "Not everyone can become a great artist, but a great artist can come from anywhere. — Never let anyone tell you that your background defines your limits.",
-        "trailer": "NgsQ8mVkN8w",
-        "tags": ["family-safe"],
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/ratatouille/39wmItIWsg5s"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/ratatouille/39wmItIWsg5s"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 31,
         "title": "The Departed",
-        "genre": ["Crime", "Thriller", "Drama"],
+        "genre": [
+            "Crime",
+            "Thriller",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 85,
         "popularity_score": 0.8,
@@ -634,20 +996,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B000P0J0AI",
         "year": 2006,
-        "poster": "https://image.tmdb.org/t/p/w500/ydomtut0UATCxnzdNdPiYTKtcwf.jpg",
+        "poster": "/assets/posters/movie_31.jpg",
         "synopsis": "An undercover cop and a mole in the police try to identify each other while infiltrating an Irish gang in Boston.",
-        "quote": "When you're facing a loaded gun, what's the difference? — Trust is fragile. Once broken, the game changes forever.",
-        "trailer": "iojhqm0JTW4",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000P0J0AI"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000P0J0AI"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 32,
         "title": "Howl's Moving Castle",
-        "genre": ["Animation", "Fantasy", "Romance"],
+        "genre": [
+            "Animation",
+            "Fantasy",
+            "Romance"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 87,
         "popularity_score": 0.7,
@@ -655,20 +1030,34 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2004,
-        "poster": "https://image.tmdb.org/t/p/w500/mEh0NFn1C3PdbLScbooFMoaM5ET.jpg",
+        "poster": "/assets/posters/movie_32.jpg",
         "synopsis": "When a young hat-maker is turned into an old woman by a witch's curse, she finds refuge in the magical moving castle of the wizard Howl.",
-        "quote": "A heart's a heavy burden. — Love isn't always easy, but it's always worth the weight.",
-        "trailer": "iwROgK94zcM",
-        "tags": ["family-safe", "cult"],
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "HBO Max", "url": "https://www.hbomax.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 33,
         "title": "Parasite",
-        "genre": ["Thriller", "Drama", "Comedy"],
+        "genre": [
+            "Thriller",
+            "Drama",
+            "Comedy"
+        ],
         "experience_type": "intense",
         "rating_percent": 96,
         "popularity_score": 0.9,
@@ -676,20 +1065,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B07YM14FPF",
         "year": 2019,
-        "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "poster": "/assets/posters/movie_33.jpg",
         "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-        "quote": "They're not cockroaches. You can't just stamp on them. — The divide between rich and poor is a wound that never stops bleeding.",
-        "trailer": "SEUXfv87Wpk",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Hulu", "url": "https://www.hulu.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B07YM14FPF"}
-        ]
+            {
+                "name": "Hulu",
+                "url": "https://www.hulu.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B07YM14FPF"
+            }
+        ],
+        "director": "Bong Joon-ho",
+        "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
+        "keywords": "class struggle, family, deception, social commentary, thriller"
     },
     {
         "movie_id": 34,
         "title": "Before Sunrise",
-        "genre": ["Romance", "Drama"],
+        "genre": [
+            "Romance",
+            "Drama"
+        ],
         "experience_type": "relaxing",
         "rating_percent": 81,
         "popularity_score": 0.6,
@@ -697,20 +1098,32 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00AEFXVYM",
         "year": 1995,
-        "poster": "https://image.tmdb.org/t/p/w500/9ehLZcm6rRIePqcKN2Wzak5aGWM.jpg",
+        "poster": "/assets/posters/movie_34.jpg",
         "synopsis": "A young man and woman meet on a train and end up spending one romantic evening together in Vienna before going their separate ways.",
-        "quote": "Isn't everything we do in life a way to be loved a little more? — At the end of the day, all anyone really wants is connection.",
-        "trailer": "6MUcuqbGTxc",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00AEFXVYM"},
-            {"name": "Apple TV", "url": "https://tv.apple.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00AEFXVYM"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 35,
         "title": "Whiplash",
-        "genre": ["Drama", "Music"],
+        "genre": [
+            "Drama",
+            "Music"
+        ],
         "experience_type": "intense",
         "rating_percent": 94,
         "popularity_score": 0.8,
@@ -718,20 +1131,34 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "https://www.amazon.com/dp/B00QGHB8D0",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+        "poster": "/assets/posters/movie_35.jpg",
         "synopsis": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an abusive instructor.",
-        "quote": "There are no two words more harmful than 'good job'. — Greatness demands discomfort. Comfort is the enemy of growth.",
-        "trailer": "7d_jQycdQGo",
-        "tags": ["cult", "underrated"],
+        "tags": [
+            "cult",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00QGHB8D0"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00QGHB8D0"
+            }
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Miles Teller, J.K. Simmons, Paul Reiser",
+        "keywords": "jazz, drumming, ambition, obsession, perfection"
     },
     {
         "movie_id": 36,
         "title": "Soul",
-        "genre": ["Animation", "Fantasy", "Comedy"],
+        "genre": [
+            "Animation",
+            "Fantasy",
+            "Comedy"
+        ],
         "experience_type": "emotional",
         "rating_percent": 89,
         "popularity_score": 0.7,
@@ -739,19 +1166,28 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2020,
-        "poster": "https://image.tmdb.org/t/p/w500/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg",
+        "poster": "/assets/posters/movie_36.png",
         "synopsis": "A middle-school music teacher's passion for jazz leads him on an extraordinary journey to discover what it means to have a soul.",
-        "quote": "Is all this living really worth dying for? — What makes life meaningful isn't the achievement — it's the passion.",
-        "trailer": "xOsLIiBStEs",
-        "tags": ["family-safe"],
+        "tags": [
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/soul/77tlWpb1AWsC"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/soul/77tlWpb1AWsC"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 37,
         "title": "Goodfellas",
-        "genre": ["Crime", "Drama"],
+        "genre": [
+            "Crime",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 87,
         "popularity_score": 0.9,
@@ -759,20 +1195,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0011TNRNE",
         "year": 1990,
-        "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+        "poster": "/assets/posters/movie_37.jpg",
         "synopsis": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.",
-        "quote": "As far back as I can remember, I always wanted to be a gangster. — We all chase versions of success. Make sure yours doesn't cost you everything.",
-        "trailer": "2ilzidi_J8Q",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B0011TNRNE"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0011TNRNE"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 38,
         "title": "The Princess Bride",
-        "genre": ["Adventure", "Comedy", "Fantasy"],
+        "genre": [
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+        ],
         "experience_type": "fun",
         "rating_percent": 84,
         "popularity_score": 0.8,
@@ -780,20 +1229,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B00AOT8JUC",
         "year": 1987,
-        "poster": "https://image.tmdb.org/t/p/w500/lxmULlro6055tZr14ZI91TFtq58.jpg",
+        "poster": "/assets/posters/movie_38.jpg",
         "synopsis": "A farmhand-turned-pirate encounters numerous obstacles, enemies, and allies in his quest to be reunited with his true love.",
-        "quote": "As you wish. — True love doesn't need grand gestures. Sometimes three simple words say it all.",
-        "trailer": "WNNUcHRiPS8",
-        "tags": ["cult", "family-safe"],
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B00AOT8JUC"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00AOT8JUC"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 39,
         "title": "A Quiet Place",
-        "genre": ["Horror", "Thriller"],
+        "genre": [
+            "Horror",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 80,
         "popularity_score": 0.7,
@@ -801,20 +1263,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B07BZ5HMTH",
         "year": 2018,
-        "poster": "https://image.tmdb.org/t/p/w500/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+        "poster": "/assets/posters/movie_39.jpg",
         "synopsis": "A family is forced to live in silence while hiding from creatures that hunt by sound, finding new ways to survive in a post-apocalyptic world.",
-        "quote": "If they hear you, they hunt you. — In a world full of noise, sometimes silence is your greatest strength.",
-        "trailer": "WR7cc5t7tv8",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B07BZ5HMTH"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B07BZ5HMTH"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 40,
         "title": "The Lion King",
-        "genre": ["Animation", "Adventure", "Family"],
+        "genre": [
+            "Animation",
+            "Adventure",
+            "Family"
+        ],
         "experience_type": "emotional",
         "rating_percent": 88,
         "popularity_score": 0.9,
@@ -822,19 +1297,29 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 1994,
-        "poster": "https://image.tmdb.org/t/p/w500/2rEJ8jPjyjMIYAmTqRbLdrHud5r.jpg",
+        "poster": "/assets/posters/movie_40.jpg",
         "synopsis": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
-        "quote": "Remember who you are. — When life makes you forget your worth, look inside — your strength was always there.",
-        "trailer": "4sj1MT05lAA",
-        "tags": ["cult", "family-safe"],
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
         "ottPlatforms": [
-            {"name": "Disney+", "url": "https://www.disneyplus.com/movies/the-lion-king/1HqwiEcje6Nj"}
-        ]
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/the-lion-king/1HqwiEcje6Nj"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 41,
         "title": "Dune",
-        "genre": ["Sci-Fi", "Adventure"],
+        "genre": [
+            "Sci-Fi",
+            "Adventure"
+        ],
         "experience_type": "intense",
         "rating_percent": 83,
         "popularity_score": 0.95,
@@ -842,20 +1327,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B09J5D7GV1",
         "year": 2021,
-        "poster": "https://image.tmdb.org/t/p/w500/5F6GBIdWpRk6f52FX5VipK57vuv.jpg",
+        "poster": "/assets/posters/movie_41.jpg",
         "synopsis": "Paul Atreides, a brilliant and gifted young man, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
-        "quote": "Fear is the mind-killer. — Courage isn't the absence of fear. It's choosing to move forward despite it.",
-        "trailer": "8g18jFHCLXk",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B09J5D7GV1"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B09J5D7GV1"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Timoth\u00e9e Chalamet, Rebecca Ferguson, Oscar Isaac",
+        "keywords": "desert, spice, empire, prophecy, political"
     },
     {
         "movie_id": 42,
         "title": "Everything Everywhere All at Once",
-        "genre": ["Sci-Fi", "Comedy", "Action"],
+        "genre": [
+            "Sci-Fi",
+            "Comedy",
+            "Action"
+        ],
         "experience_type": "fun",
         "rating_percent": 89,
         "popularity_score": 0.9,
@@ -863,19 +1361,30 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B09X5XHHKD",
         "year": 2022,
-        "poster": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+        "poster": "/assets/posters/movie_42.jpg",
         "synopsis": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes.",
-        "quote": "Every rejection, every disappointment has led you here. — Your struggles aren't setbacks — they're setup for something bigger.",
-        "trailer": "wxN1T1uxQ2g",
-        "tags": ["cult", "underrated"],
+        "tags": [
+            "cult",
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B09X5XHHKD"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B09X5XHHKD"
+            }
+        ],
+        "director": "Daniel Kwan, Daniel Scheinert",
+        "cast": "Michelle Yeoh, Stephanie Hsu, Ke Huy Quan",
+        "keywords": "multiverse, family, martial arts, surreal, absurd"
     },
     {
         "movie_id": 43,
         "title": "The Batman",
-        "genre": ["Action", "Crime", "Drama"],
+        "genre": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 85,
         "popularity_score": 0.88,
@@ -883,19 +1392,26 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "",
         "year": 2022,
-        "poster": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/74xTEgt7R36Fpooo50r9T25onhq.jpg",
         "synopsis": "When a sadistic serial killer begins murdering key political figures, Batman is forced to investigate the city's hidden corruption.",
-        "quote": "I'm vengeance. — Anger can drive you, but it's justice and purpose that give life meaning.",
-        "trailer": "mqqft2x_Aa4",
         "tags": [],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
-        "movie_id": 44,
+        "movie_id": 45,
         "title": "Top Gun: Maverick",
-        "genre": ["Action", "Drama"],
+        "genre": [
+            "Action",
+            "Drama"
+        ],
         "experience_type": "fun",
         "rating_percent": 88,
         "popularity_score": 0.92,
@@ -903,20 +1419,31 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0B2KSYRLQ",
         "year": 2022,
-        "poster": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+        "poster": "/assets/posters/movie_44.jpg",
         "synopsis": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
-        "quote": "It's not the plane, it's the pilot. — The tools don't make the master. Your heart and skill do.",
-        "trailer": "giXco2jaZ_4",
         "tags": [],
         "ottPlatforms": [
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B0B2KSYRLQ"}
-        ]
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0B2KSYRLQ"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
-        "movie_id": 45,
+        "movie_id": 46,
         "title": "La La Land",
-        "genre": ["Comedy", "Drama", "Romance"],
+        "genre": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
         "experience_type": "emotional",
         "rating_percent": 80,
         "popularity_score": 0.82,
@@ -924,19 +1451,27 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2016,
-        "poster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+        "poster": "/assets/posters/movie_45.jpg",
         "synopsis": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
-        "quote": "Here's to the ones who dream, foolish as they may seem. — The world needs more dreamers, not fewer. Keep believing.",
-        "trailer": "0pdqf4P9MB8",
         "tags": [],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            }
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Ryan Gosling, Emma Stone, John Legend",
+        "keywords": "musical, romance, jazz, dreams, hollywood"
     },
     {
-        "movie_id": 46,
+        "movie_id": 47,
         "title": "Spider-Man: Into the Spider-Verse",
-        "genre": ["Animation", "Action", "Adventure"],
+        "genre": [
+            "Animation",
+            "Action",
+            "Adventure"
+        ],
         "experience_type": "fun",
         "rating_percent": 84,
         "popularity_score": 0.88,
@@ -944,19 +1479,30 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com",
         "year": 2018,
-        "poster": "https://image.tmdb.org/t/p/w500/hpaIwkvV6Pqe7pjR41TQ37bLbFR.jpg",
+        "poster": "/assets/posters/movie_46.jpg",
         "synopsis": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
-        "quote": "Anyone can wear the mask. — You don't have to be perfect to be a hero. Just show up.",
-        "trailer": "g4Hbz2jLxvQ",
-        "tags": ["family-safe", "cult"],
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Peter Ramsey, Robert Persichetti Jr., Rodney Rothman",
+        "cast": "Shameik Moore, Jake Johnson, Hailee Steinfeld",
+        "keywords": "spider-man, multiverse, animation, superhero, style"
     },
     {
-        "movie_id": 47,
+        "movie_id": 48,
         "title": "Knives Out",
-        "genre": ["Comedy", "Crime", "Drama"],
+        "genre": [
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
         "experience_type": "fun",
         "rating_percent": 79,
         "popularity_score": 0.81,
@@ -964,19 +1510,27 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B082L42V5B",
         "year": 2019,
-        "poster": "https://image.tmdb.org/t/p/w500/3vldwDuMGJvZIx7e0a3AULGCjee.jpg",
+        "poster": "/assets/posters/movie_47.jpg",
         "synopsis": "A detective investigates the death of a patriarch of an eccentric, combative family.",
-        "quote": "I suspect foul play. — Look beneath the surface. Things aren't always what they seem.",
-        "trailer": "qGqiHJTsRkQ",
         "tags": [],
         "ottPlatforms": [
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B082L42V5B"}
-        ]
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B082L42V5B"
+            }
+        ],
+        "director": "Rian Johnson",
+        "cast": "Daniel Craig, Chris Evans, Ana de Armas",
+        "keywords": "murder mystery, whodunnit, family, inheritance, detective"
     },
     {
-        "movie_id": 48,
+        "movie_id": 49,
         "title": "Gladiator",
-        "genre": ["Action", "Adventure", "Drama"],
+        "genre": [
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
         "experience_type": "intense",
         "rating_percent": 85,
         "popularity_score": 0.84,
@@ -984,20 +1538,32 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "https://www.amazon.com/dp/B000I9URAS",
         "year": 2000,
-        "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+        "poster": "/assets/posters/movie_48.jpg",
         "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-        "quote": "What we do in life echoes in eternity. — Your actions today write the legacy of tomorrow.",
-        "trailer": "owK1qxDselE",
-        "tags": ["cult"],
+        "tags": [
+            "cult"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com/dp/B000I9URAS"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9URAS"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
-        "movie_id": 49,
+        "movie_id": 51,
         "title": "Arrival",
-        "genre": ["Drama", "Sci-Fi"],
+        "genre": [
+            "Drama",
+            "Sci-Fi"
+        ],
         "experience_type": "emotional",
         "rating_percent": 79,
         "popularity_score": 0.77,
@@ -1005,20 +1571,33 @@ const MOVIES = [
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 2016,
-        "poster": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+        "poster": "/assets/posters/movie_49.jpg",
         "synopsis": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
-        "quote": "If you could see your whole life laid out, would you change things? — Every ending is also a beginning. Trust the journey.",
-        "trailer": "tFMo3UJ4B4g",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "Netflix", "url": "https://www.netflix.com"},
-            {"name": "Paramount+", "url": "https://www.paramountplus.com"}
-        ]
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Amy Adams, Jeremy Renner, Forest Whitaker",
+        "keywords": "aliens, linguistics, time, communication, sci-fi"
     },
     {
-        "movie_id": 50,
+        "movie_id": 54,
         "title": "Ex Machina",
-        "genre": ["Drama", "Sci-Fi", "Thriller"],
+        "genre": [
+            "Drama",
+            "Sci-Fi",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 77,
         "popularity_score": 0.75,
@@ -1026,20 +1605,33 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com",
         "year": 2014,
-        "poster": "https://image.tmdb.org/t/p/w500/4JUNWIy9fmPunDlICM83FQ8Mnf5.jpg",
+        "poster": "/assets/posters/movie_50.jpg",
         "synopsis": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
-        "quote": "One day the AIs are going to look back on us the same way we look at fossils. — Progress without empathy is just destruction in disguise.",
-        "trailer": "EoQuVnKhxaM",
-        "tags": ["underrated"],
+        "tags": [
+            "underrated"
+        ],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
-        "movie_id": 51,
+        "movie_id": 60,
         "title": "Joker",
-        "genre": ["Crime", "Drama", "Thriller"],
+        "genre": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
         "experience_type": "intense",
         "rating_percent": 84,
         "popularity_score": 0.88,
@@ -1047,18 +1639,23 @@ const MOVIES = [
         "netflix_url": "",
         "prime_url": "https://www.amazon.com",
         "year": 2019,
-        "poster": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+        "poster": "/assets/posters/movie_51.jpg",
         "synopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.",
-        "quote": "All I have are negative thoughts. — Be gentle with yourself. The world is heavy enough without fighting your own mind too.",
-        "trailer": "zAGVQLHvwOY",
         "tags": [],
         "ottPlatforms": [
-            {"name": "HBO Max", "url": "https://www.hbomax.com"},
-            {"name": "Prime Video", "url": "https://www.amazon.com"}
-        ]
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Todd Phillips",
+        "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+        "keywords": "mental health, clown, social decay, origin story, gritty"
     }
 ];
 
-if (typeof module !== 'undefined') {
-    module.exports = MOVIES;
-}
+if (typeof module !== 'undefined') module.exports = MOVIES;

@@ -223,69 +223,60 @@ function getRecommendations(userUid, allMovies, count = 8, userProfile = null) {
 
     // Score each candidate
     const scored = candidates.map(movie => {
-        let score = 0;
+        let similarityScore = 0;
+        let preferenceScore = 0;
         let reasons = [];
         let source = 'hybrid';
 
-        // 1. RL Q-Value Component (strongest signal when available)
+        // 1. RL PREFERENCE SCORE (Learned behavior)
         const qEntry = qMap.get(movie.movie_id);
         if (qEntry && qEntry.visit_count > 0) {
-            score += qEntry.q_value * 3; // Amplify learned signal
+            preferenceScore += qEntry.q_value * 2.5; // Strong preference from RL
             reasons.push('learned from your behavior');
             source = 'rl';
         }
 
-        // 2. Content affinity (from genre/experience matching)
+        // 2. INTERACTION HISTORY (Search & Click history)
+        const hasDirectHistory = interactionCounts.some(ic => 
+            ic.movie_id === movie.movie_id && ['click', 'search', 'rating', 'watchlist'].includes(ic.event_type)
+        );
+        if (hasDirectHistory) {
+            preferenceScore += 1.2; 
+            reasons.push('based on your search/rating history');
+        }
+
+        // 3. CONTENT SIMILARITY SCORE (Matches preferences)
         if (userProfile.preferred_genres) {
             try {
                 const preferredGenres = JSON.parse(userProfile.preferred_genres);
                 const sharedGenres = movie.genre.filter(g => preferredGenres.includes(g));
                 if (sharedGenres.length > 0) {
-                    score += sharedGenres.length * 0.8;
-                    reasons.push(`matches your taste (${sharedGenres.join(', ')})`);
+                    similarityScore += sharedGenres.length * 0.8;
+                    reasons.push(`matches your genre interests`);
                 }
             } catch (e) { /* ignore */ }
         }
 
         if (userProfile.preferred_experience && movie.experience_type === userProfile.preferred_experience) {
-            score += 0.6;
-            reasons.push(`matches your preferred vibe (${movie.experience_type})`);
+            similarityScore += 0.6;
+            reasons.push(`fits the vibe you love`);
         }
 
-        // 3. Collaborative signal from similar rated movies
-        if (positiveRatedMovies.length > 0) {
-            const similarToRated = positiveRatedMovies.some(ratedId => {
-                const rated = allMovies.find(m => m.movie_id === ratedId);
-                if (!rated) return false;
-                return rated.genre.some(g => movie.genre.includes(g)) &&
-                    rated.experience_type === movie.experience_type;
-            });
-            if (similarToRated && !ratedMovies.has(movie.movie_id)) {
-                score += 1.2;
-                reasons.push('similar to movies you rated highly');
-            }
-        }
-
-        // 4. Quality baseline (popularity + rating)
-        score += (movie.popularity_score * 0.3) + (movie.rating_percent / 100 * 0.3);
-
-        // 5. Novelty bonus (prefer unwatched movies slightly)
-        if (!viewedMovies.has(movie.movie_id)) {
-            score += 0.2;
-        }
-
-        // 6. Penalize already-rated movies (user already knows them)
-        if (ratedMovies.has(movie.movie_id)) {
-            score -= 0.5;
-        }
+        // 4. QUALITY BASELINE
+        const qualityScore = (movie.popularity_score * 0.3) + (movie.rating_percent / 100 * 0.3);
+        
+        // HYBRID CALCULATION: final_score = similarity_score + preference_score + quality
+        const finalScore = similarityScore + preferenceScore + qualityScore;
 
         if (reasons.length === 0) {
-            reasons.push('trending and highly rated');
+            reasons.push('recommended high-quality content');
         }
 
         return {
             movie,
-            score,
+            score: finalScore,
+            similarityScore,
+            preferenceScore,
             source,
             reason: '🤖 ' + reasons[0].charAt(0).toUpperCase() + reasons[0].slice(1),
             allReasons: reasons,

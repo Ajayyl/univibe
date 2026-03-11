@@ -13,7 +13,7 @@
         "netflix_url": "https://www.netflix.com/title/70131314",
         "prime_url": "https://www.amazon.com/dp/B0047WJ11G",
         "year": 2010,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/edv5CZvj0Y9yOQ6oCcQbMgoFMmS.jpg",
         "synopsis": "A skilled thief who infiltrates dreams is offered a chance to have his criminal record erased if he can successfully plant an idea in a target's subconscious.",
         "tags": [
             "cult"
@@ -27,7 +27,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B0047WJ11G"
             }
-        ]
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "keywords": "dream, subconscious, thief, heist, mind-bending"
     },
     {
         "movie_id": 2,
@@ -57,7 +60,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00J2PGLO0"
             }
-        ]
+        ],
+        "director": "Wes Anderson",
+        "cast": "Ralph Fiennes, Tony Revolori, Adrien Brody",
+        "keywords": "hotel, concierge, mystery, quirky, colorful"
     },
     {
         "movie_id": 3,
@@ -73,7 +79,7 @@
         "netflix_url": "",
         "prime_url": "",
         "year": 2003,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/ggQJA979vYmYpWv9idq6MvS9S7A.jpg",
         "synopsis": "A clownfish named Marlin embarks on a perilous journey across the ocean to find his abducted son Nemo, with the help of a forgetful fish named Dory.",
         "tags": [
             "family-safe"
@@ -83,7 +89,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/finding-nemo/5Gpj2XqF7BV2"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 4,
@@ -99,7 +108,7 @@
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B0764GY2JD",
         "year": 2017,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/g9vYUEIByByS9vjY6Yv9pM8pL9Y.jpg",
         "synopsis": "A young blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos.",
         "tags": [
             "cult",
@@ -114,7 +123,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Ryan Gosling, Harrison Ford, Ana de Armas",
+        "keywords": "replicant, sci-fi, cyberpunk, mystery, visuals"
     },
     {
         "movie_id": 5,
@@ -129,7 +141,7 @@
         "netflix_url": "https://www.netflix.com",
         "prime_url": "",
         "year": 1994,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lyPX9N97vU6zd2Y0UnubUnls9SX.jpg",
         "synopsis": "A banker sentenced to life in Shawshank State Penitentiary forms an unlikely friendship and finds hope through acts of common decency.",
         "tags": [
             "cult"
@@ -143,7 +155,10 @@
                 "name": "HBO Max",
                 "url": "https://www.hbomax.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 6,
@@ -174,7 +189,10 @@
                 "name": "HBO Max",
                 "url": "https://www.hbomax.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 7,
@@ -204,7 +222,10 @@
                 "name": "Paramount+",
                 "url": "https://www.paramountplus.com"
             }
-        ]
+        ],
+        "director": "Quentin Tarantino",
+        "cast": "John Travolta, Uma Thurman, Samuel L. Jackson",
+        "keywords": "crime, nonlinear, violence, dialogue-heavy, cult classic"
     },
     {
         "movie_id": 8,
@@ -231,7 +252,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 9,
@@ -262,7 +286,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 10,
@@ -294,7 +321,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00IANO1TA"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 11,
@@ -325,7 +355,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00TU9UFTS"
             }
-        ]
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+        "keywords": "space, time travel, wormhole, father-daughter, gravity"
     },
     {
         "movie_id": 12,
@@ -357,7 +390,10 @@
                 "name": "HBO Max",
                 "url": "https://www.hbomax.com"
             }
-        ]
+        ],
+        "director": "Hayao Miyazaki",
+        "cast": "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
+        "keywords": "animation, spirits, adventure, coming of age, fantasy"
     },
     {
         "movie_id": 13,
@@ -386,7 +422,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00IIU9FMQ"
             }
-        ]
+        ],
+        "director": "Martin Scorsese",
+        "cast": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+        "keywords": "finance, stock market, excess, greed, biography"
     },
     {
         "movie_id": 14,
@@ -413,7 +452,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/up/3HbSCnQEbir9"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 15,
@@ -442,7 +484,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 16,
@@ -472,7 +517,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B000HAB4KS"
             }
-        ]
+        ],
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+        "keywords": "simulation, cyberpunk, action, rebellion, choice, red pill"
     },
     {
         "movie_id": 17,
@@ -502,7 +550,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 18,
@@ -532,7 +583,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00ZIFHU9Y"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 19,
@@ -563,11 +617,14 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B001EBWIPY"
             }
-        ]
+        ],
+        "director": "Peter Weir",
+        "cast": "Jim Carrey, Laura Linney, Ed Harris",
+        "keywords": "reality tv, surveillance, simulation, escape"
     },
     {
         "movie_id": 20,
-        "title": "Amélie",
+        "title": "Am\u00e9lie",
         "genre": [
             "Romance",
             "Comedy"
@@ -593,7 +650,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 21,
@@ -623,7 +683,10 @@
                 "name": "Hulu",
                 "url": "https://www.hulu.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 22,
@@ -641,7 +704,7 @@
         "prime_url": "",
         "year": 2015,
         "poster": "/assets/posters/movie_22.svg",
-        "synopsis": "After young Riley is uprooted from her Midwest life, her emotions — Joy, Fear, Anger, Disgust and Sadness — conflict on how to navigate a new city.",
+        "synopsis": "After young Riley is uprooted from her Midwest life, her emotions \u2014 Joy, Fear, Anger, Disgust and Sadness \u2014 conflict on how to navigate a new city.",
         "tags": [
             "family-safe"
         ],
@@ -650,7 +713,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/inside-out/2I0bBbhZIbkZ"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 23,
@@ -680,7 +746,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B0012I8B0Y"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 24,
@@ -708,7 +777,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 25,
@@ -739,7 +811,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 26,
@@ -756,7 +831,7 @@
         "netflix_url": "",
         "prime_url": "https://www.amazon.com/dp/B001I189MG",
         "year": 2008,
-        "poster": "/assets/posters/movie_26.jpg",
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDp9EXm7IbmV94Lqvwq.jpg",
         "synopsis": "Batman raises the stakes in his war on crime, facing off against the Joker, a criminal mastermind who wreaks havoc on Gotham City.",
         "tags": [
             "cult"
@@ -770,7 +845,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B001I189MG"
             }
-        ]
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
+        "keywords": "batman, joker, vigilante, chaos, justice, superhero"
     },
     {
         "movie_id": 27,
@@ -802,7 +880,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B079DZ5XWD"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 28,
@@ -834,7 +915,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B000JLQUZI"
             }
-        ]
+        ],
+        "director": "Michel Gondry",
+        "cast": "Jim Carrey, Kate Winslet, Kirsten Dunst",
+        "keywords": "memory, breakup, romance, sci-fi, surreal"
     },
     {
         "movie_id": 29,
@@ -862,7 +946,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00R0291Q2"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 30,
@@ -889,7 +976,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/ratatouille/39wmItIWsg5s"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 31,
@@ -920,7 +1010,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B000P0J0AI"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 32,
@@ -952,7 +1045,10 @@
                 "name": "HBO Max",
                 "url": "https://www.hbomax.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 33,
@@ -983,7 +1079,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B07YM14FPF"
             }
-        ]
+        ],
+        "director": "Bong Joon-ho",
+        "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
+        "keywords": "class struggle, family, deception, social commentary, thriller"
     },
     {
         "movie_id": 34,
@@ -1013,7 +1112,10 @@
                 "name": "Apple TV",
                 "url": "https://tv.apple.com"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 35,
@@ -1044,7 +1146,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00QGHB8D0"
             }
-        ]
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Miles Teller, J.K. Simmons, Paul Reiser",
+        "keywords": "jazz, drumming, ambition, obsession, perfection"
     },
     {
         "movie_id": 36,
@@ -1071,7 +1176,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/soul/77tlWpb1AWsC"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 37,
@@ -1101,7 +1209,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B0011TNRNE"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 38,
@@ -1133,7 +1244,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B00AOT8JUC"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 39,
@@ -1163,7 +1277,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B07BZ5HMTH"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 40,
@@ -1191,7 +1308,10 @@
                 "name": "Disney+",
                 "url": "https://www.disneyplus.com/movies/the-lion-king/1HqwiEcje6Nj"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 41,
@@ -1221,7 +1341,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B09J5D7GV1"
             }
-        ]
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Timoth\u00e9e Chalamet, Rebecca Ferguson, Oscar Isaac",
+        "keywords": "desert, spice, empire, prophecy, political"
     },
     {
         "movie_id": 42,
@@ -1249,7 +1372,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B09X5XHHKD"
             }
-        ]
+        ],
+        "director": "Daniel Kwan, Daniel Scheinert",
+        "cast": "Michelle Yeoh, Stephanie Hsu, Ke Huy Quan",
+        "keywords": "multiverse, family, martial arts, surreal, absurd"
     },
     {
         "movie_id": 43,
@@ -1274,39 +1400,10 @@
                 "name": "HBO Max",
                 "url": "https://www.hbomax.com"
             }
-        ]
-    },
-    {
-        "movie_id": 44,
-        "title": "Spirited Away",
-        "genre": [
-            "Animation",
-            "Adventure",
-            "Fantasy"
         ],
-        "experience_type": "relaxing",
-        "rating_percent": 92,
-        "popularity_score": 0.85,
-        "age_limit": 0,
-        "netflix_url": "https://www.netflix.com/title/60023642",
-        "prime_url": "",
-        "year": 2001,
-        "poster": "/assets/posters/movie_12.jpg",
-        "synopsis": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits.",
-        "tags": [
-            "family-safe",
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "HBO Max",
-                "url": "https://www.hbomax.com"
-            },
-            {
-                "name": "Netflix",
-                "url": "https://www.netflix.com/title/60023642"
-            }
-        ]
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 45,
@@ -1334,7 +1431,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B0B2KSYRLQ"
             }
-        ]
+        ],
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 46,
@@ -1359,7 +1459,10 @@
                 "name": "Netflix",
                 "url": "https://www.netflix.com"
             }
-        ]
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Ryan Gosling, Emma Stone, John Legend",
+        "keywords": "musical, romance, jazz, dreams, hollywood"
     },
     {
         "movie_id": 47,
@@ -1387,7 +1490,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com"
             }
-        ]
+        ],
+        "director": "Peter Ramsey, Robert Persichetti Jr., Rodney Rothman",
+        "cast": "Shameik Moore, Jake Johnson, Hailee Steinfeld",
+        "keywords": "spider-man, multiverse, animation, superhero, style"
     },
     {
         "movie_id": 48,
@@ -1412,7 +1518,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B082L42V5B"
             }
-        ]
+        ],
+        "director": "Rian Johnson",
+        "cast": "Daniel Craig, Chris Evans, Ana de Armas",
+        "keywords": "murder mystery, whodunnit, family, inheritance, detective"
     },
     {
         "movie_id": 49,
@@ -1443,38 +1552,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com/dp/B000I9URAS"
             }
-        ]
-    },
-    {
-        "movie_id": 50,
-        "title": "Goodfellas",
-        "genre": [
-            "Biography",
-            "Crime",
-            "Drama"
         ],
-        "experience_type": "intense",
-        "rating_percent": 87,
-        "popularity_score": 0.86,
-        "age_limit": 18,
-        "netflix_url": "",
-        "prime_url": "https://www.amazon.com",
-        "year": 1990,
-        "poster": "/assets/posters/movie_37.jpg",
-        "synopsis": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "HBO Max",
-                "url": "https://www.hbomax.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 51,
@@ -1504,70 +1585,10 @@
                 "name": "Paramount+",
                 "url": "https://www.paramountplus.com"
             }
-        ]
-    },
-    {
-        "movie_id": 52,
-        "title": "A Quiet Place",
-        "genre": [
-            "Drama",
-            "Horror",
-            "Sci-Fi"
         ],
-        "experience_type": "intense",
-        "rating_percent": 75,
-        "popularity_score": 0.8,
-        "age_limit": 13,
-        "netflix_url": "",
-        "prime_url": "https://www.amazon.com",
-        "year": 2018,
-        "poster": "/assets/posters/movie_39.jpg",
-        "synopsis": "In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.",
-        "tags": [],
-        "ottPlatforms": [
-            {
-                "name": "Paramount+",
-                "url": "https://www.paramountplus.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
-    },
-    {
-        "movie_id": 53,
-        "title": "The Truman Show",
-        "genre": [
-            "Comedy",
-            "Drama"
-        ],
-        "experience_type": "emotional",
-        "rating_percent": 81,
-        "popularity_score": 0.78,
-        "age_limit": 0,
-        "netflix_url": "https://www.netflix.com",
-        "prime_url": "https://www.amazon.com",
-        "year": 1998,
-        "poster": "/assets/posters/movie_19.jpg",
-        "synopsis": "An insurance salesman discovers his whole life is actually a reality TV show.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "Netflix",
-                "url": "https://www.netflix.com"
-            },
-            {
-                "name": "Paramount+",
-                "url": "https://www.paramountplus.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
+        "director": "Denis Villeneuve",
+        "cast": "Amy Adams, Jeremy Renner, Forest Whitaker",
+        "keywords": "aliens, linguistics, time, communication, sci-fi"
     },
     {
         "movie_id": 54,
@@ -1598,156 +1619,10 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com"
             }
-        ]
-    },
-    {
-        "movie_id": 55,
-        "title": "Coco",
-        "genre": [
-            "Animation",
-            "Adventure",
-            "Family"
         ],
-        "experience_type": "emotional",
-        "rating_percent": 84,
-        "popularity_score": 0.83,
-        "age_limit": 0,
-        "netflix_url": "",
-        "prime_url": "",
-        "year": 2017,
-        "poster": "/assets/posters/movie_8.jpg",
-        "synopsis": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
-        "tags": [
-            "family-safe"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "Disney+",
-                "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"
-            }
-        ]
-    },
-    {
-        "movie_id": 56,
-        "title": "Whiplash",
-        "genre": [
-            "Drama",
-            "Music"
-        ],
-        "experience_type": "intense",
-        "rating_percent": 85,
-        "popularity_score": 0.8,
-        "age_limit": 16,
-        "netflix_url": "https://www.netflix.com",
-        "prime_url": "https://www.amazon.com",
-        "year": 2014,
-        "poster": "/assets/posters/movie_35.jpg",
-        "synopsis": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "Netflix",
-                "url": "https://www.netflix.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
-    },
-    {
-        "movie_id": 57,
-        "title": "Mad Max: Fury Road",
-        "genre": [
-            "Action",
-            "Adventure",
-            "Sci-Fi"
-        ],
-        "experience_type": "intense",
-        "rating_percent": 81,
-        "popularity_score": 0.85,
-        "age_limit": 16,
-        "netflix_url": "",
-        "prime_url": "https://www.amazon.com",
-        "year": 2015,
-        "poster": "/assets/posters/movie_18.jpg",
-        "synopsis": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "HBO Max",
-                "url": "https://www.hbomax.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
-    },
-    {
-        "movie_id": 58,
-        "title": "Pulp Fiction",
-        "genre": [
-            "Crime",
-            "Drama"
-        ],
-        "experience_type": "fun",
-        "rating_percent": 89,
-        "popularity_score": 0.88,
-        "age_limit": 18,
-        "netflix_url": "https://www.netflix.com",
-        "prime_url": "https://www.amazon.com",
-        "year": 1994,
-        "poster": "/assets/posters/movie_7.jpg",
-        "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "HBO Max",
-                "url": "https://www.hbomax.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
-    },
-    {
-        "movie_id": 59,
-        "title": "The Dark Knight",
-        "genre": [
-            "Action",
-            "Crime",
-            "Drama"
-        ],
-        "experience_type": "intense",
-        "rating_percent": 94,
-        "popularity_score": 0.98,
-        "age_limit": 13,
-        "netflix_url": "https://www.netflix.com",
-        "prime_url": "https://www.amazon.com",
-        "year": 2008,
-        "poster": "/assets/posters/movie_26.jpg",
-        "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-        "tags": [
-            "cult"
-        ],
-        "ottPlatforms": [
-            {
-                "name": "HBO Max",
-                "url": "https://www.hbomax.com"
-            },
-            {
-                "name": "Prime Video",
-                "url": "https://www.amazon.com"
-            }
-        ]
+        "director": "Various Directors",
+        "cast": "Talented Cast",
+        "keywords": "trending, popular, movie"
     },
     {
         "movie_id": 60,
@@ -1776,6 +1651,9 @@
                 "name": "Prime Video",
                 "url": "https://www.amazon.com"
             }
-        ]
+        ],
+        "director": "Todd Phillips",
+        "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+        "keywords": "mental health, clown, social decay, origin story, gritty"
     }
 ]

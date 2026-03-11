@@ -2194,6 +2194,57 @@ select {
   letter-spacing: 0.5px;
 }
 
+/* ML Metrics Grid (Dashboard) */
+.ml-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.ml-metric-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.ml-metric-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent-tertiary);
+  margin-bottom: 4px;
+}
+
+.ml-metric-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.ml-metric-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ml-metric-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  box-shadow: 0 0 10px var(--accent-glow);
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ml-metric-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+
 .genre-chips {
   display: flex;
   flex-wrap: wrap;
