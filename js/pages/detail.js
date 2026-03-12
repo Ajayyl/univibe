@@ -41,6 +41,7 @@ function renderDetail(params) {
             <img
               src="${movie.poster}"
               alt="${movie.title}"
+              referrerpolicy="no-referrer"
               onerror="this.src='https://via.placeholder.com/300x450/1a1a2e/7c3aed?text=${encodeURIComponent(movie.title)}'"
             />
           </div>
@@ -71,7 +72,7 @@ function renderDetail(params) {
               <div class="rating-label" style="margin-bottom: 14px;">🎬 Watch Trailer</div>
               <div class="trailer-container" id="trailer-container">
                 <div class="trailer-thumbnail" onclick="playTrailer('${movie.trailer}')">
-                  <img src="https://img.youtube.com/vi/${movie.trailer}/hqdefault.jpg" alt="${movie.title} Trailer" />
+                  <img src="https://img.youtube.com/vi/${movie.trailer}/hqdefault.jpg" alt="${movie.title} Trailer" referrerpolicy="no-referrer" />
                   <div class="trailer-play-btn">
                     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.6c-3 .7-4.6 3.2-5.4 6.1C.1 13 0 24 0 24s.1 11 1.5 16.3c.8 2.9 2.5 5.4 5.4 6.2C12.2 47.9 34 48 34 48s21.8-.1 27.1-1.6c3-.7 4.6-3.2 5.4-6.1C67.9 35 68 24 68 24s-.1-11-1.5-16.3z" fill="#FF0000"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
                   </div>

@@ -15,6 +15,7 @@ function renderMovieCard(movie) {
           src="${movie.poster}"
           alt="${movie.title}"
           loading="lazy"
+          referrerpolicy="no-referrer"
           onerror="this.onerror=null; this.src='${placeholderUrl}'"
         />
         <div class="poster-overlay">
@@ -50,6 +51,7 @@ function renderRecommendedCard(movie, reason) {
             src="${movie.poster}"
             alt="${movie.title}"
             loading="lazy"
+            referrerpolicy="no-referrer"
             onerror="this.onerror=null; this.src='${placeholderUrl}'"
           />
           <div class="poster-overlay">
