@@ -762,13 +762,19 @@ function renderKPILoader() {
 async function loadDashboardData() {
   if (!API.isLoggedIn()) return;
 
-  const res = await API.get('/api/dashboard');
-  if (!res.ok) {
-    showToast('Could not load dashboard data', 'error');
-    return;
+  let d;
+  try {
+    const res = await API.get('/api/dashboard');
+    if (res.ok && res.data && res.data.dashboard) {
+      d = res.data.dashboard;
+    } else {
+      console.warn('Backend unavailable, using LocalRL for dashboard data.');
+      d = LocalRL.getUserLearningStats();
+    }
+  } catch (error) {
+    console.warn('Error fetching dashboard data, using LocalRL fallback.', error);
+    d = LocalRL.getUserLearningStats();
   }
-
-  const d = res.data.dashboard;
 
   // ── KPI Cards ──
   renderKPIs(d.summary);
