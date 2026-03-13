@@ -1,25 +1,43 @@
-UniVibe Setup
+# UniVibe 2.0 🎬
 
-1. Clone Project
+UniVibe is an AI-powered movie discovery platform featuring a hybrid Reinforcement Learning (RL) and Content-Based Recommendation engine.
 
-git clone https://github.com/<your-username>/univibe.git
+## 🚀 How to Run Locally
+
+If you are setting this up on a new laptop, doing an emergency restore, or collaborating, follow these steps to securely run both the Node.js Frontend App and the Python Machine Learning engine.
+
+### 1. Clone Project
+```bash
+git clone https://github.com/Ajayyl/univibe-2.0.git
 cd univibe
+```
 
-2. Install Frontend (Node.js)
-
+### 2. Install Frontend (Node.js)
+```bash
 npm install
 npm run dev
+```
+> **Frontend runs at:** [http://localhost:3000](http://localhost:3000)
 
-Frontend runs at: http://localhost:3000
-
-3. Install ML Backend (Python)
-
+### 3. Install ML Backend (Python)
+Make sure you have Python installed, then install the required machine learning dependencies (fastapi, uvicorn, pandas, scikit-learn, etc.):
+```bash
 pip install -r requirements.txt
+```
 
-4. Start ML Server
-
+### 4. Start ML Server
+```bash
 start_ml.bat
-or
-python -m uvicorn backend.main:app --reload
+```
+*(Alternatively, you can run `python -m uvicorn backend.main:app --reload`)*
 
-ML API runs at: http://127.0.0.1:8000/docs
+> **ML API runs at:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+---
+
+## 📂 Backup & Models Tracking
+This repository is configured to safely track all large metadata required for immediate deployment. The following are tracked and will restore flawlessly upon cloning:
+- ✅ `models/similarity.pkl` (Similarity Model)
+- ✅ `ml/dataset.csv` (Movie Dataset)
+- ✅ `data/baseMovies.json` (Base Catalog)
+- ✅ `requirements.txt` (ML Dependencies)
