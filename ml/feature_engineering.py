@@ -136,8 +136,11 @@ def build_combined_features(movie: dict) -> str:
 
     # Synopsis / overview (full overview cleaned)
     synopsis = movie.get('synopsis', '')
+    overview = movie.get('overview', '')
     if synopsis:
         parts.append(clean_text(synopsis))
+    if overview:
+        parts.append(clean_text(overview))
 
     # Cinematographer (repeat 2x — visual style is a strong similarity signal)
     cinematographer = movie.get('cinematographer', '')

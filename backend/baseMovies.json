@@ -1,1736 +1,1787 @@
 [
-  {
-    "movie_id": 1,
-    "title": "Inception",
-    "genre": "Sci-Fi|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 87,
-    "popularity_score": 0.9,
-    "age_limit": 13,
-    "netflix_url": "https://www.netflix.com/title/70131314",
-    "prime_url": "https://www.amazon.com/dp/B0047WJ11G",
-    "year": 2010,
-    "poster": "assets/posters/movie_1.jpg",
-    "synopsis": "A skilled thief who infiltrates dreams is offered a chance to have his criminal record erased if he can successfully plant an idea in a target's subconscious.",
-    "quote": "An idea is like a virus. Resilient. Highly contagious. — Sometimes the smallest thought planted in your mind changes your entire life.",
-    "trailer": "YoHD9XEInc0",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com/title/70131314"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B0047WJ11G"
-      }
-    ],
-    "director": "Christopher Nolan",
-    "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-    "keywords": "dream, subconscious, thief, heist, mind-bending",
-    "cinematographer": "Wally Pfister",
-    "music": "Hans Zimmer",
-    "writer": "Christopher Nolan"
-  },
-  {
-    "movie_id": 2,
-    "title": "The Grand Budapest Hotel",
-    "genre": "Comedy|Drama",
-    "experience_type": "fun",
-    "rating_percent": 84,
-    "popularity_score": 0.7,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00J2PGLO0",
-    "year": 2014,
-    "poster": "assets/posters/movie_2.png",
-    "synopsis": "A legendary concierge at a famous European hotel and his trusted lobby boy become embroiled in the theft of a priceless painting.",
-    "quote": "There are still faint glimmers of civilization left in this barbaric slaughterhouse. — Even in chaos, hold on to what makes life beautiful.",
-    "trailer": "1Fg5iWmQjwk",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00J2PGLO0"
-      }
-    ],
-    "director": "Wes Anderson",
-    "cast": "Ralph Fiennes, Tony Revolori, Adrien Brody",
-    "keywords": "hotel, concierge, mystery, quirky, colorful",
-    "cinematographer": "Robert Yeoman",
-    "music": "Alexandre Desplat",
-    "writer": "Wes Anderson"
-  },
-  {
-    "movie_id": 3,
-    "title": "Finding Nemo",
-    "genre": "Animation|Adventure",
-    "experience_type": "fun",
-    "rating_percent": 86,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2003,
-    "poster": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
-    "synopsis": "A clownfish named Marlin embarks on a perilous journey across the ocean to find his abducted son Nemo, with the help of a forgetful fish named Dory.",
-    "quote": "Just keep swimming. — When life gets hard, the only way out is forward.",
-    "trailer": "SPHfeNgogVs",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/finding-nemo/5Gpj2XqF7BV2"
-      }
-    ],
-    "director": "Andrew Stanton, Lee Unkrich",
-    "cast": "Albert Brooks, Ellen DeGeneres, Alexander Gould",
-    "keywords": "ocean, clownfish, father-son, journey, underwater",
-    "cinematographer": "Sharon Calahan, Jeremy Lasky",
-    "music": "Thomas Newman",
-    "writer": "Andrew Stanton, Bob Peterson"
-  },
-  {
-    "movie_id": 4,
-    "title": "Blade Runner 2049",
-    "genre": "Sci-Fi|Drama",
-    "experience_type": "intense",
-    "rating_percent": 81,
-    "popularity_score": 0.7,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B0764GY2JD",
-    "year": 2017,
-    "poster": "assets/posters/movie_4.jpg",
-    "synopsis": "A young blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos.",
-    "quote": "All those moments will be lost in time, like tears in rain. — Cherish every moment — they won't last forever.",
-    "trailer": "gCcx85zbxz4",
-    "tags": [
-      "cult",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B0764GY2JD"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Denis Villeneuve",
-    "cast": "Ryan Gosling, Harrison Ford, Ana de Armas",
-    "keywords": "replicant, sci-fi, cyberpunk, mystery, visuals",
-    "cinematographer": "Roger Deakins",
-    "music": "Hans Zimmer, Benjamin Wallfisch",
-    "writer": "Hampton Fancher, Michael Green"
-  },
-  {
-    "movie_id": 5,
-    "title": "The Shawshank Redemption",
-    "genre": "Drama",
-    "experience_type": "emotional",
-    "rating_percent": 91,
-    "popularity_score": 1,
-    "age_limit": 16,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 1994,
-    "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
-    "synopsis": "A banker sentenced to life in Shawshank State Penitentiary forms an unlikely friendship and finds hope through acts of common decency.",
-    "quote": "Get busy living, or get busy dying. — Hope is the one thing no prison can take from you.",
-    "trailer": "PLl99DlL6b4",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      }
-    ],
-    "director": "Frank Darabont",
-    "cast": "Tim Robbins, Morgan Freeman, Bob Gunton",
-    "keywords": "prison, hope, friendship, escape, justice",
-    "cinematographer": "Roger Deakins",
-    "music": "Thomas Newman",
-    "writer": "Frank Darabont"
-  },
-  {
-    "movie_id": 6,
-    "title": "My Neighbor Totoro",
-    "genre": "Animation|Fantasy",
-    "experience_type": "relaxing",
-    "rating_percent": 88,
-    "popularity_score": 0.7,
-    "age_limit": 0,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 1988,
-    "poster": "assets/posters/movie_6.jpg",
-    "synopsis": "Two young girls move to the countryside and befriend playful forest spirits, including the lovable giant creature Totoro.",
-    "quote": "Sometimes you just need to sit with a giant, fluffy friend. — Find your quiet place in this noisy world.",
-    "trailer": "92a7Hj0ijLs",
-    "tags": [
-      "family-safe",
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      }
-    ],
-    "director": "Hayao Miyazaki",
-    "cast": "Noriko Hidaka, Chika Sakamoto, Shigesato Itoi",
-    "keywords": "spirits, childhood, nature, countryside, fantasy",
-    "cinematographer": "Hisao Shirai",
-    "music": "Joe Hisaishi",
-    "writer": "Hayao Miyazaki"
-  },
-  {
-    "movie_id": 7,
-    "title": "Pulp Fiction",
-    "genre": "Crime|Drama",
-    "experience_type": "intense",
-    "rating_percent": 89,
-    "popularity_score": 0.9,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000I9YJ8E",
-    "year": 1994,
-    "poster": "assets/posters/movie_7.jpg",
-    "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-    "quote": "The path of the righteous man is beset on all sides. — Life isn't about the destination, it's about the messy journey.",
-    "trailer": "s7EdQ4FqbhY",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000I9YJ8E"
-      },
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      }
-    ],
-    "director": "Quentin Tarantino",
-    "cast": "John Travolta, Uma Thurman, Samuel L. Jackson",
-    "keywords": "crime, nonlinear, violence, dialogue-heavy, cult classic",
-    "cinematographer": "Andrzej Sekuła",
-    "music": "Various Artists",
-    "writer": "Quentin Tarantino"
-  },
-  {
-    "movie_id": 8,
-    "title": "Coco",
-    "genre": "Animation|Family|Fantasy",
-    "experience_type": "emotional",
-    "rating_percent": 90,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2017,
-    "poster": "assets/posters/movie_8.jpg",
-    "synopsis": "A young boy who dreams of becoming a musician journeys to the Land of the Dead to uncover his family's history.",
-    "quote": "Never forget where you come from. — Your roots are the most beautiful part of who you are.",
-    "trailer": "Rvr68u6k5sI",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"
-      }
-    ],
-    "director": "Lee Unkrich, Adrian Molina",
-    "cast": "Anthony Gonzalez, Gael García Bernal, Benjamin Bratt",
-    "keywords": "music, family, afterlife, mexican culture, ancestors",
-    "cinematographer": "Matt Aspbury, Danielle Feinberg",
-    "music": "Michael Giacchino",
-    "writer": "Adrian Molina, Matthew Aldrich"
-  },
-  {
-    "movie_id": 9,
-    "title": "Drive",
-    "genre": "Action|Drama",
-    "experience_type": "intense",
-    "rating_percent": 79,
-    "popularity_score": 0.7,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B006IMZ0DQ",
-    "year": 2011,
-    "poster": "assets/posters/movie_9.jpg",
-    "synopsis": "A Hollywood stunt driver who moonlights as a getaway driver finds himself in trouble when he helps his neighbour.",
-    "quote": "There are no clean getaways. — Some roads look simple, but every choice has a cost.",
-    "trailer": "KBiOF3y1W0Y",
-    "tags": [
-      "cult",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B006IMZ0DQ"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Nicolas Winding Refn",
-    "cast": "Ryan Gosling, Carey Mulligan, Bryan Cranston",
-    "keywords": "getaway driver, stunt, neo-noir, crime, heist",
-    "cinematographer": "Newton Thomas Sigel",
-    "music": "Cliff Martinez",
-    "writer": "Hossein Amini"
-  },
-  {
-    "movie_id": 10,
-    "title": "The Secret Life of Walter Mitty",
-    "genre": "Adventure|Comedy|Drama",
-    "experience_type": "relaxing",
-    "rating_percent": 65,
-    "popularity_score": 0.6,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00IANO1TA",
-    "year": 2013,
-    "poster": "assets/posters/movie_10.jpg",
-    "synopsis": "A daydreamer escapes his anonymous life by disappearing into a world of fantasies of romance, heroism, and action.",
-    "quote": "To see the world, things dangerous to come to. To see behind walls, draw closer. — Life begins where your comfort zone ends.",
-    "trailer": "QD6cy4PBQPI",
-    "tags": [
-      "underrated",
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00IANO1TA"
-      }
-    ],
-    "director": "Ben Stiller",
-    "cast": "Ben Stiller, Kristen Wiig, Sean Penn",
-    "keywords": "daydream, adventure, photography, iceland, self-discovery",
-    "cinematographer": "Stuart Dryburgh",
-    "music": "Theodore Shapiro",
-    "writer": "Steve Conrad"
-  },
-  {
-    "movie_id": 11,
-    "title": "Interstellar",
-    "genre": "Sci-Fi|Drama|Adventure",
-    "experience_type": "emotional",
-    "rating_percent": 85,
-    "popularity_score": 0.9,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00TU9UFTS",
-    "year": 2014,
-    "poster": "assets/posters/movie_11.jpg",
-    "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival on a dying Earth.",
-    "quote": "We used to look up at the sky and wonder. Now we just look down and worry. — Don't forget to dream big, even when reality weighs you down.",
-    "trailer": "zSWdZVtXT7E",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00TU9UFTS"
-      }
-    ],
-    "director": "Christopher Nolan",
-    "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
-    "keywords": "space, time travel, wormhole, father-daughter, gravity",
-    "cinematographer": "Hoyte van Hoytema",
-    "music": "Hans Zimmer",
-    "writer": "Jonathan Nolan, Christopher Nolan"
-  },
-  {
-    "movie_id": 12,
-    "title": "Spirited Away",
-    "genre": "Animation|Fantasy|Adventure",
-    "experience_type": "fun",
-    "rating_percent": 96,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 2001,
-    "poster": "assets/posters/movie_12.jpg",
-    "synopsis": "A young girl wanders into a world of spirits ruled by gods, witches, and strange creatures, and must find the courage to free herself and her parents.",
-    "quote": "Once you meet someone, you never really forget them. — The people who change your life stay in your heart forever.",
-    "trailer": "ByXuk9QqQkk",
-    "tags": [
-      "cult",
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      }
-    ],
-    "director": "Hayao Miyazaki",
-    "cast": "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
-    "keywords": "animation, spirits, adventure, coming of age, fantasy",
-    "cinematographer": "Atsushi Okui",
-    "music": "Joe Hisaishi",
-    "writer": "Hayao Miyazaki"
-  },
-  {
-    "movie_id": 13,
-    "title": "The Wolf of Wall Street",
-    "genre": "Crime|Comedy|Drama",
-    "experience_type": "fun",
-    "rating_percent": 79,
-    "popularity_score": 0.9,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00IIU9FMQ",
-    "year": 2013,
-    "poster": "assets/posters/movie_13.jpg",
-    "synopsis": "Based on the true story of Jordan Belfort, a wealthy stockbroker who ran a massive securities fraud scheme.",
-    "quote": "The only thing standing between you and your goal is the story you keep telling yourself. — Stop making excuses. Start making moves.",
-    "trailer": "iszwuX1AK6A",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00IIU9FMQ"
-      }
-    ],
-    "director": "Martin Scorsese",
-    "cast": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
-    "keywords": "finance, stock market, excess, greed, biography",
-    "cinematographer": "Rodrigo Prieto",
-    "music": "Various Artists",
-    "writer": "Terence Winter"
-  },
-  {
-    "movie_id": 14,
-    "title": "Up",
-    "genre": "Animation|Adventure|Comedy",
-    "experience_type": "emotional",
-    "rating_percent": 88,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2009,
-    "poster": "assets/posters/movie_14.jpg",
-    "synopsis": "An elderly widower ties thousands of balloons to his house and flies to South America, accidentally taking a young stowaway along for the ride.",
-    "quote": "Adventure is out there! — You're never too old to chase your dreams.",
-    "trailer": "HWEW_qTLSEE",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/up/3HbSCnQEbir9"
-      }
-    ],
-    "director": "Pete Docter, Bob Peterson",
-    "cast": "Ed Asner, Jordan Nagai, Christopher Plummer",
-    "keywords": "adventure, balloons, elderly, friendship, paradise",
-    "cinematographer": "Patrick Lin, Jean-Claude Kalache",
-    "music": "Michael Giacchino",
-    "writer": "Pete Docter, Bob Peterson"
-  },
-  {
-    "movie_id": 15,
-    "title": "Moonlight",
-    "genre": "Drama",
-    "experience_type": "emotional",
-    "rating_percent": 92,
-    "popularity_score": 0.7,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B01MU9CMGP",
-    "year": 2016,
-    "poster": "assets/posters/movie_15.jpg",
-    "synopsis": "A timeless story of human self-discovery and connection, told across three defining chapters in the life of a young Black man growing up in Miami.",
-    "quote": "At some point, you gotta decide for yourself who you gonna be. — Don't let the world write your story for you.",
-    "trailer": "9NJj12tJzqc",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B01MU9CMGP"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Barry Jenkins",
-    "cast": "Trevante Rhodes, André Holland, Janelle Monáe",
-    "keywords": "identity, growing up, poverty, vulnerability, self-discovery",
-    "cinematographer": "James Laxton",
-    "music": "Nicholas Britell",
-    "writer": "Barry Jenkins, Tarell Alvin McCraney"
-  },
-  {
-    "movie_id": 16,
-    "title": "The Matrix",
-    "genre": "Sci-Fi|Action",
-    "experience_type": "intense",
-    "rating_percent": 83,
-    "popularity_score": 0.9,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000HAB4KS",
-    "year": 1999,
-    "poster": "assets/posters/movie_16.png",
-    "synopsis": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
-    "quote": "I know you're out there. I can feel you now. — The reality you accept is the reality you live in. Question everything.",
-    "trailer": "vKQi3bBA1y8",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000HAB4KS"
-      }
-    ],
-    "director": "Lana Wachowski, Lilly Wachowski",
-    "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
-    "keywords": "simulation, cyberpunk, action, rebellion, choice, red pill",
-    "cinematographer": "Bill Pope",
-    "music": "Don Davis",
-    "writer": "Lana Wachowski, Lilly Wachowski"
-  },
-  {
-    "movie_id": 17,
-    "title": "Lost in Translation",
-    "genre": "Drama|Romance",
-    "experience_type": "relaxing",
-    "rating_percent": 80,
-    "popularity_score": 0.6,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000IBUPMK",
-    "year": 2003,
-    "poster": "assets/posters/movie_17.jpg",
-    "synopsis": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
-    "quote": "Let's never come here again because it would never be as much fun. — Some moments are perfect precisely because they can't be repeated.",
-    "trailer": "W6iVPCRflQM",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000IBUPMK"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Sofia Coppola",
-    "cast": "Bill Murray, Scarlett Johansson, Giovanni Ribisi",
-    "keywords": "tokyo, loneliness, connection, culture, melancholy",
-    "cinematographer": "Lance Acord",
-    "music": "Kevin Shields, Brian Reitzell",
-    "writer": "Sofia Coppola"
-  },
-  {
-    "movie_id": 18,
-    "title": "Mad Max: Fury Road",
-    "genre": "Action|Sci-Fi",
-    "experience_type": "intense",
-    "rating_percent": 90,
-    "popularity_score": 0.8,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00ZIFHU9Y",
-    "year": 2015,
-    "poster": "assets/posters/movie_18.jpg",
-    "synopsis": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a drifter named Max.",
-    "quote": "Oh, what a day! What a lovely day! — When everything burns around you, find something worth fighting for.",
-    "trailer": "hEJnMQG9ev8",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00ZIFHU9Y"
-      }
-    ],
-    "director": "George Miller",
-    "cast": "Tom Hardy, Charlize Theron, Nicholas Hoult",
-    "keywords": "post-apocalyptic, chase, desert, rebellion, survival",
-    "cinematographer": "John Seale",
-    "music": "Junkie XL (Tom Holkenborg)",
-    "writer": "George Miller, Brendan McCarthy, Nico Lathouris"
-  },
-  {
-    "movie_id": 19,
-    "title": "The Truman Show",
-    "genre": "Comedy|Drama",
-    "experience_type": "emotional",
-    "rating_percent": 83,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B001EBWIPY",
-    "year": 1998,
-    "poster": "assets/posters/movie_19.jpg",
-    "synopsis": "An insurance salesman discovers his whole life is actually a giant TV show, and everyone around him is acting.",
-    "quote": "We accept the reality of the world with which we are presented. — Break free from the show others have written for you.",
-    "trailer": "dlnmQbPGuls",
-    "tags": [
-      "cult",
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B001EBWIPY"
-      }
-    ],
-    "director": "Peter Weir",
-    "cast": "Jim Carrey, Laura Linney, Ed Harris",
-    "keywords": "reality tv, surveillance, simulation, escape",
-    "cinematographer": "Peter Biziou",
-    "music": "Burkhard Dallwitz, Philip Glass",
-    "writer": "Andrew Niccol"
-  },
-  {
-    "movie_id": 20,
-    "title": "Amélie",
-    "genre": "Romance|Comedy",
-    "experience_type": "fun",
-    "rating_percent": 85,
-    "popularity_score": 0.7,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000I9YLWM",
-    "year": 2001,
-    "poster": "assets/posters/movie_20.jpg",
-    "synopsis": "A shy waitress in Montmartre decides to change the lives of those around her for the better, while struggling with her own isolation.",
-    "quote": "Times are hard for dreamers. — But the world needs your kind of crazy. Never stop imagining.",
-    "trailer": "HUECWi5pX7o",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000I9YLWM"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Jean-Pierre Jeunet",
-    "cast": "Audrey Tautou, Mathieu Kassovitz, Rufus",
-    "keywords": "paris, whimsy, romance, kindness, imagination",
-    "cinematographer": "Bruno Delbonnel",
-    "music": "Yann Tiersen",
-    "writer": "Jean-Pierre Jeunet, Guillaume Laurant"
-  },
-  {
-    "movie_id": 21,
-    "title": "Fight Club",
-    "genre": "Drama|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 79,
-    "popularity_score": 0.9,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B003MAQG9Y",
-    "year": 1999,
-    "poster": "assets/posters/movie_21.jpg",
-    "synopsis": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more.",
-    "quote": "It's only after we've lost everything that we're free to do anything. — Sometimes you have to let go of who you were to become who you need to be.",
-    "trailer": "qtRKdVHc-cE",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B003MAQG9Y"
-      },
-      {
-        "name": "Hulu",
-        "url": "https://www.hulu.com"
-      }
-    ],
-    "director": "David Fincher",
-    "cast": "Brad Pitt, Edward Norton, Helena Bonham Carter",
-    "keywords": "anarchy, identity, consumerism, underground, twist",
-    "cinematographer": "Jeff Cronenweth",
-    "music": "The Dust Brothers",
-    "writer": "Jim Uhls"
-  },
-  {
-    "movie_id": 22,
-    "title": "Inside Out",
-    "genre": "Animation|Comedy|Family",
-    "experience_type": "emotional",
-    "rating_percent": 94,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2015,
-    "poster": "assets/posters/movie_22.jpg",
-    "synopsis": "After young Riley is uprooted from her Midwest life, her emotions — Joy, Fear, Anger, Disgust and Sadness — conflict on how to navigate a new city.",
-    "quote": "Do you ever look at someone and wonder: what is going on inside their head? — Be kind. Everyone is fighting battles you can't see.",
-    "trailer": "yRUAzGQ3nSY",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/inside-out/2I0bBbhZIbkZ"
-      }
-    ],
-    "director": "Pete Docter, Ronnie del Carmen",
-    "cast": "Amy Poehler, Bill Hader, Lewis Black",
-    "keywords": "emotions, memory, childhood, moving, feelings",
-    "cinematographer": "Patrick Lin",
-    "music": "Michael Giacchino",
-    "writer": "Pete Docter, Meg LeFauve, Josh Cooley"
-  },
-  {
-    "movie_id": 23,
-    "title": "No Country for Old Men",
-    "genre": "Thriller|Crime",
-    "experience_type": "intense",
-    "rating_percent": 86,
-    "popularity_score": 0.8,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B0012I8B0Y",
-    "year": 2007,
-    "poster": "assets/posters/movie_23.jpg",
-    "synopsis": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and a suitcase full of cash in the desert.",
-    "quote": "You can't stop what's coming. — Life doesn't wait for you to be ready. Keep moving anyway.",
-    "trailer": "38A__WT3-o0",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B0012I8B0Y"
-      }
-    ],
-    "director": "Joel Coen, Ethan Coen",
-    "cast": "Javier Bardem, Josh Brolin, Tommy Lee Jones",
-    "keywords": "psychopath, desert, drugs, fate, neo-western",
-    "cinematographer": "Roger Deakins",
-    "music": "Carter Burwell",
-    "writer": "Joel Coen, Ethan Coen"
-  },
-  {
-    "movie_id": 24,
-    "title": "WALL-E",
-    "genre": "Animation|Sci-Fi|Family",
-    "experience_type": "relaxing",
-    "rating_percent": 95,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2008,
-    "poster": "assets/posters/movie_24.jpg",
-    "synopsis": "In a distant future, a small waste-collecting robot inadvertently embarks on a space journey that will decide the fate of mankind.",
-    "quote": "I don't want to survive. I want to live. — Existing isn't enough. Make every day count.",
-    "trailer": "alIq_wG9FNk",
-    "tags": [
-      "family-safe",
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I"
-      }
-    ],
-    "director": "Andrew Stanton",
-    "cast": "Ben Burtt, Elissa Knight, Jeff Garlin",
-    "keywords": "robot, earth, space, environment, love, dystopia",
-    "cinematographer": "Jeremy Lasky, Danielle Feinberg",
-    "music": "Thomas Newman",
-    "writer": "Andrew Stanton, Pete Docter"
-  },
-  {
-    "movie_id": 25,
-    "title": "Her",
-    "genre": "Sci-Fi|Romance|Drama",
-    "experience_type": "emotional",
-    "rating_percent": 82,
-    "popularity_score": 0.7,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00HHJR5PO",
-    "year": 2013,
-    "poster": "assets/posters/movie_25.jpg",
-    "synopsis": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
-    "quote": "The past is just a story we tell ourselves. — You are not your mistakes. You are what you choose to be next.",
-    "trailer": "ne6p6MfLBxc",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00HHJR5PO"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Spike Jonze",
-    "cast": "Joaquin Phoenix, Scarlett Johansson, Amy Adams",
-    "keywords": "artificial intelligence, loneliness, futuristic, love, technology",
-    "cinematographer": "Hoyte van Hoytema",
-    "music": "Arcade Fire, Owen Pallett",
-    "writer": "Spike Jonze"
-  },
-  {
-    "movie_id": 26,
-    "title": "The Dark Knight",
-    "genre": "Action|Crime|Drama",
-    "experience_type": "intense",
-    "rating_percent": 90,
-    "popularity_score": 1,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B001I189MG",
-    "year": 2008,
-    "poster": "assets/posters/movie_26.jpg",
-    "synopsis": "Batman raises the stakes in his war on crime, facing off against the Joker, a criminal mastermind who wreaks havoc on Gotham City.",
-    "quote": "Why so serious? — The world will test you. Don't lose your sense of self in the process.",
-    "trailer": "EXeTwQWrcwY",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B001I189MG"
-      }
-    ],
-    "director": "Christopher Nolan",
-    "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
-    "keywords": "batman, joker, vigilante, chaos, justice, superhero",
-    "cinematographer": "Wally Pfister",
-    "music": "Hans Zimmer, James Newton Howard",
-    "writer": "Jonathan Nolan, Christopher Nolan"
-  },
-  {
-    "movie_id": 27,
-    "title": "Paddington 2",
-    "genre": "Comedy|Family|Adventure",
-    "experience_type": "fun",
-    "rating_percent": 93,
-    "popularity_score": 0.7,
-    "age_limit": 0,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "https://www.amazon.com/dp/B079DZ5XWD",
-    "year": 2017,
-    "poster": "assets/posters/movie_27.png",
-    "synopsis": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen.",
-    "quote": "If we're kind and polite, the world will be right. — A little kindness goes a long way, even when the world doesn't deserve it.",
-    "trailer": "52x5HJ9H8DM",
-    "tags": [
-      "family-safe",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B079DZ5XWD"
-      }
-    ],
-    "director": "Paul King",
-    "cast": "Ben Whishaw, Hugh Grant, Hugh Bonneville",
-    "keywords": "bear, london, family, kindness, prison, adventure",
-    "cinematographer": "Erik Wilson",
-    "music": "Dario Marianelli",
-    "writer": "Paul King, Simon Farnaby"
-  },
-  {
-    "movie_id": 28,
-    "title": "Eternal Sunshine of the Spotless Mind",
-    "genre": "Romance|Drama|Sci-Fi",
-    "experience_type": "emotional",
-    "rating_percent": 82,
-    "popularity_score": 0.8,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000JLQUZI",
-    "year": 2004,
-    "poster": "assets/posters/movie_28.jpg",
-    "synopsis": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
-    "quote": "How happy is the blameless soul's lot! — Forgetting someone doesn't erase what they meant to you.",
-    "trailer": "07-QBnEkgXU",
-    "tags": [
-      "cult",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Peacock",
-        "url": "https://www.peacocktv.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000JLQUZI"
-      }
-    ],
-    "director": "Michel Gondry",
-    "cast": "Jim Carrey, Kate Winslet, Kirsten Dunst",
-    "keywords": "memory, breakup, romance, sci-fi, surreal",
-    "cinematographer": "Ellen Kuras",
-    "music": "Jon Brion",
-    "writer": "Charlie Kaufman"
-  },
-  {
-    "movie_id": 29,
-    "title": "John Wick",
-    "genre": "Action|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 75,
-    "popularity_score": 0.8,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00R0291Q2",
-    "year": 2014,
-    "poster": "assets/posters/movie_29.jpg",
-    "synopsis": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.",
-    "quote": "People keep asking if I'm back. Yeah, I'm thinking I'm back. — When life knocks you down, come back stronger than ever.",
-    "trailer": "2AUmvWm5ZDQ",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "Peacock",
-        "url": "https://www.peacocktv.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00R0291Q2"
-      }
-    ],
-    "director": "Chad Stahelski, David Leitch",
-    "cast": "Keanu Reeves, Michael Nyqvist, Alfie Allen",
-    "keywords": "assassin, revenge, action, underworld, dog",
-    "cinematographer": "Jonathan Sela",
-    "music": "Tyler Bates, Joel J. Richard",
-    "writer": "Derek Kolstad"
-  },
-  {
-    "movie_id": 30,
-    "title": "Ratatouille",
-    "genre": "Animation|Comedy|Family",
-    "experience_type": "fun",
-    "rating_percent": 92,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2007,
-    "poster": "assets/posters/movie_30.jpg",
-    "synopsis": "A rat named Remy dreams of becoming a great chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy.",
-    "quote": "Not everyone can become a great artist, but a great artist can come from anywhere. — Never let anyone tell you that your background defines your limits.",
-    "trailer": "NgsQ8mVkN8w",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/ratatouille/39wmItIWsg5s"
-      }
-    ],
-    "director": "Brad Bird, Jan Pinkava",
-    "cast": "Patton Oswalt, Ian Holm, Lou Romano",
-    "keywords": "cooking, chef, paris, rat, passion, food",
-    "cinematographer": "Robert Anderson, Sharon Calahan",
-    "music": "Michael Giacchino",
-    "writer": "Brad Bird, Jan Pinkava"
-  },
-  {
-    "movie_id": 31,
-    "title": "The Departed",
-    "genre": "Crime|Thriller|Drama",
-    "experience_type": "intense",
-    "rating_percent": 85,
-    "popularity_score": 0.8,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B000P0J0AI",
-    "year": 2006,
-    "poster": "assets/posters/movie_31.jpg",
-    "synopsis": "An undercover cop and a mole in the police try to identify each other while infiltrating an Irish gang in Boston.",
-    "quote": "When you're facing a loaded gun, what's the difference? — Trust is fragile. Once broken, the game changes forever.",
-    "trailer": "o25VXTr6VH8",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000P0J0AI"
-      }
-    ],
-    "director": "Martin Scorsese",
-    "cast": "Leonardo DiCaprio, Matt Damon, Jack Nicholson",
-    "keywords": "undercover, mob, boston, betrayal, police",
-    "cinematographer": "Michael Ballhaus",
-    "music": "Howard Shore",
-    "writer": "William Monahan"
-  },
-  {
-    "movie_id": 32,
-    "title": "Howl's Moving Castle",
-    "genre": "Animation|Fantasy|Romance",
-    "experience_type": "relaxing",
-    "rating_percent": 87,
-    "popularity_score": 0.7,
-    "age_limit": 0,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 2004,
-    "poster": "assets/posters/movie_32.jpg",
-    "synopsis": "When a young hat-maker is turned into an old woman by a witch's curse, she finds refuge in the magical moving castle of the wizard Howl.",
-    "quote": "A heart's a heavy burden. — Love isn't always easy, but it's always worth the weight.",
-    "trailer": "iwROgK94zcM",
-    "tags": [
-      "family-safe",
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      }
-    ],
-    "director": "Hayao Miyazaki",
-    "cast": "Chieko Baishō, Takuya Kimura, Akihiro Miwa",
-    "keywords": "wizard, castle, curse, war, magic, transformation",
-    "cinematographer": "Atsushi Okui",
-    "music": "Joe Hisaishi",
-    "writer": "Hayao Miyazaki"
-  },
-  {
-    "movie_id": 33,
-    "title": "Parasite",
-    "genre": "Thriller|Drama|Comedy",
-    "experience_type": "intense",
-    "rating_percent": 96,
-    "popularity_score": 0.9,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B07YM14FPF",
-    "year": 2019,
-    "poster": "assets/posters/movie_33.jpg",
-    "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-    "quote": "They're not cockroaches. You can't just stamp on them. — The divide between rich and poor is a wound that never stops bleeding.",
-    "trailer": "SEUXfv87Wpk",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Hulu",
-        "url": "https://www.hulu.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B07YM14FPF"
-      }
-    ],
-    "director": "Bong Joon-ho",
-    "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
-    "keywords": "class struggle, family, deception, social commentary, thriller",
-    "cinematographer": "Hong Kyung-pyo",
-    "music": "Jung Jae-il",
-    "writer": "Bong Joon-ho, Han Jin-won"
-  },
-  {
-    "movie_id": 34,
-    "title": "Before Sunrise",
-    "genre": "Romance|Drama",
-    "experience_type": "relaxing",
-    "rating_percent": 81,
-    "popularity_score": 0.6,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00AEFXVYM",
-    "year": 1995,
-    "poster": "assets/posters/movie_34.jpg",
-    "synopsis": "A young man and woman meet on a train and end up spending one romantic evening together in Vienna before going their separate ways.",
-    "quote": "Isn't everything we do in life a way to be loved a little more? — At the end of the day, all anyone really wants is connection.",
-    "trailer": "6MUcuqbGTxc",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00AEFXVYM"
-      },
-      {
-        "name": "Apple TV",
-        "url": "https://tv.apple.com"
-      }
-    ],
-    "director": "Richard Linklater",
-    "cast": "Ethan Hawke, Julie Delpy",
-    "keywords": "vienna, train, conversation, romance, philosophy",
-    "cinematographer": "Lee Daniel",
-    "music": "Johann Strauss II (Various Artists)",
-    "writer": "Richard Linklater, Kim Krizan"
-  },
-  {
-    "movie_id": 35,
-    "title": "Whiplash",
-    "genre": "Drama|Music",
-    "experience_type": "intense",
-    "rating_percent": 94,
-    "popularity_score": 0.8,
-    "age_limit": 16,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "https://www.amazon.com/dp/B00QGHB8D0",
-    "year": 2014,
-    "poster": "assets/posters/movie_35.jpg",
-    "synopsis": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an abusive instructor.",
-    "quote": "There are no two words more harmful than 'good job'. — Greatness demands discomfort. Comfort is the enemy of growth.",
-    "trailer": "7d_jQycdQGo",
-    "tags": [
-      "cult",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00QGHB8D0"
-      }
-    ],
-    "director": "Damien Chazelle",
-    "cast": "Miles Teller, J.K. Simmons, Paul Reiser",
-    "keywords": "jazz, drumming, ambition, obsession, perfection",
-    "cinematographer": "Sharone Meir",
-    "music": "Justin Hurwitz",
-    "writer": "Damien Chazelle"
-  },
-  {
-    "movie_id": 36,
-    "title": "Soul",
-    "genre": "Animation|Fantasy|Comedy",
-    "experience_type": "emotional",
-    "rating_percent": 89,
-    "popularity_score": 0.7,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2020,
-    "poster": "assets/posters/movie_36.png",
-    "synopsis": "A middle-school music teacher's passion for jazz leads him on an extraordinary journey to discover what it means to have a soul.",
-    "quote": "Is all this living really worth dying for? — What makes life meaningful isn't the achievement — it's the passion.",
-    "trailer": "xOsLIiBStEs",
-    "tags": [
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/soul/77tlWpb1AWsC"
-      }
-    ],
-    "director": "Pete Docter, Kemp Powers",
-    "cast": "Jamie Foxx, Tina Fey, Graham Norton",
-    "keywords": "jazz, soul, meaning of life, passion, afterlife",
-    "cinematographer": "Matt Aspbury, Ian Megibben",
-    "music": "Trent Reznor, Atticus Ross, Jon Batiste",
-    "writer": "Pete Docter, Mike Jones, Kemp Powers"
-  },
-  {
-    "movie_id": 37,
-    "title": "Goodfellas",
-    "genre": "Crime|Drama",
-    "experience_type": "intense",
-    "rating_percent": 87,
-    "popularity_score": 0.9,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B0011TNRNE",
-    "year": 1990,
-    "poster": "assets/posters/movie_37.jpg",
-    "synopsis": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.",
-    "quote": "As far back as I can remember, I always wanted to be a gangster. — We all chase versions of success. Make sure yours doesn't cost you everything.",
-    "trailer": "2ilzidi_J8Q",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B0011TNRNE"
-      }
-    ],
-    "director": "Martin Scorsese",
-    "cast": "Robert De Niro, Ray Liotta, Joe Pesci",
-    "keywords": "mafia, gangster, true story, crime, rise and fall",
-    "cinematographer": "Michael Ballhaus",
-    "music": "Various Artists",
-    "writer": "Nicholas Pileggi, Martin Scorsese"
-  },
-  {
-    "movie_id": 38,
-    "title": "The Princess Bride",
-    "genre": "Adventure|Comedy|Fantasy",
-    "experience_type": "fun",
-    "rating_percent": 84,
-    "popularity_score": 0.8,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B00AOT8JUC",
-    "year": 1987,
-    "poster": "assets/posters/movie_38.jpg",
-    "synopsis": "A farmhand-turned-pirate encounters numerous obstacles, enemies, and allies in his quest to be reunited with his true love.",
-    "quote": "As you wish. — True love doesn't need grand gestures. Sometimes three simple words say it all.",
-    "trailer": "WNNUcHRiPS8",
-    "tags": [
-      "cult",
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B00AOT8JUC"
-      }
-    ],
-    "director": "Rob Reiner",
-    "cast": "Cary Elwes, Robin Wright, Mandy Patinkin",
-    "keywords": "fairy tale, true love, sword fighting, comedy, rescue",
-    "cinematographer": "Adrian Biddle",
-    "music": "Mark Knopfler",
-    "writer": "William Goldman"
-  },
-  {
-    "movie_id": 39,
-    "title": "A Quiet Place",
-    "genre": "Horror|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 80,
-    "popularity_score": 0.7,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B07BZ5HMTH",
-    "year": 2018,
-    "poster": "assets/posters/movie_39.jpg",
-    "synopsis": "A family is forced to live in silence while hiding from creatures that hunt by sound, finding new ways to survive in a post-apocalyptic world.",
-    "quote": "If they hear you, they hunt you. — In a world full of noise, sometimes silence is your greatest strength.",
-    "trailer": "WR7cc5t7tv8",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B07BZ5HMTH"
-      }
-    ],
-    "director": "John Krasinski",
-    "cast": "Emily Blunt, John Krasinski, Millicent Simmonds",
-    "keywords": "silence, creatures, survival, family, horror",
-    "cinematographer": "Charlotte Bruus Christensen",
-    "music": "Marco Beltrami",
-    "writer": "Bryan Woods, Scott Beck, John Krasinski"
-  },
-  {
-    "movie_id": 40,
-    "title": "The Lion King",
-    "genre": "Animation|Adventure|Family",
-    "experience_type": "emotional",
-    "rating_percent": 88,
-    "popularity_score": 0.9,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 1994,
-    "poster": "assets/posters/movie_40.jpg",
-    "synopsis": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
-    "quote": "Remember who you are. — When life makes you forget your worth, look inside — your strength was always there.",
-    "trailer": "4sj1MT05lAA",
-    "tags": [
-      "cult",
-      "family-safe"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Disney+",
-        "url": "https://www.disneyplus.com/movies/the-lion-king/1HqwiEcje6Nj"
-      }
-    ],
-    "director": "Roger Allers, Rob Minkoff",
-    "cast": "Matthew Broderick, James Earl Jones, Jeremy Irons",
-    "keywords": "lion, africa, kingdom, destiny, coming of age",
-    "cinematographer": "N/A (Animation)",
-    "music": "Hans Zimmer, Elton John",
-    "writer": "Irene Mecchi, Jonathan Roberts, Linda Woolverton"
-  },
-  {
-    "movie_id": 41,
-    "title": "Dune",
-    "genre": "Sci-Fi|Adventure",
-    "experience_type": "intense",
-    "rating_percent": 83,
-    "popularity_score": 0.95,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B09J5D7GV1",
-    "year": 2021,
-    "poster": "assets/posters/movie_41.jpg",
-    "synopsis": "Paul Atreides, a brilliant and gifted young man, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
-    "quote": "Fear is the mind-killer. — Courage isn't the absence of fear. It's choosing to move forward despite it.",
-    "trailer": "8g18jFHCLXk",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B09J5D7GV1"
-      }
-    ],
-    "director": "Denis Villeneuve",
-    "cast": "Timothée Chalamet, Rebecca Ferguson, Oscar Isaac",
-    "keywords": "desert, spice, empire, prophecy, political",
-    "cinematographer": "Greig Fraser",
-    "music": "Hans Zimmer",
-    "writer": "Jon Spaihts, Denis Villeneuve, Eric Roth"
-  },
-  {
-    "movie_id": 42,
-    "title": "Everything Everywhere All at Once",
-    "genre": "Sci-Fi|Comedy|Action",
-    "experience_type": "fun",
-    "rating_percent": 89,
-    "popularity_score": 0.9,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B09X5XHHKD",
-    "year": 2022,
-    "poster": "assets/posters/movie_42.jpg",
-    "synopsis": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes.",
-    "quote": "Every rejection, every disappointment has led you here. — Your struggles aren't setbacks — they're setup for something bigger.",
-    "trailer": "wxN1T1uxQ2g",
-    "tags": [
-      "cult",
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B09X5XHHKD"
-      }
-    ],
-    "director": "Daniel Kwan, Daniel Scheinert",
-    "cast": "Michelle Yeoh, Stephanie Hsu, Ke Huy Quan",
-    "keywords": "multiverse, family, martial arts, surreal, absurd",
-    "cinematographer": "Larkin Seiple",
-    "music": "Son Lux",
-    "writer": "Daniel Kwan, Daniel Scheinert"
-  },
-  {
-    "movie_id": 43,
-    "title": "The Batman",
-    "genre": "Action|Crime|Drama",
-    "experience_type": "intense",
-    "rating_percent": 85,
-    "popularity_score": 0.88,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "",
-    "year": 2022,
-    "poster": "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Batman_%28film%29_poster.jpg",
-    "synopsis": "When a sadistic serial killer begins murdering key political figures, Batman is forced to investigate the city's hidden corruption.",
-    "quote": "I'm vengeance. — Anger can drive you, but it's justice and purpose that give life meaning.",
-    "trailer": "mqqft2x_Aa4",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      }
-    ],
-    "director": "Matt Reeves",
-    "cast": "Robert Pattinson, Zoë Kravitz, Paul Dano",
-    "keywords": "batman, detective, gothic, riddler, corruption, noir",
-    "cinematographer": "Greig Fraser",
-    "music": "Michael Giacchino",
-    "writer": "Matt Reeves, Peter Craig"
-  },
-  {
-    "movie_id": 45,
-    "title": "Top Gun: Maverick",
-    "genre": "Action|Drama",
-    "experience_type": "fun",
-    "rating_percent": 88,
-    "popularity_score": 0.92,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B0B2KSYRLQ",
-    "year": 2022,
-    "poster": "assets/posters/movie_45.jpg",
-    "synopsis": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
-    "quote": "It's not the plane, it's the pilot. — The tools don't make the master. Your heart and skill do.",
-    "trailer": "giXco2jaZ_4",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B0B2KSYRLQ"
-      }
-    ],
-    "director": "Joseph Kosinski",
-    "cast": "Tom Cruise, Miles Teller, Jennifer Connelly",
-    "keywords": "navy, fighter jet, pilot, legacy, aviation",
-    "cinematographer": "Claudio Miranda",
-    "music": "Harold Faltermeyer, Hans Zimmer, Lorne Balfe",
-    "writer": "Ehren Kruger, Eric Warren Singer, Christopher McQuarrie"
-  },
-  {
-    "movie_id": 46,
-    "title": "La La Land",
-    "genre": "Comedy|Drama|Romance",
-    "experience_type": "emotional",
-    "rating_percent": 80,
-    "popularity_score": 0.82,
-    "age_limit": 13,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 2016,
-    "poster": "assets/posters/movie_46.jpg",
-    "synopsis": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
-    "quote": "Here's to the ones who dream, foolish as they may seem. — The world needs more dreamers, not fewer. Keep believing.",
-    "trailer": "0pdqf4P9MB8",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      }
-    ],
-    "director": "Damien Chazelle",
-    "cast": "Ryan Gosling, Emma Stone, John Legend",
-    "keywords": "musical, romance, jazz, dreams, hollywood",
-    "cinematographer": "Linus Sandgren",
-    "music": "Justin Hurwitz",
-    "writer": "Damien Chazelle"
-  },
-  {
-    "movie_id": 47,
-    "title": "Spider-Man: Into the Spider-Verse",
-    "genre": "Animation|Action|Adventure",
-    "experience_type": "fun",
-    "rating_percent": 84,
-    "popularity_score": 0.88,
-    "age_limit": 0,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com",
-    "year": 2018,
-    "poster": "assets/posters/movie_47.jpg",
-    "synopsis": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
-    "quote": "Anyone can wear the mask. — You don't have to be perfect to be a hero. Just show up.",
-    "trailer": "g4Hbz2jLxvQ",
-    "tags": [
-      "family-safe",
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com"
-      }
-    ],
-    "director": "Peter Ramsey, Robert Persichetti Jr., Rodney Rothman",
-    "cast": "Shameik Moore, Jake Johnson, Hailee Steinfeld",
-    "keywords": "spider-man, multiverse, animation, superhero, style",
-    "cinematographer": "N/A (Animation)",
-    "music": "Daniel Pemberton",
-    "writer": "Phil Lord, Rodney Rothman"
-  },
-  {
-    "movie_id": 48,
-    "title": "Knives Out",
-    "genre": "Comedy|Crime|Drama",
-    "experience_type": "fun",
-    "rating_percent": 79,
-    "popularity_score": 0.81,
-    "age_limit": 13,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com/dp/B082L42V5B",
-    "year": 2019,
-    "poster": "assets/posters/movie_48.jpg",
-    "synopsis": "A detective investigates the death of a patriarch of an eccentric, combative family.",
-    "quote": "I suspect foul play. — Look beneath the surface. Things aren't always what they seem.",
-    "trailer": "qGqiHJTsRkQ",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B082L42V5B"
-      }
-    ],
-    "director": "Rian Johnson",
-    "cast": "Daniel Craig, Chris Evans, Ana de Armas",
-    "keywords": "murder mystery, whodunnit, family, inheritance, detective",
-    "cinematographer": "Steve Yedlin",
-    "music": "Nathan Johnson",
-    "writer": "Rian Johnson"
-  },
-  {
-    "movie_id": 49,
-    "title": "Gladiator",
-    "genre": "Action|Adventure|Drama",
-    "experience_type": "intense",
-    "rating_percent": 85,
-    "popularity_score": 0.84,
-    "age_limit": 16,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "https://www.amazon.com/dp/B000I9URAS",
-    "year": 2000,
-    "poster": "assets/posters/movie_49.jpg",
-    "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-    "quote": "What we do in life echoes in eternity. — Your actions today write the legacy of tomorrow.",
-    "trailer": "owK1qxDselE",
-    "tags": [
-      "cult"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com/dp/B000I9URAS"
-      }
-    ],
-    "director": "Ridley Scott",
-    "cast": "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
-    "keywords": "roman empire, arena, revenge, honor, slavery",
-    "cinematographer": "John Mathieson",
-    "music": "Hans Zimmer, Lisa Gerrard",
-    "writer": "David Franzoni, John Logan, William Nicholson"
-  },
-  {
-    "movie_id": 51,
-    "title": "Arrival",
-    "genre": "Drama|Sci-Fi",
-    "experience_type": "emotional",
-    "rating_percent": 79,
-    "popularity_score": 0.77,
-    "age_limit": 13,
-    "netflix_url": "https://www.netflix.com",
-    "prime_url": "",
-    "year": 2016,
-    "poster": "assets/posters/movie_51.jpg",
-    "synopsis": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
-    "quote": "If you could see your whole life laid out, would you change things? — Every ending is also a beginning. Trust the journey.",
-    "trailer": "tFMo3UJ4B4g",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "Netflix",
-        "url": "https://www.netflix.com"
-      },
-      {
-        "name": "Paramount+",
-        "url": "https://www.paramountplus.com"
-      }
-    ],
-    "director": "Denis Villeneuve",
-    "cast": "Amy Adams, Jeremy Renner, Forest Whitaker",
-    "keywords": "aliens, linguistics, time, communication, sci-fi",
-    "cinematographer": "Bradford Young",
-    "music": "Jóhann Jóhannsson",
-    "writer": "Eric Heisserer"
-  },
-  {
-    "movie_id": 54,
-    "title": "Ex Machina",
-    "genre": "Drama|Sci-Fi|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 77,
-    "popularity_score": 0.75,
-    "age_limit": 16,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com",
-    "year": 2014,
-    "poster": "https://upload.wikimedia.org/wikipedia/en/b/ba/Ex-machina-uk-poster.jpg",
-    "synopsis": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
-    "tags": [
-      "underrated"
-    ],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com"
-      }
-    ],
-    "director": "Alex Garland",
-    "cast": "Domhnall Gleeson, Alicia Vikander, Oscar Isaac",
-    "keywords": "artificial intelligence, turing test, robot, consciousness, isolation",
-    "cinematographer": "Rob Hardy",
-    "music": "Geoff Barrow, Ben Salisbury",
-    "writer": "Alex Garland",
-    "quote": "One day the AIs are going to look back on us the same way we look at fossils. — Progress without empathy is just destruction in disguise.",
-    "trailer": "EoQuVnKhxaM"
-  },
-  {
-    "movie_id": 60,
-    "title": "Joker",
-    "genre": "Crime|Drama|Thriller",
-    "experience_type": "intense",
-    "rating_percent": 84,
-    "popularity_score": 0.88,
-    "age_limit": 18,
-    "netflix_url": "",
-    "prime_url": "https://www.amazon.com",
-    "year": 2019,
-    "poster": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
-    "synopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.",
-    "tags": [],
-    "ottPlatforms": [
-      {
-        "name": "HBO Max",
-        "url": "https://www.hbomax.com"
-      },
-      {
-        "name": "Prime Video",
-        "url": "https://www.amazon.com"
-      }
-    ],
-    "director": "Todd Phillips",
-    "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
-    "keywords": "mental health, clown, social decay, origin story, gritty",
-    "cinematographer": "Lawrence Sher",
-    "music": "Hildur Guðnadóttir",
-    "writer": "Todd Phillips, Scott Silver",
-    "quote": "All I have are negative thoughts. — Be gentle with yourself. The world is heavy enough without fighting your own mind too.",
-    "trailer": "zAGVQLHvwOY"
-  }
+    {
+        "movie_id": 1,
+        "title": "Inception",
+        "genre": "Sci-Fi|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 87,
+        "popularity_score": 0.9,
+        "age_limit": 13,
+        "netflix_url": "https://www.netflix.com/title/70131314",
+        "prime_url": "https://www.amazon.com/dp/B0047WJ11G",
+        "year": 2010,
+        "poster": "assets/posters/movie_1.jpg",
+        "synopsis": "A skilled thief who infiltrates dreams is offered a chance to have his criminal record erased if he can successfully plant an idea in a target's subconscious.",
+        "quote": "An idea is like a virus. Resilient. Highly contagious. \u2014 Sometimes the smallest thought planted in your mind changes your entire life.",
+        "trailer": "YoHD9XEInc0",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com/title/70131314"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0047WJ11G"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "keywords": "record, criminal, have, infiltrates, plant, dreams, thief, offered, idea, chance, thriller, sci-fi",
+        "cinematographer": "Wally Pfister",
+        "music": "Hans Zimmer",
+        "writer": "Christopher Nolan",
+        "overview": "A skilled thief who infiltrates dreams is offered a chance to have his criminal record erased if he can successfully plant an idea in a target's subconscious."
+    },
+    {
+        "movie_id": 2,
+        "title": "The Grand Budapest Hotel",
+        "genre": "Comedy|Drama",
+        "experience_type": "fun",
+        "rating_percent": 84,
+        "popularity_score": 0.7,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00J2PGLO0",
+        "year": 2014,
+        "poster": "assets/posters/movie_2.png",
+        "synopsis": "A legendary concierge at a famous European hotel and his trusted lobby boy become embroiled in the theft of a priceless painting.",
+        "quote": "There are still faint glimmers of civilization left in this barbaric slaughterhouse. \u2014 Even in chaos, hold on to what makes life beautiful.",
+        "trailer": "1Fg5iWmQjwk",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00J2PGLO0"
+            }
+        ],
+        "director": "Wes Anderson",
+        "cast": "Ralph Fiennes, Tony Revolori, Adrien Brody",
+        "keywords": "hotel, legendary, european, painting, embroiled, drama, famous, comedy, priceless, theft, trusted, concierge",
+        "cinematographer": "Robert Yeoman",
+        "music": "Alexandre Desplat",
+        "writer": "Wes Anderson",
+        "overview": "A legendary concierge at a famous European hotel and his trusted lobby boy become embroiled in the theft of a priceless painting."
+    },
+    {
+        "movie_id": 3,
+        "title": "Finding Nemo",
+        "genre": "Animation|Adventure",
+        "experience_type": "fun",
+        "rating_percent": 86,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2003,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg",
+        "synopsis": "A clownfish named Marlin embarks on a perilous journey across the ocean to find his abducted son Nemo, with the help of a forgetful fish named Dory.",
+        "quote": "Just keep swimming. \u2014 When life gets hard, the only way out is forward.",
+        "trailer": "SPHfeNgogVs",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/finding-nemo/5Gpj2XqF7BV2"
+            }
+        ],
+        "director": "Andrew Stanton, Lee Unkrich",
+        "cast": "Albert Brooks, Ellen DeGeneres, Alexander Gould",
+        "keywords": "named, embarks, perilous, adventure, abducted, nemo, forgetful, help, clownfish, marlin, animation, dory",
+        "cinematographer": "Sharon Calahan, Jeremy Lasky",
+        "music": "Thomas Newman",
+        "writer": "Andrew Stanton, Bob Peterson",
+        "overview": "A clownfish named Marlin embarks on a perilous journey across the ocean to find his abducted son Nemo, with the help of a forgetful fish named Dory."
+    },
+    {
+        "movie_id": 4,
+        "title": "Blade Runner 2049",
+        "genre": "Sci-Fi|Drama",
+        "experience_type": "intense",
+        "rating_percent": 81,
+        "popularity_score": 0.7,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B0764GY2JD",
+        "year": 2017,
+        "poster": "assets/posters/movie_4.jpg",
+        "synopsis": "A young blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos.",
+        "quote": "All those moments will be lost in time, like tears in rain. \u2014 Cherish every moment \u2014 they won't last forever.",
+        "trailer": "gCcx85zbxz4",
+        "tags": [
+            "cult",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0764GY2JD"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Ryan Gosling, Harrison Ford, Ana de Armas",
+        "keywords": "potential, young, buried, into, plunge, uncovers, drama, blade, what, society, sci-fi, chaos",
+        "cinematographer": "Roger Deakins",
+        "music": "Hans Zimmer, Benjamin Wallfisch",
+        "writer": "Hampton Fancher, Michael Green",
+        "overview": "A young blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos."
+    },
+    {
+        "movie_id": 5,
+        "title": "The Shawshank Redemption",
+        "genre": "Drama",
+        "experience_type": "emotional",
+        "rating_percent": 91,
+        "popularity_score": 1,
+        "age_limit": 16,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 1994,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+        "synopsis": "A banker sentenced to life in Shawshank State Penitentiary forms an unlikely friendship and finds hope through acts of common decency.",
+        "quote": "Get busy living, or get busy dying. \u2014 Hope is the one thing no prison can take from you.",
+        "trailer": "PLl99DlL6b4",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Frank Darabont",
+        "cast": "Tim Robbins, Morgan Freeman, Bob Gunton",
+        "keywords": "acts, sentenced, penitentiary, unlikely, common, drama, banker, shawshank, friendship, life, finds",
+        "cinematographer": "Roger Deakins",
+        "music": "Thomas Newman",
+        "writer": "Frank Darabont",
+        "overview": "A banker sentenced to life in Shawshank State Penitentiary forms an unlikely friendship and finds hope through acts of common decency."
+    },
+    {
+        "movie_id": 6,
+        "title": "My Neighbor Totoro",
+        "genre": "Animation|Fantasy",
+        "experience_type": "relaxing",
+        "rating_percent": 88,
+        "popularity_score": 0.7,
+        "age_limit": 0,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 1988,
+        "poster": "assets/posters/movie_6.jpg",
+        "synopsis": "Two young girls move to the countryside and befriend playful forest spirits, including the lovable giant creature Totoro.",
+        "quote": "Sometimes you just need to sit with a giant, fluffy friend. \u2014 Find your quiet place in this noisy world.",
+        "trailer": "92a7Hj0ijLs",
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Hayao Miyazaki",
+        "cast": "Noriko Hidaka, Chika Sakamoto, Shigesato Itoi",
+        "keywords": "befriend, young, countryside, spirits, move, girls, lovable, totoro, animation, fantasy, creature, giant",
+        "cinematographer": "Hisao Shirai",
+        "music": "Joe Hisaishi",
+        "writer": "Hayao Miyazaki",
+        "overview": "Two young girls move to the countryside and befriend playful forest spirits, including the lovable giant creature Totoro."
+    },
+    {
+        "movie_id": 7,
+        "title": "Pulp Fiction",
+        "genre": "Crime|Drama",
+        "experience_type": "intense",
+        "rating_percent": 89,
+        "popularity_score": 0.9,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000I9YJ8E",
+        "year": 1994,
+        "poster": "assets/posters/movie_7.jpg",
+        "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "quote": "The path of the righteous man is beset on all sides. \u2014 Life isn't about the destination, it's about the messy journey.",
+        "trailer": "s7EdQ4FqbhY",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9YJ8E"
+            },
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            }
+        ],
+        "director": "Quentin Tarantino",
+        "cast": "John Travolta, Uma Thurman, Samuel L. Jackson",
+        "keywords": "violence, pair, boxer, bandits, lives, tales, hitmen, four, drama, intertwine, gangster, crime",
+        "cinematographer": "Andrzej Seku\u0142a",
+        "music": "Various Artists",
+        "writer": "Quentin Tarantino",
+        "overview": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    },
+    {
+        "movie_id": 8,
+        "title": "Coco",
+        "genre": "Animation|Family|Fantasy",
+        "experience_type": "emotional",
+        "rating_percent": 90,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2017,
+        "poster": "assets/posters/movie_8.jpg",
+        "synopsis": "A young boy who dreams of becoming a musician journeys to the Land of the Dead to uncover his family's history.",
+        "quote": "Never forget where you come from. \u2014 Your roots are the most beautiful part of who you are.",
+        "trailer": "Rvr68u6k5sI",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/coco/db9orsI5O4gC"
+            }
+        ],
+        "director": "Lee Unkrich, Adrian Molina",
+        "cast": "Anthony Gonzalez, Gael Garc\u00eda Bernal, Benjamin Bratt",
+        "keywords": "young, uncover, journeys, dreams, becoming, family, history, musician, land, animation, fantasy, dead",
+        "cinematographer": "Matt Aspbury, Danielle Feinberg",
+        "music": "Michael Giacchino",
+        "writer": "Adrian Molina, Matthew Aldrich",
+        "overview": "A young boy who dreams of becoming a musician journeys to the Land of the Dead to uncover his family's history."
+    },
+    {
+        "movie_id": 9,
+        "title": "Drive",
+        "genre": "Action|Drama",
+        "experience_type": "intense",
+        "rating_percent": 79,
+        "popularity_score": 0.7,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B006IMZ0DQ",
+        "year": 2011,
+        "poster": "assets/posters/movie_9.jpg",
+        "synopsis": "A Hollywood stunt driver who moonlights as a getaway driver finds himself in trouble when he helps his neighbour.",
+        "quote": "There are no clean getaways. \u2014 Some roads look simple, but every choice has a cost.",
+        "trailer": "KBiOF3y1W0Y",
+        "tags": [
+            "cult",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B006IMZ0DQ"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Nicolas Winding Refn",
+        "cast": "Ryan Gosling, Carey Mulligan, Bryan Cranston",
+        "keywords": "himself, stunt, moonlights, helps, drama, neighbour, driver, hollywood, finds, action, trouble, when",
+        "cinematographer": "Newton Thomas Sigel",
+        "music": "Cliff Martinez",
+        "writer": "Hossein Amini",
+        "overview": "A Hollywood stunt driver who moonlights as a getaway driver finds himself in trouble when he helps his neighbour."
+    },
+    {
+        "movie_id": 10,
+        "title": "The Secret Life of Walter Mitty",
+        "genre": "Adventure|Comedy|Drama",
+        "experience_type": "relaxing",
+        "rating_percent": 65,
+        "popularity_score": 0.6,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00IANO1TA",
+        "year": 2013,
+        "poster": "assets/posters/movie_10.jpg",
+        "synopsis": "A daydreamer escapes his anonymous life by disappearing into a world of fantasies of romance, heroism, and action.",
+        "quote": "To see the world, things dangerous to come to. To see behind walls, draw closer. \u2014 Life begins where your comfort zone ends.",
+        "trailer": "QD6cy4PBQPI",
+        "tags": [
+            "underrated",
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00IANO1TA"
+            }
+        ],
+        "director": "Ben Stiller",
+        "cast": "Ben Stiller, Kristen Wiig, Sean Penn",
+        "keywords": "world, anonymous, into, adventure, romance, drama, escapes, fantasies, life, heroism, action, comedy, daydreamer",
+        "cinematographer": "Stuart Dryburgh",
+        "music": "Theodore Shapiro",
+        "writer": "Steve Conrad",
+        "overview": "A daydreamer escapes his anonymous life by disappearing into a world of fantasies of romance, heroism, and action."
+    },
+    {
+        "movie_id": 11,
+        "title": "Interstellar",
+        "genre": "Sci-Fi|Drama|Adventure",
+        "experience_type": "emotional",
+        "rating_percent": 85,
+        "popularity_score": 0.9,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00TU9UFTS",
+        "year": 2014,
+        "poster": "assets/posters/movie_11.jpg",
+        "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival on a dying Earth.",
+        "quote": "We used to look up at the sky and wonder. Now we just look down and worry. \u2014 Don't forget to dream big, even when reality weighs you down.",
+        "trailer": "zSWdZVtXT7E",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00TU9UFTS"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+        "keywords": "team, earth, adventure, travel, sci-fi, wormhole, drama, ensure, through, dying, survival, explorers, humanity",
+        "cinematographer": "Hoyte van Hoytema",
+        "music": "Hans Zimmer",
+        "writer": "Jonathan Nolan, Christopher Nolan",
+        "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival on a dying Earth."
+    },
+    {
+        "movie_id": 12,
+        "title": "Spirited Away",
+        "genre": "Animation|Fantasy|Adventure",
+        "experience_type": "fun",
+        "rating_percent": 96,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 2001,
+        "poster": "assets/posters/movie_12.jpg",
+        "synopsis": "A young girl wanders into a world of spirits ruled by gods, witches, and strange creatures, and must find the courage to free herself and her parents.",
+        "quote": "Once you meet someone, you never really forget them. \u2014 The people who change your life stay in your heart forever.",
+        "trailer": "ByXuk9QqQkk",
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Hayao Miyazaki",
+        "cast": "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
+        "keywords": "creatures, wanders, young, ruled, spirits, courage, world, herself, into, gods, adventure, animation, fantasy",
+        "cinematographer": "Atsushi Okui",
+        "music": "Joe Hisaishi",
+        "writer": "Hayao Miyazaki",
+        "overview": "A young girl wanders into a world of spirits ruled by gods, witches, and strange creatures, and must find the courage to free herself and her parents."
+    },
+    {
+        "movie_id": 13,
+        "title": "The Wolf of Wall Street",
+        "genre": "Crime|Comedy|Drama",
+        "experience_type": "fun",
+        "rating_percent": 79,
+        "popularity_score": 0.9,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00IIU9FMQ",
+        "year": 2013,
+        "poster": "assets/posters/movie_13.jpg",
+        "synopsis": "Based on the true story of Jordan Belfort, a wealthy stockbroker who ran a massive securities fraud scheme.",
+        "quote": "The only thing standing between you and your goal is the story you keep telling yourself. \u2014 Stop making excuses. Start making moves.",
+        "trailer": "iszwuX1AK6A",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00IIU9FMQ"
+            }
+        ],
+        "director": "Martin Scorsese",
+        "cast": "Leonardo DiCaprio, Jonah Hill, Margot Robbie",
+        "keywords": "massive, jordan, wealthy, fraud, story, scheme, true, stockbroker, securities, drama, belfort, crime, comedy",
+        "cinematographer": "Rodrigo Prieto",
+        "music": "Various Artists",
+        "writer": "Terence Winter",
+        "overview": "Based on the true story of Jordan Belfort, a wealthy stockbroker who ran a massive securities fraud scheme."
+    },
+    {
+        "movie_id": 14,
+        "title": "Up",
+        "genre": "Animation|Adventure|Comedy",
+        "experience_type": "emotional",
+        "rating_percent": 88,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2009,
+        "poster": "assets/posters/movie_14.jpg",
+        "synopsis": "An elderly widower ties thousands of balloons to his house and flies to South America, accidentally taking a young stowaway along for the ride.",
+        "quote": "Adventure is out there! \u2014 You're never too old to chase your dreams.",
+        "trailer": "HWEW_qTLSEE",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/up/3HbSCnQEbir9"
+            }
+        ],
+        "director": "Pete Docter, Bob Peterson",
+        "cast": "Ed Asner, Jordan Nagai, Christopher Plummer",
+        "keywords": "balloons, young, ties, south, ride, adventure, widower, flies, comedy, thousands, animation, elderly, accidentally",
+        "cinematographer": "Patrick Lin, Jean-Claude Kalache",
+        "music": "Michael Giacchino",
+        "writer": "Pete Docter, Bob Peterson",
+        "overview": "An elderly widower ties thousands of balloons to his house and flies to South America, accidentally taking a young stowaway along for the ride."
+    },
+    {
+        "movie_id": 15,
+        "title": "Moonlight",
+        "genre": "Drama",
+        "experience_type": "emotional",
+        "rating_percent": 92,
+        "popularity_score": 0.7,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B01MU9CMGP",
+        "year": 2016,
+        "poster": "assets/posters/movie_15.jpg",
+        "synopsis": "A timeless story of human self-discovery and connection, told across three defining chapters in the life of a young Black man growing up in Miami.",
+        "quote": "At some point, you gotta decide for yourself who you gonna be. \u2014 Don't let the world write your story for you.",
+        "trailer": "9NJj12tJzqc",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B01MU9CMGP"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Barry Jenkins",
+        "cast": "Trevante Rhodes, Andr\u00e9 Holland, Janelle Mon\u00e1e",
+        "keywords": "young, miami, black, told, human, story, timeless, discovery, drama, chapters, self",
+        "cinematographer": "James Laxton",
+        "music": "Nicholas Britell",
+        "writer": "Barry Jenkins, Tarell Alvin McCraney",
+        "overview": "A timeless story of human self-discovery and connection, told across three defining chapters in the life of a young Black man growing up in Miami."
+    },
+    {
+        "movie_id": 16,
+        "title": "The Matrix",
+        "genre": "Sci-Fi|Action",
+        "experience_type": "intense",
+        "rating_percent": 83,
+        "popularity_score": 0.9,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000HAB4KS",
+        "year": 1999,
+        "poster": "assets/posters/movie_16.png",
+        "synopsis": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
+        "quote": "I know you're out there. I can feel you now. \u2014 The reality you accept is the reality you live in. Question everything.",
+        "trailer": "vKQi3bBA1y8",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000HAB4KS"
+            }
+        ],
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+        "keywords": "role, against, controllers, about, sci-fi, nature, true, hacker, computer, reality, action, learns",
+        "cinematographer": "Bill Pope",
+        "music": "Don Davis",
+        "writer": "Lana Wachowski, Lilly Wachowski",
+        "overview": "A computer hacker learns about the true nature of reality and his role in the war against its controllers."
+    },
+    {
+        "movie_id": 17,
+        "title": "Lost in Translation",
+        "genre": "Drama|Romance",
+        "experience_type": "relaxing",
+        "rating_percent": 80,
+        "popularity_score": 0.6,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000IBUPMK",
+        "year": 2003,
+        "poster": "assets/posters/movie_17.jpg",
+        "synopsis": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
+        "quote": "Let's never come here again because it would never be as much fun. \u2014 Some moments are perfect precisely because they can't be repeated.",
+        "trailer": "W6iVPCRflQM",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000IBUPMK"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Sofia Coppola",
+        "cast": "Bill Murray, Scarlett Johansson, Giovanni Ribisi",
+        "keywords": "form, neglected, young, woman, unlikely, paths, tokyo, romance, drama, star, faded, after",
+        "cinematographer": "Lance Acord",
+        "music": "Kevin Shields, Brian Reitzell",
+        "writer": "Sofia Coppola",
+        "overview": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo."
+    },
+    {
+        "movie_id": 18,
+        "title": "Mad Max: Fury Road",
+        "genre": "Action|Sci-Fi",
+        "experience_type": "intense",
+        "rating_percent": 90,
+        "popularity_score": 0.8,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00ZIFHU9Y",
+        "year": 2015,
+        "poster": "assets/posters/movie_18.jpg",
+        "synopsis": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a drifter named Max.",
+        "quote": "Oh, what a day! What a lovely day! \u2014 When everything burns around you, find something worth fighting for.",
+        "trailer": "hEJnMQG9ev8",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00ZIFHU9Y"
+            }
+        ],
+        "director": "George Miller",
+        "cast": "Tom Hardy, Charlize Theron, Nicholas Hoult",
+        "keywords": "named, ruler, against, apocalyptic, woman, post, rebels, homeland, wasteland, search, action, sci-fi",
+        "cinematographer": "John Seale",
+        "music": "Junkie XL (Tom Holkenborg)",
+        "writer": "George Miller, Brendan McCarthy, Nico Lathouris",
+        "overview": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a drifter named Max."
+    },
+    {
+        "movie_id": 19,
+        "title": "The Truman Show",
+        "genre": "Comedy|Drama",
+        "experience_type": "emotional",
+        "rating_percent": 83,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B001EBWIPY",
+        "year": 1998,
+        "poster": "assets/posters/movie_19.jpg",
+        "synopsis": "An insurance salesman discovers his whole life is actually a giant TV show, and everyone around him is acting.",
+        "quote": "We accept the reality of the world with which we are presented. \u2014 Break free from the show others have written for you.",
+        "trailer": "dlnmQbPGuls",
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B001EBWIPY"
+            }
+        ],
+        "director": "Peter Weir",
+        "cast": "Jim Carrey, Laura Linney, Ed Harris",
+        "keywords": "around, actually, everyone, drama, comedy, insurance, life, discovers, show, giant, salesman, acting",
+        "cinematographer": "Peter Biziou",
+        "music": "Burkhard Dallwitz, Philip Glass",
+        "writer": "Andrew Niccol",
+        "overview": "An insurance salesman discovers his whole life is actually a giant TV show, and everyone around him is acting."
+    },
+    {
+        "movie_id": 20,
+        "title": "Am\u00e9lie",
+        "genre": "Romance|Comedy",
+        "experience_type": "fun",
+        "rating_percent": 85,
+        "popularity_score": 0.7,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000I9YLWM",
+        "year": 2001,
+        "poster": "assets/posters/movie_20.jpg",
+        "synopsis": "A shy waitress in Montmartre decides to change the lives of those around her for the better, while struggling with her own isolation.",
+        "quote": "Times are hard for dreamers. \u2014 But the world needs your kind of crazy. Never stop imagining.",
+        "trailer": "HUECWi5pX7o",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9YLWM"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Jean-Pierre Jeunet",
+        "cast": "Audrey Tautou, Mathieu Kassovitz, Rufus",
+        "keywords": "around, lives, montmartre, waitress, those, decides, romance, change, struggling, while, better, comedy",
+        "cinematographer": "Bruno Delbonnel",
+        "music": "Yann Tiersen",
+        "writer": "Jean-Pierre Jeunet, Guillaume Laurant",
+        "overview": "A shy waitress in Montmartre decides to change the lives of those around her for the better, while struggling with her own isolation."
+    },
+    {
+        "movie_id": 21,
+        "title": "Fight Club",
+        "genre": "Drama|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 79,
+        "popularity_score": 0.9,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B003MAQG9Y",
+        "year": 1999,
+        "poster": "assets/posters/movie_21.jpg",
+        "synopsis": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more.",
+        "quote": "It's only after we've lost everything that we're free to do anything. \u2014 Sometimes you have to let go of who you were to become who you need to be.",
+        "trailer": "qtRKdVHc-cE",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B003MAQG9Y"
+            },
+            {
+                "name": "Hulu",
+                "url": "https://www.hulu.com"
+            }
+        ],
+        "director": "David Fincher",
+        "cast": "Brad Pitt, Edward Norton, Helena Bonham Carter",
+        "keywords": "form, much, something, fight, worker, underground, into, club, office, maker, drama, thriller",
+        "cinematographer": "Jeff Cronenweth",
+        "music": "The Dust Brothers",
+        "writer": "Jim Uhls",
+        "overview": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more."
+    },
+    {
+        "movie_id": 22,
+        "title": "Inside Out",
+        "genre": "Animation|Comedy|Family",
+        "experience_type": "emotional",
+        "rating_percent": 94,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2015,
+        "poster": "assets/posters/movie_22.jpg",
+        "synopsis": "After young Riley is uprooted from her Midwest life, her emotions \u2014 Joy, Fear, Anger, Disgust and Sadness \u2014 conflict on how to navigate a new city.",
+        "quote": "Do you ever look at someone and wonder: what is going on inside their head? \u2014 Be kind. Everyone is fighting battles you can't see.",
+        "trailer": "yRUAzGQ3nSY",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/inside-out/2I0bBbhZIbkZ"
+            }
+        ],
+        "director": "Pete Docter, Ronnie del Carmen",
+        "cast": "Amy Poehler, Bill Hader, Lewis Black",
+        "keywords": "young, fear, conflict, midwest, navigate, riley, emotions, family, animation, life, anger, city, comedy",
+        "cinematographer": "Patrick Lin",
+        "music": "Michael Giacchino",
+        "writer": "Pete Docter, Meg LeFauve, Josh Cooley",
+        "overview": "After young Riley is uprooted from her Midwest life, her emotions \u2014 Joy, Fear, Anger, Disgust and Sadness \u2014 conflict on how to navigate a new city."
+    },
+    {
+        "movie_id": 23,
+        "title": "No Country for Old Men",
+        "genre": "Thriller|Crime",
+        "experience_type": "intense",
+        "rating_percent": 86,
+        "popularity_score": 0.8,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B0012I8B0Y",
+        "year": 2007,
+        "poster": "assets/posters/movie_23.jpg",
+        "synopsis": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and a suitcase full of cash in the desert.",
+        "quote": "You can't stop what's coming. \u2014 Life doesn't wait for you to be ready. Keep moving anyway.",
+        "trailer": "38A__WT3-o0",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0012I8B0Y"
+            }
+        ],
+        "director": "Joel Coen, Ethan Coen",
+        "cast": "Javier Bardem, Josh Brolin, Tommy Lee Jones",
+        "keywords": "hunter, violence, full, suitcase, stumbles, drug, deal, mayhem, crime, upon, thriller, wrong",
+        "cinematographer": "Roger Deakins",
+        "music": "Carter Burwell",
+        "writer": "Joel Coen, Ethan Coen",
+        "overview": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and a suitcase full of cash in the desert."
+    },
+    {
+        "movie_id": 24,
+        "title": "WALL-E",
+        "genre": "Animation|Sci-Fi|Family",
+        "experience_type": "relaxing",
+        "rating_percent": 95,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2008,
+        "poster": "assets/posters/movie_24.jpg",
+        "synopsis": "In a distant future, a small waste-collecting robot inadvertently embarks on a space journey that will decide the fate of mankind.",
+        "quote": "I don't want to survive. I want to live. \u2014 Existing isn't enough. Make every day count.",
+        "trailer": "alIq_wG9FNk",
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/wall-e/5G1wpZC2Lb6I"
+            }
+        ],
+        "director": "Andrew Stanton",
+        "cast": "Ben Burtt, Elissa Knight, Jeff Garlin",
+        "keywords": "embarks, mankind, future, collecting, small, will, family, animation, inadvertently, waste, journey, decide, sci-fi",
+        "cinematographer": "Jeremy Lasky, Danielle Feinberg",
+        "music": "Thomas Newman",
+        "writer": "Andrew Stanton, Pete Docter",
+        "overview": "In a distant future, a small waste-collecting robot inadvertently embarks on a space journey that will decide the fate of mankind."
+    },
+    {
+        "movie_id": 25,
+        "title": "Her",
+        "genre": "Sci-Fi|Romance|Drama",
+        "experience_type": "emotional",
+        "rating_percent": 82,
+        "popularity_score": 0.7,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00HHJR5PO",
+        "year": 2013,
+        "poster": "assets/posters/movie_25.jpg",
+        "synopsis": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
+        "quote": "The past is just a story we tell ourselves. \u2014 You are not your mistakes. You are what you choose to be next.",
+        "trailer": "ne6p6MfLBxc",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00HHJR5PO"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Spike Jonze",
+        "cast": "Joaquin Phoenix, Scarlett Johansson, Amy Adams",
+        "keywords": "writer, operating, meet, near, future, unlikely, relationship, romance, drama, develops, every, need, sci-fi",
+        "cinematographer": "Hoyte van Hoytema",
+        "music": "Arcade Fire, Owen Pallett",
+        "writer": "Spike Jonze",
+        "overview": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need."
+    },
+    {
+        "movie_id": 26,
+        "title": "The Dark Knight",
+        "genre": "Action|Crime|Drama",
+        "experience_type": "intense",
+        "rating_percent": 90,
+        "popularity_score": 1,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B001I189MG",
+        "year": 2008,
+        "poster": "assets/posters/movie_26.jpg",
+        "synopsis": "Batman raises the stakes in his war on crime, facing off against the Joker, a criminal mastermind who wreaks havoc on Gotham City.",
+        "quote": "Why so serious? \u2014 The world will test you. Don't lose your sense of self in the process.",
+        "trailer": "EXeTwQWrcwY",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B001I189MG"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "cast": "Christian Bale, Heath Ledger, Aaron Eckhart",
+        "keywords": "mastermind, criminal, against, batman, gotham, havoc, drama, wreaks, joker, stakes, raises, crime, action",
+        "cinematographer": "Wally Pfister",
+        "music": "Hans Zimmer, James Newton Howard",
+        "writer": "Jonathan Nolan, Christopher Nolan",
+        "overview": "Batman raises the stakes in his war on crime, facing off against the Joker, a criminal mastermind who wreaks havoc on Gotham City."
+    },
+    {
+        "movie_id": 27,
+        "title": "Paddington 2",
+        "genre": "Comedy|Family|Adventure",
+        "experience_type": "fun",
+        "rating_percent": 93,
+        "popularity_score": 0.7,
+        "age_limit": 0,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "https://www.amazon.com/dp/B079DZ5XWD",
+        "year": 2017,
+        "poster": "assets/posters/movie_27.png",
+        "synopsis": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen.",
+        "quote": "If we're kind and polite, the world will be right. \u2014 A little kindness goes a long way, even when the world doesn't deserve it.",
+        "trailer": "52x5HJ9H8DM",
+        "tags": [
+            "family-safe",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B079DZ5XWD"
+            }
+        ],
+        "director": "Paul King",
+        "cast": "Ben Whishaw, Hugh Grant, Hugh Bonneville",
+        "keywords": "paddington, series, perfect, present, jobs, clear, name, gift, family, adventure, brown, comedy",
+        "cinematographer": "Erik Wilson",
+        "music": "Dario Marianelli",
+        "writer": "Paul King, Simon Farnaby",
+        "overview": "Paddington, now settled with the Brown family in London, picks up a series of odd jobs to buy the perfect present, but must clear his name when the gift is stolen."
+    },
+    {
+        "movie_id": 28,
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "genre": "Romance|Drama|Sci-Fi",
+        "experience_type": "emotional",
+        "rating_percent": 82,
+        "popularity_score": 0.8,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000JLQUZI",
+        "year": 2004,
+        "poster": "assets/posters/movie_28.jpg",
+        "synopsis": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
+        "quote": "How happy is the blameless soul's lot! \u2014 Forgetting someone doesn't erase what they meant to you.",
+        "trailer": "07-QBnEkgXU",
+        "tags": [
+            "cult",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Peacock",
+                "url": "https://www.peacocktv.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000JLQUZI"
+            }
+        ],
+        "director": "Michel Gondry",
+        "cast": "Jim Carrey, Kate Winslet, Kirsten Dunst",
+        "keywords": "have, turns, procedure, relationship, sci-fi, romance, their, drama, medical, sour, other, each, memories",
+        "cinematographer": "Ellen Kuras",
+        "music": "Jon Brion",
+        "writer": "Charlie Kaufman",
+        "overview": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories."
+    },
+    {
+        "movie_id": 29,
+        "title": "John Wick",
+        "genre": "Action|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 75,
+        "popularity_score": 0.8,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00R0291Q2",
+        "year": 2014,
+        "poster": "assets/posters/movie_29.jpg",
+        "synopsis": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.",
+        "quote": "People keep asking if I'm back. Yeah, I'm thinking I'm back. \u2014 When life knocks you down, come back stronger than ever.",
+        "trailer": "2AUmvWm5ZDQ",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "Peacock",
+                "url": "https://www.peacocktv.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00R0291Q2"
+            }
+        ],
+        "director": "Chad Stahelski, David Leitch",
+        "cast": "Keanu Reeves, Michael Nyqvist, Alfie Allen",
+        "keywords": "everything, killed, gangsters, down, track, retirement, took, comes, hitman, action, thriller",
+        "cinematographer": "Jonathan Sela",
+        "music": "Tyler Bates, Joel J. Richard",
+        "writer": "Derek Kolstad",
+        "overview": "An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him."
+    },
+    {
+        "movie_id": 30,
+        "title": "Ratatouille",
+        "genre": "Animation|Comedy|Family",
+        "experience_type": "fun",
+        "rating_percent": 92,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2007,
+        "poster": "assets/posters/movie_30.jpg",
+        "synopsis": "A rat named Remy dreams of becoming a great chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy.",
+        "quote": "Not everyone can become a great artist, but a great artist can come from anywhere. \u2014 Never let anyone tell you that your background defines your limits.",
+        "trailer": "NgsQ8mVkN8w",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/ratatouille/39wmItIWsg5s"
+            }
+        ],
+        "director": "Brad Bird, Jan Pinkava",
+        "cast": "Patton Oswalt, Ian Holm, Lou Romano",
+        "keywords": "named, goal, remy, alliance, great, becoming, dreams, forming, parisian, animation, family, achieve, comedy",
+        "cinematographer": "Robert Anderson, Sharon Calahan",
+        "music": "Michael Giacchino",
+        "writer": "Brad Bird, Jan Pinkava",
+        "overview": "A rat named Remy dreams of becoming a great chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy."
+    },
+    {
+        "movie_id": 31,
+        "title": "The Departed",
+        "genre": "Crime|Thriller|Drama",
+        "experience_type": "intense",
+        "rating_percent": 85,
+        "popularity_score": 0.8,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B000P0J0AI",
+        "year": 2006,
+        "poster": "assets/posters/movie_31.jpg",
+        "synopsis": "An undercover cop and a mole in the police try to identify each other while infiltrating an Irish gang in Boston.",
+        "quote": "When you're facing a loaded gun, what's the difference? \u2014 Trust is fragile. Once broken, the game changes forever.",
+        "trailer": "o25VXTr6VH8",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000P0J0AI"
+            }
+        ],
+        "director": "Martin Scorsese",
+        "cast": "Leonardo DiCaprio, Matt Damon, Jack Nicholson",
+        "keywords": "identify, police, irish, mole, infiltrating, drama, undercover, other, each, crime, while, boston, thriller",
+        "cinematographer": "Michael Ballhaus",
+        "music": "Howard Shore",
+        "writer": "William Monahan",
+        "overview": "An undercover cop and a mole in the police try to identify each other while infiltrating an Irish gang in Boston."
+    },
+    {
+        "movie_id": 32,
+        "title": "Howl's Moving Castle",
+        "genre": "Animation|Fantasy|Romance",
+        "experience_type": "relaxing",
+        "rating_percent": 87,
+        "popularity_score": 0.7,
+        "age_limit": 0,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 2004,
+        "poster": "assets/posters/movie_32.jpg",
+        "synopsis": "When a young hat-maker is turned into an old woman by a witch's curse, she finds refuge in the magical moving castle of the wizard Howl.",
+        "quote": "A heart's a heavy burden. \u2014 Love isn't always easy, but it's always worth the weight.",
+        "trailer": "iwROgK94zcM",
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Hayao Miyazaki",
+        "cast": "Chieko Baish\u014d, Takuya Kimura, Akihiro Miwa",
+        "keywords": "witch, turned, young, curse, wizard, howl, into, woman, maker, magical, romance, animation, fantasy",
+        "cinematographer": "Atsushi Okui",
+        "music": "Joe Hisaishi",
+        "writer": "Hayao Miyazaki",
+        "overview": "When a young hat-maker is turned into an old woman by a witch's curse, she finds refuge in the magical moving castle of the wizard Howl."
+    },
+    {
+        "movie_id": 33,
+        "title": "Parasite",
+        "genre": "Thriller|Drama|Comedy",
+        "experience_type": "intense",
+        "rating_percent": 96,
+        "popularity_score": 0.9,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B07YM14FPF",
+        "year": 2019,
+        "poster": "assets/posters/movie_33.jpg",
+        "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+        "quote": "They're not cockroaches. You can't just stamp on them. \u2014 The divide between rich and poor is a wound that never stops bleeding.",
+        "trailer": "SEUXfv87Wpk",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Hulu",
+                "url": "https://www.hulu.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B07YM14FPF"
+            }
+        ],
+        "director": "Bong Joon-ho",
+        "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
+        "keywords": "discrimination, wealthy, formed, clan, relationship, greed, threaten, drama, newly, family, thriller, comedy, symbiotic",
+        "cinematographer": "Hong Kyung-pyo",
+        "music": "Jung Jae-il",
+        "writer": "Bong Joon-ho, Han Jin-won",
+        "overview": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."
+    },
+    {
+        "movie_id": 34,
+        "title": "Before Sunrise",
+        "genre": "Romance|Drama",
+        "experience_type": "relaxing",
+        "rating_percent": 81,
+        "popularity_score": 0.6,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00AEFXVYM",
+        "year": 1995,
+        "poster": "assets/posters/movie_34.jpg",
+        "synopsis": "A young man and woman meet on a train and end up spending one romantic evening together in Vienna before going their separate ways.",
+        "quote": "Isn't everything we do in life a way to be loved a little more? \u2014 At the end of the day, all anyone really wants is connection.",
+        "trailer": "6MUcuqbGTxc",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00AEFXVYM"
+            },
+            {
+                "name": "Apple TV",
+                "url": "https://tv.apple.com"
+            }
+        ],
+        "director": "Richard Linklater",
+        "cast": "Ethan Hawke, Julie Delpy",
+        "keywords": "going, young, meet, train, romantic, vienna, woman, ways, romance, evening, together, drama",
+        "cinematographer": "Lee Daniel",
+        "music": "Johann Strauss II (Various Artists)",
+        "writer": "Richard Linklater, Kim Krizan",
+        "overview": "A young man and woman meet on a train and end up spending one romantic evening together in Vienna before going their separate ways."
+    },
+    {
+        "movie_id": 35,
+        "title": "Whiplash",
+        "genre": "Drama|Music",
+        "experience_type": "intense",
+        "rating_percent": 94,
+        "popularity_score": 0.8,
+        "age_limit": 16,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "https://www.amazon.com/dp/B00QGHB8D0",
+        "year": 2014,
+        "poster": "assets/posters/movie_35.jpg",
+        "synopsis": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an abusive instructor.",
+        "quote": "There are no two words more harmful than 'good job'. \u2014 Greatness demands discomfort. Comfort is the enemy of growth.",
+        "trailer": "7d_jQycdQGo",
+        "tags": [
+            "cult",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00QGHB8D0"
+            }
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Miles Teller, J.K. Simmons, Paul Reiser",
+        "keywords": "young, promising, drummer, where, enrolls, music, dreams, mentored, abusive, drama, conservatory",
+        "cinematographer": "Sharone Meir",
+        "music": "Justin Hurwitz",
+        "writer": "Damien Chazelle",
+        "overview": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an abusive instructor."
+    },
+    {
+        "movie_id": 36,
+        "title": "Soul",
+        "genre": "Animation|Fantasy|Comedy",
+        "experience_type": "emotional",
+        "rating_percent": 89,
+        "popularity_score": 0.7,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2020,
+        "poster": "assets/posters/movie_36.png",
+        "synopsis": "A middle-school music teacher's passion for jazz leads him on an extraordinary journey to discover what it means to have a soul.",
+        "quote": "Is all this living really worth dying for? \u2014 What makes life meaningful isn't the achievement \u2014 it's the passion.",
+        "trailer": "xOsLIiBStEs",
+        "tags": [
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/soul/77tlWpb1AWsC"
+            }
+        ],
+        "director": "Pete Docter, Kemp Powers",
+        "cast": "Jamie Foxx, Tina Fey, Graham Norton",
+        "keywords": "soul, have, middle, music, jazz, means, school, leads, what, animation, fantasy, extraordinary, comedy",
+        "cinematographer": "Matt Aspbury, Ian Megibben",
+        "music": "Trent Reznor, Atticus Ross, Jon Batiste",
+        "writer": "Pete Docter, Mike Jones, Kemp Powers",
+        "overview": "A middle-school music teacher's passion for jazz leads him on an extraordinary journey to discover what it means to have a soul."
+    },
+    {
+        "movie_id": 37,
+        "title": "Goodfellas",
+        "genre": "Crime|Drama",
+        "experience_type": "intense",
+        "rating_percent": 87,
+        "popularity_score": 0.9,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B0011TNRNE",
+        "year": 1990,
+        "poster": "assets/posters/movie_37.jpg",
+        "synopsis": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.",
+        "quote": "As far back as I can remember, I always wanted to be a gangster. \u2014 We all chase versions of success. Make sure yours doesn't cost you everything.",
+        "trailer": "2ilzidi_J8Q",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0011TNRNE"
+            }
+        ],
+        "director": "Martin Scorsese",
+        "cast": "Robert De Niro, Ray Liotta, Joe Pesci",
+        "keywords": "karen, partners, story, henry, relationship, drama, hill, life, crime, covering, wife",
+        "cinematographer": "Michael Ballhaus",
+        "music": "Various Artists",
+        "writer": "Nicholas Pileggi, Martin Scorsese",
+        "overview": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners."
+    },
+    {
+        "movie_id": 38,
+        "title": "The Princess Bride",
+        "genre": "Adventure|Comedy|Fantasy",
+        "experience_type": "fun",
+        "rating_percent": 84,
+        "popularity_score": 0.8,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B00AOT8JUC",
+        "year": 1987,
+        "poster": "assets/posters/movie_38.jpg",
+        "synopsis": "A farmhand-turned-pirate encounters numerous obstacles, enemies, and allies in his quest to be reunited with his true love.",
+        "quote": "As you wish. \u2014 True love doesn't need grand gestures. Sometimes three simple words say it all.",
+        "trailer": "WNNUcHRiPS8",
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B00AOT8JUC"
+            }
+        ],
+        "director": "Rob Reiner",
+        "cast": "Cary Elwes, Robin Wright, Mandy Patinkin",
+        "keywords": "allies, turned, obstacles, adventure, true, numerous, enemies, fantasy, farmhand, encounters, quest, love, comedy",
+        "cinematographer": "Adrian Biddle",
+        "music": "Mark Knopfler",
+        "writer": "William Goldman",
+        "overview": "A farmhand-turned-pirate encounters numerous obstacles, enemies, and allies in his quest to be reunited with his true love."
+    },
+    {
+        "movie_id": 39,
+        "title": "A Quiet Place",
+        "genre": "Horror|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 80,
+        "popularity_score": 0.7,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B07BZ5HMTH",
+        "year": 2018,
+        "poster": "assets/posters/movie_39.jpg",
+        "synopsis": "A family is forced to live in silence while hiding from creatures that hunt by sound, finding new ways to survive in a post-apocalyptic world.",
+        "quote": "If they hear you, they hunt you. \u2014 In a world full of noise, sometimes silence is your greatest strength.",
+        "trailer": "WR7cc5t7tv8",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B07BZ5HMTH"
+            }
+        ],
+        "director": "John Krasinski",
+        "cast": "Emily Blunt, John Krasinski, Millicent Simmonds",
+        "keywords": "creatures, silence, horror, sound, forced, apocalyptic, world, post, ways, live, family, thriller",
+        "cinematographer": "Charlotte Bruus Christensen",
+        "music": "Marco Beltrami",
+        "writer": "Bryan Woods, Scott Beck, John Krasinski",
+        "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound, finding new ways to survive in a post-apocalyptic world."
+    },
+    {
+        "movie_id": 40,
+        "title": "The Lion King",
+        "genre": "Animation|Adventure|Family",
+        "experience_type": "emotional",
+        "rating_percent": 88,
+        "popularity_score": 0.9,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 1994,
+        "poster": "assets/posters/movie_40.jpg",
+        "synopsis": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery.",
+        "quote": "Remember who you are. \u2014 When life makes you forget your worth, look inside \u2014 your strength was always there.",
+        "trailer": "4sj1MT05lAA",
+        "tags": [
+            "cult",
+            "family-safe"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Disney+",
+                "url": "https://www.disneyplus.com/movies/the-lion-king/1HqwiEcje6Nj"
+            }
+        ],
+        "director": "Roger Allers, Rob Minkoff",
+        "cast": "Matthew Broderick, James Earl Jones, Jeremy Irons",
+        "keywords": "young, father, flees, learn, adventure, true, family, lion, murder, meaning, kingdom, bravery, animation",
+        "cinematographer": "N/A (Animation)",
+        "music": "Hans Zimmer, Elton John",
+        "writer": "Irene Mecchi, Jonathan Roberts, Linda Woolverton",
+        "overview": "A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility and bravery."
+    },
+    {
+        "movie_id": 41,
+        "title": "Dune",
+        "genre": "Sci-Fi|Adventure",
+        "experience_type": "intense",
+        "rating_percent": 83,
+        "popularity_score": 0.95,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B09J5D7GV1",
+        "year": 2021,
+        "poster": "assets/posters/movie_41.jpg",
+        "synopsis": "Paul Atreides, a brilliant and gifted young man, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+        "quote": "Fear is the mind-killer. \u2014 Courage isn't the absence of fear. It's choosing to move forward despite it.",
+        "trailer": "8g18jFHCLXk",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B09J5D7GV1"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Timoth\u00e9e Chalamet, Rebecca Ferguson, Oscar Isaac",
+        "keywords": "paul, young, atreides, brilliant, most, gifted, planet, future, adventure, travel, dangerous, sci-fi",
+        "cinematographer": "Greig Fraser",
+        "music": "Hans Zimmer",
+        "writer": "Jon Spaihts, Denis Villeneuve, Eric Roth",
+        "overview": "Paul Atreides, a brilliant and gifted young man, must travel to the most dangerous planet in the universe to ensure the future of his family and his people."
+    },
+    {
+        "movie_id": 42,
+        "title": "Everything Everywhere All at Once",
+        "genre": "Sci-Fi|Comedy|Action",
+        "experience_type": "fun",
+        "rating_percent": 89,
+        "popularity_score": 0.9,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B09X5XHHKD",
+        "year": 2022,
+        "poster": "assets/posters/movie_42.jpg",
+        "synopsis": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes.",
+        "quote": "Every rejection, every disappointment has led you here. \u2014 Your struggles aren't setbacks \u2014 they're setup for something bigger.",
+        "trailer": "wxN1T1uxQ2g",
+        "tags": [
+            "cult",
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B09X5XHHKD"
+            }
+        ],
+        "director": "Daniel Kwan, Daniel Scheinert",
+        "cast": "Michelle Yeoh, Stephanie Hsu, Ke Huy Quan",
+        "keywords": "immigrant, save, universes, world, alone, adventure, where, swept, chinese, comedy, other, action, sci-fi",
+        "cinematographer": "Larkin Seiple",
+        "music": "Son Lux",
+        "writer": "Daniel Kwan, Daniel Scheinert",
+        "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes."
+    },
+    {
+        "movie_id": 43,
+        "title": "The Batman",
+        "genre": "Action|Crime|Drama",
+        "experience_type": "intense",
+        "rating_percent": 85,
+        "popularity_score": 0.88,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "",
+        "year": 2022,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Batman_%28film%29_poster.jpg",
+        "synopsis": "When a sadistic serial killer begins murdering key political figures, Batman is forced to investigate the city's hidden corruption.",
+        "quote": "I'm vengeance. \u2014 Anger can drive you, but it's justice and purpose that give life meaning.",
+        "trailer": "mqqft2x_Aa4",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            }
+        ],
+        "director": "Matt Reeves",
+        "cast": "Robert Pattinson, Zo\u00eb Kravitz, Paul Dano",
+        "keywords": "forced, batman, corruption, drama, serial, killer, political, figures, murdering, hidden, sadistic, action, crime",
+        "cinematographer": "Greig Fraser",
+        "music": "Michael Giacchino",
+        "writer": "Matt Reeves, Peter Craig",
+        "overview": "When a sadistic serial killer begins murdering key political figures, Batman is forced to investigate the city's hidden corruption."
+    },
+    {
+        "movie_id": 45,
+        "title": "Top Gun: Maverick",
+        "genre": "Action|Drama",
+        "experience_type": "fun",
+        "rating_percent": 88,
+        "popularity_score": 0.92,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B0B2KSYRLQ",
+        "year": 2022,
+        "poster": "assets/posters/movie_45.jpg",
+        "synopsis": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
+        "quote": "It's not the plane, it's the pilot. \u2014 The tools don't make the master. Your heart and skill do.",
+        "trailer": "giXco2jaZ_4",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B0B2KSYRLQ"
+            }
+        ],
+        "director": "Joseph Kosinski",
+        "cast": "Tom Cruise, Miles Teller, Jennifer Connelly",
+        "keywords": "years, still, envelope, pushing, aviator, confront, mission, ghosts, drama, action, past, when",
+        "cinematographer": "Claudio Miranda",
+        "music": "Harold Faltermeyer, Hans Zimmer, Lorne Balfe",
+        "writer": "Ehren Kruger, Eric Warren Singer, Christopher McQuarrie",
+        "overview": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission."
+    },
+    {
+        "movie_id": 46,
+        "title": "La La Land",
+        "genre": "Comedy|Drama|Romance",
+        "experience_type": "emotional",
+        "rating_percent": 80,
+        "popularity_score": 0.82,
+        "age_limit": 13,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 2016,
+        "poster": "assets/posters/movie_46.jpg",
+        "synopsis": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
+        "quote": "Here's to the ones who dream, foolish as they may seem. \u2014 The world needs more dreamers, not fewer. Keep believing.",
+        "trailer": "0pdqf4P9MB8",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            }
+        ],
+        "director": "Damien Chazelle",
+        "cast": "Ryan Gosling, Emma Stone, John Legend",
+        "keywords": "actress, reconcile, attempting, pianist, future, careers, romance, their, aspirations, love, drama, angeles, comedy",
+        "cinematographer": "Linus Sandgren",
+        "music": "Justin Hurwitz",
+        "writer": "Damien Chazelle",
+        "overview": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future."
+    },
+    {
+        "movie_id": 47,
+        "title": "Spider-Man: Into the Spider-Verse",
+        "genre": "Animation|Action|Adventure",
+        "experience_type": "fun",
+        "rating_percent": 84,
+        "popularity_score": 0.88,
+        "age_limit": 0,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com",
+        "year": 2018,
+        "poster": "assets/posters/movie_47.jpg",
+        "synopsis": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+        "quote": "Anyone can wear the mask. \u2014 You don't have to be perfect to be a hero. Just show up.",
+        "trailer": "g4Hbz2jLxvQ",
+        "tags": [
+            "family-safe",
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Peter Ramsey, Robert Persichetti Jr., Rodney Rothman",
+        "cast": "Shameik Moore, Jake Johnson, Hailee Steinfeld",
+        "keywords": "threat, powered, individuals, adventure, spider, realities, teen, join, five, other, dimensions, animation, action",
+        "cinematographer": "N/A (Animation)",
+        "music": "Daniel Pemberton",
+        "writer": "Phil Lord, Rodney Rothman",
+        "overview": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities."
+    },
+    {
+        "movie_id": 48,
+        "title": "Knives Out",
+        "genre": "Comedy|Crime|Drama",
+        "experience_type": "fun",
+        "rating_percent": 79,
+        "popularity_score": 0.81,
+        "age_limit": 13,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com/dp/B082L42V5B",
+        "year": 2019,
+        "poster": "assets/posters/movie_48.jpg",
+        "synopsis": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+        "quote": "I suspect foul play. \u2014 Look beneath the surface. Things aren't always what they seem.",
+        "trailer": "qGqiHJTsRkQ",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B082L42V5B"
+            }
+        ],
+        "director": "Rian Johnson",
+        "cast": "Daniel Craig, Chris Evans, Ana de Armas",
+        "keywords": "eccentric, combative, patriarch, investigates, death, drama, family, crime, detective, comedy",
+        "cinematographer": "Steve Yedlin",
+        "music": "Nathan Johnson",
+        "writer": "Rian Johnson",
+        "overview": "A detective investigates the death of a patriarch of an eccentric, combative family."
+    },
+    {
+        "movie_id": 49,
+        "title": "Gladiator",
+        "genre": "Action|Adventure|Drama",
+        "experience_type": "intense",
+        "rating_percent": 85,
+        "popularity_score": 0.84,
+        "age_limit": 16,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "https://www.amazon.com/dp/B000I9URAS",
+        "year": 2000,
+        "poster": "assets/posters/movie_49.jpg",
+        "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+        "quote": "What we do in life echoes in eternity. \u2014 Your actions today write the legacy of tomorrow.",
+        "trailer": "owK1qxDselE",
+        "tags": [
+            "cult"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com/dp/B000I9URAS"
+            }
+        ],
+        "director": "Ridley Scott",
+        "cast": "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
+        "keywords": "murdered, roman, emperor, against, into, adventure, corrupt, drama, general, former, family, exact, action",
+        "cinematographer": "John Mathieson",
+        "music": "Hans Zimmer, Lisa Gerrard",
+        "writer": "David Franzoni, John Logan, William Nicholson",
+        "overview": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
+    },
+    {
+        "movie_id": 51,
+        "title": "Arrival",
+        "genre": "Drama|Sci-Fi",
+        "experience_type": "emotional",
+        "rating_percent": 79,
+        "popularity_score": 0.77,
+        "age_limit": 13,
+        "netflix_url": "https://www.netflix.com",
+        "prime_url": "",
+        "year": 2016,
+        "poster": "assets/posters/movie_51.jpg",
+        "synopsis": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
+        "quote": "If you could see your whole life laid out, would you change things? \u2014 Every ending is also a beginning. Trust the journey.",
+        "trailer": "tFMo3UJ4B4g",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "Netflix",
+                "url": "https://www.netflix.com"
+            },
+            {
+                "name": "Paramount+",
+                "url": "https://www.paramountplus.com"
+            }
+        ],
+        "director": "Denis Villeneuve",
+        "cast": "Amy Adams, Jeremy Renner, Forest Whitaker",
+        "keywords": "linguist, appear, mysterious, around, communicate, world, lifeforms, drama, twelve, spacecraft, works, sci-fi",
+        "cinematographer": "Bradford Young",
+        "music": "J\u00f3hann J\u00f3hannsson",
+        "writer": "Eric Heisserer",
+        "overview": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world."
+    },
+    {
+        "movie_id": 54,
+        "title": "Ex Machina",
+        "genre": "Drama|Sci-Fi|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 77,
+        "popularity_score": 0.75,
+        "age_limit": 16,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com",
+        "year": 2014,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/b/ba/Ex-machina-uk-poster.jpg",
+        "synopsis": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
+        "tags": [
+            "underrated"
+        ],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Alex Garland",
+        "cast": "Domhnall Gleeson, Alicia Vikander, Oscar Isaac",
+        "keywords": "participate, young, experiment, intelligence, selected, human, ground, advanced, programmer, synthetic, drama, thriller, sci-fi",
+        "cinematographer": "Rob Hardy",
+        "music": "Geoff Barrow, Ben Salisbury",
+        "writer": "Alex Garland",
+        "quote": "One day the AIs are going to look back on us the same way we look at fossils. \u2014 Progress without empathy is just destruction in disguise.",
+        "trailer": "EoQuVnKhxaM",
+        "overview": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I."
+    },
+    {
+        "movie_id": 60,
+        "title": "Joker",
+        "genre": "Crime|Drama|Thriller",
+        "experience_type": "intense",
+        "rating_percent": 84,
+        "popularity_score": 0.88,
+        "age_limit": 18,
+        "netflix_url": "",
+        "prime_url": "https://www.amazon.com",
+        "year": 2019,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
+        "synopsis": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.",
+        "tags": [],
+        "ottPlatforms": [
+            {
+                "name": "HBO Max",
+                "url": "https://www.hbomax.com"
+            },
+            {
+                "name": "Prime Video",
+                "url": "https://www.amazon.com"
+            }
+        ],
+        "director": "Todd Phillips",
+        "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+        "keywords": "then, embarks, fleck, comedian, revolution, gotham, mentally, bloody, drama, disregarded, crime, spiral, thriller",
+        "cinematographer": "Lawrence Sher",
+        "music": "Hildur Gu\u00f0nad\u00f3ttir",
+        "writer": "Todd Phillips, Scott Silver",
+        "quote": "All I have are negative thoughts. \u2014 Be gentle with yourself. The world is heavy enough without fighting your own mind too.",
+        "trailer": "zAGVQLHvwOY",
+        "overview": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime."
+    }
 ]

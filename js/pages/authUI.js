@@ -427,9 +427,15 @@ async function loadMLStats() {
     </div>
     ${stats.topGenres.length > 0 ? `
       <div class="ml-stat-item" style="grid-column:1/-1;">
-        <div class="ml-stat-label" style="margin-bottom:8px;">Your Top Genres</div>
+        <div class="ml-stat-label" style="margin-bottom:8px;">Your Top Genres (Preference Model)</div>
         <div class="genre-chips">
-          ${stats.topGenres.map(g => `<span class="genre-chip">${g.genre} <small>(${g.count})</small></span>`).join('')}
+          ${(() => {
+            const total = stats.topGenres.reduce((sum, g) => sum + g.count, 0);
+            return stats.topGenres.map(g => {
+              const pct = total > 0 ? Math.round((g.count / total) * 100) : 0;
+              return \`<span class="genre-chip">\${g.genre} <small>(\${pct}%)</small></span>\`;
+            }).join('');
+          })()}
         </div>
       </div>
     ` : ''}

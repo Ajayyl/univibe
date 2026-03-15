@@ -123,12 +123,12 @@ METRICS_JSON_PATH = os.path.join(BASE_DIR, 'models', 'metrics.json')
 SIM_MODEL = None
 MOVIES_DF = None
 EVAL_METRICS = None
-
+COLLAB_MODEL = None
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Load model, dataset, and metrics on startup (Immutable in memory)
-    global SIM_MODEL, MOVIES_DF, EVAL_METRICS
+    global SIM_MODEL, MOVIES_DF, EVAL_METRICS, COLLAB_MODEL
     try:
         if os.path.exists(MODEL_PATH):
             with open(MODEL_PATH, 'rb') as f:
@@ -148,6 +148,12 @@ async def lifespan(app: FastAPI):
             with open(METRICS_PATH, 'rb') as f:
                 EVAL_METRICS = pickle.load(f)
             print(f"Loaded evaluation metrics (pkl)")
+            
+        collab_path = os.path.join(BASE_DIR, 'models', 'collaborative.pkl')
+        if os.path.exists(collab_path):
+            with open(collab_path, 'rb') as f:
+                COLLAB_MODEL = pickle.load(f)
+            print("Loaded Collaborative Filtering model.")
     except Exception as e:
         print(f"Startup Error: {e}")
         MOVIES_DF = pd.DataFrame()
@@ -339,7 +345,7 @@ def build_explanation(source_movie: dict, rec_movie: dict, sim_score: float, pre
         explanation: Structured dict with per-factor scores and reason tags
     """
     reason_parts = []
-    explanation = {
+    explanation: dict = {
         'factors': [],
         'similarity_score': round(sim_score, 4),
         'user_preference': round(pref_score, 4),
@@ -452,7 +458,7 @@ def build_explanation(source_movie: dict, rec_movie: dict, sim_score: float, pre
 def build_cold_start_explanation(movie_row: dict, quality_score: float):
     """Build explanation for cold-start (no user history) recommendations."""
     reason_parts = []
-    explanation = {
+    explanation: dict = {
         'factors': [],
         'similarity_score': 0.0,
         'user_preference': 0.0,
@@ -494,11 +500,11 @@ def build_cold_start_explanation(movie_row: dict, quality_score: float):
         })
     
     if not reason_parts:
-        reason = "Recommended to get you started"
+        reason = "Why recommended:\n• Recommended to get you started"
     else:
-        reason = " · ".join(reason_parts)
+        reason = "Why recommended:\n" + "\n".join(f"• {part.capitalize()}" for part in reason_parts)
     
-    return f"🌟 {reason.capitalize()}", explanation
+    return reason, explanation
 
 
 # ──────────────────────────────────────────────
@@ -535,10 +541,12 @@ class RLEngine:
     CONFIG = {
         "learning_rate": 0.1,
         "discount_factor": 0.95,
+        "exploration_rate": 0.15,  # Epsilon for epsilon-greedy exploration strategy
+        "lr_decay": 0.05,          # Decay rate for Policy optimization
         "rewards": {
             "click": 1.0, "view": 0.5, "search": 0.3, "recommend_click": 1.5,
-            "watchlist": 1.2, "dwell": 0.8, "rating_positive": 2.0,
-            "rating_neutral": 0.5, "rating_negative": -1.0, "ignore": -0.2
+            "watchlist": 1.2, "dwell": 0.8, "rating_positive": 2.5,  # Adjusted in reward tuning
+            "rating_neutral": 0.5, "rating_negative": -1.5, "ignore": -0.2
         }
     }
     
@@ -596,13 +604,19 @@ class RLEngine:
         current_q = existing[0] if existing else 0.0
         visit_count = existing[1] if existing else 0
         
+        # Policy optimization: dynamic learning rate
+        dynamic_lr = max(0.01, cls.CONFIG["learning_rate"] / (1 + cls.CONFIG["lr_decay"] * visit_count))
+        
         top_future = db.execute(text("SELECT q_value FROM rl_qtable WHERE user_uid = :uid AND state_key = :state ORDER BY q_value DESC LIMIT 1"),
                                 {"uid": user_uid, "state": state_key}).fetchone()
         max_future_q = top_future[0] if top_future else 0.0
         
-        td_target = reward + cls.CONFIG["discount_factor"] * max_future_q
+        # Reward tuning: penalty for repeated identical interactions
+        tuned_reward = reward * (0.9 ** visit_count) if reward > 0 else reward
+        
+        td_target = tuned_reward + cls.CONFIG["discount_factor"] * max_future_q
         td_error = td_target - current_q
-        new_q = current_q + cls.CONFIG["learning_rate"] * td_error
+        new_q = current_q + dynamic_lr * td_error
         
         if existing:
             db.execute(text("UPDATE rl_qtable SET q_value=:q, visit_count=:v, last_reward=:r, updated_at=CURRENT_TIMESTAMP WHERE user_uid=:uid AND state_key=:state AND movie_id=:mid"),
@@ -630,9 +644,9 @@ async def track_interaction(request: Request, bg: BackgroundTasks, db: Session =
     """Logs interactions perfectly and triggers offline RL."""
     try:
         data = await request.json()
-        uid = data.get('user_uid') or data.get('userUid')
+        uid = data.get('user_uid') or data.get('userUid') or data.get('user_id')
         m_id = data.get('movie_id') or data.get('movieId')
-        event_type = str(data.get('eventType') or data.get('event_type') or 'view')
+        event_type = str(data.get('eventType') or data.get('event_type') or data.get('action') or 'view')
         event_value = str(data.get('eventValue') or data.get('event_value') or '')
         context = data.get('context', {})
         
@@ -695,6 +709,29 @@ async def get_general_recommendations(user_id: str, db: Session = Depends(get_db
                             user_pref_scores[m_idx] = q_val * 2.5
             
             PREF_CACHE.set(user_id, user_pref_scores)
+            
+    # Combine Collaborative Filtering (SVD) with RL user preference
+    if COLLAB_MODEL is not None and user_id in COLLAB_MODEL['users']:
+        try:
+            user_idx = COLLAB_MODEL['users'].index(user_id)
+            user_factors = COLLAB_MODEL['user_factors'][user_idx]
+            item_factors = COLLAB_MODEL['item_factors']
+            collab_preds = np.dot(user_factors, item_factors)
+            
+            collab_scores = np.zeros_like(user_pref_scores)
+            movie_ids = COLLAB_MODEL['movies']
+            for i, m_id in enumerate(movie_ids):
+                if SIM_MODEL and m_id in SIM_MODEL['id_to_idx']:
+                    m_idx = SIM_MODEL['id_to_idx'][m_id]
+                    collab_scores[m_idx] = collab_preds[i]
+                    
+            if collab_scores.max() > 0:
+                collab_scores = collab_scores / collab_scores.max()
+                
+            user_pref_scores += collab_scores * 2.5
+        except Exception as e:
+            print(f"Collab Filtering Error: {e}")
+            
     
     if MOVIES_DF is None or MOVIES_DF.empty:
         raise HTTPException(status_code=500, detail="Dataframe empty")
@@ -742,13 +779,52 @@ async def get_general_recommendations(user_id: str, db: Session = Depends(get_db
         # Warm user without genre history
         quality_scores = (MOVIES_DF['popularity_score'].values * 0.7) + (MOVIES_DF['rating_percent'].values / 100.0 * 0.3)
 
-    # 5. Final Hybrid Score = RL pref + quality (which now includes genre boost)
-    final_scores = user_pref_scores + quality_scores
+    # 5. Final Hybrid Score = Hybrid Recommender (0.7 * Content/Similarity + 0.3 * User Preference)
+    final_scores = (0.7 * quality_scores) + (0.3 * user_pref_scores)
+    
+    # Exploration strategy (epsilon-greedy)
+    if not is_cold_start and random.random() < RLEngine.CONFIG["exploration_rate"]:
+        # Boost randomly selected items for exploration
+        exploration_boost = np.random.uniform(0, 0.5, size=len(final_scores))
+        final_scores += exploration_boost
 
-    # Get top items
-    indices = np.argpartition(final_scores, -count)[-count:]
-    indices = indices[np.argsort(final_scores[indices])][::-1]
+    # Get a pool of candidates
+    pool_size = min(len(final_scores), count * 5)
+    if pool_size > 0:
+        candidate_indices = np.argpartition(final_scores, -pool_size)[-pool_size:]
+        candidate_indices = candidate_indices[np.argsort(final_scores[candidate_indices])][::-1].tolist()
+    else:
+        candidate_indices = []
 
+    # Recommendation diversity using Maximal Marginal Relevance (MMR)
+    top_indices = []
+    diversity_weight = 0.4
+    sim_matrix = SIM_MODEL.get('similarity_matrix') if SIM_MODEL else None
+
+    while len(top_indices) < count and candidate_indices:
+        best_idx = -1
+        best_mmr_score = -float('inf')
+        
+        for idx in candidate_indices:
+            base_score = final_scores[idx]
+            diversity_penalty = 0.0
+            
+            if top_indices and sim_matrix is not None:
+                similarities = [sim_matrix[idx][s_idx] for s_idx in top_indices]
+                if similarities:
+                    diversity_penalty = max(similarities)
+                
+            mmr_score = base_score - (diversity_weight * diversity_penalty)
+            
+            if mmr_score > best_mmr_score:
+                best_mmr_score = mmr_score
+                best_idx = idx
+                
+        if best_idx == -1: break
+        candidate_indices.remove(best_idx)
+        top_indices.append(best_idx)
+
+    indices = top_indices
     recommendations = []
     for idx in indices:
         movie_row = MOVIES_DF.iloc[idx].to_dict()
@@ -776,16 +852,19 @@ async def get_general_recommendations(user_id: str, db: Session = Depends(get_db
                         recent_watched_titles.append(t)
                 if len(recent_watched_titles) >= 2:
                     break
-            
             if len(recent_watched_titles) > 0:
-                bullets = "\n• " + "\n• ".join(recent_watched_titles)
-                reason = f"Recommended because you watched:{bullets}"
+                similar_to = recent_watched_titles[0]
+                reason = f"Why recommended:\n• Similar to {similar_to}"
+                if top_genre:
+                    reason += f"\n• Popular among {top_genre} fans"
             else:
-                reason = "Recommended because it aligns with your taste profile."
+                reason = "Why recommended:\n• Matches your taste profile"
+                if top_genre:
+                    reason += f"\n• Popular among {top_genre} fans"
             
             explanation = {
                 'factors': [],
-                'similarity_score': 0.0,
+                'similarity_score': round(float(quality), 4),
                 'user_preference': round(pref_score, 4),
                 'genre_boost': round(g_boost, 4),
                 'final_score': round(float(final_scores[idx]), 4),
@@ -868,21 +947,21 @@ async def get_movie_recommendations(movie_id: int, user_id: str, db: Session = D
                         user_pref_scores[m_idx] = q_val * 0.2
         PREF_CACHE.set(user_id, user_pref_scores)
 
-    # 3. Genre Preference Boost (from user interaction history)
     user_genre_pref = build_user_genre_pref(db, user_id)
     has_genre_pref = len(user_genre_pref) > 0
+    top_genre = get_top_genre(user_genre_pref) if has_genre_pref else ''
     
     genre_boost_scores = np.array([
         genre_score(str(MOVIES_DF.iloc[i].get('genre', '')), user_genre_pref) * 0.15
         for i in range(len(MOVIES_DF))
     ]) if has_genre_pref else np.zeros(len(sim_scores))
 
-    # 4. Calculate Hybrid Score = similarity + RL pref + genre boost
+    # 4. Calculate Hybrid Score = 0.7*similarity + 0.3*user_pref (+ genre boost if relevant)
     n = len(sim_scores)
     pref = user_pref_scores[:n] if len(user_pref_scores) >= n else np.pad(user_pref_scores, (0, n - len(user_pref_scores)))
     g_boost = genre_boost_scores[:n] if len(genre_boost_scores) >= n else np.pad(genre_boost_scores, (0, n - len(genre_boost_scores)))
     
-    hybrid_scores = sim_scores + pref + g_boost
+    hybrid_scores = (0.7 * sim_scores) + (0.3 * pref) + g_boost
     
     # Get a pool of candidates to select diverse recommendations from
     pool_size = min(len(hybrid_scores), count * 5)
@@ -939,7 +1018,9 @@ async def get_movie_recommendations(movie_id: int, user_id: str, db: Session = D
         explanation['genre_boost'] = round(g_score_val, 4)
         
         # Override with UI requested exact format
-        reason = f"Recommended because you watched:\n• {source_movie.get('title', 'this movie')}"
+        reason = f"Why recommended:\n• Similar to {source_movie.get('title', 'this movie')}"
+        if top_genre:
+            reason += f"\n• Popular among {top_genre} fans"
             
         rec = {
             **movie_row,
