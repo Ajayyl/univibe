@@ -15,7 +15,7 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "An idiosyncratic general confronts opposition from enemies, allies, and bureaucrats while leading a massive rebuilding operation in Afghanistan.",
     "quote": "Impact... -- War Machine is the proof that one decision, one moment, can change the orbit of an entire life. Embrace the leading within.",
-    "director": "David Mich\u00f4d",
+    "director": "David Michôd",
     "cast": [
       "Brad Pitt",
       "Emory Cohen",
@@ -26,7 +26,7 @@ const MOVIES = [
     "keywords": "Action, Sci-Fi, Thriller",
     "cinematographer": "Barry Ackroyd",
     "music": "Lorne Balfe",
-    "writer": "Michael Hastings, David Mich\u00f4d",
+    "writer": "Michael Hastings, David Michôd",
     "overview": "Follow the final recruits of a grueling special ops boot camp who encounter a deadly force from beyond this world.",
     "ottPlatforms": [
       {
@@ -155,7 +155,7 @@ const MOVIES = [
     "trailer_yt_id": "l2h2lC0vlX4",
     "keywords": "Action, Drama, Horror",
     "cinematographer": "Autumn Durald Arkapaw",
-    "music": "Ludwig G\u00f6ransson",
+    "music": "Ludwig Göransson",
     "writer": "Ryan Coogler",
     "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
     "ottPlatforms": [
@@ -191,7 +191,7 @@ const MOVIES = [
     "director": "Corin Hardy",
     "cast": [
       "Dafne Keen",
-      "Sophie N\u00e9lisse",
+      "Sophie Nélisse",
       "Sky Yang"
     ],
     "trailer_yt_id": "-O5DgGQJeks",
@@ -283,7 +283,7 @@ const MOVIES = [
     "keywords": "Drama, Romance",
     "cinematographer": "Gregg Toland",
     "music": "Alfred Newman",
-    "writer": "Charles MacArthur, Ben Hecht, Emily Bront\u00eb",
+    "writer": "Charles MacArthur, Ben Hecht, Emily Brontë",
     "overview": "A passionate and tumultuous love story set against the backdrop of the Yorkshire moors, exploring the intense and destructive relationship between Heathcliff and Catherine Earnshaw.",
     "ottPlatforms": [
       {
@@ -324,7 +324,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "d9erkpdh5o0",
     "keywords": "Horror, Sci-Fi, Thriller",
-    "cinematographer": "Janusz Kami\u0144ski",
+    "cinematographer": "Janusz Kamiński",
     "music": "John Williams",
     "writer": "Josh Friedman, David Koepp, H.G. Wells",
     "overview": "A colossal invasion of Earth is coming in this off-kilter take on the legendary novel of the same name, filled with present-day themes of technology, government surveillance, and privacy.",
@@ -404,17 +404,17 @@ const MOVIES = [
     "age_limit": 0,
     "synopsis": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
     "quote": "Essence... -- What if the world in Demon Slayer: Kimetsu no Yaiba Infinity Castle is just a mirror of the questions we are too afraid to ask ourselves? Embrace the battle within.",
-    "director": "Haruo Sotozaki, Hikaru Kond\u00f4",
+    "director": "Haruo Sotozaki, Hikaru Kondô",
     "cast": [
       "Zach Aguilar",
       "Saeko Akiho",
-      "Y\u00f4hei Azakami"
+      "Yôhei Azakami"
     ],
     "trailer_yt_id": "EpAlHmuA2YM",
     "keywords": "Animation, Action, Adventure",
     "cinematographer": "Animated",
     "music": "Yuki Kajiura & Go Shiina",
-    "writer": "Koyoharu Gotouge, Hikaru Kond\u00f4",
+    "writer": "Koyoharu Gotouge, Hikaru Kondô",
     "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
     "ottPlatforms": [
       {
@@ -451,7 +451,7 @@ const MOVIES = [
     "director": "Albert Hughes",
     "cast": [
       "Kodi Smit-McPhee",
-      "J\u00f3hannes Haukur J\u00f3hannesson",
+      "Jóhannes Haukur Jóhannesson",
       "Marcin Kowalczyk"
     ],
     "trailer_yt_id": "4Cc2A-YLARs",
@@ -750,7 +750,7 @@ const MOVIES = [
     "quote": "Vibe... -- Marty Supreme is a whisper in the wind, a reminder that the most beautiful things in life are often the ones we cannot catch. Embrace the pursuit within.",
     "director": "Josh Safdie",
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Gwyneth Paltrow",
       "Odessa A'zion"
     ],
@@ -795,7 +795,7 @@ const MOVIES = [
     "cast": [
       "Sener Sen",
       "Cem Yilmaz",
-      "\u00c7etin Tekindor"
+      "Çetin Tekindor"
     ],
     "trailer_yt_id": "O7vKuVadFmo",
     "keywords": "Action, Crime, Drama",
@@ -1013,17 +1013,17 @@ const MOVIES = [
     "age_limit": 18,
     "synopsis": "Two shark hunters flirt with an attractive British lady while hunting down a large tiger shark terrorizing the Mexican East coast.",
     "quote": "Spark... -- Tintorera: Killer Shark teaches us that even if you're a mess, at least you're a masterpiece of a mess. Embrace the Mexican within.",
-    "director": "Ren\u00e9 Cardona Jr.",
+    "director": "René Cardona Jr.",
     "cast": [
       "Susan George",
       "Hugo Stiglitz",
-      "Andr\u00e9s Garc\u00eda"
+      "Andrés García"
     ],
     "trailer_yt_id": "6nBe4kzC0OE",
     "keywords": "Drama, Horror, Romance",
-    "cinematographer": "\u00c1lex Phillips Jr.",
+    "cinematographer": "Álex Phillips Jr.",
     "music": "Basil Poledouris",
-    "writer": "Ren\u00e9 Cardona Jr., Ram\u00f3n Bravo, Christina Schuch",
+    "writer": "René Cardona Jr., Ramón Bravo, Christina Schuch",
     "overview": "Two shark hunters flirt with an attractive British lady while hunting down a large tiger shark terrorizing the Mexican East coast.",
     "ottPlatforms": [
       {
@@ -1066,7 +1066,7 @@ const MOVIES = [
     "trailer_yt_id": "LFLyvzIZjK4",
     "keywords": "Action, Adventure, Comedy",
     "cinematographer": "William J. Jurgensen",
-    "music": "Enrique \u00c1lvarez Y\u00e1\u00f1ez",
+    "music": "Enrique Álvarez Yáñez",
     "writer": "Hans Bauer, Jim Cash, Jack Epps Jr.",
     "overview": "A group of friends are going through a mid-life crisis. They decide to remake a favorite movie from their youth but encounter unexpected events when they enter the jungle.",
     "ottPlatforms": [
@@ -1447,7 +1447,7 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "After losing their son Hamnet to plague, Agnes and William Shakespeare grapple with grief in 16th-century England. A healer, Agnes must find strength to care for her surviving children while processing her devastating loss.",
     "quote": "Power... -- Own your story with the ferocity of Hamnet. The world is waiting for your roar. Embrace the losing within.",
-    "director": "Chlo\u00e9 Zhao",
+    "director": "Chloé Zhao",
     "cast": [
       "Jessie Buckley",
       "Paul Mescal",
@@ -1457,7 +1457,7 @@ const MOVIES = [
     "keywords": "Biography, Drama, History",
     "cinematographer": "Lol Crawley",
     "music": "Various Artists",
-    "writer": "Chlo\u00e9 Zhao, Maggie O'Farrell",
+    "writer": "Chloé Zhao, Maggie O'Farrell",
     "overview": "After losing their son Hamnet to plague, Agnes and William Shakespeare grapple with grief in 16th-century England. A healer, Agnes must find strength to care for her surviving children while processing her devastating loss.",
     "ottPlatforms": [
       {
@@ -1759,7 +1759,7 @@ const MOVIES = [
     "keywords": "Fantasy, Horror, Mystery",
     "cinematographer": "Donald M. Morgan",
     "music": "John Barry",
-    "writer": "Charn\u00e9 Porter",
+    "writer": "Charné Porter",
     "overview": "Sailor Royce Hagan returns from the sea and occupies his deserted family ranch in a remote part of backwoods Florida. A strange family is living in the woods on his property. A Florida Folk Mystery hangs over the ranch.",
     "ottPlatforms": [
       {
@@ -1843,7 +1843,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "fkoU01NwHlE",
     "keywords": "Horror",
-    "cinematographer": "V\u00e9ra Belmont",
+    "cinematographer": "Véra Belmont",
     "music": "David Wheatley",
     "writer": "Galen Thompson, Michael O. Sajbel, Bret Thompson Plate",
     "overview": "A witch put to death in 1692 swears vengeance on her persecutors and returns to the present day to punish their descendants.",
@@ -2089,17 +2089,17 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "In 1977, a technology expert flees from a mysterious past and returns to his hometown of Recife in search of peace. He soon realizes that the city is far from being the refuge he seeks.",
     "quote": "Ethereal... -- Through the lens of The Secret Agent, we see that every heartbeat is a note in a symphony we are only just beginning to hear. Embrace the realizes within.",
-    "director": "Kleber Mendon\u00e7a Filho",
+    "director": "Kleber Mendonça Filho",
     "cast": [
       "Robson Andrade",
       "Rubens Santos",
-      "Lic\u00ednio Janu\u00e1rio"
+      "Licínio Januário"
     ],
     "trailer_yt_id": "9UfrzDKrhEc",
     "keywords": "Crime, Drama, Mystery",
     "cinematographer": "Various",
     "music": "Various Artists",
-    "writer": "Kleber Mendon\u00e7a Filho",
+    "writer": "Kleber Mendonça Filho",
     "overview": "In 1977, a technology expert flees from a mysterious past and returns to his hometown of Recife in search of peace. He soon realizes that the city is far from being the refuge he seeks.",
     "ottPlatforms": [
       {
@@ -2567,7 +2567,7 @@ const MOVIES = [
     "director": "Joachim Trier",
     "cast": [
       "Renate Reinsve",
-      "Stellan Skarsg\u00e5rd",
+      "Stellan Skarsgård",
       "Inga Ibsdotter Lilleaas"
     ],
     "trailer_yt_id": "zBFstFXdk90",
@@ -2680,7 +2680,7 @@ const MOVIES = [
   },
   {
     "movie_id": 85,
-    "title": "Culpa M\u00eda",
+    "title": "Culpa Mía",
     "year": 2023,
     "genre": [
       "Drama",
@@ -2692,8 +2692,8 @@ const MOVIES = [
     "popularity_score": 0.8,
     "age_limit": 13,
     "synopsis": "Noah has to leave her town, boyfriend and friends behind and move into the mansion of her mother's new rich husband. There she meets Nick, her new stepbrother. They fall madly in love in secret.",
-    "quote": "Vision... -- The impossible is only impossible until someone like the hero of Culpa M\u00eda decides it isn't. Embrace the mansion within.",
-    "director": "Domingo Gonz\u00e1lez",
+    "quote": "Vision... -- The impossible is only impossible until someone like the hero of Culpa Mía decides it isn't. Embrace the mansion within.",
+    "director": "Domingo González",
     "cast": [
       "Nicole Wallace",
       "Gabriel Guevara",
@@ -2703,12 +2703,12 @@ const MOVIES = [
     "keywords": "Drama, Romance",
     "cinematographer": "Joris Ivens",
     "music": "Lucas Vidal",
-    "writer": "Mercedes Ron, Domingo Gonz\u00e1lez",
+    "writer": "Mercedes Ron, Domingo González",
     "overview": "Noah has to leave her town, boyfriend and friends behind and move into the mansion of her mother's new rich husband. There she meets Nick, her new stepbrother. They fall madly in love in secret.",
     "ottPlatforms": [
       {
         "name": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Culpa%20M\u00eda",
+        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Culpa%20Mía",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
@@ -2736,7 +2736,7 @@ const MOVIES = [
     "quote": "Power... -- Own your story with the ferocity of Pose. The world is waiting for your roar. Embrace the crisis within.",
     "director": "Ryan Murphy",
     "cast": [
-      "Michaela Ja\u00e9 (MJ) Rodriguez",
+      "Michaela Jaé (MJ) Rodriguez",
       "Dominique Jackson",
       "Indya Moore"
     ],
@@ -2900,7 +2900,7 @@ const MOVIES = [
     "rating_percent": 62,
     "popularity_score": 0.8,
     "age_limit": 18,
-    "synopsis": "Centuries-old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker's fianc\u00e9e Mina Murray and wreak havoc in the foreign land.",
+    "synopsis": "Centuries-old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker's fiancée Mina Murray and wreak havoc in the foreign land.",
     "quote": "Power... -- Own your story with the ferocity of Dracula. The world is waiting for your roar. Embrace the seduce within.",
     "director": "Francis Ford Coppola",
     "cast": [
@@ -2944,7 +2944,7 @@ const MOVIES = [
     "rating_percent": 74,
     "popularity_score": 0.8,
     "age_limit": 13,
-    "synopsis": "A WWII psychiatrist evaluates Nazi leaders before the Nuremberg trials, growing increasingly obsessed with understanding evil as he forms a disturbing bond with Hermann G\u00f6ring.",
+    "synopsis": "A WWII psychiatrist evaluates Nazi leaders before the Nuremberg trials, growing increasingly obsessed with understanding evil as he forms a disturbing bond with Hermann Göring.",
     "quote": "Legacy... -- Use the fire of Nuremberg to light your own path. Your story is still being written. Embrace the disturbing within.",
     "director": "James Vanderbilt",
     "cast": [
@@ -2957,7 +2957,7 @@ const MOVIES = [
     "cinematographer": "Robert Richardson",
     "music": "Hans Zimmer",
     "writer": "James Vanderbilt, Jack El-Hai",
-    "overview": "A WWII psychiatrist evaluates Nazi leaders before the Nuremberg trials, growing increasingly obsessed with understanding evil as he forms a disturbing bond with Hermann G\u00f6ring.",
+    "overview": "A WWII psychiatrist evaluates Nazi leaders before the Nuremberg trials, growing increasingly obsessed with understanding evil as he forms a disturbing bond with Hermann Göring.",
     "ottPlatforms": [
       {
         "name": "Netflix",
@@ -2994,7 +2994,7 @@ const MOVIES = [
     "cast": [
       "Dennis Quaid",
       "Billy Bob Thornton",
-      "Emilio Echevarr\u00eda"
+      "Emilio Echevarría"
     ],
     "trailer_yt_id": "3wJBG6P5Wlg",
     "keywords": "Drama, History, War",
@@ -3076,7 +3076,7 @@ const MOVIES = [
     "rating_percent": 84,
     "popularity_score": 0.8,
     "age_limit": 0,
-    "synopsis": "Denji encounters a new romantic interest, Reze, who works at a coffee caf\u00e9.",
+    "synopsis": "Denji encounters a new romantic interest, Reze, who works at a coffee café.",
     "quote": "Truth... -- In the world of Chainsaw Man - The Movie: Reze Arc, loyalty isn't a word; it's a debt paid in blood and sweat. Embrace the romantic within.",
     "director": "Tatsuya Yoshihara",
     "cast": [
@@ -3089,7 +3089,7 @@ const MOVIES = [
     "cinematographer": "Animated",
     "music": "Kensuke Ushio",
     "writer": "Tatsuki Fujimoto, Hiroshi Seko",
-    "overview": "Denji encounters a new romantic interest, Reze, who works at a coffee caf\u00e9.",
+    "overview": "Denji encounters a new romantic interest, Reze, who works at a coffee café.",
     "ottPlatforms": [
       {
         "name": "Netflix",
@@ -3126,7 +3126,7 @@ const MOVIES = [
     "director": "James Cameron",
     "cast": [
       "Sam Worthington",
-      "Zoe Salda\u00f1a",
+      "Zoe Saldaña",
       "Sigourney Weaver"
     ],
     "trailer_yt_id": "jm2sNLIPPvA",
@@ -3262,7 +3262,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "6voWeM-xQ4Y",
     "keywords": "Drama",
-    "cinematographer": "St\u00e9phane Fontaine",
+    "cinematographer": "Stéphane Fontaine",
     "music": "Volker Bertelmann",
     "writer": "Clint Bentley, Greg Kwedar, Denis Johnson",
     "overview": "Based on Denis Johnson's beloved novella, Train Dreams is the moving portrait of Robert Grainier, a logger and railroad worker who leads a life of unexpected depth and beauty in the rapidly-changing America of the early 20th Century.",
@@ -3299,7 +3299,7 @@ const MOVIES = [
     "cast": [
       "Nina Kiri",
       "Kris Holden-Ried",
-      "Mich\u00e8le Duquet"
+      "Michèle Duquet"
     ],
     "trailer_yt_id": "1fCZhJMkBaY",
     "keywords": "Horror, Thriller",
@@ -3522,7 +3522,7 @@ const MOVIES = [
     "trailer_yt_id": "QKHySfXqN0I",
     "keywords": "Horror, Mystery",
     "cinematographer": "Hoyte van Hoytema",
-    "music": "Ludwig G\u00f6ransson",
+    "music": "Ludwig Göransson",
     "writer": "Zach Cregger",
     "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
     "ottPlatforms": [
@@ -3733,8 +3733,8 @@ const MOVIES = [
     "quote": "Endurance... -- Much like the journey in Sirat, life requires the strength to keep walking when the path is no longer visible. Embrace the accompanied within.",
     "director": "Oliver Laxe",
     "cast": [
-      "Sergi L\u00f3pez",
-      "Bruno N\u00fa\u00f1ez Arjona",
+      "Sergi López",
+      "Bruno Núñez Arjona",
       "Stefania Gadda"
     ],
     "trailer_yt_id": "3_9OkHX8ZiA",
@@ -3995,7 +3995,7 @@ const MOVIES = [
     "cast": [
       "Ulrich Tukur",
       "Mathieu Kassovitz",
-      "Ulrich M\u00fche"
+      "Ulrich Mühe"
     ],
     "trailer_yt_id": "McEkNCpTOKs",
     "keywords": "Biography, Crime, Drama",
@@ -4379,15 +4379,15 @@ const MOVIES = [
     "quote": "Perspective... -- In the end, Rashomon reminds us that we are not defined by our circumstances, but by our response to them. Embrace the century within.",
     "director": "Akira Kurosawa",
     "cast": [
-      "Toshir\u00f4 Mifune",
-      "Machiko Ky\u00f4",
+      "Toshirô Mifune",
+      "Machiko Kyô",
       "Masayuki Mori"
     ],
     "trailer_yt_id": "L2E_DfExUmU",
     "keywords": "Crime, Drama, Mystery",
     "cinematographer": "Kazuo Miyagawa",
     "music": "Fumio Hayasaka",
-    "writer": "Ry\u00fbnosuke Akutagawa, Akira Kurosawa, Shinobu Hashimoto",
+    "writer": "Ryûnosuke Akutagawa, Akira Kurosawa, Shinobu Hashimoto",
     "overview": "Three parties and a witness have four versions of a rape/murder in ninth-century Japan.",
     "ottPlatforms": [
       {
@@ -4645,12 +4645,12 @@ const MOVIES = [
     "cast": [
       "Christian Bale",
       "Jennifer Jason Leigh",
-      "Aitana S\u00e1nchez-Gij\u00f3n"
+      "Aitana Sánchez-Gijón"
     ],
     "trailer_yt_id": "H0fuHY4U1UA",
     "keywords": "Drama, Thriller",
-    "cinematographer": "Xavi Gim\u00e9nez",
-    "music": "Roque Ba\u00f1os",
+    "cinematographer": "Xavi Giménez",
+    "music": "Roque Baños",
     "writer": "Scott Kosar",
     "overview": "An industrial worker who hasn't slept in a year begins to doubt his own sanity.",
     "ottPlatforms": [
@@ -5219,7 +5219,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "tGpTpVyI_OQ",
     "keywords": "",
-    "cinematographer": "Andrzej Seku\u0142a",
+    "cinematographer": "Andrzej Sekuła",
     "music": "Various (Pulp Fiction OST)",
     "writer": "Taylor Sheridan",
     "overview": "",
@@ -5472,7 +5472,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "y4SA9yUDgW8",
     "keywords": "",
-    "cinematographer": "Janusz Kami\u0144ski",
+    "cinematographer": "Janusz Kamiński",
     "music": "John Williams",
     "writer": "Robert Rodat",
     "overview": "",
@@ -5512,7 +5512,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "v0RB-3sWbBA",
     "keywords": "",
-    "cinematographer": "Janusz Kami\u0144ski",
+    "cinematographer": "Janusz Kamiński",
     "music": "John Williams",
     "writer": "Thomas Keneally, Steven Zaillian",
     "overview": "",
@@ -5872,7 +5872,7 @@ const MOVIES = [
     "director": "Lee Unkrich, Adrian Molina",
     "cast": [
       "Anthony Gonzalez",
-      "Gael Garc\u00eda Bernal",
+      "Gael García Bernal",
       "Benjamin Bratt"
     ],
     "trailer_yt_id": "Rvr68u6k5sI",
@@ -5911,7 +5911,7 @@ const MOVIES = [
     "quote": "Mood... -- Your Name. is the main character energy we all need when the world feels like a side quest. Embrace the teenagers within.",
     "director": "Makoto Shinkai",
     "cast": [
-      "Ry\u00fbnosuke Kamiki",
+      "Ryûnosuke Kamiki",
       "Mone Kamishiraishi",
       "Ryo Narita"
     ],
@@ -5937,7 +5937,7 @@ const MOVIES = [
   },
   {
     "movie_id": 164,
-    "title": "L\u00e9on: The Professional",
+    "title": "Léon: The Professional",
     "year": 1994,
     "genre": [
       "Drama"
@@ -5948,7 +5948,7 @@ const MOVIES = [
     "popularity_score": 0.8,
     "age_limit": 13,
     "synopsis": "When her family is murdered by a group of corrupt officers led by the tyrannical Norman Stansfield, a young 12-year-old girl enlists the help of an Italian-American hitman to seek revenge.",
-    "quote": "Power... -- Own your story with the ferocity of L\u00e9on: The Professional. The world is waiting for your roar. Embrace the Stansfield within.",
+    "quote": "Power... -- Own your story with the ferocity of Léon: The Professional. The world is waiting for your roar. Embrace the Stansfield within.",
     "director": "Luc Besson",
     "cast": [
       "Jean Reno",
@@ -5964,7 +5964,7 @@ const MOVIES = [
     "ottPlatforms": [
       {
         "name": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=L\u00e9on:%20The%20Professional",
+        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Léon:%20The%20Professional",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
@@ -6181,7 +6181,7 @@ const MOVIES = [
   },
   {
     "movie_id": 170,
-    "title": "Am\u00e9lie",
+    "title": "Amélie",
     "year": 2001,
     "genre": [
       "Drama"
@@ -6192,7 +6192,7 @@ const MOVIES = [
     "popularity_score": 0.8,
     "age_limit": 13,
     "synopsis": "Despite being caught in her imaginative world, young waitress Amelie decides to help people find happiness. Her quest to spread joy leads her on a journey during which she finds true love.",
-    "quote": "Impact... -- Am\u00e9lie is the proof that one decision, one moment, can change the orbit of an entire life. Embrace the Despite within.",
+    "quote": "Impact... -- Amélie is the proof that one decision, one moment, can change the orbit of an entire life. Embrace the Despite within.",
     "director": "Jean-Pierre Jeunet",
     "cast": [
       "Audrey Tautou",
@@ -6208,7 +6208,7 @@ const MOVIES = [
     "ottPlatforms": [
       {
         "name": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Am\u00e9lie",
+        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Amélie",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
@@ -6234,7 +6234,7 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
     "quote": "Reflection... -- City of God suggests that time is a river, and we are but echoes of the choices we made upstream. Embrace the photographer within.",
-    "director": "Fernando Meirelles, K\u00e1tia Lund",
+    "director": "Fernando Meirelles, Kátia Lund",
     "cast": [
       "Alexandre Rodrigues",
       "Leandro Firmino",
@@ -6242,9 +6242,9 @@ const MOVIES = [
     ],
     "trailer_yt_id": "dcUOO4Itgmw",
     "keywords": "",
-    "cinematographer": "C\u00e9sar Charlone",
+    "cinematographer": "César Charlone",
     "music": "Antonio Pinto",
-    "writer": "Br\u00e1ulio Mantovani, Paulo Lins",
+    "writer": "Bráulio Mantovani, Paulo Lins",
     "overview": "",
     "ottPlatforms": [
       {
@@ -6317,9 +6317,9 @@ const MOVIES = [
     "quote": "Truth... -- In the world of Howl's Moving Castle, loyalty isn't a word; it's a debt paid in blood and sweat. Embrace the cursed within.",
     "director": "Hayao Miyazaki",
     "cast": [
-      "Chieko Baish\u00f4",
+      "Chieko Baishô",
       "Takuya Kimura",
-      "Tatsuya Gash\u00fbin"
+      "Tatsuya Gashûin"
     ],
     "trailer_yt_id": "ARCQf2CEr8k",
     "keywords": "",
@@ -6357,9 +6357,9 @@ const MOVIES = [
     "quote": "Ethereal... -- Through the lens of Princess Mononoke, we see that every heartbeat is a note in a symphony we are only just beginning to hear. Embrace the consume within.",
     "director": "Hayao Miyazaki",
     "cast": [
-      "Y\u00f4ji Matsuda",
+      "Yôji Matsuda",
       "Yuriko Ishida",
-      "Y\u00fbko Tanaka"
+      "Yûko Tanaka"
     ],
     "trailer_yt_id": "I1dHzoRl0sQ",
     "keywords": "",
@@ -6559,7 +6559,7 @@ const MOVIES = [
     "cast": [
       "Soma Santoki",
       "Masaki Suda",
-      "K\u00f4 Shibasaki"
+      "Kô Shibasaki"
     ],
     "trailer_yt_id": "A002-b7IH2M",
     "keywords": "",
@@ -6639,7 +6639,7 @@ const MOVIES = [
     "director": "Satoshi Kon",
     "cast": [
       "Megumi Hayashibara",
-      "T\u00f4ru Emori",
+      "Tôru Emori",
       "Katsunosuke Hori"
     ],
     "trailer_yt_id": "a6avI9oPgnw",
@@ -6679,7 +6679,7 @@ const MOVIES = [
     "director": "Rupert Sanders",
     "cast": [
       "Scarlett Johansson",
-      "Pilou Asb\u00e6k",
+      "Pilou Asbæk",
       "Takeshi Kitano"
     ],
     "trailer_yt_id": "5XnptKCeaJE",
@@ -6717,7 +6717,7 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "A secret military project endangers Neo-Tokyo when it turns a teenage biker gang member into a rampaging psychic psychopath who can only be stopped by his best friend.",
     "quote": "Endurance... -- Much like the journey in Akira, life requires the strength to keep walking when the path is no longer visible. Embrace the rampaging within.",
-    "director": "Katsuhiro \u00d4tomo",
+    "director": "Katsuhiro Ôtomo",
     "cast": [
       "Mitsuo Iwata",
       "Nozomu Sasaki",
@@ -6727,7 +6727,7 @@ const MOVIES = [
     "keywords": "",
     "cinematographer": "Animated",
     "music": "Shoji Yamashiro",
-    "writer": "Katsuhiro \u00d4tomo, Iz\u00f4 Hashimoto",
+    "writer": "Katsuhiro Ôtomo, Izô Hashimoto",
     "overview": "",
     "ottPlatforms": [
       {
@@ -6762,12 +6762,12 @@ const MOVIES = [
     "cast": [
       "Megumi Ogata",
       "Megumi Hayashibara",
-      "Y\u00fbko Miyamura"
+      "Yûko Miyamura"
     ],
     "trailer_yt_id": "4HALL5-PZu4",
     "keywords": "",
     "cinematographer": "Hisao Shirai",
-    "music": "Shir\u014d Sagisu",
+    "music": "Shirō Sagisu",
     "writer": "Hideaki Anno",
     "overview": "",
     "ottPlatforms": [
@@ -7350,7 +7350,7 @@ const MOVIES = [
     "quote": "Essence... -- What if the world in Dune: Part One is just a mirror of the questions we are too afraid to ask ourselves? Embrace the However within.",
     "director": "Denis Villeneuve",
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Rebecca Ferguson",
       "Zendaya"
     ],
@@ -7392,7 +7392,7 @@ const MOVIES = [
     "quote": "Legacy... -- Use the fire of Dune: Part Two to light your own path. Your story is still being written. Embrace the revenge within.",
     "director": "Denis Villeneuve",
     "cast": [
-      "Timoth\u00e9e Chalamet",
+      "Timothée Chalamet",
       "Zendaya",
       "Rebecca Ferguson"
     ],
@@ -7477,7 +7477,7 @@ const MOVIES = [
     "director": "James Cameron",
     "cast": [
       "Sam Worthington",
-      "Zoe Salda\u00f1a",
+      "Zoe Saldaña",
       "Sigourney Weaver"
     ],
     "trailer_yt_id": "o5F8MOz_IDw",
@@ -7787,7 +7787,7 @@ const MOVIES = [
     "writer": "C. Prem Kumar",
     "synopsis": "Two high school sweethearts meet at a reunion after 22 years and reminisce about their past and their unfinished love story.",
     "trailer": "r0synl-lI4I",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNmU2N2U1NGEtNTEyYy00Mzk3LWE1ZTYtMjgwNzcyYTFlZDA2XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTUyOTkzYzgtNjYxMS00ZjE1LTgxNjEtNDhiMjBlYzA4YTc2XkEyXkFqcGc@._V1_SX500.jpg",
     "experience_type": "emotional",
     "rating_percent": 88,
     "popularity_score": 0.85,
@@ -8625,7 +8625,7 @@ const MOVIES = [
     "release_date": "Feb 18, 2009"
   },
   {
-    "title": "WALL\u00b7E",
+    "title": "WALL·E",
     "year": 2008,
     "genre": [
       "Animation",
@@ -8646,7 +8646,7 @@ const MOVIES = [
     "rating_percent": 97,
     "popularity_score": 0.95,
     "age_limit": 0,
-    "quote": "Vibe... -- WALL\u00b7E is a whisper in the wind, a reminder that the most beautiful things in life are often the ones we cannot catch. Embrace the collecting within.",
+    "quote": "Vibe... -- WALL·E is a whisper in the wind, a reminder that the most beautiful things in life are often the ones we cannot catch. Embrace the collecting within.",
     "keywords": "Animation, Adventure, Family, Masterpiece",
     "tags": [
       "Animation",
@@ -8663,7 +8663,7 @@ const MOVIES = [
     "ottPlatforms": [
       {
         "name": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=WALL\u00b7E",
+        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=WALL·E",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
@@ -8835,7 +8835,7 @@ const MOVIES = [
     ],
     "trailer_yt_id": "71rDQ7z4eFg",
     "overview": "Barely 21 yet, Frank is a skilled forger who has passed as a doctor, lawyer, and pilot.",
-    "cinematographer": "Janusz Kami\u0144ski",
+    "cinematographer": "Janusz Kamiński",
     "music": "John Williams",
     "writer": "Steven Spielberg",
     "ottPlatforms": [
@@ -9059,7 +9059,7 @@ const MOVIES = [
     "trailer_yt_id": "uYPbbksJxIg",
     "overview": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
     "cinematographer": "Hoyte van Hoytema",
-    "music": "Ludwig G\u00f6ransson",
+    "music": "Ludwig Göransson",
     "writer": "Christopher Nolan",
     "ottPlatforms": [
       {
@@ -9969,7 +9969,7 @@ const MOVIES = [
     "director": "Matt Reeves",
     "cast": [
       "Robert Pattinson",
-      "Zo\u00eb Kravitz",
+      "Zoë Kravitz",
       "Jeffrey Wright"
     ],
     "trailer_yt_id": "vc7_mH2PWHs",
@@ -10162,7 +10162,7 @@ const MOVIES = [
     ],
     "writer": "Denis Villeneuve",
     "cinematographer": "Bradford Young",
-    "music": "J\u00f3hann J\u00f3hannsson",
+    "music": "Jóhann Jóhannsson",
     "duration_minutes": 149,
     "overview": "When twelve mysterious spacecraft land across the globe, linguist Louise Banks is recruited by the military to communicate with the extraterrestrial visitors and decipher their complex language before global tensions lead to war.",
     "release_date": "Oct 22, 2016"
@@ -10250,7 +10250,7 @@ const MOVIES = [
     ],
     "writer": "Todd Phillips",
     "cinematographer": "Lawrence Sher",
-    "music": "Hildur Gu\u00f0nad\u00f3ttir",
+    "music": "Hildur Guðnadóttir",
     "duration_minutes": 122,
     "release_date": "Oct 04, 2019"
   },
@@ -11028,7 +11028,7 @@ const MOVIES = [
     "quote": "Ethereal... -- Through the lens of Godzilla Minus One, we see that every heartbeat is a note in a symphony we are only just beginning to hear. Embrace the kamikaze within.",
     "director": "Takashi Yamazaki",
     "cast": [
-      "Ry\u00fbnosuke Kamiki",
+      "Ryûnosuke Kamiki",
       "Minami Hamabe",
       "Yuki Yamada"
     ],
@@ -11766,7 +11766,7 @@ const MOVIES = [
     ],
     "writer": "Ryan Coogler",
     "cinematographer": "Rachel Morrison",
-    "music": "Ludwig G\u00f6ransson",
+    "music": "Ludwig Göransson",
     "duration_minutes": 137,
     "release_date": "Aug 20, 2018"
   },
@@ -11959,7 +11959,7 @@ const MOVIES = [
     "age_limit": 0,
     "synopsis": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
     "quote": "Wit... -- If life were as simple as Harry Potter and the Prisoner of Azkaban, we'd all have better theme music and fewer taxes. Embrace the surrounding within.",
-    "director": "Alfonso Cuar\u00f3n",
+    "director": "Alfonso Cuarón",
     "cast": [
       "Daniel Radcliffe",
       "Emma Watson",
@@ -11981,7 +11981,7 @@ const MOVIES = [
       "Fantasy",
       "family-safe"
     ],
-    "writer": "Alfonso Cuar\u00f3n",
+    "writer": "Alfonso Cuarón",
     "cinematographer": "Michael Seresin",
     "music": "John Williams",
     "duration_minutes": 91,
@@ -12722,7 +12722,7 @@ const MOVIES = [
     "rating_percent": 79,
     "popularity_score": 0.8,
     "age_limit": 0,
-    "synopsis": "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnar\u00f6k, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+    "synopsis": "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
     "quote": "Connection... -- In a digital age, Thor: Ragnarok is a reminder that the most important signal is the one we feel in our hearts. Embrace the powerful within.",
     "director": "Taika Waititi",
     "cast": [
@@ -13049,7 +13049,7 @@ const MOVIES = [
       "Thriller"
     ],
     "writer": "Martin Campbell",
-    "cinematographer": "Phil M\u00e9heux",
+    "cinematographer": "Phil Méheux",
     "music": "David Arnold",
     "duration_minutes": 149,
     "release_date": "Nov 27, 2006"
@@ -13498,7 +13498,7 @@ const MOVIES = [
     "quote": "Vision... -- The impossible is only impossible until someone like the hero of Seven Samurai decides it isn't. Embrace the exploited within.",
     "director": "Akira Kurosawa",
     "cast": [
-      "Toshir\u00f4 Mifune",
+      "Toshirô Mifune",
       "Takashi Shimura",
       "Keiko Tsushima"
     ],
@@ -15270,7 +15270,7 @@ const MOVIES = [
       "cult"
     ],
     "writer": "Mary Harron",
-    "cinematographer": "Andrzej Seku\u0142a",
+    "cinematographer": "Andrzej Sekuła",
     "music": "John Cale",
     "duration_minutes": 142,
     "release_date": "Apr 28, 2000"
@@ -16597,7 +16597,7 @@ const MOVIES = [
       "cult"
     ],
     "writer": "Quentin Tarantino",
-    "cinematographer": "Andrzej Seku\u0142a",
+    "cinematographer": "Andrzej Sekuła",
     "music": "Various (Reservoir Dogs OST)",
     "duration_minutes": 152,
     "release_date": "Oct 14, 1992"
@@ -17540,7 +17540,7 @@ const MOVIES = [
   },
   {
     "movie_id": 488,
-    "title": "Sapta Sagaradaache Ello \u2013 Side A",
+    "title": "Sapta Sagaradaache Ello – Side A",
     "year": 2024,
     "genre": [
       "Drama",
@@ -17551,8 +17551,8 @@ const MOVIES = [
     "rating_percent": 82,
     "popularity_score": 0.8,
     "age_limit": 13,
-    "synopsis": "In the heart of 'Sapta Sagaradaache Ello\u2019 resides an ardent love story between Manu and Priya. Set in 2010, the couple hails from a middle-class background. Circumstances land Manu in jail, putting his relationship with Priya in jeopardy.",
-    "quote": "Vision... -- The impossible is only impossible until someone like the hero of Sapta Sagaradaache Ello \u2013 Side A decides it isn't. Embrace the jeopardy within.",
+    "synopsis": "In the heart of 'Sapta Sagaradaache Ello’ resides an ardent love story between Manu and Priya. Set in 2010, the couple hails from a middle-class background. Circumstances land Manu in jail, putting his relationship with Priya in jeopardy.",
+    "quote": "Vision... -- The impossible is only impossible until someone like the hero of Sapta Sagaradaache Ello – Side A decides it isn't. Embrace the jeopardy within.",
     "director": "Hemanth M. Rao",
     "cast": [
       "Rakshit Shetty",
@@ -17565,7 +17565,7 @@ const MOVIES = [
     "ottPlatforms": [
       {
         "name": "Netflix",
-        "url": "https://www.netflix.com/search?q=Sapta%20Sagaradaache%20Ello%20\u2013%20Side%20A",
+        "url": "https://www.netflix.com/search?q=Sapta%20Sagaradaache%20Ello%20–%20Side%20A",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=netflix.com"
       }
     ],
@@ -17621,7 +17621,7 @@ const MOVIES = [
   },
   {
     "movie_id": 490,
-    "title": "Sex and Luc\u00eda",
+    "title": "Sex and Lucía",
     "year": 2001,
     "genre": [
       "Drama",
@@ -17633,11 +17633,11 @@ const MOVIES = [
     "popularity_score": 0.8,
     "age_limit": 13,
     "synopsis": "Various lives converge on an isolated island, all connected by an author whose novel has become inextricably entwined with his own life.",
-    "quote": "Essence... -- What if the world in Sex and Luc\u00eda is just a mirror of the questions we are too afraid to ask ourselves? Embrace the connected within.",
+    "quote": "Essence... -- What if the world in Sex and Lucía is just a mirror of the questions we are too afraid to ask ourselves? Embrace the connected within.",
     "director": "Julio Medem",
     "cast": [
       "Paz Vega",
-      "Trist\u00e1n Ulloa",
+      "Tristán Ulloa",
       "Najwa Nimri"
     ],
     "trailer_yt_id": "5HtAvM7Wi68",
@@ -17646,7 +17646,7 @@ const MOVIES = [
     "ottPlatforms": [
       {
         "name": "Amazon Prime Video",
-        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Sex%20and%20Luc\u00eda",
+        "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Sex%20and%20Lucía",
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
@@ -17763,7 +17763,7 @@ const MOVIES = [
     "director": "Denis Villeneuve",
     "cast": [
       "Lubna Azabal",
-      "M\u00e9lissa D\u00e9sormeaux-Poulin",
+      "Mélissa Désormeaux-Poulin",
       "Maxim Gaudette"
     ],
     "trailer_yt_id": "XJ69WnwvZhE",
@@ -17783,8 +17783,8 @@ const MOVIES = [
       "underrated"
     ],
     "writer": "Denis Villeneuve",
-    "cinematographer": "Andr\u00e9 Turpin",
-    "music": "Gr\u00e9goire Hetzel",
+    "cinematographer": "André Turpin",
+    "music": "Grégoire Hetzel",
     "duration_minutes": 151,
     "release_date": "Sep 17, 2010"
   },
@@ -17848,7 +17848,7 @@ const MOVIES = [
     "age_limit": 13,
     "synopsis": "In 2027, in a chaotic world in which women have somehow become infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea.",
     "quote": "Legacy... -- Use the fire of Children of Men to light your own path. Your story is still being written. Embrace the activist within.",
-    "director": "Alfonso Cuar\u00f3n",
+    "director": "Alfonso Cuarón",
     "cast": [
       "Juan Gabriel Yacuzzi",
       "Mishal Husain",
@@ -17870,7 +17870,7 @@ const MOVIES = [
       "Thriller",
       "underrated"
     ],
-    "writer": "Alfonso Cuar\u00f3n",
+    "writer": "Alfonso Cuarón",
     "cinematographer": "Emmanuel Lubezki",
     "music": "John Tavener",
     "duration_minutes": 118,
@@ -17916,7 +17916,7 @@ const MOVIES = [
     ],
     "writer": "James Ward Byrkit",
     "cinematographer": "Nic Sadler",
-    "music": "Kristin \u00d8hrn Dyrud",
+    "music": "Kristin Øhrn Dyrud",
     "duration_minutes": 155,
     "release_date": "Mar 23, 2013"
   },

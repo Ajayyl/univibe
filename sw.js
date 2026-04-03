@@ -4,7 +4,7 @@
 // ═══════════════════════════════════════════════════════════════
 
 // SW version bump strictly to clear caches smoothly
-const CACHE_NAME = 'univibe-v63';
+const CACHE_NAME = 'univibe-v78';
 
 // All static assets to cache for offline use
 const STATIC_ASSETS = [

@@ -6,6 +6,11 @@ function renderDetail(params) {
   
   const shouldAutoplay = localStorage.getItem('univibe_play_trailer') === 'true';
 
+  // Track this movie as recently viewed
+  if (typeof trackRecentlyViewed === 'function') {
+    trackRecentlyViewed(movieId);
+  }
+
   // Auto-scroll to trailer if requested
   if (shouldAutoplay) {
     setTimeout(() => {
@@ -71,7 +76,7 @@ function renderDetail(params) {
               <span class="genre-badge" style="background: rgba(255,255,255,0.08); color: var(--text-secondary);">${ageBadgeText}</span>
             </div>
 
-            <p class="detail-synopsis">${movie.synopsis}</p>
+            <p class="detail-synopsis">${movie.synopsis || movie.overview || 'Description coming soon...'}</p>
 
             ${movie.quote ? `
             <blockquote class="detail-quote">
@@ -191,15 +196,21 @@ function renderDetail(params) {
                 Watch Later
               </button>
             </div>
+
+            <!-- Like / Dislike (Quick Feedback for AI) -->
+            <div style="margin-top: 16px;">
+              <div class="rating-label" style="margin-bottom: 10px;">Quick Feedback</div>
+              ${renderLikeDislike(movieId)}
+            </div>
           </div>
         </div>
 
-        <!-- Similar Movies with Loading State -->
+        <!-- More Like This — with Loading State -->
         <div class="section recommend-section" style="padding-top: 0;">
           <div class="section-header">
             <div>
-              <h2 class="section-title">Similar Movies</h2>
-              <p class="section-subtitle">Discover more titles you might enjoy</p>
+              <h2 class="section-title">More Like This</h2>
+              <p class="section-subtitle">If you enjoyed this, you'll love these</p>
             </div>
           </div>
           <div id="detail-recommendations">
@@ -225,8 +236,6 @@ async function showDetailRecommendations(movieId) {
 
   const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
 
-  // Analysis delay for "AI Premium" feel
-  await new Promise(resolve => setTimeout(resolve, 1500));
 
   try {
     // 1. Try fetching from AI Backend

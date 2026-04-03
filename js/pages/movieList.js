@@ -61,6 +61,12 @@ function renderMovieList(params) {
         subtitle = "Highest rated by critics and audiences";
         movies = getTopRated(safeMovies);
         break;
+      case 'recently-viewed':
+        title = "Recently Viewed";
+        subtitle = "Pick up where you left off";
+        const rvIds = getRecentlyViewed(50);
+        movies = rvIds.map(id => safeMovies.find(m => m.movie_id === id)).filter(Boolean);
+        break;
       case 'all':
         title = "Complete Movie List";
         subtitle = `A-Z collection of all ${safeMovies.length} titles`;

@@ -1,60 +1,58 @@
 {
-    "timestamp": "2026-03-25 14:38:58",
-    "duration": 6.162,
+    "timestamp": "2026-04-01 12:04:13",
+    "duration": 6.182,
     "total": 8,
-    "passed": 6,
-    "failed": 2,
+    "passed": 8,
+    "failed": 0,
     "errors": 0,
     "tests": [
         {
             "name": "test_calculate_reward_click",
             "doc": "Test RL weight for a standard click event.",
             "status": "pass",
-            "time": 1774429732.697443
+            "time": 1775025247.7000842
         },
         {
             "name": "test_calculate_reward_rating_negative",
             "doc": "Test RL penalty for poor rating (<3).",
             "status": "pass",
-            "time": 1774429732.697519
+            "time": 1775025247.700149
         },
         {
             "name": "test_calculate_reward_rating_positive",
             "doc": "Test RL weight for high rating (>4).",
             "status": "pass",
-            "time": 1774429732.6976233
+            "time": 1775025247.700229
         },
         {
             "name": "test_genre_score_match",
             "doc": "Test scoring of movie genres against user preferences.",
             "status": "pass",
-            "time": 1774429732.6977124
+            "time": 1775025247.7002702
         },
         {
             "name": "test_genre_score_no_match",
             "doc": "Test scoring when movie genres do not match user preferences.",
             "status": "pass",
-            "time": 1774429732.697815
+            "time": 1775025247.7002978
         },
         {
             "name": "test_health_check",
             "doc": "Verify the backend is responsive.",
-            "status": "fail",
-            "error": "(<class 'AssertionError'>, AssertionError('500 != 200'), <traceback object at 0x0000023DB9625140>)",
-            "time": 1774429734.7469733
+            "status": "pass",
+            "time": 1775025249.7772026
         },
         {
             "name": "test_movie_catalog_endpoint",
             "doc": "Verify fetching the movie catalog returns valid data.",
-            "status": "fail",
-            "error": "(<class 'AssertionError'>, AssertionError('500 != 200'), <traceback object at 0x0000023DB6C1E240>)",
-            "time": 1774429736.8010228
+            "status": "pass",
+            "time": 1775025251.8165956
         },
         {
             "name": "test_tracking_endpoint",
             "doc": "Verify tracking an interaction queues properly.",
             "status": "pass",
-            "time": 1774429738.856785
+            "time": 1775025253.8814278
         }
     ]
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UniVibe — Smart Movie Discovery & Recommendations</title>
+  <title>UniVibe — AI Movie Recommendation System</title>
   <meta name="description"
     content="Discover movies that match your vibe. Powered by a recommendation engine that learns your taste — then stream on your favourite platform." />
   <meta name="referrer" content="no-referrer" />
@@ -19,11 +19,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="UniVibe" />
   <link rel="apple-touch-icon" href="assets/logo/v3.png" />
+  <!-- Preconnect to external resources for faster loading -->
+  <link rel="preconnect" href="https://m.media-amazon.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="dns-prefetch" href="https://image.tmdb.org" />
 
   <!-- Stylesheet -->
   <!-- Professional Icon System (FontAwesome) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css?v=64" />
+  <link rel="stylesheet" href="css/style.css?v=78" />
 
   <!-- Fade-out keyframe for age gate removal -->
   <style>
@@ -43,23 +49,25 @@
   <!-- Global Background Layer -->
   <div id="global-bg-blur" class="global-bg-blur"></div>
 
-  <!-- Aggressive Cache Buster to solve Localhost stickiness -->
+  <!-- Lightweight Cache Version Manager -->
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for(let registration of registrations) {
-          registration.unregister();
+    // Only clear stale service worker caches, don't force reload
+    (function() {
+      const CURRENT_VERSION = 'v78';
+      const lastVersion = localStorage.getItem('univibe_cache_ver');
+      if (lastVersion && lastVersion !== CURRENT_VERSION) {
+        // Version changed — clear old caches once
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(regs) {
+            regs.forEach(function(r) { r.unregister(); });
+          });
         }
-      });
-    }
-    caches.keys().then(function(names) {
-        for (let name of names) caches.delete(name);
-    });
-    // Force one-time reload if URL doesn't have ?reloaded
-    if (!window.location.search.includes('reloaded=true')) {
-        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?reloaded=true" + window.location.hash;
-        window.location.replace(newUrl);
-    }
+        caches.keys().then(function(names) {
+          names.forEach(function(n) { caches.delete(n); });
+        });
+      }
+      localStorage.setItem('univibe_cache_ver', CURRENT_VERSION);
+    })();
   </script>
 
   <!-- Navbar -->
@@ -86,21 +94,21 @@
   </main>
 
   <!-- Scripts (order matters: data → AI → API → logic → components → auth → router → pages) -->
-  <script src="data/movieData_v63.js?v=64"></script>
-    <script src="js/localAI.js?v=64"></script>
-    <script src="js/api.js?v=64"></script>
-    <script src="js/recommendationEngine.js?v=64"></script>
-    <script src="js/components.js?v=64"></script>
-    <script src="js/router.js?v=64"></script>
-    <script src="js/pages/ageGate.js?v=64"></script>
-    <script src="js/pages/authUI.js?v=64"></script>
-    <script src="js/pages/dashboard.js?v=64"></script>
-    <script src="js/pages/home.js?v=64"></script>
-    <script src="js/pages/catalogue.js?v=64"></script>
-    <script src="js/pages/movieList.js?v=64"></script>
-    <script src="js/pages/search.js?v=64"></script>
-    <script src="js/pages/detail.js?v=64"></script>
-    <script src="js/pages/platform.js?v=64"></script>
+  <script src="data/movieData_v63.js?v=78"></script>
+    <script src="js/localAI.js?v=78"></script>
+    <script src="js/api.js?v=78"></script>
+    <script src="js/recommendationEngine.js?v=78"></script>
+    <script src="js/components.js?v=78"></script>
+    <script src="js/router.js?v=78"></script>
+    <script src="js/pages/ageGate.js?v=78"></script>
+    <script src="js/pages/authUI.js?v=78"></script>
+    <script src="js/pages/dashboard.js?v=78"></script>
+    <script src="js/pages/home.js?v=78"></script>
+    <script src="js/pages/catalogue.js?v=78"></script>
+    <script src="js/pages/movieList.js?v=78"></script>
+    <script src="js/pages/search.js?v=78"></script>
+    <script src="js/pages/detail.js?v=78"></script>
+    <script src="js/pages/platform.js?v=78"></script>
 
   <script>
     // ——————————————————————————
@@ -137,24 +145,8 @@
         let imgUrl = customImgUrl;
         
         if (!imgUrl) {
-          // Detail page handling
-          if (hash.startsWith('/movie/')) {
-            const movieId = parseInt(hash.split('/')[2]);
-            const movie = MOVIES.find(m => m.movie_id === movieId);
-            if (movie) imgUrl = movie.poster;
-          } 
-          // Home page handling
-          else if (hash === '/' || hash === '') {
-            // Use the first slider wallpaper as the main home background
-            imgUrl = 'assets/wallpapers/cyberpunk.png';
-          }
-          // Others
-          else {
-            // Sample a movie from the top 10
-            const trending = getTrending(MOVIES);
-            if (trending.length > 5) imgUrl = trending[4].poster;
-            else if (trending.length > 0) imgUrl = trending[0].poster;
-          }
+          // Always use the home page's cyberpunk wallpaper for every page 
+          imgUrl = 'assets/wallpapers/cyberpunk.png';
         }
         
         if (imgUrl) {

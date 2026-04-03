@@ -1,4 +1,4 @@
-# UniVibe 2.0 - Consolidated System Context
+# UniVibe - Consolidated System Context
 This file contains the core code of the UniVibe project for documentation and analysis.
 
 ## Table of Contents

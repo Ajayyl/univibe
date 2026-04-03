@@ -9,7 +9,7 @@ function renderSearch() {
       <div class="container" style="display: flex; gap: 30px; align-items: flex-start;">
         
         <!-- Filter Sidebar -->
-        <aside class="filter-sidebar" style="flex: 0 0 300px; background: rgba(255,255,255,0.02); border-radius: 16px; padding: 24px; border: 1px solid rgba(255,255,255,0.05); position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto;">
+        <aside class="filter-sidebar" style="flex: 0 0 300px; background: var(--bg-secondary); border-radius: 16px; padding: 24px; border: 1px solid var(--border-glass); position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto;">
           <h2 style="font-size: 1.5rem; margin-bottom: 20px;">Filters</h2>
           
           <div class="filter-group" style="margin-bottom: 24px;">

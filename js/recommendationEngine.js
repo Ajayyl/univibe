@@ -85,11 +85,11 @@ function similarityScore(movieA, movieB) {
     const breakdown = { genreScore: 0, experienceScore: 0, ratingScore: 0, popularityScore: 0 };
     const reasons = [];
 
-    // ── Factor 1: Genre match (weight 2) ──
-    // Any shared genre between the two movies triggers the full +2 bonus
+    // ── Factor 1: Genre match (weight 1.5 per genre) ──
+    // Any shared genre improves the score, scaling up rapidly for multi-genre matches
     const sharedGenres = movieA.genre.filter(g => movieB.genre.includes(g));
     if (sharedGenres.length > 0) {
-        breakdown.genreScore = 2;
+        breakdown.genreScore = sharedGenres.length * 1.5;
         
         // Bonus: If the PRIMARY (first) genre matches, add extra weight (+0.5)
         if (movieA.genre[0] === movieB.genre[0]) {
@@ -100,7 +100,13 @@ function similarityScore(movieA, movieB) {
         }
     }
 
-    // ── Factor 2: Experience match (weight 1) ──
+    // ── Factor 2: Same Director match (Bonus) ──
+    if (movieA.director && movieB.director && movieA.director !== 'Unknown' && movieA.director === movieB.director) {
+        breakdown.genreScore += 2.0;
+        reasons.push(`same director (${movieA.director})`);
+    }
+
+    // ── Factor 3: Experience match (weight 1) ──
     // Exact match of experience_type (fun, intense, emotional, relaxing)
     if (movieA.experience_type === movieB.experience_type) {
         breakdown.experienceScore = 1;
@@ -126,7 +132,12 @@ function similarityScore(movieA, movieB) {
     }
 
     // ── Total ──
-    const total = breakdown.genreScore + breakdown.experienceScore + breakdown.ratingScore + breakdown.popularityScore;
+    let total = breakdown.genreScore + breakdown.experienceScore + breakdown.ratingScore + breakdown.popularityScore;
+
+    // Penalize movies that share zero genres to avoid random recommendations
+    if (breakdown.genreScore === 0) {
+        total *= 0.1;
+    }
 
     return { total, ...breakdown, reasons };
 }
@@ -214,7 +225,7 @@ function getHybridRecommendations(allMovies, criteria, count = 12) {
     // 5. Sort, Filter, Slice
     const results = scored
         .filter(item => item.score > 0) // Remove self-match (-1) or zero score
-        .sort((a, b) => b.score - a.score)
+        .sort((a, b) => (b.score - a.score) || (b.movie.popularity_score - a.movie.popularity_score) || (b.movie.rating_percent - a.movie.rating_percent))
         .slice(0, count);
 
     return results;
@@ -254,7 +265,7 @@ function getRecommendations(allMovies, movieId, userAge, count = 6) {
             };
         })
         .filter(item => item.score > 0)
-        .sort((a, b) => b.score - a.score);
+        .sort((a, b) => (b.score - a.score) || (b.movie.popularity_score - a.movie.popularity_score) || (b.movie.rating_percent - a.movie.rating_percent));
 
     // Age filtering applied BEFORE returning final recommendations
     const filtered = scored.filter(item => userAge >= item.movie.age_limit);

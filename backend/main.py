@@ -769,9 +769,7 @@ async def get_general_recommendations(user_id: str, db: Session = Depends(get_db
     # Hybrid blend: 60% quality/profile, 40% RL/History preference
     final_scores = (0.6 * quality_scores) + (0.4 * c_user_pref)
     
-    # Exploration
-    if not is_cold_start and random.random() < RLEngine.CONFIG["exploration_rate"]:
-        final_scores += np.random.uniform(0, 0.3, size=len(final_scores))
+    # Deterministic final scoring (Removed exploration noise to guarantee accurate sorting)
 
     # Candidate Selection
     pool_size = min(len(final_scores), count * 4)

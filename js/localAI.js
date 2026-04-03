@@ -124,12 +124,11 @@ const LocalAI = {
             return { movie, score, reason: '🤖 ' + reason };
         });
 
-        // Epsilon-greedy
-        if (Math.random() < this.CONFIG.epsilon) {
-            return scored.sort(() => Math.random() - 0.5).slice(0, count).map(s => s.movie);
-        }
-
-        return scored.sort((a, b) => b.score - a.score).slice(0, count).map(s => s.movie);
+        // Sort deterministically by highest score, using popularity and rating as tiebreakers to prevent random ordering
+        return scored
+            .sort((a, b) => (b.score - a.score) || (b.movie.popularity_score - a.movie.popularity_score) || (b.movie.rating_percent - a.movie.rating_percent))
+            .slice(0, count)
+            .map(s => s.movie);
     },
 
     getUserLearningStats() {

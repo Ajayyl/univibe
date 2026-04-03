@@ -295,10 +295,10 @@ const API = {
     // ── AI Recommendations ──
     async getRecommendations(count = 8) {
         const user = this.getUser();
-        if (!user) return { ok: false, error: 'User not logged in' };
+        const userId = user ? user.user_uid : 'guest';
 
         try {
-            const response = await fetch(`${this.ML_API_BASE}/recommend?user_id=${user.user_uid}&count=${count * 2}`);
+            const response = await fetch(`${this.ML_API_BASE}/recommend?user_id=${userId}&count=${count * 2}`);
             if (response.ok) {
                 const recommendations = await response.json();
                 // Deduplicate by movie_id
@@ -353,10 +353,10 @@ const API = {
 
     async getMovieRecommendations(movieId, count = 5) {
         const user = this.getUser();
-        if (!user) return { ok: false, error: 'User not logged in' };
+        const userId = user ? user.user_uid : 'guest';
 
         try {
-            const response = await fetch(`${this.ML_API_BASE}/recommend/${movieId}?user_id=${user.user_uid}&count=${count * 2}`);
+            const response = await fetch(`${this.ML_API_BASE}/recommend/${movieId}?user_id=${userId}&count=${count * 2}`);
             if (response.ok) {
                 const recommendations = await response.json();
                 // Deduplicate and exclude the current movie

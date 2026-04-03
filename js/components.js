@@ -2,7 +2,23 @@
 // Rendering only — no recommendation logic.
 
 /**
+ * Convert a percentage (0-100) to star HTML (5 stars).
+ */
+function renderStarsFromPercent(percent) {
+  const rating5 = (percent / 100) * 5;
+  const fullStars = Math.floor(rating5);
+  const hasHalf = (rating5 - fullStars) >= 0.3;
+  const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
+  let html = '';
+  for (let i = 0; i < fullStars; i++) html += '<span class="star-icon filled">★</span>';
+  if (hasHalf) html += '<span class="star-icon half">★</span>';
+  for (let i = 0; i < emptyStars; i++) html += '<span class="star-icon">★</span>';
+  return html;
+}
+
+/**
  * Render a movie card used in grids and rows.
+ * Now includes ⭐ star rating display.
  */
 function renderMovieCard(movie) {
   // Use local SVG placeholder if image fails
@@ -24,6 +40,10 @@ function renderMovieCard(movie) {
       </div>
       <div class="card-info">
         <div class="card-title" title="${movie.title}">${movie.title}</div>
+        <div class="card-stars">
+          ${renderStarsFromPercent(movie.rating_percent)}
+          <span class="card-rating-num">${(movie.rating_percent / 20).toFixed(1)}</span>
+        </div>
         <div class="card-meta">
           <span class="genre-badge">${movie.genre[0]}</span>
           <span class="exp-badge ${movie.experience_type}">${movie.experience_type}</span>
@@ -39,9 +59,11 @@ function renderMovieCard(movie) {
  */
 function renderRecommendedCard(movie, reason) {
   const placeholderUrl = generatePlaceholderUrl(movie.title);
+  // Clean reason text for display
+  const cleanReason = (reason || 'Matched your vibe').replace(/🤖\s*/g, '').replace(/^Recommended because it /i, '');
 
   return `
-    <div class="movie-card fade-in-up" onclick="Router.navigate('/movie/${movie.movie_id}')" title="${(reason || '').replace(/"/g, '&quot;')}">
+    <div class="movie-card fade-in-up has-reason" onclick="Router.navigate('/movie/${movie.movie_id}')" title="${(reason || '').replace(/"/g, '&quot;')}">
       <div class="poster-wrap">
         <img
           src="${movie.poster}"
@@ -56,9 +78,16 @@ function renderRecommendedCard(movie, reason) {
       </div>
       <div class="card-info">
         <div class="card-title" title="${movie.title}">${movie.title}</div>
+        <div class="card-stars">
+          ${renderStarsFromPercent(movie.rating_percent)}
+          <span class="card-rating-num">${(movie.rating_percent / 20).toFixed(1)}</span>
+        </div>
         <div class="card-meta">
           <span class="genre-badge">${movie.genre[0]}</span>
           <span class="exp-badge ${movie.experience_type}">${movie.experience_type}</span>
+        </div>
+        <div class="card-reason-tag" title="${(reason || '').replace(/"/g, '&quot;')}">
+          <span class="reason-text">${cleanReason}</span>
         </div>
       </div>
     </div>
@@ -91,7 +120,7 @@ function generatePlaceholderUrl(title) {
       </defs>
       <rect width="100%" height="100%" fill="url(#grad)" />
       <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" dominant-baseline="middle" dy="-10">
-        ${title.substring(0, 15)}${title.length > 15 ? '...' : ''}
+        ${title.substring(0, 25)}${title.length > 25 ? '...' : ''}
       </text>
       <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)" text-anchor="middle" dominant-baseline="middle" dy="20">
         Poster Unavailable
@@ -403,6 +432,148 @@ function deleteReview(movieId, index) {
   }
 }
 
+// ──────────────────────────────────────────────
+// LIKE / DISLIKE COMPONENT
+// ──────────────────────────────────────────────
+
+/**
+ * Render Like / Dislike buttons for the detail page.
+ * Feeds the AI recommendation model with preference signals.
+ */
+function renderLikeDislike(movieId) {
+  const isLoggedIn = API.isLoggedIn();
+  const existing = getLikeStatus(movieId);
+
+  if (!isLoggedIn) {
+    return `
+      <div class="like-dislike-row" style="opacity: 0.4; pointer-events: none;">
+        <button class="like-btn"><span class="thumb-icon">👍</span> Like</button>
+        <button class="dislike-btn"><span class="thumb-icon">👎</span> Not for me</button>
+      </div>
+      <div class="like-dislike-feedback">Sign in to rate movies</div>
+    `;
+  }
+
+  return `
+    <div class="like-dislike-row" id="like-dislike-${movieId}">
+      <button class="like-btn ${existing === 'like' ? 'active' : ''}" onclick="handleLikeDislike(${movieId}, 'like')">
+        <span class="thumb-icon">👍</span> Like
+      </button>
+      <button class="dislike-btn ${existing === 'dislike' ? 'active' : ''}" onclick="handleLikeDislike(${movieId}, 'dislike')">
+        <span class="thumb-icon">👎</span> Not for me
+      </button>
+    </div>
+    <div class="like-dislike-feedback" id="like-feedback-${movieId}">
+      ${existing ? (existing === 'like' ? 'You liked this — AI model updated' : 'Noted — AI will adjust recommendations') : 'Quick feedback helps the AI learn your taste'}
+    </div>
+  `;
+}
+
+/**
+ * Handle like/dislike click.
+ */
+function handleLikeDislike(movieId, action) {
+  const existing = getLikeStatus(movieId);
+  const newAction = existing === action ? null : action;
+
+  // Save to localStorage
+  const likes = JSON.parse(localStorage.getItem('univibe_likes') || '{}');
+  if (newAction) {
+    likes[movieId] = newAction;
+  } else {
+    delete likes[movieId];
+  }
+  localStorage.setItem('univibe_likes', JSON.stringify(likes));
+
+  // Update UI
+  const container = document.getElementById(`like-dislike-${movieId}`);
+  if (container) {
+    const likeBtn = container.querySelector('.like-btn');
+    const dislikeBtn = container.querySelector('.dislike-btn');
+    likeBtn.classList.toggle('active', newAction === 'like');
+    dislikeBtn.classList.toggle('active', newAction === 'dislike');
+  }
+
+  const feedback = document.getElementById(`like-feedback-${movieId}`);
+  if (feedback) {
+    if (!newAction) {
+      feedback.textContent = 'Feedback cleared';
+    } else if (newAction === 'like') {
+      feedback.textContent = 'You liked this — AI model updated';
+    } else {
+      feedback.textContent = 'Noted — AI will adjust recommendations';
+    }
+  }
+
+  // Track interaction for AI learning
+  const movie = MOVIES.find(m => m.movie_id === movieId);
+  if (newAction && typeof API !== 'undefined' && API.trackInteraction) {
+    const reward = newAction === 'like' ? 'positive' : 'negative';
+    API.trackInteraction(movieId, 'rating', newAction === 'like' ? 5 : 1, {
+      genre: movie ? (Array.isArray(movie.genre) ? movie.genre[0] : movie.genre) : '',
+      experience: movie ? movie.experience_type : '',
+      source: 'like_dislike'
+    });
+  }
+
+  if (typeof showToast === 'function') {
+    showToast(newAction === 'like' ? 'Liked! AI learning...' : newAction === 'dislike' ? 'Noted! AI adjusting...' : 'Feedback cleared', newAction === 'like' ? 'success' : 'info');
+  }
+}
+
+/**
+ * Get existing like/dislike status for a movie.
+ */
+function getLikeStatus(movieId) {
+  const likes = JSON.parse(localStorage.getItem('univibe_likes') || '{}');
+  return likes[movieId] || null;
+}
+
+// ──────────────────────────────────────────────
+// RECENTLY VIEWED TRACKING
+// ──────────────────────────────────────────────
+
+/**
+ * Track a movie as recently viewed (localStorage).
+ */
+function trackRecentlyViewed(movieId) {
+  const key = 'univibe_recently_viewed';
+  let history = JSON.parse(localStorage.getItem(key) || '[]');
+  // Remove duplicates
+  history = history.filter(id => id !== movieId);
+  // Prepend
+  history.unshift(movieId);
+  // Keep last 20
+  history = history.slice(0, 20);
+  localStorage.setItem(key, JSON.stringify(history));
+}
+
+/**
+ * Get recently viewed movie IDs.
+ */
+function getRecentlyViewed(count = 10) {
+  const key = 'univibe_recently_viewed';
+  const history = JSON.parse(localStorage.getItem(key) || '[]');
+  return history.slice(0, count);
+}
+
+/**
+ * Render scroll arrows for a movie row container.
+ */
+function renderScrollArrows(rowId) {
+  return ''; // Navigation arrows removed as requested
+}
+
+/**
+ * Scroll a movie row left or right.
+ */
+function scrollMovieRow(rowId, direction) {
+  const row = document.getElementById(rowId);
+  if (!row) return;
+  const scrollAmount = 600;
+  row.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
 // Make components and logic accessible globally
 window.renderMovieCard = renderMovieCard;
 window.renderRecommendedCard = renderRecommendedCard;
@@ -416,3 +587,11 @@ window.renderFooter = renderFooter;
 window.submitReview = submitReview;
 window.deleteReview = deleteReview;
 window.getMovieReviews = getMovieReviews;
+window.renderStarsFromPercent = renderStarsFromPercent;
+window.renderLikeDislike = renderLikeDislike;
+window.handleLikeDislike = handleLikeDislike;
+window.getLikeStatus = getLikeStatus;
+window.trackRecentlyViewed = trackRecentlyViewed;
+window.getRecentlyViewed = getRecentlyViewed;
+window.renderScrollArrows = renderScrollArrows;
+window.scrollMovieRow = scrollMovieRow;

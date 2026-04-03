@@ -1,12 +1,12 @@
 {
-  "precision_k": 0.8268,
-  "recall_k": 0.7655,
-  "hit_rate_k": 0.8866,
-  "mrr": 0.6717,
-  "ndcg_k": 0.7965,
-  "coverage": 0.8251,
-  "avg_similarity": 0.2631,
+  "precision_k": 0.8362,
+  "recall_k": 0.7443,
+  "hit_rate_k": 0.8922,
+  "mrr": 0.6875,
+  "ndcg_k": 0.7826,
+  "coverage": 0.852,
+  "avg_similarity": 0.1901,
   "num_movies": 446,
   "k": 5,
-  "evaluated_at": "2026-03-26T01:14:37.409073"
+  "evaluated_at": "2026-04-02T10:13:45.992308"
 }
