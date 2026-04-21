@@ -1,4 +1,4 @@
-// UniVibe — Platform Page (shows all movies on a specific OTT platform)
+// Movie Recommendation System — Platform Page (shows all movies on a specific OTT platform)
 
 function renderPlatform(params) {
   const platformName = decodeURIComponent(params.name || '');
@@ -10,7 +10,7 @@ function renderPlatform(params) {
     ? `<img src="${platformMeta.icon}" style="width: 56px; height: 56px; object-fit: contain; margin-bottom: 20px;" />`
     : `<div class="cat-icon fade-in" style="font-size: 56px;">${icon}</div>`;
 
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   const safeMovies = applyAgeFilter(MOVIES, userAge);
   const platformMovies = getByPlatform(safeMovies, platformName);
 

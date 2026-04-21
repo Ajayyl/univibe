@@ -1,10 +1,10 @@
 const API = {
     // ── Local Storage Keys ──
-    USER_KEY: 'univibe_user_local',
-    TOKEN_KEY: 'univibe_auth_token',
-    RATINGS_KEY: 'univibe_ratings',
-    WATCHLIST_KEY: 'univibe_watchlist',
-    FAVORITES_KEY: 'univibe_favorites',
+    USER_KEY: 'mrs_user_local',
+    TOKEN_KEY: 'mrs_auth_token',
+    RATINGS_KEY: 'mrs_ratings',
+    WATCHLIST_KEY: 'mrs_watchlist',
+    FAVORITES_KEY: 'mrs_favorites',
     BASE_URL: `http://${window.location.hostname}:3000/api`,
     ML_API_BASE: `http://${window.location.hostname}:8000`,
 
@@ -40,7 +40,7 @@ const API = {
             if (data.success) {
                 localStorage.setItem(this.USER_KEY, JSON.stringify(data.user));
                 localStorage.setItem(this.TOKEN_KEY, data.token);
-                localStorage.setItem('univibe_age', data.user.age);
+                localStorage.setItem('mrs_age', data.user.age);
                 return { ok: true, data };
             }
             return { ok: false, error: data.error };
@@ -49,7 +49,7 @@ const API = {
             const localUser = { user_uid: 'local-' + Date.now(), username, display_name: username, age: 18 };
             localStorage.setItem(this.USER_KEY, JSON.stringify(localUser));
             localStorage.setItem(this.TOKEN_KEY, 'offline-token');
-            localStorage.setItem('univibe_age', '18');
+            localStorage.setItem('mrs_age', '18');
             return { ok: true, data: { user: localUser, token: 'offline-token' }, localFallback: true };
         }
     },
@@ -65,7 +65,7 @@ const API = {
             if (data.success) {
                 localStorage.setItem(this.USER_KEY, JSON.stringify(data.user));
                 localStorage.setItem(this.TOKEN_KEY, data.token);
-                localStorage.setItem('univibe_age', data.user.age);
+                localStorage.setItem('mrs_age', data.user.age);
                 return { ok: true, data };
             }
             return { ok: false, error: data.error };
@@ -74,7 +74,7 @@ const API = {
             const localUser = { user_uid: 'local-' + Date.now(), username, display_name: displayName, email, age };
             localStorage.setItem(this.USER_KEY, JSON.stringify(localUser));
             localStorage.setItem(this.TOKEN_KEY, 'offline-token');
-            localStorage.setItem('univibe_age', age);
+            localStorage.setItem('mrs_age', age);
             return { ok: true, data: { user: localUser, token: 'offline-token' }, localFallback: true };
         }
     },
@@ -89,7 +89,7 @@ const API = {
             const data = await res.json();
             if (data.success) {
                 localStorage.setItem(this.USER_KEY, JSON.stringify(data.user));
-                if (updates.age) localStorage.setItem('univibe_age', updates.age);
+                if (updates.age) localStorage.setItem('mrs_age', updates.age);
                 return { ok: true, data };
             }
             return { ok: false, error: data.error };
@@ -101,7 +101,7 @@ const API = {
     logout() {
         localStorage.removeItem(this.USER_KEY);
         localStorage.removeItem(this.TOKEN_KEY);
-        window.dispatchEvent(new CustomEvent('univibe:logout'));
+        window.dispatchEvent(new CustomEvent('mrs:logout'));
     },
 
     // ── Interaction Tracking (Shared across backends via SQLite) ──
@@ -245,10 +245,10 @@ const API = {
             if (res.status === 401) this.logout();
             return await res.json();
         } catch (e) {
-            const favs = JSON.parse(localStorage.getItem('univibe_favorites') || '[]');
+            const favs = JSON.parse(localStorage.getItem('mrs_favorites') || '[]');
             if (!favs.includes(movieId)) {
                 favs.push(movieId);
-                localStorage.setItem('univibe_favorites', JSON.stringify(favs));
+                localStorage.setItem('mrs_favorites', JSON.stringify(favs));
             }
             return { ok: true, local: true };
         }
@@ -263,9 +263,9 @@ const API = {
             if (res.status === 401) this.logout();
             return await res.json();
         } catch (e) {
-            let favs = JSON.parse(localStorage.getItem('univibe_favorites') || '[]');
+            let favs = JSON.parse(localStorage.getItem('mrs_favorites') || '[]');
             favs = favs.filter(id => id !== movieId);
-            localStorage.setItem('univibe_favorites', JSON.stringify(favs));
+            localStorage.setItem('mrs_favorites', JSON.stringify(favs));
             return { ok: true, local: true };
         }
     },
@@ -275,7 +275,7 @@ const API = {
             const res = await fetch(`${this.BASE_URL}/favorites/${movieId}`, { headers: this.getHeaders() });
             return await res.json();
         } catch (e) {
-            const favs = JSON.parse(localStorage.getItem('univibe_favorites') || '[]');
+            const favs = JSON.parse(localStorage.getItem('mrs_favorites') || '[]');
             return { isFavorite: favs.includes(movieId) };
         }
     },
@@ -287,7 +287,7 @@ const API = {
             const data = await res.json();
             return { ok: true, data: data };
         } catch (e) {
-            const favs = JSON.parse(localStorage.getItem('univibe_favorites') || '[]');
+            const favs = JSON.parse(localStorage.getItem('mrs_favorites') || '[]');
             return { ok: true, data: { favorites: favs.map(id => ({ movie_id: id })) } };
         }
     },

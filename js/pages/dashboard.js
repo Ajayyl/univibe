@@ -1,4 +1,4 @@
-// UniVibe — AI Intelligence Dashboard
+// Movie Recommendation System — AI Intelligence Dashboard
 // Full-page analytics with Canvas-based visualizations
 
 // ──────────────────────────────────
@@ -607,7 +607,7 @@ function renderDashboard() {
   const user = API.getUser();
   if (!user) {
     return `
-      <div class="empty-state" style="padding-top:140px;">
+      <div class="empty-state" style="padding-top:20px;">
         <div class="empty-icon">Note</div>
         <h3>Sign in required</h3>
         <p>Log in to access your ML Intelligence Dashboard.</p>

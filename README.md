@@ -1,6 +1,6 @@
-# UniVibe
+# Movie Recommendation System
 
-UniVibe is an AI-powered movie discovery platform featuring a hybrid Reinforcement Learning (RL) and Content-Based Recommendation engine.
+Movie Recommendation System is an AI-powered movie discovery platform featuring a hybrid Reinforcement Learning (RL) and Content-Based Recommendation engine.
 
 ## How to Run Locally
 
@@ -8,8 +8,8 @@ If you are setting this up on a new laptop, doing an emergency restore, or colla
 
 ### 1. Clone Project
 ```bash
-git clone https://github.com/Ajayyl/univibe-2.0.git
-cd univibe
+git clone https://github.com/Ajayyl/mrs-2.0.git
+cd mrs
 ```
 
 ### 2. Install Frontend (Node.js)

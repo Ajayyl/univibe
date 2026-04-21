@@ -1,4 +1,4 @@
-// UniVibe — Shared UI Components
+// Movie Recommendation System — Shared UI Components
 // Rendering only — no recommendation logic.
 
 /**
@@ -14,6 +14,22 @@ function renderStarsFromPercent(percent) {
   if (hasHalf) html += '<span class="star-icon half">★</span>';
   for (let i = 0; i < emptyStars; i++) html += '<span class="star-icon">★</span>';
   return html;
+}
+
+/**
+ * Get a short, balanced display label for experience_type.
+ * Keeps badge text uniform in length with genre badges.
+ */
+function getExpLabel(type) {
+  const labels = {
+    'thought-provoking': 'Insightful',
+    'intense': 'Intense',
+    'emotional': 'Emotional',
+    'fun': 'Fun',
+    'relaxing': 'Relaxing',
+    'inspirational': 'Inspiring'
+  };
+  return labels[type] || type;
 }
 
 /**
@@ -46,7 +62,7 @@ function renderMovieCard(movie) {
         </div>
         <div class="card-meta">
           <span class="genre-badge">${movie.genre[0]}</span>
-          <span class="exp-badge ${movie.experience_type}">${movie.experience_type}</span>
+          <span class="exp-badge ${movie.experience_type}">${getExpLabel(movie.experience_type)}</span>
         </div>
       </div>
     </div>
@@ -84,7 +100,7 @@ function renderRecommendedCard(movie, reason) {
         </div>
         <div class="card-meta">
           <span class="genre-badge">${movie.genre[0]}</span>
-          <span class="exp-badge ${movie.experience_type}">${movie.experience_type}</span>
+          <span class="exp-badge ${movie.experience_type}">${getExpLabel(movie.experience_type)}</span>
         </div>
         <div class="card-reason-tag" title="${(reason || '').replace(/"/g, '&quot;')}">
           <span class="reason-text">${cleanReason}</span>
@@ -351,13 +367,11 @@ async function handleRating(movieId, rating) {
 function renderFooter() {
   return `
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-brand">
-          Made by <a href="#" class="brand-link">UniVibe</a> · ${new Date().getFullYear()}
-        </div>
+      <div class="container footer-content" style="text-align: center; opacity: 0.7;">
         <div class="footer-disclaimer">
-          UniVibe is a movie discovery platform. We do not stream or host any content. 
-          All streaming links redirect to official external platforms.
+          <strong>Movie Recommendation System</strong> — Using Machine Learning Techniques<br>
+          We are a movie discovery platform and do not stream or host any copyright content.<br>
+          &copy; 2026. All streaming links redirect to official platforms.
         </div>
       </div>
     </footer>
@@ -370,7 +384,7 @@ function renderFooter() {
  */
 function getMovieReviews(movieId) {
   try {
-    const all = JSON.parse(localStorage.getItem('univibe_reviews') || '{}');
+    const all = JSON.parse(localStorage.getItem('mrs_reviews') || '{}');
     return all[movieId] || [];
   } catch { return []; }
 }
@@ -397,10 +411,10 @@ function submitReview(movieId) {
   };
 
   // Save to localStorage
-  const all = JSON.parse(localStorage.getItem('univibe_reviews') || '{}');
+  const all = JSON.parse(localStorage.getItem('mrs_reviews') || '{}');
   if (!all[movieId]) all[movieId] = [];
   all[movieId].push(review);
-  localStorage.setItem('univibe_reviews', JSON.stringify(all));
+  localStorage.setItem('mrs_reviews', JSON.stringify(all));
 
   // Track the interaction for AI learning
   if (typeof API !== 'undefined' && API.trackInteraction) {
@@ -418,11 +432,11 @@ function submitReview(movieId) {
  * Delete a specific review by index.
  */
 function deleteReview(movieId, index) {
-  const all = JSON.parse(localStorage.getItem('univibe_reviews') || '{}');
+  const all = JSON.parse(localStorage.getItem('mrs_reviews') || '{}');
   if (all[movieId] && all[movieId][index]) {
     all[movieId].splice(index, 1);
     if (all[movieId].length === 0) delete all[movieId];
-    localStorage.setItem('univibe_reviews', JSON.stringify(all));
+    localStorage.setItem('mrs_reviews', JSON.stringify(all));
 
     // Re-render
     const container = document.getElementById(`user-feedback-${movieId}`);
@@ -477,13 +491,13 @@ function handleLikeDislike(movieId, action) {
   const newAction = existing === action ? null : action;
 
   // Save to localStorage
-  const likes = JSON.parse(localStorage.getItem('univibe_likes') || '{}');
+  const likes = JSON.parse(localStorage.getItem('mrs_likes') || '{}');
   if (newAction) {
     likes[movieId] = newAction;
   } else {
     delete likes[movieId];
   }
-  localStorage.setItem('univibe_likes', JSON.stringify(likes));
+  localStorage.setItem('mrs_likes', JSON.stringify(likes));
 
   // Update UI
   const container = document.getElementById(`like-dislike-${movieId}`);
@@ -525,7 +539,7 @@ function handleLikeDislike(movieId, action) {
  * Get existing like/dislike status for a movie.
  */
 function getLikeStatus(movieId) {
-  const likes = JSON.parse(localStorage.getItem('univibe_likes') || '{}');
+  const likes = JSON.parse(localStorage.getItem('mrs_likes') || '{}');
   return likes[movieId] || null;
 }
 
@@ -537,7 +551,7 @@ function getLikeStatus(movieId) {
  * Track a movie as recently viewed (localStorage).
  */
 function trackRecentlyViewed(movieId) {
-  const key = 'univibe_recently_viewed';
+  const key = 'mrs_recently_viewed';
   let history = JSON.parse(localStorage.getItem(key) || '[]');
   // Remove duplicates
   history = history.filter(id => id !== movieId);
@@ -552,7 +566,7 @@ function trackRecentlyViewed(movieId) {
  * Get recently viewed movie IDs.
  */
 function getRecentlyViewed(count = 10) {
-  const key = 'univibe_recently_viewed';
+  const key = 'mrs_recently_viewed';
   const history = JSON.parse(localStorage.getItem(key) || '[]');
   return history.slice(0, count);
 }

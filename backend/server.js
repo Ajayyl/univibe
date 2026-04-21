@@ -1,4 +1,4 @@
-// UniVibe — Express API Server
+// Movie Recommendation System — Express API Server
 // Handles authentication, user tracking, and RL recommendations
 
 const express = require('express');
@@ -442,7 +442,7 @@ app.get('/api/metrics', (req, res) => {
 app.get('/api/health', (req, res) => {
     res.json({
         status: 'ok',
-        service: 'UniVibe ML Backend',
+        service: 'Movie Recommendation System ML Backend',
         version: '1.0.0',
         features: ['auth', 'tracking', 'rl-recommendations', 'sqlite-persistence']
     });
@@ -453,8 +453,8 @@ app.get('/api/health', (req, res) => {
 // ──────────────────────────────────
 (async () => {
     const server = await app.listen(PORT);
-    console.log(`\nUniVibe ML Server running at http://localhost:${PORT}`);
+    console.log(`\nMovie Recommendation System ML Server running at http://localhost:${PORT}`);
     console.log(`RL Engine: Contextual Multi-Armed Bandit (ε-greedy)`);
-    console.log(`Database: SQLite @ backend/data/univibe.db`);
+    console.log(`Database: SQLite @ backend/data/mrs.db`);
     console.log(`Auth: JWT + bcrypt\n`);
 })();

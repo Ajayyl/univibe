@@ -8,7 +8,7 @@ const MOVIES = [
       "Sci-Fi",
       "Thriller"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/bU2Q2rCH5VFrJNKSyx6wSmQZFsX.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/bU2Q2rCH5VFrJNKSyx6wSmQZFsX.jpg",
     "experience_type": "intense",
     "rating_percent": 88,
     "popularity_score": 0.8,
@@ -24,10 +24,10 @@ const MOVIES = [
     ],
     "trailer_yt_id": "a9Jg20Ukf4E",
     "keywords": "Action, Sci-Fi, Thriller",
-    "cinematographer": "Barry Ackroyd",
-    "music": "Lorne Balfe",
+    "cinematographer": "Dariusz Wolski",
+    "music": "Nick Cave, Warren Ellis",
     "writer": "Michael Hastings, David Mich\u00f4d",
-    "overview": "Follow the final recruits of a grueling special ops boot camp who encounter a deadly force from beyond this world.",
+    "overview": "An idiosyncratic general confronts opposition from enemies, allies, and bureaucrats while leading a massive rebuilding operation in Afghanistan.",
     "ottPlatforms": [
       {
         "name": "Netflix",
@@ -51,7 +51,7 @@ const MOVIES = [
       "Action",
       "Thriller"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/gnW3HcHpZmbim5fjt5hy5LGLs8d.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/gnW3HcHpZmbim5fjt5hy5LGLs8d.jpg",
     "experience_type": "intense",
     "rating_percent": 64,
     "popularity_score": 0.8,
@@ -93,7 +93,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 77,
     "popularity_score": 0.8,
@@ -136,7 +136,7 @@ const MOVIES = [
       "Drama",
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -173,11 +173,11 @@ const MOVIES = [
   {
     "movie_id": 11,
     "title": "Whistle",
-    "year": 2025,
+    "year": 2026,
     "genre": [
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWIwYzUwNmMtYTY2My00ODg2LWI3MmEtNmY0Njg3MzYwYmQyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWIwYzUwNmMtYTY2My00ODg2LWI3MmEtNmY0Njg3MzYwYmQyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 56,
     "popularity_score": 0.8,
@@ -218,7 +218,7 @@ const MOVIES = [
       "Adventure",
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTQ0NzYzM2QtOWYzMC00MGU5LWJmMTQtYTU1ODU0ZjUwYjk0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTQ0NzYzM2QtOWYzMC00MGU5LWJmMTQtYTU1ODU0ZjUwYjk0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -260,7 +260,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGFlMTVkMDktZGMzMC00Yjk4LWFmNzEtNTFmMzM2YzM3MWFkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGFlMTVkMDktZGMzMC00Yjk4LWFmNzEtNTFmMzM2YzM3MWFkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 62,
     "popularity_score": 0.8,
@@ -302,7 +302,7 @@ const MOVIES = [
       "Sci-Fi",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWVlZDUzNTgtYzcxNC00OTYyLThlZjYtZDc1MTM2ZmI1Y2IzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWVlZDUzNTgtYzcxNC00OTYyLThlZjYtZDc1MTM2ZmI1Y2IzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 25,
     "popularity_score": 0.8,
@@ -345,7 +345,7 @@ const MOVIES = [
       "Horror",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDI5ZGM0NzItMGNmZi00Y2EyLWE4ZGEtMmVmZjdkNTE3ZWMzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDI5ZGM0NzItMGNmZi00Y2EyLWE4ZGEtMmVmZjdkNTE3ZWMzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 43,
     "popularity_score": 0.8,
@@ -388,7 +388,7 @@ const MOVIES = [
       "Action",
       "Adventure"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGQ3YWUzYjEtMTJiYy00ZjQ0LWI0YjktYjhiNGVhNGExYTM3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 84,
     "popularity_score": 0.8,
@@ -431,7 +431,7 @@ const MOVIES = [
       "Drama",
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzQ3OTI0ZTUtMzkwMC00MzZhLWJiZmYtODFmZjZmMmJiMTc5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzQ3OTI0ZTUtMzkwMC00MzZhLWJiZmYtODFmZjZmMmJiMTc5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 59,
     "popularity_score": 0.8,
@@ -473,7 +473,7 @@ const MOVIES = [
       "Mystery",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGU0ZThmMDUtYmZjMi00MDk5LWE2NTQtYzQ3NWZjNWZkZGE3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGU0ZThmMDUtYmZjMi00MDk5LWE2NTQtYzQ3NWZjNWZkZGE3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 68,
     "popularity_score": 0.8,
@@ -516,7 +516,7 @@ const MOVIES = [
       "Adventure",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTdjZGUxMTItNjRkNS00N2VhLWE4MjMtMjVhODMwMGIxNjUwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTdjZGUxMTItNjRkNS00N2VhLWE4MjMtMjVhODMwMGIxNjUwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 73,
     "popularity_score": 0.8,
@@ -559,7 +559,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2ZhMGU1MTItMzBkMi00MjZmLWI2MDQtMWE1ODNjMWFhZjY4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2ZhMGU1MTItMzBkMi00MjZmLWI2MDQtMWE1ODNjMWFhZjY4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 71,
     "popularity_score": 0.8,
@@ -601,7 +601,7 @@ const MOVIES = [
       "Horror",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWU3N2M4NDItNzFkMC00YTcyLWJiYTQtODFlMmQ4MmE3Yjg0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWU3N2M4NDItNzFkMC00YTcyLWJiYTQtODFlMmQ4MmE3Yjg0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 44,
     "popularity_score": 0.8,
@@ -643,7 +643,7 @@ const MOVIES = [
       "Mystery",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjM1MzczMDgwOV5BMl5BanBnXkFtZTcwMDM4NjM2OQ@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjM1MzczMDgwOV5BMl5BanBnXkFtZTcwMDM4NjM2OQ@@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 41,
     "popularity_score": 0.8,
@@ -684,7 +684,7 @@ const MOVIES = [
     "genre": [
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDBlODM3NDQtMzViMy00ZGNlLWE1YWMtNzNmODU4MGM4Zjk1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDBlODM3NDQtMzViMy00ZGNlLWE1YWMtNzNmODU4MGM4Zjk1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -724,7 +724,7 @@ const MOVIES = [
       "Drama",
       "Sport"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTRhYjI1MTItMWYwMi00MjY5LWI1OTktMzQwNzA3MWJlN2QyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTRhYjI1MTItMWYwMi00MjY5LWI1OTktMzQwNzA3MWJlN2QyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -766,7 +766,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTJmN2E2YTYtNDc2Ni00ZjZlLWIzMjEtMjgyMzY2ZWU2YjRlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTJmN2E2YTYtNDc2Ni00ZjZlLWIzMjEtMjgyMzY2ZWU2YjRlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 57,
     "popularity_score": 0.8,
@@ -809,7 +809,7 @@ const MOVIES = [
       "Fantasy",
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -852,7 +852,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODczZDkzMDgtYzRjMi00YWNkLWJhNzMtNGNiMzQxNzE1ZDc3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODczZDkzMDgtYzRjMi00YWNkLWJhNzMtNGNiMzQxNzE1ZDc3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 70,
     "popularity_score": 0.8,
@@ -896,7 +896,7 @@ const MOVIES = [
       "Action",
       "Adventure"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTBiYWJlMjQtOTIyMy00NTY4LWFhOWItOWZhNzc3NGMyMjc2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTBiYWJlMjQtOTIyMy00NTY4LWFhOWItOWZhNzc3NGMyMjc2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -940,7 +940,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjY0MTc4ZDEtY2MxYi00ODIxLWJlNzQtZTlmZDVkYTYwM2NhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjY0MTc4ZDEtY2MxYi00ODIxLWJlNzQtZTlmZDVkYTYwM2NhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 59,
     "popularity_score": 0.8,
@@ -983,7 +983,7 @@ const MOVIES = [
       "Horror",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjM4OTQ3N2MtNWJkNi00MWI2LThkOWItN2M4MmU1NTlhZThiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjM4OTQ3N2MtNWJkNi00MWI2LThkOWItN2M4MmU1NTlhZThiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 41,
     "popularity_score": 0.8,
@@ -1026,7 +1026,7 @@ const MOVIES = [
       "Adventure",
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTNlMTk1YTItOWYxNi00ZWIzLTkyOWEtNTJmMzk4NmIyN2NmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTNlMTk1YTItOWYxNi00ZWIzLTkyOWEtNTJmMzk4NmIyN2NmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 57,
     "popularity_score": 0.8,
@@ -1068,7 +1068,7 @@ const MOVIES = [
       "Action",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTc4NGFlYjMtOWZmZC00NzJiLTk2NDUtNWJmMjgyNDIwMWYwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTc4NGFlYjMtOWZmZC00NzJiLTk2NDUtNWJmMjgyNDIwMWYwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 39,
     "popularity_score": 0.8,
@@ -1110,7 +1110,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDFkMjU5ZTQtMzA0Yi00M2VmLThlZWMtZWUwZTkxNmFkNDZmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDFkMjU5ZTQtMzA0Yi00M2VmLThlZWMtZWUwZTkxNmFkNDZmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 46,
     "popularity_score": 0.8,
@@ -1153,7 +1153,7 @@ const MOVIES = [
       "Action",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODMxOWIxYzAtNTNiYi00MTk5LWE2MjUtNjM1MTg3YmQ5NTlhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODMxOWIxYzAtNTNiYi00MTk5LWE2MjUtNjM1MTg3YmQ5NTlhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 65,
     "popularity_score": 0.8,
@@ -1196,7 +1196,7 @@ const MOVIES = [
       "Crime",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmZmZDc1Y2EtMmU2MS00NmMzLTllZmYtNjlkODFkNjZlOGE0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmZmZDc1Y2EtMmU2MS00NmMzLTllZmYtNjlkODFkNjZlOGE0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 59,
     "popularity_score": 0.8,
@@ -1232,13 +1232,13 @@ const MOVIES = [
   {
     "movie_id": 46,
     "title": "GOAT",
-    "year": 2016,
+    "year": 2024,
     "genre": [
       "Animation",
       "Action",
       "Adventure"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzE5OTJkOGMtYWFiNi00NTlkLWE3ZWItY2ZlNjkyOWVhMjMyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzE5OTJkOGMtYWFiNi00NTlkLWE3ZWItY2ZlNjkyOWVhMjMyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 69,
     "popularity_score": 0.8,
@@ -1282,7 +1282,7 @@ const MOVIES = [
       "Drama",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 87,
     "popularity_score": 0.8,
@@ -1324,7 +1324,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjI1NGFmODQtNTUyNS00Yzk5LWE1MmMtOWZhODA3ZTY1YzAxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjI1NGFmODQtNTUyNS00Yzk5LWE1MmMtOWZhODA3ZTY1YzAxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 70,
     "popularity_score": 0.8,
@@ -1365,7 +1365,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWRlNDM1NjktZDkyYi00Zjk0LWE5MTQtNWEyNzMwODY1Njc5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWRlNDM1NjktZDkyYi00Zjk0LWE5MTQtNWEyNzMwODY1Njc5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 66,
     "popularity_score": 0.8,
@@ -1407,7 +1407,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDQ5ZmY0OWYtOTYzZi00Mzg5LWE3N2EtMjYwZTAzZmJhYjkyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDQ5ZmY0OWYtOTYzZi00Mzg5LWE3N2EtMjYwZTAzZmJhYjkyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 79,
     "popularity_score": 0.8,
@@ -1448,7 +1448,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 93,
     "popularity_score": 0.8,
@@ -1489,7 +1489,7 @@ const MOVIES = [
       "Action",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 80,
     "popularity_score": 0.8,
@@ -1530,7 +1530,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 92,
     "popularity_score": 0.8,
@@ -1573,7 +1573,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGRhNmU2OTUtNzk2YS00NDRjLTlhN2YtODUzM2JiNjMyMzUxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGRhNmU2OTUtNzk2YS00NDRjLTlhN2YtODUzM2JiNjMyMzUxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 48,
     "popularity_score": 0.8,
@@ -1616,7 +1616,7 @@ const MOVIES = [
       "Sci-Fi",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjhiYWQ4MTAtOGY1Zi00ZjcyLTk1ZDYtODI3ODRhNjE4MzZhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjhiYWQ4MTAtOGY1Zi00ZjcyLTk1ZDYtODI3ODRhNjE4MzZhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 64,
     "popularity_score": 0.8,
@@ -1659,7 +1659,7 @@ const MOVIES = [
       "Mystery",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWJlOGU1NDctMWMwNS00MjQzLTk4MDMtYTEwZDlmZGJmMGZkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWJlOGU1NDctMWMwNS00MjQzLTk4MDMtYTEwZDlmZGJmMGZkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -1702,7 +1702,7 @@ const MOVIES = [
       "Horror",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWEwOTU3Y2YtZDczZi00MmFjLTk3M2EtNGIzMzY4OTZhY2QyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWEwOTU3Y2YtZDczZi00MmFjLTk3M2EtNGIzMzY4OTZhY2QyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 59,
     "popularity_score": 0.8,
@@ -1745,7 +1745,7 @@ const MOVIES = [
       "Drama",
       "Sport"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 76,
     "popularity_score": 0.8,
@@ -1786,7 +1786,7 @@ const MOVIES = [
     "genre": [
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzY2MTFiNGQtZjgzOS00MzRhLTgzOGItZWQ1MDQ2ZTk2MDE1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzY2MTFiNGQtZjgzOS00MzRhLTgzOGItZWQ1MDQ2ZTk2MDE1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 57,
     "popularity_score": 0.8,
@@ -1826,7 +1826,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjM2ZTA1NmItMDM4OS00MDg0LWFmNzUtYWJmN2VhMzE1ZTFhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjM2ZTA1NmItMDM4OS00MDg0LWFmNzUtYWJmN2VhMzE1ZTFhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 66,
     "popularity_score": 0.8,
@@ -1868,7 +1868,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzQ5ZjcwZTktMWEyMi00MmE4LWFhZmItOGE5MGI0MGRhNWI1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQ5ZjcwZTktMWEyMi00MmE4LWFhZmItOGE5MGI0MGRhNWI1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -1910,7 +1910,7 @@ const MOVIES = [
       "Action",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmM5MDBiYjUtZDc3ZC00ODc2LTlkMmYtMWIwODhhZTQ0MmY1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmM5MDBiYjUtZDc3ZC00ODc2LTlkMmYtMWIwODhhZTQ0MmY1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 42,
     "popularity_score": 0.8,
@@ -1950,7 +1950,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4NjcwMzU3OV5BMl5BanBnXkFtZTcwNTUwOTQ3OA@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4NjcwMzU3OV5BMl5BanBnXkFtZTcwNTUwOTQ3OA@@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 62,
     "popularity_score": 0.8,
@@ -1991,7 +1991,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmIzOWViNDEtOWRiZS00ZWM4LWFiMmEtNGJjMmQ3NTIxN2U0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmIzOWViNDEtOWRiZS00ZWM4LWFiMmEtNGJjMmQ3NTIxN2U0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -2034,7 +2034,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDlkMzNhYzgtNTk1Yi00M2I1LTlkOTMtY2RmZGU3YzVmMzE2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDlkMzNhYzgtNTk1Yi00M2I1LTlkOTMtY2RmZGU3YzVmMzE2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 73,
     "popularity_score": 0.8,
@@ -2077,7 +2077,7 @@ const MOVIES = [
       "Adventure",
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTk0NDZjNzAtZmZlYy00OWMwLTg2MTUtMjM3MTVjYjBlYzMzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTk0NDZjNzAtZmZlYy00OWMwLTg2MTUtMjM3MTVjYjBlYzMzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 54,
     "popularity_score": 0.8,
@@ -2119,7 +2119,7 @@ const MOVIES = [
       "Comedy",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGQ4MTk5YjctNGE5NC00ODk4LWIzOWItNzNhODc0N2JmYzMzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGQ4MTk5YjctNGE5NC00ODk4LWIzOWItNzNhODc0N2JmYzMzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 69,
     "popularity_score": 0.8,
@@ -2161,7 +2161,7 @@ const MOVIES = [
       "Adventure",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTk5NjU4OTAtNTEyMS00ZjBiLTg0ZjMtOGJiMGJhNjQ3MzYxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk5NjU4OTAtNTEyMS00ZjBiLTg0ZjMtOGJiMGJhNjQ3MzYxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 64,
     "popularity_score": 0.8,
@@ -2202,7 +2202,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/qQw1mNIaDTKtW4LUI8gnZ780QY1.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/qQw1mNIaDTKtW4LUI8gnZ780QY1.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -2243,7 +2243,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTM5MTY3NjQtOWUxYS00YzJiLWJiZGEtMDZmZWY3ZGZkN2MwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTM5MTY3NjQtOWUxYS00YzJiLWJiZGEtMDZmZWY3ZGZkN2MwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -2286,7 +2286,7 @@ const MOVIES = [
       "Comedy",
       "Family"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzk4NWNmMDYtZmRmMC00NDcxLWEyYTAtNDc5YWQwZDhlODI1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzk4NWNmMDYtZmRmMC00NDcxLWEyYTAtNDc5YWQwZDhlODI1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 56,
     "popularity_score": 0.8,
@@ -2330,7 +2330,7 @@ const MOVIES = [
       "Horror",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BM2VmMDVlNzgtNThhZC00ZGMwLTg4MmEtZTUzNmRiYTkxYzUyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2VmMDVlNzgtNThhZC00ZGMwLTg4MmEtZTUzNmRiYTkxYzUyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -2373,7 +2373,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzg2Mzc2OTEtZGNlZS00NTk5LThlMjYtZjM5MDZiOWZiM2RiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzg2Mzc2OTEtZGNlZS00NTk5LThlMjYtZjM5MDZiOWZiM2RiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -2415,7 +2415,7 @@ const MOVIES = [
       "Action",
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWQ4N2Y5YjYtNGE1Ni00YWExLWIzNDYtMmM2ZTc0OGJmMDA1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWQ4N2Y5YjYtNGE1Ni00YWExLWIzNDYtMmM2ZTc0OGJmMDA1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 55,
     "popularity_score": 0.8,
@@ -2457,7 +2457,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTU3Y2U1MTQtYjA1NS00YmJlLTk3NDktZGViYTAwY2I0NDM1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU3Y2U1MTQtYjA1NS00YmJlLTk3NDktZGViYTAwY2I0NDM1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 71,
     "popularity_score": 0.8,
@@ -2498,7 +2498,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTMwMTk0Y2QtY2VhNy00OGYwLThkMjMtZjkwMGI3MTJiMjAyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 78,
     "popularity_score": 0.8,
@@ -2539,7 +2539,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTNjOWVkMjUtODRjNC00NWQ1LTllZjctZjE2YTBkOWI4ZTU5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTNjOWVkMjUtODRjNC00NWQ1LTllZjctZjE2YTBkOWI4ZTU5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 68,
     "popularity_score": 0.8,
@@ -2582,7 +2582,7 @@ const MOVIES = [
       "Mystery",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODhlNjFkNWEtNDMzNi00YjE1LWI3N2QtNzBmZjIyNTlkZjA2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODhlNjFkNWEtNDMzNi00YjE1LWI3N2QtNzBmZjIyNTlkZjA2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 66,
     "popularity_score": 0.8,
@@ -2624,7 +2624,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTI4ZWQ5YjYtMmYwMy00OWFmLWFmNDYtZGNlNWMxNTllZjc4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTI4ZWQ5YjYtMmYwMy00OWFmLWFmNDYtZGNlNWMxNTllZjc4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 61,
     "popularity_score": 0.8,
@@ -2664,7 +2664,7 @@ const MOVIES = [
     "genre": [
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BY2E5MDI0ZjMtYjZlNy00YzFjLTlmNTAtMjA0MDEzZmYwZDdiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2E5MDI0ZjMtYjZlNy00YzFjLTlmNTAtMjA0MDEzZmYwZDdiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 29,
     "popularity_score": 0.8,
@@ -2703,7 +2703,7 @@ const MOVIES = [
     "genre": [
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzU2MGIwNmItYWZlMy00MGYxLTkxM2MtMmQwODAzYjcxYWMwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzU2MGIwNmItYWZlMy00MGYxLTkxM2MtMmQwODAzYjcxYWMwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 42,
     "popularity_score": 0.8,
@@ -2744,7 +2744,7 @@ const MOVIES = [
       "Horror",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTQ4NTJkNzMtN2JiNi00MTVkLWJlZGQtN2UwZGY5NTA0YTY5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTQ4NTJkNzMtN2JiNi00MTVkLWJlZGQtN2UwZGY5NTA0YTY5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 32,
     "popularity_score": 0.8,
@@ -2786,7 +2786,7 @@ const MOVIES = [
       "Action",
       "Crime"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmY0OTk0ZDktMmJkNy00NjQwLWE0NjQtOTY4Y2VhODdhOTJjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmY0OTk0ZDktMmJkNy00NjQwLWE0NjQtOTY4Y2VhODdhOTJjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 54,
     "popularity_score": 0.8,
@@ -2828,7 +2828,7 @@ const MOVIES = [
       "Horror",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BY2IyZTVkOWMtOTJjZS00NzM2LWFmYTgtM2NlMjhkY2E5NWZjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2IyZTVkOWMtOTJjZS00NzM2LWFmYTgtM2NlMjhkY2E5NWZjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 62,
     "popularity_score": 0.8,
@@ -2871,7 +2871,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWUzODNkYWUtMmMzOC00NzZjLTlkMTctOTkwM2I2ZWI1MTlmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWUzODNkYWUtMmMzOC00NzZjLTlkMTctOTkwM2I2ZWI1MTlmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -2914,7 +2914,7 @@ const MOVIES = [
       "History",
       "War"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2IwMDcwZGYtNDRhMy00MTJlLWEwMWItMWQ4MTBhZTU5MWQ2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2IwMDcwZGYtNDRhMy00MTJlLWEwMWItMWQ4MTBhZTU5MWQ2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 61,
     "popularity_score": 0.8,
@@ -2957,7 +2957,7 @@ const MOVIES = [
       "Adventure",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjg2NTcwYWQtYzk4NS00MTJhLWEzZjItMzIxNjk3YzlkYzU0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjg2NTcwYWQtYzk4NS00MTJhLWEzZjItMzIxNjk3YzlkYzU0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 58,
     "popularity_score": 0.8,
@@ -3000,7 +3000,7 @@ const MOVIES = [
       "Action",
       "Adventure"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmMzNGVhODktYmU5MS00MDg1LThlNTEtNTMyYTg5MDA0Njk4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmMzNGVhODktYmU5MS00MDg1LThlNTEtNTMyYTg5MDA0Njk4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 84,
     "popularity_score": 0.8,
@@ -3044,7 +3044,7 @@ const MOVIES = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/mp8l8S6ynxD7cz4c2a7Sr9aW1ej.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/mp8l8S6ynxD7cz4c2a7Sr9aW1ej.jpg",
     "experience_type": "intense",
     "rating_percent": 79,
     "popularity_score": 0.8,
@@ -3087,7 +3087,7 @@ const MOVIES = [
       "Adventure",
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzdlYmM2YmEtMmQ3Zi00ZjAxLTg2ZjctNzU3NDVkY2RiOTBjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzdlYmM2YmEtMmQ3Zi00ZjAxLTg2ZjctNzU3NDVkY2RiOTBjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 57,
     "popularity_score": 0.8,
@@ -3131,7 +3131,7 @@ const MOVIES = [
       "Crime",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzIzNWQxMjEtZmQ3MS00OTk2LWFlZjktZDUyYWRkM2M3NWVlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzIzNWQxMjEtZmQ3MS00OTk2LWFlZjktZDUyYWRkM2M3NWVlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -3172,7 +3172,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDkzNzkyNTktYzNhMi00YjhiLWI5YmUtZjliMTY0ZDc5NmMyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDkzNzkyNTktYzNhMi00YjhiLWI5YmUtZjliMTY0ZDc5NmMyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -3253,7 +3253,7 @@ const MOVIES = [
       "Comedy",
       "Family"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzNmNmQ2ZDEtMTc1MS00NjNiLThlMGUtZmQxNTg1Nzg5NWMzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzNmNmQ2ZDEtMTc1MS00NjNiLThlMGUtZmQxNTg1Nzg5NWMzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 78,
     "popularity_score": 0.8,
@@ -3296,7 +3296,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWQxYTMyZTktZDg5Yi00Y2YwLWI4YzQtMjkyYmYxNmFjYThmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWQxYTMyZTktZDg5Yi00Y2YwLWI4YzQtMjkyYmYxNmFjYThmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 84,
     "popularity_score": 0.8,
@@ -3339,7 +3339,7 @@ const MOVIES = [
       "Comedy",
       "Horror"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/uw3vecKYPC2ICpUgUC3OpUA85fx.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/uw3vecKYPC2ICpUgUC3OpUA85fx.jpg",
     "experience_type": "intense",
     "rating_percent": 68,
     "popularity_score": 0.8,
@@ -3382,7 +3382,7 @@ const MOVIES = [
       "Family",
       "Music"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTFmODhjZDgtOGQ2Yy00OWMzLWFhYmItZGY5YWZhMTEyYTFlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTFmODhjZDgtOGQ2Yy00OWMzLWFhYmItZGY5YWZhMTEyYTFlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "relaxing",
     "rating_percent": 86,
     "popularity_score": 0.8,
@@ -3425,7 +3425,7 @@ const MOVIES = [
       "Horror",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -3466,7 +3466,7 @@ const MOVIES = [
       "Drama",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGRlMjIzMDctNzNkMS00MzEwLTlhZWEtM2FjYmE1ZmFjMzZlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGRlMjIzMDctNzNkMS00MzEwLTlhZWEtM2FjYmE1ZmFjMzZlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 66,
     "popularity_score": 0.8,
@@ -3508,7 +3508,7 @@ const MOVIES = [
       "Action",
       "Adventure"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/A7uVTHtjXV5268NaqXodB6v1OGT.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/A7uVTHtjXV5268NaqXodB6v1OGT.jpg",
     "experience_type": "fun",
     "rating_percent": 80,
     "popularity_score": 0.8,
@@ -3552,7 +3552,7 @@ const MOVIES = [
       "Comedy",
       "Crime"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWViZjhjYjQtZDI1MC00MWMyLTlhZTktNmIzY2Y0ZWVkMWFhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWViZjhjYjQtZDI1MC00MWMyLTlhZTktNmIzY2Y0ZWVkMWFhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 63,
     "popularity_score": 0.8,
@@ -3595,7 +3595,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjExZDc1MzUtNDc3Mi00NDcxLWFmYTAtYzI2MzhlMmE3YzBiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjExZDc1MzUtNDc3Mi00NDcxLWFmYTAtYzI2MzhlMmE3YzBiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 73,
     "popularity_score": 0.8,
@@ -3638,7 +3638,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzA1OTkyN2MtMGZjYy00NTcxLTg4Y2ItZjc4NjM2NmQzMzdjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzA1OTkyN2MtMGZjYy00NTcxLTg4Y2ItZjc4NjM2NmQzMzdjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 70,
     "popularity_score": 0.8,
@@ -3681,7 +3681,7 @@ const MOVIES = [
       "Horror",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmYxZjY5NDQtZThjOS00MjZmLThlZDktZTIyMGM2NjY4MzMyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmYxZjY5NDQtZThjOS00MjZmLThlZDktZTIyMGM2NjY4MzMyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 74,
     "popularity_score": 0.8,
@@ -3724,7 +3724,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjIxMTU3M2MtMjg4MC00YWFkLTljMTItYjcxOTJlNDcxMjlmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjIxMTU3M2MtMjg4MC00YWFkLTljMTItYjcxOTJlNDcxMjlmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 66,
     "popularity_score": 0.8,
@@ -3767,7 +3767,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWJkZmZlNjUtM2Q1OC00MmNjLWFkOWEtNjRhN2FkM2ZlMjI3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWJkZmZlNjUtM2Q1OC00MmNjLWFkOWEtNjRhN2FkM2ZlMjI3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -3810,7 +3810,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODQ0NjNlN2MtNGRmZi00OGYzLWFjNGYtMjkyMTlmMWFkNTQ2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODQ0NjNlN2MtNGRmZi00OGYzLWFjNGYtMjkyMTlmMWFkNTQ2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 68,
     "popularity_score": 0.8,
@@ -3851,7 +3851,7 @@ const MOVIES = [
     "genre": [
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTE2MmExOTAtOWIxMi00NGQ1LWI1YTItN2M4Y2JhYWMxY2ViXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTE2MmExOTAtOWIxMi00NGQ1LWI1YTItN2M4Y2JhYWMxY2ViXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 64,
     "popularity_score": 0.8,
@@ -3892,7 +3892,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzYmE4NTktMjA0Ny00YWMwLWE2MzMtMjVkYjE5YmU5ZTg0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzYmE4NTktMjA0Ny00YWMwLWE2MzMtMjVkYjE5YmU5ZTg0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 72,
     "popularity_score": 0.8,
@@ -3933,7 +3933,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWNmZGYzOGYtNTc4OC00YzBhLTljZGItYzVlZGYwZTAxMWNkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWNmZGYzOGYtNTc4OC00YzBhLTljZGItYzVlZGYwZTAxMWNkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 83,
     "popularity_score": 0.8,
@@ -3975,7 +3975,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTEzNTRmZWMtMjA3NS00ZmZlLTg2YmQtMTY3NjBkZWViMTQxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTEzNTRmZWMtMjA3NS00ZmZlLTg2YmQtMTY3NjBkZWViMTQxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 82,
     "popularity_score": 0.8,
@@ -4017,7 +4017,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzkxOGRiMTItMjAyMC00NjRhLWJjODktNWY5YzQwNDYyZmViXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzkxOGRiMTItMjAyMC00NjRhLWJjODktNWY5YzQwNDYyZmViXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -4059,7 +4059,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjk1ZDJlMmUtOWQ0Zi00MDM5LTk1OGYtODczNjFmMGYwZGVkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjk1ZDJlMmUtOWQ0Zi00MDM5LTk1OGYtODczNjFmMGYwZGVkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 82,
     "popularity_score": 0.8,
@@ -4100,7 +4100,7 @@ const MOVIES = [
     "genre": [
       "Comedy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzZkOWZkOGEtNDQ3Ny00ZjNiLTk0MGQtNWU0ZDViYzA2ZGYzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzZkOWZkOGEtNDQ3Ny00ZjNiLTk0MGQtNWU0ZDViYzA2ZGYzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 69,
     "popularity_score": 0.8,
@@ -4142,7 +4142,7 @@ const MOVIES = [
       "Comedy",
       "Crime"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/pTmMxAHqX4vsIDE6HPPxOR0Q6TN.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/pTmMxAHqX4vsIDE6HPPxOR0Q6TN.jpg",
     "experience_type": "intense",
     "rating_percent": 72,
     "popularity_score": 0.8,
@@ -4184,7 +4184,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTczZDI5YWMtMjViZS00YmM3LTg1MWEtMDBlNjI1YTgzZTQzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTczZDI5YWMtMjViZS00YmM3LTg1MWEtMDBlNjI1YTgzZTQzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 84,
     "popularity_score": 0.8,
@@ -4226,7 +4226,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmJkM2Y4ZjItOGQ5Ny00Y2E2LTk3OTgtMjhmMTYyYzgwNDc0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmJkM2Y4ZjItOGQ5Ny00Y2E2LTk3OTgtMjhmMTYyYzgwNDc0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.8,
@@ -4269,7 +4269,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDlkYjViMDAtYjkxNy00ZDk1LWE5MmUtNDc4NDU3ZWJmOTYzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDlkYjViMDAtYjkxNy00ZDk1LWE5MmUtNDc4NDU3ZWJmOTYzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -4313,7 +4313,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODY3NTU1NDEtMWEyNS00MTk2LTllMWQtNmU0YWI1YzNkYzcyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODY3NTU1NDEtMWEyNS00MTk2LTllMWQtNmU0YWI1YzNkYzcyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 71,
     "popularity_score": 0.8,
@@ -4356,7 +4356,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWVmMTBhNjAtMmE5Yy00NTdmLThhMTYtOTA2Y2Y3NTU0MmM1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWVmMTBhNjAtMmE5Yy00NTdmLThhMTYtOTA2Y2Y3NTU0MmM1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -4399,7 +4399,7 @@ const MOVIES = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -4441,7 +4441,7 @@ const MOVIES = [
       "Comedy",
       "Sport"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTFlNGFlNTUtNWRmNC00NTY5LWE5ZTItNzVhZGRiOWU1MWQ0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTFlNGFlNTUtNWRmNC00NTY5LWE5ZTItNzVhZGRiOWU1MWQ0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -4484,7 +4484,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjU3NmQ3NWMtNDZkOS00OTIwLTk0MjktYjNkNTI2YjQxMGY4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjU3NmQ3NWMtNDZkOS00OTIwLTk0MjktYjNkNTI2YjQxMGY4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 69,
     "popularity_score": 0.8,
@@ -4527,7 +4527,7 @@ const MOVIES = [
       "Drama",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BY2I1MmUxYmMtZjk3OC00N2MwLWI2YjAtNGQxODA1Y2I3YTI4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2I1MmUxYmMtZjk3OC00N2MwLWI2YjAtNGQxODA1Y2I3YTI4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 76,
     "popularity_score": 0.8,
@@ -4570,7 +4570,7 @@ const MOVIES = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 73,
     "popularity_score": 0.8,
@@ -4613,7 +4613,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDFkMTRkZmQtM2I0NC00NjJjLWJlMDctNTNiZWYxYzhjZDZiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDFkMTRkZmQtM2I0NC00NjJjLWJlMDctNTNiZWYxYzhjZDZiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 77,
     "popularity_score": 0.8,
@@ -4657,7 +4657,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTA0MDFmMDMtMTE5OC00YWQ0LWIwZTUtOWIwMjk4Yjc3NGY1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTA0MDFmMDMtMTE5OC00YWQ0LWIwZTUtOWIwMjk4Yjc3NGY1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 77,
     "popularity_score": 0.8,
@@ -4700,7 +4700,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 82,
     "popularity_score": 0.8,
@@ -4743,7 +4743,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BY2VkZjk5ZjMtM2ExOS00ZDA1LTg1ZDEtYTliNGZiYTc4ZWZiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2VkZjk5ZjMtM2ExOS00ZDA1LTg1ZDEtYTliNGZiYTc4ZWZiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -4786,7 +4786,7 @@ const MOVIES = [
       "Crime",
       "Thriller"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDBlNGEyZDAtZjFhYS00YWU2LWFkYzEtNTlmYTIxZjJhNzI3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDBlNGEyZDAtZjFhYS00YWU2LWFkYzEtNTlmYTIxZjJhNzI3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 73,
     "popularity_score": 0.8,
@@ -4829,7 +4829,7 @@ const MOVIES = [
       "Drama",
       "Sport"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjFiOGMwNWYtMTI4OS00YWE2LTllZmQtOTRjMjEzM2M0NWM0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjFiOGMwNWYtMTI4OS00YWE2LTllZmQtOTRjMjEzM2M0NWM0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 85,
     "popularity_score": 0.8,
@@ -4872,7 +4872,7 @@ const MOVIES = [
       "Drama",
       "Sport"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWU0ZTk1ODYtOTk4MS00ZTdmLWJjOWYtMmJiYWQ2ZTcwZjJlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWU0ZTk1ODYtOTk4MS00ZTdmLWJjOWYtMmJiYWQ2ZTcwZjJlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 85,
     "popularity_score": 0.8,
@@ -4957,7 +4957,7 @@ const MOVIES = [
       "Drama",
       "Horror"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGRkMThjMWItZDI1NC00NTYxLWIzYjMtMmY2ZTBjN2E3MWMxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGRkMThjMWItZDI1NC00NTYxLWIzYjMtMmY2ZTBjN2E3MWMxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 46,
     "popularity_score": 0.7,
@@ -4999,7 +4999,7 @@ const MOVIES = [
       "Sci-Fi",
       "Adventure"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5042,7 +5042,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5084,7 +5084,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5125,7 +5125,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5166,7 +5166,7 @@ const MOVIES = [
       "Action",
       "Sci-Fi"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5207,7 +5207,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2E5NzI2ZGMtY2VjNi00YTRjLWI1MDUtZGY5OWU1MWJjZjRjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2E5NzI2ZGMtY2VjNi00YTRjLWI1MDUtZGY5OWU1MWJjZjRjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5249,7 +5249,7 @@ const MOVIES = [
       "Drama",
       "Mystery"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/69Sns8WoET6CfaYlIkHbla4l7nC.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/69Sns8WoET6CfaYlIkHbla4l7nC.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 86,
     "popularity_score": 0.8,
@@ -5291,7 +5291,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5331,7 +5331,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5370,7 +5370,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5409,7 +5409,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5448,7 +5448,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5487,7 +5487,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmM3ZjE0NzctNjBiOC00MDZmLTgzMTUtNGVlOWFlOTNiZDJiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5527,7 +5527,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGNhMjg2ZjgtYzk4Ni00MTViLTg1MmUtYzM2MDZiYjZlMmU3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGNhMjg2ZjgtYzk4Ni00MTViLTg1MmUtYzM2MDZiYjZlMmU3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5568,7 +5568,7 @@ const MOVIES = [
       "Adventure",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5609,7 +5609,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5648,7 +5648,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5687,7 +5687,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5726,7 +5726,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5765,7 +5765,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5804,7 +5804,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5844,7 +5844,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5884,7 +5884,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5924,7 +5924,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -5963,7 +5963,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6002,7 +6002,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTAwNzNjYWItZmI0Ni00ZTcyLWIwNWMtZjlmNGMxZTEyYTJmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTAwNzNjYWItZmI0Ni00ZTcyLWIwNWMtZjlmNGMxZTEyYTJmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6042,7 +6042,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTNmYzY0MWQtZGZmNy00Y2Y4LWFmMDQtMTZjYTdiYzEwZGQ2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTNmYzY0MWQtZGZmNy00Y2Y4LWFmMDQtMTZjYTdiYzEwZGQ2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6082,7 +6082,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjY4NGI5OTUtY2ZlZS00Zjk4LTk5N2MtN2JmYWVjNGNmMGRlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjY4NGI5OTUtY2ZlZS00Zjk4LTk5N2MtN2JmYWVjNGNmMGRlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6122,7 +6122,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6161,7 +6161,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6200,7 +6200,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTcyN2Y0MDYtMGI1NC00MWQ1LWFhZGMtN2U4NTcxZGYyNjljXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTcyN2Y0MDYtMGI1NC00MWQ1LWFhZGMtN2U4NTcxZGYyNjljXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6239,7 +6239,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTY5MmE2OGMtN2IxNC00MDY4LTkwMGEtZDUzOTYyNWE0ZTNjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTY5MmE2OGMtN2IxNC00MDY4LTkwMGEtZDUzOTYyNWE0ZTNjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6278,7 +6278,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMmJiYWI4ZjktMzgyZS00MjBiLThmOTYtZWJmOTUzOTFkMTFiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmJiYWI4ZjktMzgyZS00MjBiLThmOTYtZWJmOTUzOTFkMTFiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6317,7 +6317,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODhkNDhmNzktODFmMC00NDZiLWEzN2UtY2YwYzgzYTVlMWZmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODhkNDhmNzktODFmMC00NDZiLWEzN2UtY2YwYzgzYTVlMWZmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6356,7 +6356,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGViYmNmZDUtODFlNi00MjMxLWI0ZmYtYTBiMDg2OGRiODQ4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGViYmNmZDUtODFlNi00MjMxLWI0ZmYtYTBiMDg2OGRiODQ4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6395,7 +6395,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6434,7 +6434,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzAwNDIzMzEtZDZkNC00ZDQ4LTk3ZDMtZjVhMTU2YzgzZTZiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzAwNDIzMzEtZDZkNC00ZDQ4LTk3ZDMtZjVhMTU2YzgzZTZiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6474,7 +6474,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGJkYjkyMDUtM2U3ZC00NDM3LWI0MzItZjU5MmYwYjg2YmIwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGJkYjkyMDUtM2U3ZC00NDM3LWI0MzItZjU5MmYwYjg2YmIwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6513,7 +6513,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6553,7 +6553,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYWUxMGRhZDQtMTBmMi00N2IxLWE5NmYtMDMyMWExODAwNWYzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWUxMGRhZDQtMTBmMi00N2IxLWE5NmYtMDMyMWExODAwNWYzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6593,7 +6593,7 @@ const MOVIES = [
     "genre": [
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODYzNDZmOTUtMDdiZS00Nzg3LTkxZGUtZmYzYzkxYjBlYjA5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODYzNDZmOTUtMDdiZS00Nzg3LTkxZGUtZmYzYzkxYjBlYjA5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -6633,7 +6633,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6674,7 +6674,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6715,7 +6715,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6756,7 +6756,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6797,7 +6797,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6838,7 +6838,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6879,7 +6879,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6920,7 +6920,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWEwOTI0MmUtMGNmNy00ODViLTlkZDQtZTg1YmQ3MDgyNTUzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWEwOTI0MmUtMGNmNy00ODViLTlkZDQtZTg1YmQ3MDgyNTUzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -6961,7 +6961,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7003,7 +7003,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGMyMGNkMDUtMjc2Ni00NWFlLTgyODEtZTY2MzBiZTg0OWZiXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGMyMGNkMDUtMjc2Ni00NWFlLTgyODEtZTY2MzBiZTg0OWZiXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7044,7 +7044,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2NhMDk2MmEtZDQzOC00MmY5LThhYzAtMDdjZGFjOGZjMjdjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2NhMDk2MmEtZDQzOC00MmY5LThhYzAtMDdjZGFjOGZjMjdjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7086,7 +7086,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjIyNGJhYzYtN2I1My00OTVhLWEyMzItZTVjNDMzOTVkYWViXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjIyNGJhYzYtN2I1My00OTVhLWEyMzItZTVjNDMzOTVkYWViXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7127,7 +7127,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7169,7 +7169,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/5pBcbtOBhnAE7CMWoAcTJC5fIsn.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/5pBcbtOBhnAE7CMWoAcTJC5fIsn.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7210,7 +7210,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/5aUVLiqcW0kFTBfGsCWjvLas91w.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/5aUVLiqcW0kFTBfGsCWjvLas91w.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7251,7 +7251,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7292,7 +7292,7 @@ const MOVIES = [
       "Sci-Fi",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 85,
     "popularity_score": 0.9,
@@ -7343,7 +7343,7 @@ const MOVIES = [
     "writer": "Lokesh Kanagaraj",
     "synopsis": "Parthiban is a mild-mannered cafe owner who fends off a gang of murderous thugs and gains attention from a drug cartel claiming he was once a part of them.",
     "trailer": "Po3jStA673E",
-    "poster": "https://image.tmdb.org/t/p/w500/rzSBCrS7ZSkB8quje1Na31gRze.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/rzSBCrS7ZSkB8quje1Na31gRze.jpg",
     "experience_type": "intense",
     "rating_percent": 81,
     "popularity_score": 0.95,
@@ -7386,7 +7386,7 @@ const MOVIES = [
     "writer": "Lokesh Kanagaraj",
     "synopsis": "An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.",
     "trailer": "1_iUFT3nWHk",
-    "poster": "https://image.tmdb.org/t/p/w500/wjbOlovDadOdPKkSAMohLCjbIsc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/wjbOlovDadOdPKkSAMohLCjbIsc.jpg",
     "experience_type": "intense",
     "rating_percent": 78,
     "popularity_score": 0.9,
@@ -7430,7 +7430,7 @@ const MOVIES = [
     "writer": "Lokesh Kanagaraj",
     "synopsis": "A special investigator discovers a case of serial killings is not what it seems to be, and leading down this path is only going to end in a war between everyone involved.",
     "trailer": "OKBMCL-frPU",
-    "poster": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
     "experience_type": "intense",
     "rating_percent": 88,
     "popularity_score": 0.96,
@@ -7475,7 +7475,7 @@ const MOVIES = [
     "writer": "Lokesh Kanagaraj",
     "synopsis": "Dilli, an ex-convict, endeavours to meet his daughter for the first time after leaving prison. However, his attempts are interrupted due to a drug raid planned by Inspector Bejoy.",
     "trailer": "g79CvhHaj5I",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDk2NWQyMjQtODlkYi00YTJjLTkxMGItMGU0ZDExODI3OWIxXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDk2NWQyMjQtODlkYi00YTJjLTkxMGItMGU0ZDExODI3OWIxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 85,
     "popularity_score": 0.88,
@@ -7519,7 +7519,7 @@ const MOVIES = [
     "writer": "Vetrimaaran",
     "synopsis": "A mathematician genius, Mathi, has another identity, Cobra, who commits intelligent crimes using maths.",
     "trailer": "vOCM9wztBYQ",
-    "poster": "https://image.tmdb.org/t/p/w500/Elnp3XrAlMM30dil8rbL7D9XeP.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/Elnp3XrAlMM30dil8rbL7D9XeP.jpg",
     "experience_type": "intense",
     "rating_percent": 89,
     "popularity_score": 0.85,
@@ -7562,7 +7562,7 @@ const MOVIES = [
     "writer": "Vetrimaaran",
     "synopsis": "Anbuf, a skilled carrom player, is drawn into the world of local gangsters in North Chennai. He becomes a pawn in a power struggle between two rivalry gangs while trying to protect his neighborhood and his loved ones.",
     "trailer": "q5GG5HJ1hVk",
-    "poster": "https://image.tmdb.org/t/p/w500/4Pa7SriYtq4BdoS2BAPm6w66vLi.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/4Pa7SriYtq4BdoS2BAPm6w66vLi.jpg",
     "experience_type": "emotional",
     "rating_percent": 88,
     "popularity_score": 0.82,
@@ -7589,23 +7589,23 @@ const MOVIES = [
   },
   {
     "title": "96",
-    "year": 2022,
+    "year": 2018,
     "genre": [
       "Romance",
       "Drama"
     ],
-    "director": "Kiranraj K",
+    "director": "C. Prem Kumar",
     "cast": [
-      "Rakshit Shetty",
-      "Charlie",
-      "Sangeetha Sringeri"
+          "Vijay Sethupathi",
+          "Trisha Krishnan",
+          "Gouri G. Kishan"
     ],
     "music": "Govind Vasantha",
-    "cinematographer": "Mahendiran Jayaraju",
+    "cinematographer": "S. Tirru",
     "writer": "C. Prem Kumar",
-    "synopsis": "Dharma is stuck in a rut with his negative and lonely lifestyle and spends each day in the comfort of his loneliness. A pup named Charlie enters his life and gives him a new perspective towards it.",
+    "synopsis": "A former couple reunites at a school reunion after 22 years, rekindling memories and unspoken emotions from their past.",
     "trailer": "r0synl-lI4I",
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWY4MzlmNjItZGYzMS00ZDVhLWI2ZDMtNWEwZTBiMmU0YzQ4XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWY4MzlmNjItZGYzMS00ZDVhLWI2ZDMtNWEwZTBiMmU0YzQ4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 85,
     "popularity_score": 0.8,
@@ -7627,7 +7627,7 @@ const MOVIES = [
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
-    "overview": "Two high school sweethearts meet at a reunion after 22 years and reminisce about their past over the course of a single evening.",
+    "overview": "A former couple reunites at a school reunion after 22 years, rekindling memories and unspoken emotions from their past.",
     "duration_minutes": 150
   },
   {
@@ -7649,7 +7649,7 @@ const MOVIES = [
     "writer": "Ram Kumar",
     "synopsis": "A sub-inspector sets out in pursuit of a mysterious serial killer who targets teen school girls and murders them brutally.",
     "trailer": "GsrN7rNch9Y",
-    "poster": "https://image.tmdb.org/t/p/w500/mruUFlrVKiL994y3vvQBT8R2Vnf.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/mruUFlrVKiL994y3vvQBT8R2Vnf.jpg",
     "experience_type": "intense",
     "rating_percent": 88,
     "popularity_score": 0.84,
@@ -7693,7 +7693,7 @@ const MOVIES = [
     "writer": "Sudha Kongara",
     "synopsis": "Maara, a young man from a remote village, dreams of launching his own airline service. However, he must overcome several obstacles and challenges in order to be successful.",
     "trailer": "fa_DIwRsa9o",
-    "poster": "https://image.tmdb.org/t/p/w500/5uimlxPCgAei8JfQUDFEUQLoyyh.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/5uimlxPCgAei8JfQUDFEUQLoyyh.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 87,
     "popularity_score": 0.86,
@@ -7780,7 +7780,7 @@ const MOVIES = [
     "writer": "Nithilan Saminathan",
     "synopsis": "A barber seeks vengeance after his home is burglarized, cryptically telling police his \"lakshmi\" has been taken, leaving them uncertain if it's a person or object. His quest to recover the elusive \"lakshmi\" unfolds.",
     "trailer": "z37hCm4eges",
-    "poster": "https://image.tmdb.org/t/p/w500/s0m4TM1XRAftQStgKpw024RvkJo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/s0m4TM1XRAftQStgKpw024RvkJo.jpg",
     "experience_type": "intense",
     "rating_percent": 87,
     "popularity_score": 0.91,
@@ -7825,7 +7825,7 @@ const MOVIES = [
     "writer": "Thiagarajan Kumararaja",
     "synopsis": "An unfaithful wife, an estranged father, and a priest must all face their demons on one fateful day where their lives mysteriously intertwine in Chennai.",
     "trailer": "3-Xq_Zz3nPA",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmQ3NjM2OWMtY2IxNy00OWY4LWIyYjMtNGUzMGU3ZTZkMWJmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmQ3NjM2OWMtY2IxNy00OWY4LWIyYjMtNGUzMGU3ZTZkMWJmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 83,
     "popularity_score": 0.79,
@@ -7861,16 +7861,17 @@ const MOVIES = [
     ],
     "director": "Venkat Prabhu",
     "cast": [
-      "Michiko Kichise",
-      "Juna Aoki",
-      "Kasumi Arimura"
+          "Ajith Kumar",
+          "Arjun Sarja",
+          "Trisha Krishnan",
+          "Lakshmi Rai"
     ],
     "music": "Yuvan Shankar Raja",
     "cinematographer": "Sakthi Saravanan",
     "writer": "Venkat Prabhu",
-    "synopsis": "A suspended cop joins hands with a gang of thieves to steal a massive sum of cricket betting money, only to face double-crossings at every turn.",
+    "synopsis": "A suspended police officer gets involved in a match-fixing scandal involving illegal cricket betting, double-crossing everyone to steal a fortune.",
     "trailer": "vHESM8iR1JE",
-    "poster": "https://image.tmdb.org/t/p/w500/tZnDKJyUYfZKKPfBgVheU9vKlUo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/tZnDKJyUYfZKKPfBgVheU9vKlUo.jpg",
     "experience_type": "intense",
     "rating_percent": 82,
     "popularity_score": 0.83,
@@ -7893,28 +7894,29 @@ const MOVIES = [
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
-    "overview": "A suspended cop joins hands with a gang of thieves to steal a massive sum of cricket betting money, only to face double-crossings at every turn.",
+    "overview": "A suspended police officer gets involved in a match-fixing scandal involving illegal cricket betting, double-crossing everyone to steal a fortune.",
     "duration_minutes": 160
   },
   {
     "title": "Thuppakki",
-    "year": 2006,
+    "year": 2012,
     "genre": [
       "Action",
       "Thriller"
     ],
-    "director": "AR Murugadoss",
+    "director": "A.R. Murugadoss",
     "cast": [
-      "Yeon-hong Ahn",
-      "Jung Dong-hwan",
-      "Lee Yeon Hee"
+          "Joseph Vijay",
+          "Kajal Aggarwal",
+          "Vidyut Jammwal",
+          "Jayaram"
     ],
     "music": "Harris Jayaraj",
     "cinematographer": "Santosh Sivan",
-    "writer": "AR Murugadoss",
-    "synopsis": "An intelligence officer from the Indian Army sets out to hunt down a sleeper cell network plotting massive terrorist attacks across Mumbai.",
+    "writer": "A.R. Murugadoss",
+    "synopsis": "An Indian Army captain on leave single-handedly takes on a terrorist sleeper cell operating in Mumbai.",
     "trailer": "aW_j4pNvG98",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDhmMWI0OWEtNTY3My00MjcxLTgwNDItMTgzYmJkMWQyMzg0XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDhmMWI0OWEtNTY3My00MjcxLTgwNDItMTgzYmJkMWQyMzg0XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 83,
     "popularity_score": 0.86,
@@ -7936,7 +7938,7 @@ const MOVIES = [
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
-    "overview": "An intelligence officer from the Indian Army sets out to hunt down a sleeper cell network plotting massive terrorist attacks across Mumbai.",
+    "overview": "An Indian Army captain on leave single-handedly takes on a terrorist sleeper cell operating in Mumbai.",
     "duration_minutes": 124
   },
   {
@@ -7957,7 +7959,7 @@ const MOVIES = [
     "writer": "Kamal Haasan",
     "synopsis": "Two men of contrasting personalities, a communist activist and a capitalist ad filmmaker, undertake a journey together that changes their perspectives on life.",
     "trailer": "lPLN69KAukE",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDAxNWM0NmMtOTE0YS00M2I0LTkwNjItNWY2N2VmNzJiZTdmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDAxNWM0NmMtOTE0YS00M2I0LTkwNjItNWY2N2VmNzJiZTdmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 87,
     "popularity_score": 0.76,
@@ -7984,25 +7986,25 @@ const MOVIES = [
   },
   {
     "title": "Jigarthanda",
-    "year": 2005,
+    "year": 2014,
     "genre": [
       "Action",
       "Comedy",
       "Crime"
     ],
-    "director": "Petra Clever",
+    "director": "Karthik Subbaraj",
     "cast": [
-      "Nils Brunkhorst",
-      "Yvonne Burbach",
-      "Inez Bj\u00f8rg David",
-      "Wolfram Grandezka"
+          "Siddharth",
+          "Bobby Simha",
+          "Lakshmi Menon",
+          "Nassar"
     ],
     "music": "Santhosh Narayanan",
-    "cinematographer": "Gavemic U. Ary",
+    "cinematographer": "P.S. Vinod",
     "writer": "Karthik Subbaraj",
-    "synopsis": "An aspiring filmmaker tries to secretly shadow a ruthless gangster to research a movie about him, but gets caught in a dangerous web of deception and violence.",
+    "synopsis": "An aspiring filmmaker sets out to make a gangster movie, but his research on a real-life gangster spirals out of control.",
     "trailer": "_T8n-EHr4ZE",
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGM5NGE4Y2UtMzQzZS00ZGRjLWFiNDItNjk5YTkwZmMyZmM5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGM5NGE4Y2UtMzQzZS00ZGRjLWFiNDItNjk5YTkwZmMyZmM5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 83,
     "popularity_score": 0.78,
@@ -8025,7 +8027,7 @@ const MOVIES = [
         "icon": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
       }
     ],
-    "overview": "An aspiring filmmaker tries to secretly shadow a ruthless gangster to research a movie about him, but gets caught in a dangerous web of deception and violence.",
+    "overview": "An aspiring filmmaker sets out to make a gangster movie, but his research on a real-life gangster spirals out of control.",
     "duration_minutes": 158
   },
   {
@@ -8046,7 +8048,7 @@ const MOVIES = [
     "writer": "Mari Selvaraj",
     "synopsis": "A law student from a lower caste faces immense discrimination and violence after he befriends a girl from a higher caste in his college.",
     "trailer": "GMNsUxJe4R4",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmMzOWQ0NWUtOGQ0Yi00NGNiLWEzNTItMmE1NGRmNDlhYWFkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmMzOWQ0NWUtOGQ0Yi00NGNiLWEzNTItMmE1NGRmNDlhYWFkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 88,
     "popularity_score": 0.81,
@@ -8090,7 +8092,7 @@ const MOVIES = [
     "writer": "Mani Ratnam",
     "synopsis": "A young boy from Tamil Nadu flees to Mumbai and gradually rises through the ranks of the underworld to become a powerful don to protect the poor.",
     "trailer": "1S6YkmYvgi8",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDgyNDFhMTgtM2Y5YS00MTczLWJmODktNTAzZGIyYWNjYmFjXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDgyNDFhMTgtM2Y5YS00MTczLWJmODktNTAzZGIyYWNjYmFjXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 87,
     "popularity_score": 0.77,
@@ -8136,7 +8138,7 @@ const MOVIES = [
     "writer": "H. Vinoth",
     "synopsis": "A dedicated police officer investigates a series of cold-blooded murders and burglaries committed by a highly dangerous and elusive gang across India.",
     "trailer": "uLuGOOFORAs",
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YjVhMWQtODQwMC00NWQ4LTgzMGMtMGFkOTExNzAyNzM5XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YjVhMWQtODQwMC00NWQ4LTgzMGMtMGFkOTExNzAyNzM5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 85,
     "popularity_score": 0.82,
@@ -8178,7 +8180,7 @@ const MOVIES = [
     "imdb": "tt0109830",
     "trailer": "bLvqoHBptjg",
     "movie_id": 228,
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 93,
     "popularity_score": 0.88,
@@ -8221,7 +8223,7 @@ const MOVIES = [
     "imdb": "tt6710474",
     "trailer": "wxN1T1uxQ2g",
     "movie_id": 231,
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 85,
     "popularity_score": 0.87,
@@ -8264,7 +8266,7 @@ const MOVIES = [
     "imdb": "tt0209144",
     "trailer": "4CV41hoyS8A",
     "movie_id": 236,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGQ3Y2Q4NjktN2E4Ny00Y2Q2LTliZDUtZTNiNjRhY2I0NGIyXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGQ3Y2Q4NjktN2E4Ny00Y2Q2LTliZDUtZTNiNjRhY2I0NGIyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 85,
     "popularity_score": 0.94,
@@ -8307,7 +8309,7 @@ const MOVIES = [
     "imdb": "tt0095016",
     "trailer": "jaJuwKCmJbY",
     "movie_id": 246,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 91,
     "popularity_score": 0.9299999999999999,
@@ -8351,7 +8353,7 @@ const MOVIES = [
     "imdb": "tt0114709",
     "trailer": "v-PjgYDrg70",
     "movie_id": 248,
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 89,
     "popularity_score": 0.9199999999999999,
@@ -8441,7 +8443,7 @@ const MOVIES = [
     "imdb": "tt0910970",
     "trailer": "alIq_wG9FNk",
     "movie_id": 250,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 97,
     "popularity_score": 0.95,
@@ -8486,7 +8488,7 @@ const MOVIES = [
     "imdb": "tt0361748",
     "trailer": "KnrRy6kSFF0",
     "movie_id": 254,
-    "poster": "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 85,
     "popularity_score": 0.98,
@@ -8530,7 +8532,7 @@ const MOVIES = [
     "imdb": "tt0993846",
     "trailer": "iszwuX1AK6A",
     "movie_id": 255,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 88,
     "popularity_score": 0.86,
@@ -8573,7 +8575,7 @@ const MOVIES = [
     "imdb": "tt1130884",
     "trailer": "v8yrZSkKxTA",
     "movie_id": 256,
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 87,
     "popularity_score": 0.97,
@@ -8616,7 +8618,7 @@ const MOVIES = [
     "imdb": "tt0264464",
     "trailer": "71rDQ7z4eFg",
     "movie_id": 257,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 82,
     "popularity_score": 0.9,
@@ -8659,7 +8661,7 @@ const MOVIES = [
     "imdb": "tt0120382",
     "trailer": "dlnmQbPGuls",
     "movie_id": 258,
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 97,
     "popularity_score": 0.89,
@@ -8703,7 +8705,7 @@ const MOVIES = [
     "imdb": "tt0338013",
     "trailer": "yE-f1alkq9I",
     "movie_id": 259,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 95,
     "popularity_score": 0.98,
@@ -8747,7 +8749,7 @@ const MOVIES = [
     "imdb": "tt1285016",
     "trailer": "lB95KLmpLR4",
     "movie_id": 260,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 83,
     "popularity_score": 0.9,
@@ -8790,7 +8792,7 @@ const MOVIES = [
     "imdb": "tt1392190",
     "trailer": "hEJnMQG9ev8",
     "movie_id": 261,
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDRkODJhOTgtOTc1OC00NTgzLTk4NjItNDgxZDY4YjlmNDY2XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDRkODJhOTgtOTc1OC00NTgzLTk4NjItNDgxZDY4YjlmNDY2XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 97,
     "popularity_score": 0.87,
@@ -8834,7 +8836,7 @@ const MOVIES = [
     "imdb": "tt15398776",
     "trailer": "uYPbbksJxIg",
     "movie_id": 264,
-    "poster": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 94,
     "popularity_score": 0.87,
@@ -8878,7 +8880,7 @@ const MOVIES = [
     "imdb": "tt1517268",
     "trailer": "pBk4NYhWNMM",
     "movie_id": 265,
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 80,
     "popularity_score": 0.86,
@@ -8922,7 +8924,7 @@ const MOVIES = [
     "imdb": "tt4154756",
     "trailer": "6ZfuNTqbHE8",
     "movie_id": 268,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 87,
     "popularity_score": 0.94,
@@ -8966,7 +8968,7 @@ const MOVIES = [
     "imdb": "tt4633694",
     "trailer": "tg52up16eq0",
     "movie_id": 269,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 84,
     "popularity_score": 0.9199999999999999,
@@ -9011,7 +9013,7 @@ const MOVIES = [
     "imdb": "tt2096673",
     "trailer": "yRUAzGQ3nSY",
     "movie_id": 271,
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_SX1080.jpg",
     "experience_type": "fun",
     "rating_percent": 83,
     "popularity_score": 0.86,
@@ -10147,7 +10149,7 @@ const MOVIES = [
       "Drama",
       "Sport"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/jNyLZjIgaYVkBli2JihHwABlAPY.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/jNyLZjIgaYVkBli2JihHwABlAPY.jpg",
     "experience_type": "fun",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -10178,13 +10180,13 @@ const MOVIES = [
     ],
     "writer": "Tamizharasan Pachamuthu",
     "cinematographer": "M. Ezhil Arasu",
-    "music": "Vishnu Vijay",
+    "music": "Yuvan Shankar Raja",
     "duration_minutes": 151
   },
   {
     "movie_id": 300,
     "title": "Garudan",
-    "year": 2023,
+    "year": 2024,
     "genre": [
       "Crime",
       "Thriller"
@@ -10194,13 +10196,14 @@ const MOVIES = [
     "rating_percent": 73,
     "popularity_score": 0.8,
     "age_limit": 18,
-    "synopsis": "Harish Madhav, a straightforward cop, and Nishanth, a college professor, get entangled in a crime and one has to fight for his integrity and other has to fight for justice.",
+    "synopsis": "A tale of loyalty, betrayal, and revenge among childhood friends in rural Tamil Nadu.",
     "quote": "Spark... -- Garudan teaches us that even if you're a mess, at least you're a masterpiece of a mess. Embrace the Madhav within.",
-    "director": "Arun Varma",
+    "director": "R.S. Durai Senthilkumar",
     "cast": [
-      "Suresh Gopi",
-      "Biju Menon",
-      "Siddique"
+          "Soori",
+          "M. Sasikumar",
+          "Unni Mukundan",
+          "Samuthirakani"
     ],
     "trailer_yt_id": "ZLnSJJF_lHE",
     "keywords": "Crime, Thriller",
@@ -10216,8 +10219,8 @@ const MOVIES = [
       "Crime",
       "Thriller"
     ],
-    "writer": "Arun Varma",
-    "cinematographer": "Santosh Sivan",
+    "writer": "Vetrimaaran, R.S. Durai Senthilkumar",
+    "cinematographer": "S.R. Kathir",
     "music": "Anirudh Ravichander",
     "duration_minutes": 120
   },
@@ -10597,7 +10600,7 @@ const MOVIES = [
       "Drama",
       "Action"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZDQ4YmMyYTAtYTNiZS00NzM2LWFkMmQtNGUzNDJkMDU0MWUwXkEyXkFqcGc@._V1_SX250.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDQ4YmMyYTAtYTNiZS00NzM2LWFkMmQtNGUzNDJkMDU0MWUwXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 75,
     "popularity_score": 0.8,
@@ -10637,7 +10640,7 @@ const MOVIES = [
       "Drama",
       "History"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/fCfQoMxBg1jjyQaY06LxQDrVssC.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/fCfQoMxBg1jjyQaY06LxQDrVssC.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 80,
     "popularity_score": 0.8,
@@ -10848,7 +10851,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/hqFEVoT3g9PuZd7vG6eyKQdUqxd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/hqFEVoT3g9PuZd7vG6eyKQdUqxd.jpg",
     "experience_type": "intense",
     "rating_percent": 83,
     "popularity_score": 0.8,
@@ -10970,7 +10973,7 @@ const MOVIES = [
       "Drama",
       "Action"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/28AzafDajgmd53F2DgMAK2ncu3K.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/28AzafDajgmd53F2DgMAK2ncu3K.jpg",
     "experience_type": "intense",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -11256,7 +11259,7 @@ const MOVIES = [
       "Drama",
       "Romance"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BODdkZWU1NjgtYmFjZS00MGU3LTk4YzEtOGY4ZDM5YTc4NDIyXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODdkZWU1NjgtYmFjZS00MGU3LTk4YzEtOGY4ZDM5YTc4NDIyXkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "emotional",
     "rating_percent": 81,
     "popularity_score": 0.8,
@@ -11548,7 +11551,7 @@ const MOVIES = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/9x1Kaa4ETCAZUrEaCPXHVqwPuT5.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/9x1Kaa4ETCAZUrEaCPXHVqwPuT5.jpg",
     "experience_type": "intense",
     "rating_percent": 79,
     "popularity_score": 0.8,
@@ -13176,7 +13179,7 @@ const MOVIES = [
       "Action",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/xMLJKM61RivaLixxY2Gi37UiYSF.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/xMLJKM61RivaLixxY2Gi37UiYSF.jpg",
     "experience_type": "intense",
     "rating_percent": 86,
     "popularity_score": 0.8,
@@ -13842,7 +13845,7 @@ const MOVIES = [
       "Comedy",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/88QYspKRArRutF3t0Bzj0JYFlcI.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/88QYspKRArRutF3t0Bzj0JYFlcI.jpg",
     "experience_type": "fun",
     "rating_percent": 82,
     "popularity_score": 0.8,
@@ -14038,7 +14041,7 @@ const MOVIES = [
   {
     "movie_id": 402,
     "title": "Mudhalvan",
-    "year": 2024,
+    "year": 1999,
     "genre": [
       "Drama",
       "Action"
@@ -14165,7 +14168,7 @@ const MOVIES = [
       "Biography",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/uEug1su4J5HSvsNHVwBWQ0qjtSc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/uEug1su4J5HSvsNHVwBWQ0qjtSc.jpg",
     "experience_type": "thought-provoking",
     "rating_percent": 84,
     "popularity_score": 0.8,
@@ -14336,7 +14339,7 @@ const MOVIES = [
       "Crime",
       "Drama"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTA0NjQwYmUtN2ViZS00MWI2LWI4NWEtMjBlYWUxMTYzMTI5XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTA0NjQwYmUtN2ViZS00MWI2LWI4NWEtMjBlYWUxMTYzMTI5XkEyXkFqcGc@._V1_SX1080.jpg",
     "experience_type": "intense",
     "rating_percent": 80,
     "popularity_score": 0.8,
@@ -14672,12 +14675,12 @@ const MOVIES = [
   {
     "movie_id": 419,
     "title": "Polladhavan",
-    "year": 2024,
+    "year": 2007,
     "genre": [
       "Drama",
       "Action"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/1RYVHriU4DP6awmb62Qu6dJ3YxD.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/1RYVHriU4DP6awmb62Qu6dJ3YxD.jpg",
     "experience_type": "intense",
     "rating_percent": 77,
     "popularity_score": 0.8,
@@ -14712,7 +14715,7 @@ const MOVIES = [
   {
     "movie_id": 420,
     "title": "Aaranya Kaandam",
-    "year": 2010,
+    "year": 2011,
     "genre": [
       "Action",
       "Comedy",
@@ -16300,7 +16303,7 @@ const MOVIES = [
   {
     "movie_id": 465,
     "title": "16 Vayathinile",
-    "year": 2024,
+    "year": 1977,
     "genre": [
       "Drama",
       "Action"
@@ -17210,7 +17213,7 @@ const MOVIES = [
   {
     "movie_id": 489,
     "title": "Garuda Gamana Vrishabha Vahana",
-    "year": 2024,
+    "year": 2021,
     "genre": [
       "Drama",
       "Action"
@@ -18128,7 +18131,7 @@ const MOVIES = [
   {
     "movie_id": 512,
     "title": "Irupatham Noottandu",
-    "year": 2024,
+    "year": 1987,
     "genre": [
       "Drama",
       "Action"
@@ -18508,7 +18511,7 @@ const MOVIES = [
       "Comedy",
       "Action"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/dP1Xoc3X76Q97OUCpQTN9hftUST.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/dP1Xoc3X76Q97OUCpQTN9hftUST.jpg",
     "rating_percent": 74,
     "popularity_score": 0.85,
     "experience_type": "fun",
@@ -18555,7 +18558,7 @@ const MOVIES = [
       "Action",
       "Thriller"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/zSZhWTkPBom7kb8cACf2H9eKeXo.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/zSZhWTkPBom7kb8cACf2H9eKeXo.jpg",
     "rating_percent": 88,
     "popularity_score": 0.95,
     "experience_type": "intense",
@@ -18602,7 +18605,7 @@ const MOVIES = [
       "Action",
       "Drama"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/dw3Dllz1gV7186m7clqNDnI9R28.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/dw3Dllz1gV7186m7clqNDnI9R28.jpg",
     "rating_percent": 85,
     "popularity_score": 0.9,
     "experience_type": "intense",
@@ -18695,7 +18698,7 @@ const MOVIES = [
       "Action",
       "Comedy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w500/6sy04pXxnBgjTZmnb7QrOLPntTl.jpg",
+    "poster": "https://image.tmdb.org/t/p/w1280/6sy04pXxnBgjTZmnb7QrOLPntTl.jpg",
     "rating_percent": 82,
     "popularity_score": 0.92,
     "experience_type": "fun",

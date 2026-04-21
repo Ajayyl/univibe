@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UniVibe — AI Movie Recommendation System</title>
+  <title>Movie Recommendation System</title>
   <meta name="description"
     content="Discover movies that match your vibe. Powered by a recommendation engine that learns your taste — then stream on your favourite platform." />
   <meta name="referrer" content="no-referrer" />
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/logo/v3.png" type="image/png" />
+  <link rel="icon" href="assets/logo/cinema.png" type="image/png" />
 
   <!-- PWA Support -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#7c3aed" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="UniVibe" />
-  <link rel="apple-touch-icon" href="assets/logo/v3.png" />
+  <meta name="apple-mobile-web-app-title" content="Movie Recommendation System" />
+  <link rel="apple-touch-icon" href="assets/logo/cinema.png" />
   <!-- Preconnect to external resources for faster loading -->
   <link rel="preconnect" href="https://m.media-amazon.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -29,7 +29,7 @@
   <!-- Stylesheet -->
   <!-- Professional Icon System (FontAwesome) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css?v=78" />
+  <link rel="stylesheet" href="css/style.css?v=80" />
 
   <!-- Fade-out keyframe for age gate removal -->
   <style>
@@ -53,8 +53,8 @@
   <script>
     // Only clear stale service worker caches, don't force reload
     (function() {
-      const CURRENT_VERSION = 'v78';
-      const lastVersion = localStorage.getItem('univibe_cache_ver');
+      const CURRENT_VERSION = 'v80';
+      const lastVersion = localStorage.getItem('mrs_cache_ver');
       if (lastVersion && lastVersion !== CURRENT_VERSION) {
         // Version changed — clear old caches once
         if ('serviceWorker' in navigator) {
@@ -66,7 +66,7 @@
           names.forEach(function(n) { caches.delete(n); });
         });
       }
-      localStorage.setItem('univibe_cache_ver', CURRENT_VERSION);
+      localStorage.setItem('mrs_cache_ver', CURRENT_VERSION);
     })();
   </script>
 
@@ -74,8 +74,11 @@
   <nav class="navbar" id="navbar">
     <div class="navbar-inner">
       <a class="navbar-brand" href="#/">
-        <img src="assets/logo/v3.png" alt="UniVibe" class="logo-img" />
-        <div class="logo-text">UniVibe</div>
+        <img src="assets/logo/cinema.png" class="logo-img" alt="Movie Recommendation System" />
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="logo-text">Movie Recommendation System</div>
+          <div style="font-size: 14px; font-weight: 500; color: rgba(255, 255, 255, 0.8); line-height: 1.2; margin-top: 2px;">Using Machine Learning Techniques</div>
+        </div>
       </a>
       <div class="navbar-links" id="nav-links">
         <a class="nav-link" href="#/" data-route="/">Home</a>
@@ -94,25 +97,25 @@
   </main>
 
   <!-- Scripts (order matters: data → AI → API → logic → components → auth → router → pages) -->
-  <script src="data/movieData_v63.js?v=78"></script>
-    <script src="js/localAI.js?v=78"></script>
-    <script src="js/api.js?v=78"></script>
-    <script src="js/recommendationEngine.js?v=78"></script>
-    <script src="js/components.js?v=78"></script>
-    <script src="js/router.js?v=78"></script>
-    <script src="js/pages/ageGate.js?v=78"></script>
-    <script src="js/pages/authUI.js?v=78"></script>
-    <script src="js/pages/dashboard.js?v=78"></script>
-    <script src="js/pages/home.js?v=78"></script>
-    <script src="js/pages/catalogue.js?v=78"></script>
-    <script src="js/pages/movieList.js?v=78"></script>
-    <script src="js/pages/search.js?v=78"></script>
-    <script src="js/pages/detail.js?v=78"></script>
-    <script src="js/pages/platform.js?v=78"></script>
+  <script src="data/movieData_v63.js?v=80"></script>
+    <script src="js/localAI.js?v=80"></script>
+    <script src="js/api.js?v=80"></script>
+    <script src="js/recommendationEngine.js?v=80"></script>
+    <script src="js/components.js?v=80"></script>
+    <script src="js/router.js?v=80"></script>
+    <script src="js/pages/ageGate.js?v=80"></script>
+    <script src="js/pages/authUI.js?v=80"></script>
+    <script src="js/pages/dashboard.js?v=80"></script>
+    <script src="js/pages/home.js?v=80"></script>
+    <script src="js/pages/catalogue.js?v=80"></script>
+    <script src="js/pages/movieList.js?v=80"></script>
+    <script src="js/pages/search.js?v=80"></script>
+    <script src="js/pages/detail.js?v=80"></script>
+    <script src="js/pages/platform.js?v=80"></script>
 
   <script>
     // ——————————————————————————
-    // UniVibe — App Initialisation
+    // Movie Recommendation System — App Initialisation
     // ——————————————————————————
 
     (function () {
@@ -125,6 +128,8 @@
               scrollPositions[Router.currentRoute] = window.scrollY;
           }
       }, { passive: true });
+
+
 
       // Helper: render a page and add footer
       function renderPage(html) {
@@ -163,7 +168,7 @@
         // Init Slider
         setTimeout(initHomeSlider, 100);
         // Trigger recommendation loading after render
-        const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+        const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
         const safeMovies = applyAgeFilter(MOVIES, userAge);
         const trending = getTrending(safeMovies);
         const featured = trending.length > 0
@@ -272,12 +277,12 @@
       setTimeout(updateAuthUI, 0);
 
       // Listen for auth events
-      window.addEventListener('univibe:logout', () => {
+      window.addEventListener('mrs:logout', () => {
         updateAuthUI();
         Router.resolve();
       });
 
-      window.addEventListener('univibe:auth-expired', () => {
+      window.addEventListener('mrs:auth-expired', () => {
         showToast('Session expired. Please sign in again.', 'error');
         updateAuthUI();
       });

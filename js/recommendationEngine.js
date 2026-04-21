@@ -1,4 +1,4 @@
-// UniVibe — Recommendation Engine
+// Movie Recommendation System — Recommendation Engine
 // Separated from UI rendering. Contains all filtering, scoring, and recommendation logic.
 
 // ──────────────────────────────────────────────
@@ -94,23 +94,23 @@ function similarityScore(movieA, movieB) {
         // Bonus: If the PRIMARY (first) genre matches, add extra weight (+0.5)
         if (movieA.genre[0] === movieB.genre[0]) {
             breakdown.genreScore += 0.5;
-            reasons.push(`exact category match (${movieA.genre[0]})`);
+            reasons.push(`has an exact category match (${movieA.genre[0]})`);
         } else {
-            reasons.push(`shares genre (${sharedGenres.join(', ')})`);
+            reasons.push(`shares similar genres (${sharedGenres.join(', ')})`);
         }
     }
 
     // ── Factor 2: Same Director match (Bonus) ──
     if (movieA.director && movieB.director && movieA.director !== 'Unknown' && movieA.director === movieB.director) {
         breakdown.genreScore += 2.0;
-        reasons.push(`same director (${movieA.director})`);
+        reasons.push(`is directed by the same person (${movieA.director})`);
     }
 
     // ── Factor 3: Experience match (weight 1) ──
     // Exact match of experience_type (fun, intense, emotional, relaxing)
     if (movieA.experience_type === movieB.experience_type) {
         breakdown.experienceScore = 1;
-        reasons.push(`same experience type (${movieA.experience_type})`);
+        reasons.push(`offers a similar experience (${movieA.experience_type})`);
     }
 
     // ── Factor 3: Rating similarity (weight 1) ──
@@ -119,7 +119,7 @@ function similarityScore(movieA, movieB) {
     const ratingDiff = Math.abs(movieA.rating_percent - movieB.rating_percent);
     breakdown.ratingScore = 1 - (ratingDiff / 100);
     if (breakdown.ratingScore >= 0.85) {
-        reasons.push('similar rating');
+        reasons.push('has a similar audience rating');
     }
 
     // ── Factor 4: Popularity similarity (weight 1) ──
@@ -128,7 +128,7 @@ function similarityScore(movieA, movieB) {
     const popDiff = Math.abs(movieA.popularity_score - movieB.popularity_score);
     breakdown.popularityScore = 1 - popDiff;
     if (breakdown.popularityScore >= 0.85) {
-        reasons.push('similar popularity');
+        reasons.push('is similarly popular');
     }
 
     // ── Total ──
@@ -151,7 +151,12 @@ function similarityScore(movieA, movieB) {
  */
 function buildReasonText(reasons) {
     if (!reasons || reasons.length === 0) return 'Recommended based on overall similarity.';
-    return 'Recommended because it ' + reasons.join(' and ') + '.';
+    
+    // Shuffle the reasons slightly and cap at 2 to avoid repetitiveness and long text
+    const shuffled = [...reasons].sort(() => 0.5 - Math.random());
+    const selectedReasons = shuffled.slice(0, 2);
+    
+    return 'Recommended because it ' + selectedReasons.join(' and ') + '.';
 }
 
 /**
@@ -206,13 +211,29 @@ function getHybridRecommendations(allMovies, criteria, count = 12) {
             // Score = Popularity (0-1) + Rating (0-1)
             const qualityScore = m.popularity_score + (m.rating_percent / 100);
 
-            // Construct a reason based on active filters
-            let reasonParts = [];
-            if (genre) reasonParts.push(`matches genre (${genre})`);
-            if (experience) reasonParts.push(`matches vibe (${experience})`);
-            if (reasonParts.length === 0) reasonParts.push('highly rated and popular');
+            let reasonStr = '';
+            const isHighlyRated = m.rating_percent >= 85;
+            const isVeryPopular = m.popularity_score >= 0.8;
+            const dirStr = (m.director && m.director !== 'Unknown' && Math.random() > 0.5) ? ` directed by ${m.director}` : '';
+            const yearStr = (m.year && !dirStr && Math.random() > 0.5) ? ` from ${m.year}` : '';
+            const suffix = dirStr || yearStr;
 
-            const reasonStr = 'Selected because it ' + reasonParts.join(' and ') + '.';
+            if (genre && experience) {
+                 if (isHighlyRated) reasonStr = `Highly rated ${genre} pick with a ${experience} vibe${suffix}.`;
+                 else reasonStr = `Matches the ${genre} category and ${experience} vibe${suffix}.`;
+            } else if (genre) {
+                 if (isHighlyRated) reasonStr = `Critically acclaimed ${genre} movie${suffix}.`;
+                 else if (isVeryPopular) reasonStr = `Trending ${genre} choice${suffix}.`;
+                 else reasonStr = `Selected for the ${genre} category${suffix}.`;
+            } else if (experience) {
+                 if (isHighlyRated) reasonStr = `Highly rated choice for a ${experience} vibe${suffix}.`;
+                 else reasonStr = `Great fit for a ${experience} experience${suffix}.`;
+            } else {
+                 if (isHighlyRated && isVeryPopular) reasonStr = `A highly rated and globally popular movie${suffix}.`;
+                 else if (isHighlyRated) reasonStr = `A critically acclaimed choice${suffix}.`;
+                 else if (isVeryPopular) reasonStr = `A trending popular pick${suffix}.`;
+                 else reasonStr = `A solid choice based on general quality${suffix}.`;
+            }
 
             return {
                 movie: m,
@@ -277,7 +298,7 @@ function getRecommendations(allMovies, movieId, userAge, count = 6) {
  * Legacy-compatible getSimilar wrapper.
  */
 function getSimilar(allMovies, movieId, count = 6) {
-    const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+    const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
     return getRecommendations(allMovies, movieId, userAge, count);
 }
 

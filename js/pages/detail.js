@@ -1,10 +1,10 @@
-// UniVibe — Movie Detail Page
+// Movie Recommendation System — Movie Detail Page
 
 function renderDetail(params) {
   const movieId = parseInt(params.id);
   const movie = MOVIES.find(m => m.movie_id === movieId);
   
-  const shouldAutoplay = localStorage.getItem('univibe_play_trailer') === 'true';
+  const shouldAutoplay = localStorage.getItem('mrs_play_trailer') === 'true';
 
   // Track this movie as recently viewed
   if (typeof trackRecentlyViewed === 'function') {
@@ -16,13 +16,13 @@ function renderDetail(params) {
     setTimeout(() => {
       const el = document.getElementById('movie-trailer-section');
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      localStorage.removeItem('univibe_play_trailer');
+      localStorage.removeItem('mrs_play_trailer');
     }, 500);
   }
 
   if (!movie) {
     return `
-      <div class="empty-state" style="padding-top: 140px;">
+      <div class="empty-state" style="padding-top: 20px;">
         <div class="empty-icon">?</div>
         <h3>Movie not found</h3>
         <p>The movie you're looking for doesn't exist.</p>
@@ -32,10 +32,10 @@ function renderDetail(params) {
   }
 
   // Check age filter
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   if (userAge < movie.age_limit) {
     return `
-      <div class="empty-state" style="padding-top: 140px;">
+      <div class="empty-state" style="padding-top: 20px;">
         <div class="empty-icon">?</div>
         <h3>Age-Restricted Content</h3>
         <p>This movie requires age ${movie.age_limit}+. Please update your age to access.</p>
@@ -234,7 +234,7 @@ async function showDetailRecommendations(movieId) {
   const container = document.getElementById('detail-recommendations');
   if (!container) return;
 
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
 
 
   try {
@@ -369,7 +369,7 @@ const UNIVERSE_RULES = [
     'X-Men': ['X-Men'],
     'Demon Slayer': ['Demon Slayer', 'Kimetsu no Yaiba'],
     'Dragon Ball': ['Dragon Ball'],
-    'Lokesh Cinematic Universe': { exact: true, titles: ['Vikram', 'Kaithi', 'Leo', 'Coolie'] },  // LCU
+    'Lokesh Cinematic Universe': { exact: true, titles: ['Vikram', 'Kaithi', 'Leo'] },  // LCU
   }}
 ];
 

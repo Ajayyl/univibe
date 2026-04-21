@@ -1,4 +1,4 @@
-// UniVibe — Home Page (Enhanced v65)
+// Movie Recommendation System — Home Page (Enhanced v65)
 
 /**
  * Render a horizontal movie row for a specific OTT platform.
@@ -26,7 +26,7 @@ function renderPlatformRow(movies, platformName, icon) {
 }
 
 function renderHome() {
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   const safeMovies = applyAgeFilter(MOVIES, userAge);
   const trending = getTrending(safeMovies);
   const latest = getLatest(safeMovies);
@@ -49,9 +49,29 @@ function renderHome() {
     <section class="home-slider-container">
       <div class="home-slider" id="home-hero-slider">
         ${(() => {
-          const slidesToRender = trending.slice(0, 5);
+          // Filter out Vijay movies manually per user preference
+          const filteredTrending = trending.filter(m => {
+            const castStr = Array.isArray(m.cast) ? m.cast.join(' ').toLowerCase() : (typeof m.cast === 'string' ? m.cast.toLowerCase() : '');
+            const dirname = (m.director || '').toLowerCase();
+            return !castStr.includes('vijay') && !dirname.includes('vijay');
+          });
+          
+          // Take the top 20 trending movies and shuffle them so it's different every time
+          const topTrendingPool = filteredTrending.slice(0, 20);
+          const shuffledTrending = topTrendingPool.sort(() => 0.5 - Math.random());
+          const slidesToRender = shuffledTrending.slice(0, 5);
           return slidesToRender.map((m, index) => {
-            const posterUrl = m.poster;
+            let posterUrl = m.poster;
+            
+            // Dynamically upgrade image resolution for the massive hero screen
+            if (posterUrl.includes('tmdb.org')) {
+              // Replace 500px width constraint with original source resolution
+              posterUrl = posterUrl.replace('/w500/', '/original/');
+            } else if (posterUrl.includes('media-amazon.com')) {
+              // Strip Amazon's low-res constraints (like _V1_SX250.jpg) to grab the raw HD image
+              posterUrl = posterUrl.replace(/_V1_.*\.jpg$/, '_V1_.jpg');
+            }
+
             return `
                 <div class="slide ${index === 0 ? 'active' : ''}" data-index="${index}">
                   <div class="container slide-container">
@@ -66,7 +86,7 @@ function renderHome() {
                       <p class="slide-description">${m.synopsis}</p>
                       <div class="slide-actions">
                         <a href="#/movie/${m.movie_id}" class="btn btn-primary">
-                          Movie Details
+                          Explore Movie
                         </a>
                       </div>
                     </div>
@@ -249,7 +269,7 @@ function showHomeRecommendations(featuredId) {
   const container = document.getElementById('home-recommendations');
   if (!container) return;
 
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   const recs = getRecommendations(MOVIES, featuredId, userAge, 6);
 
   if (recs.length > 0) {

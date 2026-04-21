@@ -1,6 +1,6 @@
 @echo off
 echo ==============================================
-echo Installing UniVibe Dependencies (Windows)
+echo Installing Movie Recommendation System Dependencies (Windows)
 echo ==============================================
 
 echo [1/2] Installing Node.js Packages...

@@ -4,8 +4,8 @@ import random
 import hashlib
 
 # Paths
-BASE_MOVIES = r'd:\univibe\backend\baseMovies.json'
-FRONTEND_DATA = r'd:\univibe\data\movieData_v63.js'
+BASE_MOVIES = r'd:\mrs\backend\baseMovies.json'
+FRONTEND_DATA = r'd:\mrs\data\movieData_v63.js'
 
 # Top 50+ Real Release Dates (Indian/Global)
 REAL_DATES = {

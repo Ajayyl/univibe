@@ -1,4 +1,4 @@
-// UniVibe — Auth UI (Login, Register, Profile)
+// Movie Recommendation System — Auth UI (Login, Register, Profile)
 // Handles all authentication-related UI rendering and logic
 
 // ──────────────────────────────────
@@ -15,9 +15,9 @@ function renderAuthModal(mode = 'login') {
         
         <div class="auth-header">
           <div class="auth-logo">
-            <img src="assets/logo/v3.png" alt="UniVibe" class="logo-img" style="width:54px; height:54px;" />
+            <img src="assets/logo/cinema.png" alt="Movie Recommendation System" class="logo-img" style="width:54px; height:54px; filter: drop-shadow(0 4px 12px rgba(124, 58, 237, 0.5));" />
           </div>
-          <h2 class="auth-title">${isLogin ? 'Welcome Back' : 'Join UniVibe'}</h2>
+          <h2 class="auth-title">${isLogin ? 'Welcome Back' : 'Create Account'}</h2>
           <p class="auth-subtitle">${isLogin ? 'Sign in to get personalized recommendations' : 'Create your account for personalized movie picks'}</p>
         </div>
 
@@ -94,7 +94,7 @@ function renderRegisterForm() {
     <div class="auth-field">
       <label for="auth-username-reg">Username</label>
       <div class="auth-input-wrap">
-        <span class="auth-input-icon">User</span>
+        <span class="auth-input-icon"><i class="fa-solid fa-at"></i></span>
         <input type="text" id="auth-username-reg" name="username" placeholder="Choose a username (3-24 chars)" 
                required pattern="[a-zA-Z0-9_]+" minlength="3" maxlength="24" autocomplete="username" />
       </div>
@@ -192,7 +192,7 @@ async function handleAuthSubmit(event) {
     // Sync age with existing age gate system
     const user = API.getUser();
     if (user && user.age) {
-      localStorage.setItem('univibe_age', user.age);
+      localStorage.setItem('mrs_age', user.age);
     }
 
     updateAuthUI();
@@ -218,7 +218,7 @@ function renderProfile() {
   const user = API.getUser();
   if (!user) {
     return `
-      <div class="empty-state" style="padding-top:140px;">
+      <div class="empty-state" style="padding-top:20px;">
         <div class="empty-icon"><i class="fa-solid fa-lock" style="font-size:48px;"></i></div>
         <h3>Sign in required</h3>
         <p>Log in to view your profile and ML recommendations.</p>
@@ -228,7 +228,7 @@ function renderProfile() {
   }
 
   return `
-    <section class="section" style="padding-top:100px;">
+    <section class="section" style="padding-top:20px;">
       <div class="container">
         
         <!-- Profile Header -->
@@ -604,7 +604,7 @@ function renderActivityHistory() {
   if (!user) return Router.navigate('/profile');
 
   return `
-    <section class="section" style="padding-top:100px;">
+    <section class="section" style="padding-top:20px;">
       <div class="container">
         <div class="section-header">
           <div>
@@ -770,7 +770,7 @@ async function handleProfileUpdate(event) {
 
   if (result.ok) {
     // Sync age
-    localStorage.setItem('univibe_age', formData.get('age'));
+    localStorage.setItem('mrs_age', formData.get('age'));
     document.getElementById('edit-profile-modal').remove();
     updateAuthUI();
     Router.resolve();

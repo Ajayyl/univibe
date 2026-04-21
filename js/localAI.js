@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// UniVibe — Frontend AI Brain (Recommendation Learning)
+// Movie Recommendation System — Frontend AI Brain (Recommendation Learning)
 // Handles all intelligence locally in the browser for offline use.
 // ═══════════════════════════════════════════════════════════════
 
@@ -27,18 +27,18 @@ const LocalAI = {
     // ── Database Simulation ──
     db: {
         getQTable() {
-            return JSON.parse(localStorage.getItem('univibe_qtable') || '{}');
+            return JSON.parse(localStorage.getItem('mrs_qtable') || '{}');
         },
         saveQTable(table) {
-            localStorage.setItem('univibe_qtable', JSON.stringify(table));
+            localStorage.setItem('mrs_qtable', JSON.stringify(table));
         },
         getInteractions() {
-            return JSON.parse(localStorage.getItem('univibe_interactions') || '[]');
+            return JSON.parse(localStorage.getItem('mrs_interactions') || '[]');
         },
         saveInteraction(interaction) {
             const history = this.getInteractions();
             history.unshift({ ...interaction, created_at: new Date().toISOString() });
-            localStorage.setItem('univibe_interactions', JSON.stringify(history.slice(0, 500)));
+            localStorage.setItem('mrs_interactions', JSON.stringify(history.slice(0, 500)));
         }
     },
 
@@ -67,7 +67,7 @@ const LocalAI = {
     learn(movieId, eventType, eventValue = '', context = {}) {
         const reward = this.calculateReward(eventType, eventValue);
         const interactions = this.db.getInteractions();
-        const userAge = parseInt(localStorage.getItem('univibe_age')) || 18;
+        const userAge = parseInt(localStorage.getItem('mrs_age')) || 18;
         const stateKey = this.encodeState(userAge, interactions);
 
         // Log interaction
@@ -100,11 +100,11 @@ const LocalAI = {
     // ── Recommendations ──
     getRecommendations(count = 8) {
         const interactions = this.db.getInteractions();
-        const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+        const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
         const stateKey = this.encodeState(userAge, interactions);
         const qTable = this.db.getQTable();
 
-        const rated = new Set(JSON.parse(localStorage.getItem('univibe_ratings') || '[]').map(r => r.movieId));
+        const rated = new Set(JSON.parse(localStorage.getItem('mrs_ratings') || '[]').map(r => r.movieId));
         const candidates = MOVIES.filter(m => userAge >= m.age_limit);
 
         const scored = candidates.map(movie => {
@@ -134,8 +134,8 @@ const LocalAI = {
     getUserLearningStats() {
         const interactions = this.db.getInteractions();
         const qTable = this.db.getQTable();
-        const ratings = JSON.parse(localStorage.getItem('univibe_ratings') || '[]');
-        const watchlist = JSON.parse(localStorage.getItem('univibe_watchlist') || '[]');
+        const ratings = JSON.parse(localStorage.getItem('mrs_ratings') || '[]');
+        const watchlist = JSON.parse(localStorage.getItem('mrs_watchlist') || '[]');
 
         const qValues = Object.values(qTable).map(v => v.q);
         const totalInteractions = interactions.length;

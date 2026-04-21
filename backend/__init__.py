@@ -1,1 +1,1 @@
-# UniVibe Backend Package
+# Movie Recommendation System Backend Package

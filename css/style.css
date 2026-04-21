@@ -1,5 +1,5 @@
 /* =================================================================
-   UniVibe — Design System
+   Movie Recommendation System — Design System
    Transparent glassmorphism theme with frosted glass effects
    ================================================================= */
 
@@ -10,10 +10,10 @@
 :root {
   /* Palette — True Glass */
   --bg-primary: transparent;
-  --bg-secondary: rgba(15, 15, 25, 0.5); /* Neutral dark grey glass global */
+  --bg-secondary: rgba(15, 15, 25, 0.75); /* Neutral dark grey glass global */
   --bg-card: rgba(15, 15, 25, 0.4);
   --bg-card-hover: rgba(25, 25, 35, 0.6);
-  --bg-glass: rgba(15, 15, 25, 0.5);
+  --bg-glass: rgba(15, 15, 25, 0.75);
   --border-glass: rgba(255, 255, 255, 0.08);
   --border-glass-light: rgba(255, 255, 255, 0.15);
 
@@ -78,6 +78,8 @@ a {
 img {
   max-width: 100%;
   display: block;
+  image-rendering: -webkit-optimize-contrast; /* Force crisp sharp images globally */
+  image-rendering: crisp-edges;
 }
 
 button {
@@ -134,20 +136,16 @@ select {
 
 /* ---- Navigation ---- */
 .navbar {
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   width: calc(100% - 30px);
   max-width: var(--container-max);
+  margin: 15px auto 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(25px) saturate(1.8);
-  -webkit-backdrop-filter: blur(25px) saturate(1.8);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-pill);
   padding: 0 40px;
-  transition: all 0.5s var(--ease);
+  transition: background 0.5s var(--ease), border-color 0.5s var(--ease);
 }
 
 .navbar:hover {
@@ -215,28 +213,29 @@ select {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   cursor: pointer;
 }
 
 .navbar-brand .logo-img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
-  transition: transform 0.3s var(--ease);
+  filter: drop-shadow(0 4px 12px rgba(124, 58, 237, 0.4));
+  transition: transform 0.4s var(--ease), filter 0.4s var(--ease);
 }
 
 .navbar-brand:hover .logo-img {
-  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0 6px 16px rgba(168, 85, 247, 0.7));
 }
 
 .navbar-brand .logo-text {
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 22px; /* Increased back up for better visibility */
+  font-weight: 700; /* Unified Bold weight for entire string */
   color: #fff;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.2px; /* Relaxed letter spacing */
+  word-spacing: 2px; /* Extra gap between words so it doesn't look squeezed */
+  white-space: nowrap; /* Prevent awkward wrapping */
 }
 
 .navbar-links {
@@ -257,7 +256,7 @@ select {
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -266,7 +265,6 @@ select {
   background: rgba(255, 255, 255, 0.12); /* Frosted tab look like reference */
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
 }
 
 /* ---- Profile & Auth Actions ---- */
@@ -280,14 +278,13 @@ select {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-glass-light);
   padding: 8px 18px;
   border-radius: var(--radius-pill);
   cursor: pointer;
   transition: all 0.4s var(--ease);
   margin-left: 12px;
-  backdrop-filter: blur(10px);
 }
 
 .nav-profile-pill:hover {
@@ -330,7 +327,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 24px 80px;
+  padding: 0 24px 80px;
   overflow: hidden;
 }
 
@@ -425,10 +422,9 @@ select {
 }
 
 .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Like 'Download' button */
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .btn-outline:hover {
@@ -449,8 +445,7 @@ select {
   border-radius: 20px;
   border: 1px solid var(--border-glass-light);
   color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
   transition: all 0.3s var(--ease);
 }
 
@@ -462,7 +457,7 @@ select {
 
 /* ---- Section Layout ---- */
 .section {
-  padding: 48px 24px;
+  padding: 16px 24px;
   position: relative;
   content-visibility: auto;
   contain-intrinsic-size: auto 600px;
@@ -471,11 +466,9 @@ select {
 /* All home page sections as unified floating glass cards */
 .section .container {
   background: var(--bg-secondary);
-  backdrop-filter: blur(20px) saturate(1.2);
-  -webkit-backdrop-filter: blur(20px) saturate(1.2);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius);
-  padding: 48px 40px;
+  padding: 24px 40px;
   box-shadow: 
     0 20px 60px rgba(0, 0, 0, 0.35),
     inset 0 0 10px rgba(255, 255, 255, 0.02);
@@ -672,7 +665,6 @@ select {
   border-radius: var(--radius);
   background: var(--bg-glass);
   border: 1px solid var(--border-glass);
-  backdrop-filter: blur(10px);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -787,7 +779,6 @@ select {
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
-  backdrop-filter: blur(10px);
   cursor: pointer;
   transition: all var(--duration) var(--ease);
   overflow: hidden;
@@ -850,7 +841,7 @@ select {
 /* ---- Movie Grid ---- */
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 24px;
 }
 
@@ -858,9 +849,7 @@ select {
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  background: rgba(15, 15, 25, 0.65);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(15, 15, 25, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.12);
   cursor: pointer;
   transition: transform var(--duration) var(--ease), border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
@@ -872,7 +861,7 @@ select {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 
     0 20px 60px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(255, 255, 255, 0.05);
+    0 0 30px rgba(255, 255, 255, 0.08);
   z-index: 10;
 }
 
@@ -890,8 +879,6 @@ select {
   height: 36px;
   border-radius: 50%;
   background: rgba(10, 10, 26, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
@@ -938,6 +925,8 @@ select {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  image-rendering: -webkit-optimize-contrast; /* Force crisp sharp edges */
+  image-rendering: crisp-edges;
   filter: brightness(1.02); /* Standardized high clarity across all grids */
   transition: transform 0.5s var(--ease), filter 0.5s ease;
 }
@@ -1100,10 +1089,8 @@ select {
   margin-bottom: 32px;
   padding: 24px 30px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border-glass-light);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
 }
 
 .filter-input {
@@ -1419,7 +1406,6 @@ select {
   inset: 0;
   z-index: 9999;
   background: rgba(10, 10, 26, 0.92);
-  backdrop-filter: blur(24px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1577,7 +1563,7 @@ select {
 
 .rec-select {
   width: 100%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-glass);
   border-radius: 12px;
   padding: 12px 16px;
@@ -1717,7 +1703,6 @@ select {
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
-  backdrop-filter: blur(10px);
   cursor: pointer;
   transition: all var(--duration) var(--ease);
   display: flex;
@@ -1763,7 +1748,6 @@ select {
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
-  backdrop-filter: blur(10px);
   cursor: pointer;
   transition: all var(--duration) var(--ease);
   text-align: center;
@@ -1974,8 +1958,6 @@ select {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   animation: fadeIn 0.3s var(--ease);
   padding: 20px;
 }
@@ -2239,11 +2221,16 @@ select {
   gap: 28px;
   padding: 36px 32px;
   border-radius: var(--radius);
-  background: var(--bg-card);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass-light);
   margin-bottom: 40px;
   flex-wrap: wrap;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35), inset 0 0 10px rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
 }
+
+
 
 .profile-avatar-large {
   width: 80px;
@@ -2304,8 +2291,8 @@ select {
   gap: 6px;
   padding: 6px 14px;
   border-radius: 20px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-glass);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass-light);
   font-size: 12px;
 }
 
@@ -2324,28 +2311,33 @@ select {
   gap: 8px;
 }
 
+.activity-cta-card {
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass-light);
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35), inset 0 0 10px rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
 /* =================================================================
    ML INTELLIGENCE CARD
    ================================================================= */
 
 .ml-intelligence-card {
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(168, 85, 247, 0.03) 100%);
-  border: 1px solid var(--border-glass);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass-light);
   padding: 32px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35), inset 0 0 10px rgba(255, 255, 255, 0.02);
 }
 
-.ml-intelligence-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), #ec4899);
-}
+
 
 .ml-card-header {
   display: flex;
@@ -2386,7 +2378,7 @@ select {
 .ml-stat-item {
   padding: 20px;
   border-radius: 12px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-glass);
   text-align: center;
 }
@@ -2418,8 +2410,8 @@ select {
 .genre-chip {
   padding: 6px 14px;
   border-radius: 20px;
-  background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass-light);
   color: var(--accent-tertiary);
   font-size: 13px;
   font-weight: 500;
@@ -2849,7 +2841,7 @@ select {
    ================================================================= */
 
 .dashboard-page {
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 60px;
   min-height: 100vh;
 }
@@ -3188,7 +3180,7 @@ select {
 
 .state-table tbody td {
   padding: 10px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   vertical-align: middle;
 }
 
@@ -3803,7 +3795,7 @@ select {
 .home-slider-container {
   position: relative;
   height: min(700px, 85vh);
-  margin-top: 60px;
+  margin-top: 0;
   overflow: hidden;
   background: transparent;
   display: flex;
@@ -3875,9 +3867,7 @@ select {
   height: 580px; /* Fixed height to perfectly maintain size */
   margin: 0 auto;
   padding: 50px 70px;
-  background: rgba(15, 15, 25, 0.5); /* Neutral dark grey glass */
-  backdrop-filter: blur(50px) saturate(1.2);
-  -webkit-backdrop-filter: blur(50px) saturate(1.2);
+  background: rgba(15, 15, 25, 0.75); /* Neutral dark grey glass */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
   box-shadow: 
@@ -3908,13 +3898,14 @@ select {
 }
 
 .slide-title {
-  font-size: clamp(38px, 4.5vw, 46px); /* Stabilized font size for all movies */
+  font-size: clamp(28px, 3.5vw, 36px); /* Significantly reduced font size for all movies */
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 24px;
   color: #fff;
   line-height: 1.15;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px; /* Added light gap across letters */
+  word-spacing: 3px; /* Added light gap between words */
   text-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
@@ -3950,18 +3941,16 @@ select {
 }
 
 .slide-actions .btn-primary {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.06) 100%);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.3); /* Subtle top light catch */
   color: #fff;
   padding: 12px 30px;
   border-radius: 12px; /* Smoother curve */
   font-weight: 600;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.05); /* Inner thin border */
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08); /* Inner thin border */
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   position: relative;
@@ -4003,6 +3992,8 @@ select {
   width: 310px;
   height: 460px;
   object-fit: cover;
+  image-rendering: -webkit-optimize-contrast; /* Force crisp sharp edges */
+  image-rendering: crisp-edges;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
@@ -4026,8 +4017,6 @@ select {
   height: 50px;
   border-radius: 50%;
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255,255,255,0.15);
   color: #fff;
   cursor: pointer;
@@ -4100,9 +4089,7 @@ select {
 .footer {
   margin-top: 100px;
   padding: 60px 0 40px;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px) saturate(1.2);
-  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  background: rgba(255, 255, 255, 0.06);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
@@ -4267,7 +4254,7 @@ select {
   font-weight: 600;
   cursor: pointer;
   border: 1.5px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--text-secondary);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
@@ -4408,7 +4395,6 @@ select {
   height: 40px;
   border-radius: 50%;
   background: rgba(10, 10, 26, 0.85);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
   font-size: 16px;

@@ -34,7 +34,7 @@ with open('tests/movies_table.html', 'w', encoding='utf-8') as f:
     f.write(html_template.format("movies_metadata_dataset (JSON/CSV snippet)", df_movies.to_html(index=False)))
 
 # Interactions from sqlite, or mock if failure to read.
-conn = sqlite3.connect('backend/data/univibe.db')
+conn = sqlite3.connect('backend/data/mrs.db')
 try:
     df_int = pd.read_sql_query("SELECT id, user_uid, movie_id, event_type, rating, duration_ms, created_at FROM interactions LIMIT 25", conn)
     with open('tests/interactions_table.html', 'w', encoding='utf-8') as f:

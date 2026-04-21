@@ -1,11 +1,11 @@
-// UniVibe — Advanced Search & Filter Page
+// Movie Recommendation System — Advanced Search & Filter Page
 
 function renderSearch() {
   const genres = [...new Set(MOVIES.flatMap(m => m.genre || []))].sort();
   const experiences = [...new Set(MOVIES.map(m => m.experience_type || 'Unknown'))].sort();
 
   return `
-    <section class="section" style="padding-top: 100px; padding-bottom: 50px;">
+    <section class="section" style="padding-top: 20px; padding-bottom: 50px;">
       <div class="container" style="display: flex; gap: 30px; align-items: flex-start;">
         
         <!-- Filter Sidebar -->
@@ -135,7 +135,7 @@ function applyAdvancedFilters() {
   const minYear = parseInt(document.getElementById('adv-search-year').value) || 1950;
 
   // Enforce age safe logic first
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   let matches = applyAgeFilter(MOVIES, userAge);
 
   // Apply specific filters

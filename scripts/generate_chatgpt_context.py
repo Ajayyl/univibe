@@ -1,8 +1,8 @@
 import os
 
 # Configuration
-PROJECT_ROOT = r'd:\univibe'
-OUTPUT_FILE = os.path.join(PROJECT_ROOT, 'univibe_chatgpt_context.md')
+PROJECT_ROOT = r'd:\mrs'
+OUTPUT_FILE = os.path.join(PROJECT_ROOT, 'mrs_chatgpt_context.md')
 
 # Files to include (ordered by importance)
 CORE_FILES = [
@@ -20,8 +20,8 @@ def generate_context():
     print(f"Generating consolidated context file: {OUTPUT_FILE}")
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as outfile:
-        outfile.write("# UniVibe 2.0 - Consolidated System Context\n")
-        outfile.write("This file contains the core code of the UniVibe project for documentation and analysis.\n\n")
+        outfile.write("# Movie Recommendation System 2.0 - Consolidated System Context\n")
+        outfile.write("This file contains the core code of the Movie Recommendation System project for documentation and analysis.\n\n")
         outfile.write("## Table of Contents\n")
         
         for file_path, description in CORE_FILES:
@@ -51,7 +51,7 @@ def generate_context():
             outfile.write("\n```\n\n")
             outfile.write("---\n\n")
             
-    print("Done! You can now upload 'univibe_chatgpt_context.md' to ChatGPT.")
+    print("Done! You can now upload 'mrs_chatgpt_context.md' to ChatGPT.")
 
 if __name__ == "__main__":
     generate_context()

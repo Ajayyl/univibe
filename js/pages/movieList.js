@@ -1,8 +1,8 @@
-// UniVibe — All Movies List Page
+// Movie Recommendation System — All Movies List Page
 // Restores the original "Catalogue" functionality
 
 function renderMovieList(params) {
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   const safeMovies = applyAgeFilter(MOVIES, userAge);
 
   // Check for search query
@@ -12,7 +12,7 @@ function renderMovieList(params) {
     const subtitle = `${movies.length} matches found ${movies.length > 0 ? '' : '— try something else!'}`;
 
     return `
-      <section class="section" style="padding-top: 100px; padding-bottom: 50px;">
+      <section class="section" style="padding-top: 20px; padding-bottom: 50px;">
         <div class="container">
           <div class="section-header">
             <div>
@@ -78,7 +78,7 @@ function renderMovieList(params) {
         // Handle async loading for AI picks
         setTimeout(loadAIPicksInGrid, 100);
         return `
-          <section class="section" style="padding-top: 100px; padding-bottom: 50px;">
+          <section class="section" style="padding-top: 20px; padding-bottom: 50px;">
             <div class="container">
               <div class="section-header">
                 <div>
@@ -101,7 +101,7 @@ function renderMovieList(params) {
 
     // Render Grid View for Specific Filter
     return `
-      <section class="section" style="padding-top: 100px; padding-bottom: 50px;">
+      <section class="section" style="padding-top: 20px; padding-bottom: 50px;">
         <div class="container">
           <div class="section-header">
             <div>
@@ -147,7 +147,7 @@ function renderMovieList(params) {
   ].filter(cat => cat.movies.length > 0); // Only show categories with movies
 
   return `
-    <section class="section" style="padding-top: 100px; padding-bottom: 50px;">
+    <section class="section" style="padding-top: 20px; padding-bottom: 50px;">
       <div class="container">
         <div class="section-header">
             <div>
@@ -158,7 +158,7 @@ function renderMovieList(params) {
         </div>
 
         ${categories.map(cat => `
-          <div class="category-section" style="margin-bottom: 40px;">
+          <div class="category-section" style="margin-bottom: 16px;">
             <h3 class="category-title" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--text-color);">${cat.title}</h3>
             <div class="movie-row" style="
               display: flex;

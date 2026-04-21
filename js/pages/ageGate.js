@@ -1,4 +1,4 @@
-// UniVibe — Age & Content Control
+// Movie Recommendation System — Age & Content Control
 // Derive content labels (Kids, Teen, Adult) from numeric age
 
 function renderAgeGate() {
@@ -6,12 +6,12 @@ function renderAgeGate() {
     <div class="age-gate-overlay" id="age-gate">
       <div class="age-gate-card">
         <div class="gate-icon">?</div>
-        <h2>Welcome to UniVibe</h2>
+        <h2>Welcome</h2>
         <p>Enter your age to personalize your movie discovery</p>
         
-        <div class="age-input-field">
-          <input type="number" id="age-gate-input" placeholder="Your age" min="1" max="120" />
-          <p class="age-hint">We use this to filter content for Kids, Teens, or Adults.</p>
+        <div class="age-input-field" style="margin: 24px 0;">
+          <input type="number" id="age-gate-input" placeholder="Age" min="1" max="120" style="width: 140px; text-align: center; font-size: 18px; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.3); color: white; display: block; margin: 0 auto 16px auto;" />
+          <p class="age-hint" style="margin: 0; opacity: 0.8;">We use this to filter content for Kids, Teens, or Adults.</p>
         </div>
         
         <button class="btn btn-primary" onclick="submitAgeGate()">Continue</button>
@@ -33,7 +33,7 @@ function submitAgeGate() {
 }
 
 function submitAge(age) {
-  localStorage.setItem('univibe_age', age);
+  localStorage.setItem('mrs_age', age);
 
   // Remove the gate
   const gate = document.getElementById('age-gate');
@@ -51,7 +51,7 @@ function submitAge(age) {
 
 function showAgeGate() {
   // Only show if no age is stored AND not logged in
-  if (!localStorage.getItem('univibe_age') && !API.isLoggedIn()) {
+  if (!localStorage.getItem('mrs_age') && !API.isLoggedIn()) {
     document.body.insertAdjacentHTML('beforeend', renderAgeGate());
   }
 }
@@ -63,7 +63,7 @@ function resetAge() {
     showToast('Update your age in your profile settings', 'info');
     return;
   }
-  localStorage.removeItem('univibe_age');
+  localStorage.removeItem('mrs_age');
   location.reload();
 }
 
@@ -72,7 +72,7 @@ function updateNavAgeBadge() {
   if (!badge) return;
 
   const user = API.getUser();
-  const age = user ? user.age : parseInt(localStorage.getItem('univibe_age'));
+  const age = user ? user.age : parseInt(localStorage.getItem('mrs_age'));
 
   if (age) {
     if (user) {

@@ -4,8 +4,8 @@ import hashlib
 import re
 
 # Paths
-BASE_MOVIES = r'd:\univibe\backend\baseMovies.json'
-FRONTEND_DATA = r'd:\univibe\data\movieData.js'
+BASE_MOVIES = r'd:\mrs\backend\baseMovies.json'
+FRONTEND_DATA = r'd:\mrs\data\movieData.js'
 
 # Final Verified Official OTT Links (Standardized Names)
 VERIFIED_OTT = {

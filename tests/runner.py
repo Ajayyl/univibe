@@ -7,18 +7,18 @@ import time
 # To allow importing from parent backend folder
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from unit_test import TestUniVibeCore
-from integration_test import TestUniVibeIntegration
+from unit_test import TestMovie Recommendation SystemCore
+from integration_test import TestMovie Recommendation SystemIntegration
 
 def run_tests_and_report():
-    print("Running UniVibe Test Suite...")
+    print("Running Movie Recommendation System Test Suite...")
     
     loader = unittest.TestLoader()
     suite = unittest.TestSuite()
     
     # Add Test Cases
-    suite.addTests(loader.loadTestsFromTestCase(TestUniVibeCore))
-    suite.addTests(loader.loadTestsFromTestCase(TestUniVibeIntegration))
+    suite.addTests(loader.loadTestsFromTestCase(TestMovie Recommendation SystemCore))
+    suite.addTests(loader.loadTestsFromTestCase(TestMovie Recommendation SystemIntegration))
     
     # Custom Result to capture details
     class TestResultJSON(unittest.TextTestResult):

@@ -5,7 +5,7 @@ import os
 
 async def take_screenshots():
     # Ensure output directory exists
-    output_dir = r"d:\univibe\assets\screenshots"
+    output_dir = r"d:\mrs\assets\screenshots"
     os.makedirs(output_dir, exist_ok=True)
     
     # Let the servers warm up for a moment

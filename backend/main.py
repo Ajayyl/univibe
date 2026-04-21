@@ -1,5 +1,5 @@
 """
-UniVibe — FastAPI ML Backend (Enhanced)
+Movie Recommendation System — FastAPI ML Backend (Enhanced)
 ========================================
 Handles movie metadata, user profiles, and hybrid (RL + Content) recommendations.
 Uses SQLite for persistence.
@@ -36,7 +36,7 @@ from sqlalchemy.pool import QueuePool
 # ──────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # PostgreSQL ready (Use env variable for production)
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{os.path.join(BASE_DIR, 'backend', 'data', 'univibe.db')}")
+DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{os.path.join(BASE_DIR, 'backend', 'data', 'mrs.db')}")
 
 # Scaling defaults
 POOL_SIZE = int(os.getenv("DB_POOL_SIZE", "10"))
@@ -182,7 +182,7 @@ async def lifespan(app: FastAPI):
         MOVIES_DF = pd.DataFrame()
     yield
 
-app = FastAPI(title="UniVibe ML Backend - Enhanced Engine", lifespan=lifespan)
+app = FastAPI(title="Movie Recommendation System ML Backend - Enhanced Engine", lifespan=lifespan)
 
 # CORS configurations
 app.add_middleware(
@@ -468,14 +468,18 @@ def build_cold_start_explanation(movie_row: dict, quality_score: float):
     popularity = movie_row.get('popularity_score', 0)
     
     if rating >= 90:
-        reason_parts.append("masterpiece-level rating")
+        variations = [f"exceptional {rating}% rating", "masterpiece-level rating", "critically acclaimed"]
+        choice = random.choice(variations)
+        reason_parts.append(choice)
         explanation['factors'].append({
             'type': 'high_rating',
             'label': f"Exceptionally rated ({rating}%)",
             'weight': 'high',
         })
     elif rating >= 80:
-        reason_parts.append("highly rated")
+        variations = [f"strong {rating}% rating", "highly rated", "audience favorite"]
+        choice = random.choice(variations)
+        reason_parts.append(choice)
         explanation['factors'].append({
             'type': 'good_rating',
             'label': f"Highly rated ({rating}%)",
@@ -483,23 +487,33 @@ def build_cold_start_explanation(movie_row: dict, quality_score: float):
         })
     
     if popularity >= 0.9:
-        reason_parts.append("trending globally")
+        variations = ["trending globally", "top trending choice", "highly popular"]
+        choice = random.choice(variations)
+        reason_parts.append(choice)
         explanation['factors'].append({
             'type': 'high_popularity',
             'label': f"Very popular (score: {popularity})",
             'weight': 'high',
         })
     elif popularity >= 0.7:
-        reason_parts.append("popular choice")
+        variations = ["popular choice", "widely watched", "trending right now"]
+        choice = random.choice(variations)
+        reason_parts.append(choice)
         explanation['factors'].append({
             'type': 'moderate_popularity',
             'label': f"Popular (score: {popularity})",
             'weight': 'medium',
         })
     
-    # Build the reason string (outside the elif block)
+    # Introduce variety using genre or year if available
+    genre = str(movie_row.get('genre', '')).split('|')[0] if movie_row.get('genre') else ''
+    if genre and genre != 'nan' and random.random() > 0.5:
+        reason_parts.append(f"acclaimed {genre}")
+
+    # Build the reason string
     if reason_parts:
-        reason = "AI: " + " · ".join(part.capitalize() for part in reason_parts)
+        random.shuffle(reason_parts)
+        reason = "AI: " + " · ".join(part.capitalize() for part in reason_parts[:2])
     else:
         reason = "AI: Trending choice you might enjoy"
     
@@ -793,12 +807,26 @@ async def get_general_recommendations(user_id: str, db: Session = Depends(get_db
         if is_cold_start:
             reason, explanation = build_cold_start_explanation(row.to_dict(), score_val)
         else:
-            # Bullet point format as requested
-            reason = f"Recommended because:\n- matches your growing movie taste profile"
+            reason_options = []
             if hist_genre_scores[idx] > 0.3 and top_genre_name:
-                reason += f"\n- matches your interest in {top_genre_name}"
+                reason_options.append(f"matches your interest in {top_genre_name}")
             if profile_boost[idx] > 0.6:
-                reason += f"\n- matches your preferred movie vibes"
+                reason_options.append(f"aligns with your preferred movie vibes")
+            if pref_val > 0.5:
+                reason_options.append("strongly matches your viewing history")
+            
+            # Add movie specific stat for variety
+            if float(row.get('rating_percent', 0)) >= 85:
+                reason_options.append("highly rated by audiences")
+            elif float(row.get('popularity_score', 0)) >= 0.8:
+                reason_options.append("currently trending")
+                
+            if not reason_options:
+                reason_options.append("matches your growing movie taste profile")
+                
+            random.shuffle(reason_options)
+            selected = reason_options[:2]
+            reason = "Recommended because it " + " and ".join(selected)
                 
             explanation = {
                 'factors': [{'type': 'hybrid', 'label': 'AI profile matching', 'weight': 'high'}],
@@ -872,9 +900,18 @@ async def get_movie_recommendations(movie_id: int, user_id: str, db: Session = D
         row = MOVIES_DF.iloc[idx]
         
         # Explanation format as requested
-        reason = f"Recommended because:\n• similar to {source_title}"
+        reason_opts = [f"similar to {source_title}"]
         if top_genre_name and top_genre_name in str(row.get('genre', '')):
-            reason += f"\n• matches your interest in {top_genre_name}"
+            reason_opts.append(f"matches your interest in {top_genre_name}")
+            
+        rating = float(row.get('rating_percent', 0))
+        if rating >= 85 and random.random() > 0.5:
+            reason_opts.append(f"is highly rated by viewers ({rating}%)")
+        elif float(row.get('popularity_score', 0)) >= 0.8 and random.random() > 0.5:
+            reason_opts.append("is trending right now")
+            
+        random.shuffle(reason_opts)
+        reason = "Recommended because it is " + " and ".join(reason_opts[:2])
 
         recommendations.append(MovieRecommendation(
             **row.to_dict(),

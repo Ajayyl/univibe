@@ -12,7 +12,7 @@ MOVIES_JSON = os.path.join(BASE_DIR, 'baseMovies.json')
 MODEL_PATH = os.path.join(BASE_DIR, 'data', 'similarity.pkl')
 
 def train():
-    print("🚀 Starting UniVibe Similarity Model Training...")
+    print("🚀 Starting Movie Recommendation System Similarity Model Training...")
     
     # 1. Load Data
     with open(MOVIES_JSON, 'r', encoding='utf-8') as f:

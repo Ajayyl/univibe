@@ -11,7 +11,7 @@ MODEL_PATH = os.path.join(BASE_DIR, 'data', 'similarity.pkl')
 METRICS_PATH = os.path.join(BASE_DIR, 'data', 'metrics.json')
 
 def evaluate_model():
-    print("🧪 Starting UniVibe Model Evaluation...")
+    print("🧪 Starting Movie Recommendation System Model Evaluation...")
     
     if not os.path.exists(MODEL_PATH):
         print(f"❌ Model not found at {MODEL_PATH}")

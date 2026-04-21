@@ -1,5 +1,5 @@
 {
-  "name": "univibe",
+  "name": "movie-recommendation-system",
   "version": "1.0.0",
   "description": "AI-powered movie discovery platform with hybrid RL recommendations",
   "main": "backend/server.js",

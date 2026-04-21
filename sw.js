@@ -1,10 +1,10 @@
 // ═══════════════════════════════════════════════════════════════
-// UniVibe — Service Worker (PWA Offline Support)
+// Movie Recommendation System — Service Worker (PWA Offline Support)
 // Caches all static assets for full offline functionality
 // ═══════════════════════════════════════════════════════════════
 
 // SW version bump strictly to clear caches smoothly
-const CACHE_NAME = 'univibe-v78';
+const CACHE_NAME = 'mrs-v78';
 
 // All static assets to cache for offline use
 const STATIC_ASSETS = [
@@ -12,7 +12,9 @@ const STATIC_ASSETS = [
     './index.html',
     './manifest.json',
     './css/style.css',
-    './assets/logo/v2.png',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+    'https://img.icons8.com/fluency/512/cinema-.png',
+    './assets/wallpapers/cyberpunk.png',
 
     // Data
     './data/movieData_v63.js',
@@ -37,7 +39,7 @@ const STATIC_ASSETS = [
 
 // ── Install: Pre-cache all static assets ──
 self.addEventListener('install', (event) => {
-    console.log('[SW] Installing UniVibe service worker...');
+    console.log('[SW] Installing Movie Recommendation System service worker...');
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then((cache) => {
@@ -50,7 +52,7 @@ self.addEventListener('install', (event) => {
 
 // ── Activate: Clean up old caches ──
 self.addEventListener('activate', (event) => {
-    console.log('[SW] Activating UniVibe service worker...');
+    console.log('[SW] Activating Movie Recommendation System service worker...');
     event.waitUntil(
         caches.keys()
             .then((cacheNames) => {

@@ -1,4 +1,4 @@
-// UniVibe — Authentication & Authorization Middleware
+// Movie Recommendation System — Authentication & Authorization Middleware
 // JWT-based auth with bcrypt password hashing
 
 const bcrypt = require('bcryptjs');
@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const { stmts } = require('./database');
 
 // In production, use environment variable
-const JWT_SECRET = process.env.JWT_SECRET || 'univibe_secret_key_2026_ml_recommendation_engine';
+const JWT_SECRET = process.env.JWT_SECRET || 'mrs_secret_key_2026_ml_recommendation_engine';
 const JWT_EXPIRY = '7d'; // Token expires in 7 days
 const SALT_ROUNDS = 10;
 

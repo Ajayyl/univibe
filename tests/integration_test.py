@@ -5,7 +5,7 @@ import subprocess
 import os
 import signal
 
-class TestUniVibeIntegration(unittest.TestCase):
+class TestMovie Recommendation SystemIntegration(unittest.TestCase):
     API_URL = "http://localhost:8000"
 
     def test_health_check(self):

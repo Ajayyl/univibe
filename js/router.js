@@ -1,4 +1,4 @@
-// UniVibe — Hash-based SPA Router
+// Movie Recommendation System — Hash-based SPA Router
 
 const Router = {
     routes: {},

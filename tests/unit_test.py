@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from backend.main import RLEngine, genre_score
 
-class TestUniVibeCore(unittest.TestCase):
+class TestMovie Recommendation SystemCore(unittest.TestCase):
     
     def test_calculate_reward_click(self):
         """Test RL weight for a standard click event."""

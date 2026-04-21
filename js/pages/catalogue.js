@@ -1,7 +1,7 @@
-// UniVibe — Recommendation Builder Page (formerly Catalogue)
+// Movie Recommendation System — Recommendation Builder Page (formerly Catalogue)
 
 function renderCatalogue(params) {
-  const userAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const userAge = parseInt(localStorage.getItem('mrs_age')) || 0;
   const safeMovies = applyAgeFilter(MOVIES, userAge);
   const genres = getAllGenres(safeMovies).sort();
 
@@ -18,7 +18,7 @@ function renderCatalogue(params) {
   if (userAge >= 18) ageOptions += `<option value="18">Adult (18+)</option>`;
 
   return `
-    <section class="section" style="padding-top: 100px;">
+    <section class="section" style="padding-top: 20px;">
       <div class="container">
         <div class="section-header" style="justify-content: center; text-align: center; margin-bottom: 40px;">
           <div style="max-width: 600px;">
@@ -100,7 +100,7 @@ function renderCatalogue(params) {
 }
 
 function runRecommendationEngine() {
-  const profileAge = parseInt(localStorage.getItem('univibe_age')) || 99;
+  const profileAge = parseInt(localStorage.getItem('mrs_age')) || 0;
 
   // Get Inputs
   const experience = document.getElementById('rec-experience').value;
